@@ -1,0 +1,779 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+                <head>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <title>Patient Stories</title>
+                    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+                    <link rel="stylesheet" href="/lib/bootstrap-icons/font/bootstrap-icons.min.css" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LLZTQML145"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LLZTQML145');
+</script>
+<head>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="facebook-domain-verification" content="t0cc1p1pr5h8xpx7swsbpw97xkd82t" />
+    <title>Brains Super Speciality Hospital</title>
+    <meta name="title" content="Brains Super Speciality Hospital" />
+    <meta name="description" content="Brains Super Speciality Hospital is one of the best hospital in Bengaluru for Brain Care, Neurosurgery, comprehensive care for all health conditions" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="/static/brainshospital-com/slick.css">
+    <link rel="stylesheet" type="text/css" href="/static/brainshospital-com/custom.css">
+    <link rel="stylesheet" type="text/css" href="/static/brainshospital-com/animate.css">
+    <link rel="shortcut icon" href="/static/brainshospital-com/brains-favicon.ico" type="image/ico" />
+
+<!-- Taboola Pixel Code -->
+<script type='text/javascript'>
+  window._tfa = window._tfa || [];
+  window._tfa.push({notify: 'event', name: 'page_view', id: 1719367});
+  !function (t, f, a, x) {
+         if (!document.getElementById(x)) {
+            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+         }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/unip/1719367/tfa.js',
+  'tb_tfa_script');
+</script>
+ <!-- End of Taboola Pixel Code -->
+</head>                        <link rel="stylesheet" href="/root-site.css"/>
+                </head>
+
+
+        <body>
+                <header>
+                    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQ5G4DK');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="facebook-domain-verification" content="t0cc1p1pr5h8xpx7swsbpw97xkd82t" />
+    <title>Brains Super Speciality Hospital</title>
+    <meta name="title" content="Brains Super Speciality Hospital" />
+    <meta name="description" content="Brains Super Speciality Hospital is one of the best hospital in Bengaluru for Brain Care, Neurosurgery, comprehensive care for all health conditions" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="/static/brainshospital-com/slick.css">
+    <link rel="stylesheet" type="text/css" href="/static/brainshospital-com/custom.css">
+    <link rel="stylesheet" type="text/css" href="/static/brainshospital-com/animate.css">
+    <link rel="shortcut icon" href="/static/brainshospital-com/brains-favicon.ico" type="image/ico" />
+
+<div class="modal fade" id="overlay">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="/static/brainshospital-com/dengue-creative.webp" alt="popup" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="top-con">
+                <p><b>24/7 Helpline: +91 9148080000</b></p> 
+            	<a data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" href="/Contact-Us" title="book an appointment">BOOK AN APPOINTMENT</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+    
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/"><div class="half-ellipse"><img src="brains-logo.webp" class="img-fluid" alt="logo"></div></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggleBtn">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-1"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/Doctors" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/founder">Founder</a></li>
+                        <li><a class="dropdown-item" href="/Doctors">Doctors</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/brains-hospital-specialities" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SPECIALITIES</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="specialities-menu">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <li><a class="dropdown-item" href="/brain-tumor-treatment-bangalore">Brain Tumor Treatment</a></li>
+                                <li><a class="dropdown-item" href="/spine-care-and-ortho-care-hospital-bangalore">Spine Care and Ortho Care</a></li>
+                                <li><a class="dropdown-item" href="/nerve-compression-treatment-bangalore">Nerve Compression Treatment</a></li>
+                                <li><a class="dropdown-item" href="/joint-and-bone-care-hospital">Joint and Bone Care Treatment</a></li>
+                                <li><a class="dropdown-item" href="/Heart-Care">Heart Care Treatment</a></li>
+                                <li><a class="dropdown-item" href="/Lung-Care">Lung Cancer Treatment</a></li>
+                                <li><a class="dropdown-item" href="/General-Medicine">General Medicine Doctor</a></li>
+                                <li><a class="dropdown-item" href="/Critical-care-hospital-bangalore">Critical Care Treatment</a></li>
+                                <li><a class="dropdown-item" href="/Vascular-Care">Vascular Care Treatment</a></li>
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <li><a class="dropdown-item" href="/Epilepsy-Treatment">Epilepsy Treatment</a></li>
+                                <li><a class="dropdown-item" href="/Surgical-Oncology">Surgical Oncology</a></li>
+                                <li><a class="dropdown-item" href="/Orthopedic-Treatment">Orthopedic Treatment</a></li>
+                                <li><a class="dropdown-item" href="/neck-pain-treatment-bangalore">Neck Pain Treatment</a></li>
+                                <li><a class="dropdown-item" href="/Parkinson-Disease">Parkinson Disease</a></li>
+                                <li><a class="dropdown-item" href="/Brain-Tumor-Wing">Brain Tumor Wing</a></li>
+                                <li><a class="dropdown-item" href="/Paediatric-Neuroscience">Paediatric Neuroscience</a></li>
+                                <li><a class="dropdown-item" href="/Neuro-Nutrition">Neuro Nutrition</a></li>
+                                <li><a class="dropdown-item" href="/Speech-Therapy">Speech Therapy</a></li>
+                                </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/Parkinsons-Clinic" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">CLINIC</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/Parkinsons-Clinic">Parkinson's Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Vertigo-Clinic">Vertigo Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Spine-care-clinic">Spine Care Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Multiple-Sclerosis-Clinic">Multiple Sclerosis Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Craniofacial-Clinic">Craniofacial Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Alzheimers-and-Dementia-Clinic">Alzheimer’s & Dementia Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Motor-Neuron-Disease">Motor Neuron Disease Clinic</a></li>
+                        <li><a class="dropdown-item" href="/stroke-brain-attack-clinic">Stroke (Brain Attack) Clinic</a></li>
+                        <li><a class="dropdown-item" href="/ENT-clinic-at-brains-hospital">ENT Clinic at Brains Hospital</a></li>
+                        <li><a class="dropdown-item" href="/Neuro-genetics-clinic-at-Brains-Hospital">Neuro Genetic Clinic</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/Inpatient" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">INPATIENT</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/Admission-Procedures">Admission Procedures</a></li>
+                        <li><a class="dropdown-item" href="/Important-Guidelines">Important Guidelines</a></li>
+                        <li><a class="dropdown-item" href="/Registration">Registration</a></li>
+                        <li><a class="dropdown-item" href="/InsuranceMediclaim">Insurance/Mediclaim</a></li>
+                        <li><a class="dropdown-item" href="/Food">Food</a></li>
+                        <li><a class="dropdown-item" href="/Discharge-Process">Discharge Process</a></li>
+                        <li><a class="dropdown-item" href="/Feedback">Feedback</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/Brain-Voice" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">RESOURCES</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/Brain-Voice" >Brain Voice</a></li>
+                      <li><a class="dropdown-item" href="/Articles-by-Dr-Venkataramana" >Articles by Dr. Venkataramana</a></li>
+                      <li><a class="dropdown-item" href="/News-Brains" >News @Brains</a></li>
+                      <li><a class="dropdown-item" href="/Articles-by-Specialists" >Articles by Specialists</a></li>
+                      <li><a class="dropdown-item" href="/Brain-Wave-of-the-week" >Brain Wave of the Week</a></li>
+                      <li><a class="dropdown-item" href="/Basal-Ganglia-Support-Group" >Basal Ganglia Support Group</a></li>
+                      <li><a class="dropdown-item" href="/Brain-Attack-Stroke-Support-Group" >Brain Attack (Stroke) Support Group</a></li>
+                      <li><a class="dropdown-item" href="/CSR" >CSR</a></li>
+                      <li><a class="dropdown-item" href="/Intensive-Care-Unit" >Intensive Care Unit</a></li>
+                      <li><a class="dropdown-item" href="/World-Health-Day" >World Health Day</a></li>
+                      <li><a class="dropdown-item" href="/Donate-and-gift-lives" >Donate & Gift Lives</a></li>
+                      <li><a class="dropdown-item" href="/Patient-Stories" >Patient Stories</a></li>
+                      <li><a class="dropdown-item" href="/Case-Studies" >Case Studies</a></li>
+                      <li><a class="dropdown-item" href="/Golden-HourSocial-Initiative" >Golden Hour-Social Initiative</a></li>
+                      <li><a class="dropdown-item" href="/Maitri-Program" >Maitri Program</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/Gallery" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MEDIA</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/Gallery" >Gallery</a></li>
+                        <li><a class="dropdown-item" href="/Videos" >Videos</a></li>
+                    </ul>
+                </li>
+                     
+                <ul class="mobile-view">
+                  <li class="nav-item"><a class="nav-link" href="/INTERNATIONAL-PATIENTS">INTERNATIONAL PATIENTS</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/Diseases">DISEASES</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/Key-Procedures">KEY PROCEDURES</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/Contact-Us">CONTACT US</a></li>
+                </ul>
+
+                <input type="checkbox" id="menuToggle" class="fragment">
+                <label for="menuToggle" class="sec-nav">
+                    <span class="bar top"></span>
+                    <span class="bar middle"></span>
+                    <span class="bar bottom"></span>
+                </label>
+                <aside>
+                    <div class="aside-section aside-right">
+                       <ul class="aside-list navigation__list">
+                          <div class="dropdown">
+                                <li><a class="btn" href="/INTERNATIONAL-PATIENTS" role="button" aria-expanded="false">International Patients</a></li>
+                                <li><a class="btn" href="/Diseases" role="button" aria-expanded="false">Diseases</a></li>
+                                <li><a class="btn" href="/Key-Procedures" role="button" aria-expanded="false">Key Procedures</a></li>
+                                <li><a class="btn" href="/Contact-Us" role="button" aria-expanded="false">Contact Us </a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </aside>
+            </ul>
+        </div>
+    </div>
+</nav>
+                </header>
+            <div class="container-fluid">
+    <div class="inner-banner">
+            <img src="/static/brainshospital-com/brains-inner-page-banner.webp" class="img-fluid" alt="Patient Stories">
+                        </div>
+</div>
+
+
+<div class="container-fluid brdcrmb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home </a></li><li class="breadcrumb-item"><a href="/Brain-Voice">Resources </a></li><li class="breadcrumb-item active" aria-current="page">Patient Stories</li></ol>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                    <div class="left-content">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                <div class="left-content-info">
+                                    <h2>Patient Stories</h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+<div class="row">
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-19.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Brain tumor is curable provided you get the correct treatment on time. Mr Sahoo, is one example</p>
+<div class="more-box"><a href="https://youtu.be/1iq0-ieykmU" target="blank">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-18.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Stroke patient, makes miraculous recovery at Brains Super Speciality Hospital.</p>
+<div class="more-box"><a href="https://youtu.be/zlzqUVT85gU" target="blank">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-17.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Stroke is reversible. Time is key</p>
+<div class="more-box"><a href="#myModal-1" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-16.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">We are extremely thankful to the entire team of doctor</p>
+<div class="more-box"><a href="#myModal-2" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">62 years old Kanthamma is all smiles</p>
+<div class="more-box"><a href="#myModal-3" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Bhavani is back to normal &amp; would like to thank Brains</p>
+<div class="more-box"><a href="#myModal-4" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-13.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Thanks to Dr Venkataramana and his team, I am back to normal</p>
+<div class="more-box"><a href="#myModal-5" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-12.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Thanks to Brains and their expert doctors, I am now doing fine.</p>
+<div class="more-box"><a href="#myModal-6" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-11.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">We are happy because the doctor saved my mother</p>
+<div class="more-box"><a href="#myModal-7" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-10.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Brains has changed my life</p>
+<div class="more-box"><a href="#myModal-8" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">The remarkable story of Baby Haritha in the words of her mother</p>
+<div class="more-box"><a href="#myModal-9" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-8.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">After years I am free of pain and feel liberated, all because of BRAINS</p>
+<div class="more-box"><a href="#myModal-10" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">My daughter is now fit and fine thanks to Brains</p>
+<div class="more-box"><a href="#myModal-11" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">&ldquo;Back&rdquo; to normal from the brink</p>
+<div class="more-box"><a href="#myModal-12" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Thanks for putting our lives back on track!</p>
+<div class="more-box"><a href="#myModal-13" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-4.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Thanks to DBS, Parkinson&rsquo;s patient is up and about</p>
+<div class="more-box"><a href="#myModal-14" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-3.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Meet a patient who recovered sight and hope in just a week</p>
+<div class="more-box"><a href="#myModal-15" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">Awake Brain Surgery: The story of a young patient</p>
+<div class="more-box"><a href="#myModal-16" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+<div class="box"><img class="img-fluid" style="font-size: 10px;" src="/static/brainshospital-com/patient-story-1.webp" alt="inner-logo" />
+<div class="box-info">
+<p data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1100">How little Raiyaan found &lsquo;healthy&rsquo; reasons to laugh</p>
+<div class="more-box"><a href="#myModal-17" data-bs-toggle="modal">Know More</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div id="myModal-1" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>Stroke is reversible. Time is key</p>
+<p>70 year old Muthukumar, a resident of Bangalore, a heart patient, noticed sudden weakness on the right side of his body. He guessed it to be a symptom of a stroke and rushed to the hospital as quickly as possible, within one hour he was at Brains Hospital. He underwent a CT Scan and was diagnosed with a stroke. He was put on clot dissolving medicine and fortunately his stroke got reversed. Muthukumar said: "I had lost hope, my right side was totally paralyzed. Since I reached the hospital on time, the doctors were able to take immediate action. The doctors consoled me and told me not to worry. The procedure took around 40 minutes, then I got some hope. I was able to walk the next day and carry on my daily routine activities. I am very thankful to the doctors, especially Dr. Venkataramana and all the staff who took care of me very well."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-2" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>Vishala's husband - "We are extremely thankful to the entire team of doctor"</p>
+<p>26 December 2021</p>
+<p>Early cerebral degenerative disease can be treated if diagnosed at the right time and administered correct treatment method and medications. 46 year old Vishala who is now back on her feet post her treatment at Brains Hospitals.</p>
+<p>With a history of 3 episodes of focal seizures 1 month ago, cognitive decline, behavioral changes since 2 years, Vishala had come to Brains Hospitals.</p>
+<p>She was diagnosed with Early cerebral degenerative disease. Post her treatment at the hospital her aggressive behavior reduced significantly and her walking has significantly improved. Vishala and her husband are now happy that she can hold things and walk. Vishala's husband says, "Vishala had become so weak that she was not able to hold a glass. After we got her to Brains Hospitals she is much better. We are extremely thankful to the entire team of doctors."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-3" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>62 years old Kanthamma is all smiles and expresses her thanks to Dr. Venkataramana and team.</p>
+<p>13 December 2021</p>
+<p>62 years old Kanthamma had come to Brains Hospitals with a history of decreased hearing in left ear since 1 year. She also had imbalance while walking since 3 months &amp; tendency to fall towards left side. She was diagnosed with brain tumor (left vestibular cystic schwannoma). The team of doctors led by Dr NK Venkataramana conducted the surgery. Post-surgery Kanthamma recovered and regained her normalcy and is now with all smiles.</p>
+<p>Kanthamma expressing her gratitude said, "I would like to thank Dr Venkataramana and his team of doctors for the correct diagnosis and treatment. I can now walk properly".</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-4" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>Bhavani is back to normal &amp; would like to thank Brains Hospital</p>
+<p>07 July 2021</p>
+<p>Ailing with intermittent seizure episodes for the past 6 years, with daily 2-3 attacks, worsening of seizure activity during menstrual cycles, complex partial seizures 2-3 attacks per day, 32 year old Bhavani was scared that she would never be able to lead a normal life. She was on medication when she came to Brains Hospitals. On investigation at the hospital, she was diagnosed with right temporal mesial sclerosis following which she underwent the surgery. Post-surgery she is doing fine and there is no recurrence of seizures. Bhavani is now happy, back to her normal routine life and says that she had lost hope until she came to Brains Hospitals and would like to thank Dr NK Venkataramana and his team. She visits the hospital for routine check-ups.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-5" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>Thanks to Dr Venkataramana and his team, I am back to normal</p>
+<p>11 April 2018</p>
+<p>Being diagnosed with serious brain disease can prove nerve-shattering to most. But well-known public face Sonia Singh was clearly made of sterner stuff. Not only did Sonia, a mother of a three-month infant when she heard about her condition, take the news in her stride, but she remained strong every step of the way. &ldquo;She was a resolute ally in the treatment,&rdquo; say her doctor the internationally acclaimed neurosurgeon, Dr. N K Venkataramana who operated upon her at the Brains Hospital in Bangalore.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-6" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>Thanks to Brains and their expert doctors, I am now doing fine.</p>
+<p>26 December 2017</p>
+<p>&ldquo;It has been three months since I was first hit by a terrible head that required surgery. Thanks to Brains and their expert doctors, I am now doing fine&rdquo;. 55 year old Syed Ziaulla's son said, &ldquo;It was just another day in the life of my father late in September, or seemed to be until he was felled by a vicious headache that never went away. It was recurrent, persistent and intolerable. He also experienced something weird: a change in his sensations leading to a loss in consciousness. &ldquo;When we brought him to Brains we had no idea what had led to his terrible condition but thanks to the care at the hospital, my father is now leading a normal life&rdquo;.</p>
+<p>Indeed, a series of tests, including a CT Angiogram at the Brains Hospital revealed that this apparently healthy man with no remarkable medical history was in fact stricken with large high flow arterio-venous malformatio-nonthe left frontal region of his brain. He went through a surgery soon after and left the hospital feeling fine. &ldquo;the headaches are now just a distant memory,&rdquo; says Syed. &ldquo;We are very happy with the way my father was treated. Very thankful to Dr. Venkataramana and his team of doctor including nurses and all other staff at Brains,&rdquo; says his son.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-7" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>We are happy because the doctor saved my mother</p>
+<p>26 December 2017</p>
+<p>For many months my mother felt constantly tired and had difficulty in even walking,&rdquo; says the daughter of 70-year-old Gowramma. &ldquo;A doctor in our Jayanagar neighbourhood prescribed an MRI, which revealed a tumour (tentorial meningioma). The doctor at Jayanagar-based Abhaya Hospital, referred her to the world renowned neurosurgeon at the Brains Hospital for further treatment. &ldquo;She was operated upon soon after and recovered completely,&rdquo; she says. &ldquo;Our special thanks to Brains Hospital and its expert teams of neurosurgeons and neurologists led by Dr Venkataramana for taking care of her so well."</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-8" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>Brains has changed my life</p>
+<p>23 September 2017</p>
+<p>This is the story of a 40-year-old patient of a serious brain disorder called right mesial temporal (RMT) sclerosis. In his own words the patient, Saneerappa A B, who lives on the outskirts of Bangalore, describes how his difficult battle with this serious condition took a dramatic turn for the better after he met Dr N K Venkataramana, the Founder and Chief Neurosurgeon of Brains in December 2016. RMT Sclerosis, also known as Hippocampal sclerosis (HS),leads to serious loss of neuronal cells and causes seizures. Greetings from me and my family to Dr. Venkataramana. I am a resident of Dasarahalli on Tumkur Road, Bangalore City. For eight long and traumatic years I suffered from a serious neurological condition that caused seizures. In this period I consulted several neurologists in and around Bangalore but to no avail. It seemed I had reached a dead-end with little hope of recovery.</p>
+<p>In December 2016 the President of the Karnataka Rakshana Veedike, T A Naryan Gowda advised me to consult Dr Venkataramana. On my first visit the doctor examined me clinically and evaluated all my reports, following which he patiently explained the problem. &ldquo;You have a problem on the right side of your brain,&rdquo; he said. &ldquo;But don&rsquo;t worry, this can be treated with a surgery.&rdquo; Initially, the thought of a brain surgery was unnerving, but the doctor gave me the confidence to go through it. I was admitted to the Brains Hospital on January 25, 2017 and operated upon on January 27. During my stay at the hospital I was asked to follow certain instructions which I did religiously. I am now seizure-free and feeling much better. I am very grateful to Dr. Venkataramana, he is equivalent to god for me.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-9" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>The remarkable story of Baby Haritha in the words of her mother</p>
+<p>22 September 2017</p>
+<p>When Haritha was one-year-old, she was not able to identify or grasp any object. She was poor at recognizing people around her including her parents and was not able to comprehend spoken words. We were told that she was stricken with cerebral palsy&mdash;a phrase we had never heard before but was to become a part of our worst nightmares from that point in time. After having knocked every door that we could imagine, we brought her to BRAINS in Bangalore and that proved to be an important life-turning moment in the little baby's life. A team of doctors at BRAINS led by Dr Venkataramana took charge of the case with compassion, not just medical knowledge. There was instant bonding that kindled hope in our hearts&mdash;a hope that we saw turning into reality over the next six months of stem cells therapy.</p>
+<p>At the end of that period little Haritha began to identify her parents, identify and grasp objects. She now tries to imitate stories told by other children in single words. She is able to understand what is being told to her. If her father is not at home or is traveling, she wants to speak to him on the phone and say good night. She can recognize callers from a conversation and wants to talk to her father. Her comprehensive capacity has increased significantly. There is still scope for improvement in her motor skills but she can now turnover on her own and follow any moving object. Haritha has shown greater improvement than other children in her class in the same period of time. We are thankful to BRAINS for giving Haritha a chance in life.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-10" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>After years I am free of pain and feel liberated, all because of BRAINS</p>
+<p>22 September 2017</p>
+<p>"When my husband first complained of severe headaches nearly three years ago, we thought it was just one of those things&hellip;after all who doesn't get a headache?" says Passion Iorun looking relaxed inside a private room at the Hospitals in Bangalore where her husband, 46-year-old Justin is recovering from brain surgery. "He anyway liked to fret about every small health issue" she says, referring somewhat indulgently to her husband's habit of "rushing to doctors for every little reason."</p>
+<p>However, unknown to her or to their three children, this time Justin was not over-reacting. These were not just any normal headaches. "The pain was so terrible that at times I could barely even talk," says Justin, recalling the days and months he spent in 'hell'. "Soon he was in agony all the time," adds Passion "forcing him to regularly skip and stay off work." Then his vision started to blur and his nose, fingers and hands began to thicken. "I suddenly appeared to be bloating everywhere and could no longer fit into my clothes even as I battled my worsening headaches and declining vision."</p>
+<p>Justin was not just getting bigger, he "was getting weaker all the time," says Passion who hails from Benue State in Nigeria. "Although", as Dr. N K Venkataramana Chief Neurosurgeon at BRAINS says, "these are classic symptoms of acromegaly, a hormonal disorder caused by excessive production of a growth hormone," it took doctors in Iorun's native Nigeria nearly two-and-half years to figure it out. "We spent many harrowing months going from one hospital to another eye hospital as doctors in Nigeria thought Justin was suffering from an ophthalmological problem," says Passion. "It was believed to be glaucoma," says Justin.</p>
+<p>Finally, after nearly two years of chasing shadows, doctors at the ECWA Eye Hospital in Nigeria's Kano state concluded that this was not an eye problem that they were looking at and Justin was probably down with 'something far more serious.' A brain scan soon after confirmed their fears: Justin was carrying a brain tumour, a growth that was pushing into pain-sensitive blood vessels inside the brain and causing his excruciating, ceaseless headaches. It was also affecting his vision and causing his pituitary glands to produce excessive amounts of growth hormones, which explained the thickening of his features.</p>
+<p>"Following the diagnosis, doctors in Nigeria told us that the tumour would have to be removed surgically, something that could not be done in the country." And then "a chance meeting with a former BRAINS patient at our family doctor's clinic" turned despair to hope for the Ioruns. "The patient had recovered completely from a similar tumour of the brain after being treated at this hospital," says Passion. "We got to know all about BRAINS, its wonderful team of doctors and facilities from him and decided to come here," says Passion with a big, relieved smile. "It's been three days since the surgery," says Justin. "And there is no trace of the headaches that hounded me for so long&ndash; after many years I feel free and liberated, happy to be alive and looking forward to a new beginning all thanks to the doctors at this hospital."</p>
+<p>Says Dr. Venkataramana who tended to Justin with his team of doctors and later performed the surgery that has put him on the road to quick recovery: "When he came here Justin was clearly in serious trouble. However, we had already studied his reports and knew the background and were, therefore, ready with a plan to deal with his problem." Justin went through his surgery within three days of arriving at BRAINS and will not be spending more than a week in the hospital in all. "I will be leaving for home in just a few days," he says. "Ready to resume my life, with Passion and my children," says Justin a lecturer in accountancy at the Benue State University, looking fondly at his wife who was once his student.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-11" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>My daughter is now fit and fine thanks to Brains</p>
+<p>22 September 2017</p>
+<p>"Our daughter Sundis was only 11 when we saw it happen for the first time. One moment she was up and about, dancing happily around our living room, and then the very next, she was down on the floor&mdash; limbs rigid, mouth frothing, her whole body convulsing. As we rushed to her we could see that she was not conscious. It was a moment of pure terror&hellip;shock and terror," says Siddiq Mohammed, his voice trembling. "Back then we had not even heard of the word 'epilepsy', we had no idea what it was&hellip;we didn't know what had hit our little daughter&hellip;all we felt was pure chilling fear," continues Mohammed, a native of Kurdistan Zakho, a small town on the edge of the Iraqi-Turkish border district of Dohuk Governorate.</p>
+<p>Sure, given the huge strides neurological medicine has taken, you may not think epilepsy is such a big health crisis. "But that is only if you have access to the right medical attention," says Dr. Shailesh A V Rao, senior neurosurgeon at BRAINS who was part of the team that took care of Sundis. "Back home in Iraq we went from doctor to doctor, hospital to hospital in search of answers, for the right diagnosis care and cure, but it was hopeless," says the now relieved father.</p>
+<p>"Our daughter continued to suffer from the terrible fits." "And then we met a former BRAINS patient," says Mohammed. "She told us about how she had recovered completely from epilepsy after being treated there." Soon after that, Sundis and her parents were on a plane to Bangalore. "It was definitely the moment that changed our lives," says Mohammed. "The doctors and facilities at BRAINS were top-class, everything and more than what we had expected." "It's because of a combination of poor diagnosis, mis-matched drugs and wrong dosages that she had shown no improvement," says Dr Shailesh A V Rao, senior neurosurgeon at BRAINS who was part of the team that attended to the stricken girl.</p>
+<p>"Left untreated or improperly managed, epilepsy can be life threatening particularly if it were to strike during activities like swimming or driving." Sundis was on the path of recovery within days of reaching the hospital after a comprehensive medical exam and diagnostic tests confirmed her problem. "It is now more than a year since we left the hospital and she has not had a single attack of fits in all this time," says Mohammed, saluting the doctors and the facilities at the hospital for giving his daughter a new life. "I have only one word," he says. "Thanks."</p>
+<p>Epilepsy is a disorder of the central nervous system that causes repeated episodes of unprovoked seizures in people of all ages and backgrounds and is triggered by the disturbance of a brain's normal cell activity. During seizures patients experience abnormal behavior, symptoms and sensations, including loss of consciousness. There are many possible causes of epilepsy, including an imbalance of nerve-signaling chemicals called neurotransmitters, tumors, strokes, and brain damage from illness or injury, or a combination of these. To control and regulate all voluntary and involuntary responses in the body, nerve cells in the brain communicate with each other through electrical activity. A seizure occurs when part(s) of the brain receives a burst of abnormal electrical signals that temporarily interrupts normal electrical brain function.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-12" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>&ldquo;Back&rdquo; to normal from the brink</p>
+<p>22 September 2017</p>
+<p>"When the back spasms first hit me, I thought it was just a passing niggle&mdash;something that would settle down with some rest," says 39-year-old Bangalore resident Ravi Kumar. "But that alas was not to be. The pain only kept getting worse until I could barely move at all. It was excruciating, immobilizing pain that clearly needed expert medical attention." The young man's search for 'expert' attention started with visits to orthopaedicians who put him on doses of pain-killers, relaxants and a series of scans and other tests. "It was diagnosed as a disc problem," says Kumar, father of a four-year-old daughter. What followed was 10 days of hospitalization, which made no discernible difference to his condition. "I was then put on traction," he says. "A move that brought some relief, but it was temporary as was the stint of physiotherapy." The pain returned, more insufferable than ever. "Suddenly my whole career and life appeared to be crashing around my ears; there was a cloud of despondency that seemed to have settled over my usually chirpy family &mdash;and it had all happened so suddenly."</p>
+<p>"That is when I heard of Dr. Venkataramana" says Kumar. When he first saw him with all his reports, Dr. Venkataramana, the chief neurosurgeon at BRAINS prescribed medication and a week of complete bed rest, just to be sure that there was no option but surgery left to put him back on his feet. "By this time, I had already spent more than eight weeks of agony, able to survive only because of the increasingly powerful pain killers. But, clearly the distinguished doctor wanted to be absolutely sure that I could not be cured any other way before recommending surgery," says Kumar. "The medicines led to dramatic improvement but the pain returned the day I was taken off the drugs," says Kumar. "That is when the doctor decided that I had to go through surgery&mdash;a decision I agreed with immediately." On October 23, 2013 Kumar was admitted at the hospital and a week later he walked out after a successful surgery feeling like a new man. "It was incredible," says a hugely relieved Kumar, thanking the doctor and BRAINS for their care and cure.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-13" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>Thanks for putting our lives back on track!</p>
+<p>22 September 2017</p>
+<p>Mr. Girija Prasad recalls feelingly, "for four years my wife, Vijaya, endured hell&hellip;often all it took was a mere touch or some noise to trigger it off&hellip;stabs of excruciating pain that would strike the right side of her face like violent electric shocks and leave her writhing in agony. Until then we had never even heard of this disease, but now it lurked around our house like a silent, terrifying enemy." Like thousands of people around the country, 64-year-old Vijaya was a patient of Trigeminal Neuralgia, a nerve disorder that causes a stabbing or electric-shock-like pain in parts of the face. The pain is often transient but so intense that it can leave patients psychologically devastated. "She lived in constant fear," says Prasad, "not knowing when the pain would hit again, or what would trigger it." From nowhere, the quiet, retired life of Prasad's middle-class family in Tirupathi had been torn apart. "I have three daughters who live nearby with their families," says the 72-year-old Prasad.</p>
+<p>"And for all of us this was like nightmare." In the years before Prasad met Dr. Venkataramana, "we went to a number of doctors and hospitals, in search of a cure. But to no avail. Then came the life-changing BRAINS moment for the family and "I got in touch with the doctor who had been god sent to change our lives." After a detailed evaluation, Dr. Venkataramana, the head of neurosurgery and his team of doctors, decided that surgery would be the most effective course of treatment for her. "It is now nearly15 days since she went through the surgery at the hospital," says Prasad and "my wife has not had any problem." Gradually, she is starting to recover not just her health but belief, and the fear of those terrible bouts of pain is passing away like a nightmare. The transformation has been unbelievable and we wish to thank the doctors and all the people at this wonderful hospital for helping us and putting our ravaged lives back on track".</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-14" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>Thanks to DBS, Parkinson&rsquo;s patient is up and about</p>
+<p>22 September 2017</p>
+<p>A 61-year-old patient of Parkinson's disease approached us for help with symptoms ranging from progressively reducing mobility to difficulty in walking (bradykinesia), and tremors that chiefly affected his hands. He had been suffering from these degenerative symptoms for 15 years. Over the last four years, he had nearly lost his ability to write as well. Since being diagnosed with Parkinson's he had been put on increasingly higher doses of medicines just to keep his basic mobility going. Now his dosages had reached a point when he could no longer bear the side-effects including dyskinesia. The patient was up against the wall, caught in a classically tragic Parkinson's predicament where he had to make a choice between two dreadful options: limited but terribly painful mobility with the medicines or near-complete immobility without them.</p>
+<p>We at BRAINS offered him a third: DBS or Deep Brain Stimulation, surgery. The patient agreed and went through this completely safe procedure that involved placing electrodes on either side of the Sub Thalamic Nucleus, a small lens-shaped nucleus in the basal ganglia system of the brain, through burr-holes, and connecting them to a battery on the chest wall with subcutaneous cables. Post-surgery, based on evaluation, the voltage and frequency of the stimulation were adjusted. Following the procedure, this 61-year-old chronic patient of Parkinson's regained his regular movements and was able to not merely walk but also attend to his business on his own He is on regular follow up and the medicines are being tapered off.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-15" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>Seeing is believing&hellip;meet a patient who recovered sight and hope in just a week</p>
+<p>22 September 2017</p>
+<p>From complete loss of eyesight to 6/6 vision, the turnaround in the medical fortunes of 44-year-old Sindhu K B, a patient of pituitary tumour, may seem like an "act of god" to many. But to the super-specialists at BRAINS, it's all in a day's dedicated work! Yes, when this middle-aged woman from the small, picturesque town of Coorg reported at the hospital complaining of severe headaches and the loss of vision in the right eye on November 26, 2014, she was in despair. "I feared that I would never recover my sight", she says. "I was in great pain and there seemed no way out". "It is like rebirth for her", says her 22-year-old daughter Shyma.</p>
+<p>"The doctors and the facilities at BRAINS were awesome". The story of Sindhu's 'rebirth' started when she reached BRAINS and met its doctors led by it talismanic chief neurosurgeon Dr. N K Venkataramana. "On evaluating her we were confident that with the right treatment she could bounce back to good health and recover her vision too," says the doctor. Just about a week later, on December 3 to be precise, Sindhu proved that the confidence had been well-placed as she walked out of the hospital with a 6/6 vision and little sign of the disease that had tormented her for many months and plunged her life into darkness. "In these terrible months we consulted many doctors including an ophthalmologist," says Shyma. "But she continued to only get worse that was until we came to BRAINS and saw Dr Venkataramana and the entire BRAINS team".</p>
+<p>Sindhu had been suffering for more than two years with bouts of severe headaches accompanied by fading eyesight, symptoms that led her to general physicians and ophthalmologists. "Since it appeared to be an eye-related problem, Sindhu went to eye specialists. Later, she visited a physician in Mysore who ordered several tests, which showed that the symptoms were because of a tumour. He referred her to BRAINS in Bangalore. "That proved to be the turning point in my mom's life," says Shyma. "The treatment at the hospital was intense and swift. It filled me with hope that finally I could get back to leading a normal life," says Sindhu. An MRI scan done on November 20 had revealed the presence of a solid/cystic sellar lesion with super-sellar extension and altered signal intensity.</p>
+<p>The lesion was predominantly cystic and the pituitary gland lay compressed against the sellar floor. It was clear that Sindhu was suffering from Pituitary macro adenoma (tumour of the Pituitary gland) and needed immediate surgical intervention. On November 27, the doctors performed an endoscopic surgical procedure that led to the macro adenoma's resection (medical term for removal of a tumour by surgery). Soon Sindhu began to feel better and started recovering her lost vision. On December 3 she was discharged. "We are grateful to the doctors at BRAINS for the outstanding care and treatment", says Sindhu. "I have so much more to do in life like securing the future of my daughter. BRAINS has given me a second chance in life for all this".</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-16" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>Awake Brain Surgery: The story of a young patient</p>
+<p>22 September 2017</p>
+<p>On the morning of June 26 this year Mahipal Solanki, a 25-year-old home appliance entrepreneur lay on a bed, relaxing over his favourite Bollywood numbers. Hovering over him were faces covered in blue surgical masks, their deft fingers working inside his brain, removing deadly cancer cells. "I couldn't feel any pain," says Solanki with audible cheer. "I could see doctor Venkataramana and his team of doctors around me, removing the tumour even as Kumar Sanu sang in the background, his mellifluous voice mixing eerily with the clinical quiet of the surgical theatre. But there was no pain, just a very odd feeling knowing that my head had actually been split open and I was still not only alive but conscious, talking to the doctor like normal!".</p>
+<p>Four years back, on June 27, minutes after Mahipal had finished with a series of elaborate ceremonies that form a traditional Gujarati wedding, he collapsed to the ground with a bout of fits. "Everyone around me thought that it was owing to exhaustion as it had been a long day, packed with ceremonial engagements," recalls Solanki. But his headaches only got worse and more frequent. A month later, he suffered from another attack of fits, which is when he decided to see Dr Suresh Hegde in Bangalore's Mallya Hospital. An MRI revealed a brain tumour. "Glioma, I was told" says Mahipal. "Until then I had not even heard of the word, glioma." When he and his family understood what it was, the first reaction was one of shock and disbelief. "How could this be true?" So, "we went to a doctor known to us in Hubli for a second opinion".</p>
+<p>He confirmed the diagnosis. There was no doubt that "I was suffering from brain tumour," says Mahipal, now the father of one-year-old Dhriti. The verdict carried a morbid finality. We were stunned, says Mahipal. But his newly-wed wife took the news with extraordinary poise and courage making no public show of the grief she clearly felt. "It was her attitude and my father's support that helped us in turning the corner. We were soon talking solutions; we decided to stand up and fight the disease." In December 2012 the Solankis met Dr. Venkataramana, eminent neurosurgeon and Founder Chairman BRAINS. Soon there after, Mahipal went through his first surgery at the Hospitals in Bangalore. "I felt fine after that," he says. "The care was exceptional".</p>
+<p>But in April 2015, the fits returned and Mahipal was back in Dr. Venkataramana's consultation room. Tests revealed that the glioma had re-surfaced. "That is when the doctor recommended awake brain surgery to me," says Mahipal. "Initially, it was an unnerving, scary thought and I said no." Later, however, after the doctor counselled him on the particular advantages of the procedure for him, Mahipal agreed and here he was on a surgical bed, his head open, listening to music and speaking to the doctor casually alongside a brain surgery! It has been more than two months since Mahipal went through awake brain surgery and he says that he never felt better in his life. Also called intraoperative brain mapping, awake brain surgery is a procedure that enables neurosurgeons to remove tumours that would normally be inoperable because they are too close to critical regions of the brain responsible for critical functions like vision, language and body movements.</p>
+<p>"Without awake brain surgery removing such tumours would be unacceptably risky," says Dr. Venkataramana. Neurosurgeons perform awake brain surgery for tumours that have spread throughout the brain and do not have clear borders, such as some types of glioma. For the procedure, Mahipal was sedated and his scalp numbed. "Working closely with a neuro-anesthesiologist, we decide whether awake brain surgery is an appropriate choice for a particular patient, depending on how effective we think it would be in helping us remove a tumour without damaging the critical parts of the brain," says Dr Venkataramana. "We assessed Mahipal's general health and whether he would remain calm and responsive during the procedure." In awake brain surgery the patient receives a local anaesthesia to numb the scalp at the beginning of the procedure. The sedation is stopped when the neurosurgeon is ready to remove the brain tumour.</p>
+<p>Finally, the neuro-anesthesiologist sedates the patient again towards the end of the procedure. The surgery itself involves stimulating regions surrounding the tumour with small electrodes with the objective of locating the brain's functional areas that must be avoided. To keep patients calm and ascertain the limits to which it is possible to go without causing functional damage, neurosurgeons engage them in conversations throughout the surgery asking them to perform several tasks. "The doctor encouraged me to keep talking and asked me repeatedly to clench and open my left fist and flex my left knee throughout the surgery," says Mahipal. Says Dr Venkataramana, "this helps us remove as much of the tumour as possible (if not all of it) while avoiding the functional areas of the brain". Mahipal is now back on his feet busy with his family business that he entered when just 19. "I am thankful to my family, Dr Venkataramana and of course most importantly god for having come this far," says a relieved Mahipal.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-17" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<p>How little Raiyaan found &lsquo;healthy&rsquo; reasons to laugh</p>
+<p>22 September 2017</p>
+<p>&ldquo;Our son is free of all the symptoms that plagued him virtually from his birth thanks to Dr. Venkataramana and his team at BRAINS&rdquo; - Raiyaan&rsquo;s parent Mohommed Raiyaan was just three months old when his parents first heard him burst into what seemed like uncontrolled, loud laughter. Instead of being happy, they sensed that everything was not normal with their child&rsquo;s guffaw: it appeared to start without any reason and last for minutes on end. When these bouts became frequent his alarmed parents took him to doctors, who eventually diagnosed it as gelastic seizure, a rare type of fit that involves a sudden burst of energy, usually in the form of laughing or crying.</p>
+<p>The condition is associated with conditions like temporal and frontal lobe lesions, tumors, atrophy, tuberous sclerosis, hemangiomas, and post infectious foci, but mainly an unusual tumour called hypothalamic hamartomas, which is what doctors at BRAINS finally diagnosed as his root problem. Until coming to the super-specialty neuro and spine centre in Bangalore, Raiyaan had been for years taking anti-epileptic medicines, which made very little difference to his deteriorating condition, which included symptoms like head banging, aggression and hyperactivity. The child was admitted on February 17, 2017 after a team of expert doctors at BRAINS aided by an MRI and other tests diagnosed it as hypothalamic hamartoma, which had to be treated surgically.</p>
+<p>Raiyaan went through endoscopic resection (an advanced surgical method for removing tumours) on February 20; just three days later the six-year old boy walked out of the hospital and into a new life, freed of his debilitating illness. &ldquo;The seizures would hit him 3-4 times a day and they were awful,&rdquo; said his parents in a note they left behind at the hospital. &ldquo;He would often pass out following an attack. Over time he had become hyperactive, weak and even aggressive. The medicines alleviated a few of the symptoms but could not stop the attacks. That&rsquo;s when we heard of Dr Venkataramana from one of our friends and came to his Brains Centre.&rdquo; Post-surgery, &ldquo;our son is back to near normal and all those symptoms and trauma he suffered now seem like a bad history. We wish to whole-heartedly thank Dr. Venkataramana.&rdquo;</p>
+</div>
+</div>
+</div>
+</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+                <footer>
+                    <div class="container-fluid footer">
+	<div class="container">
+		<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+					<div class="booking">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<a href="/Contact-Us">Book an Appointment</a>
+								<div class="call">
+								   <img src="call.webp" class="img-fluid" alt="call">
+								   <p>+91 91480 80000 / +91 8073012345</p>
+								</div>
+								<div class="opd-main">
+								  <img src="opd.webp" class="img-fluid" alt="opd">
+								  <p><b>OPD Hours</b></p>
+                                  <p>Monday to Saturday</p>
+                                  <p>09 AM to 05 PM, 05 PM to 08 PM</p>
+                                </div>
+                            </div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="bkng-1">
+								<div class="location">
+								  <img src="location.webp" class="img-fluid bounce2" alt="location">
+								  <p><b>Our Location</b></p>
+								  <p><b>Brains Super Speciality Hospital</b></p>
+                                  <p>192, T Mariyappa Road, Lalbagh, Siddapura,</p>
+                                  <p>Jayanagar 1st Block, Bengaluru - 560011,</p>
+                                  <p>Karnataka India.</p>
+                                </div>
+                                <div class="emergency">
+                                  <img src="emergency-services.webp" class="img-fluid" alt="location">
+                                  <p><b>Emergency Services available</b></p>
+                                  <p>24 hrs X 365 days, including Holidays</p>
+                                </div>
+							</div>  
+						</div>
+					</div>
+					<div class="quick-links">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<p><a href="/Patient-Stories" title="Patient Stories">Patient Stories</a></p>
+                                <p><a href="/Diseases" title="Diseases">Diseases</a></p>
+                                <p><a href="/Key-Procedures" title="Key Procedures">Key Procedures</a></p>
+                                <p><a href="/INTERNATIONAL-PATIENTS" title="International Patients">International Patients</a></p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<p><a href="/Gallery" title="Media">Media</a></p>
+                                <p><a href="/CSR" title="CSR">CSR</a></p>
+                                <p><a href="/Brain-Voice" title="Resources">Resources</a></p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<p><a href="/Privacy-Policy" title="Privacy Policy">Privacy Policy</a></p>
+                                <p><a href="/Disclaimer" title="Disclaimer">Disclaimer</a></p>
+								<p><a href="/static/brainshospital-com/sitemap.xml">Sitemap</a></p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<a href="https://in.linkedin.com/company/center-for-brain-and-spine-repair" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+								<a href="https://www.youtube.com/c/BRAINSHOSPITAL/featured" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+					<div class="barcode">
+                      <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.507436196616!2d77.5922195!3d12.9477201!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75e781fad36ecf06!2sBrains%20Hospital!5e0!3m2!1sen!2sin!4v1657947681523!5m2!1sen!2sin" target="blank"><img src="brains-hospital-location.webp" class="img-fluid" alt="brains hospital map"></a>
+                      <p>Scan here for the Location</p>
+                    </div>
+                </div>
+				<a href="javascript:" id="return-to-top" class="demo" style="display: inline;" title="return-to-top"><i class="fa fa-angle-up"></i></a>
+			</div>
+		</div>
+	</div>
+
+<div class="container-fluid footer-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="copy-ryt">
+					<p>© 2019-2025. Brains Super Speciality Hospital. All rights reserved.</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="design">
+                    <p>Powered By: <a href="https://lumos.in/">LUMOS.in</a></p>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/static/brainshospital-com/slick.js"></script>
+<script src="/static/brainshospital-com/custom.js"></script>
+                </footer>
+            
+
+                <script src="/lib/jquery/dist/jquery.min.js"></script>
+                <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="/root-site.js" asp-append-version="true"></script>
+                <script>
+                    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))    
+                </script>
+        </body>
+
+    </html>
+<!--    *******************************************************************  -->
+<!--    * Website deployed using [ The Guild ] platform by [ PASKAN ]·····*  -->
+<!--    * All rights reserved - paskan.com································*  -->
+<!--    * Like to work with us? mail to info@·····························*  -->
+<!--    * Want to host your website on The Guild platform? mail to info@··*  -->
+<!--    *******************************************************************  -->
+ 

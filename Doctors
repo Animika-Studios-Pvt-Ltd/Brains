@@ -1,0 +1,1500 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+                <head>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <title>Doctors</title>
+                    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+                    <link rel="stylesheet" href="/lib/bootstrap-icons/font/bootstrap-icons.min.css" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LLZTQML145"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LLZTQML145');
+</script>
+
+<head>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="facebook-domain-verification" content="t0cc1p1pr5h8xpx7swsbpw97xkd82t" />
+    <title>Brains Super Speciality Hospital</title>
+    <meta name="title" content="Brains Super Speciality Hospital" />
+    <meta name="description" content="Brains Super Speciality Hospital is one of the best hospital in Bengaluru for Brain Care, Neurosurgery, comprehensive care for all health conditions" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="/static/brainshospital-com/slick.css">
+    <link rel="stylesheet" type="text/css" href="/static/brainshospital-com/custom.css">
+    <link rel="stylesheet" type="text/css" href="/static/brainshospital-com/animate.css">
+    <link rel="shortcut icon" href="/static/brainshospital-com/brains-favicon.ico" type="image/ico" />
+
+<!-- Taboola Pixel Code -->
+<script type='text/javascript'>
+  window._tfa = window._tfa || [];
+  window._tfa.push({notify: 'event', name: 'page_view', id: 1719367});
+  !function (t, f, a, x) {
+         if (!document.getElementById(x)) {
+            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+         }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/unip/1719367/tfa.js',
+  'tb_tfa_script');
+</script>
+<!-- End of Taboola Pixel Code -->
+
+</head>
+
+                        <link rel="stylesheet" href="/root-site.css"/>
+                </head>
+
+
+        <body>
+                <header>
+                    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQ5G4DK');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="facebook-domain-verification" content="t0cc1p1pr5h8xpx7swsbpw97xkd82t" />
+    <title>Brains Super Speciality Hospital</title>
+    <meta name="title" content="Brains Super Speciality Hospital" />
+    <meta name="description" content="Brains Super Speciality Hospital is one of the best hospital in Bengaluru for Brain Care, Neurosurgery, comprehensive care for all health conditions" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="/static/brainshospital-com/slick.css">
+    <link rel="stylesheet" type="text/css" href="/static/brainshospital-com/custom.css">
+    <link rel="stylesheet" type="text/css" href="/static/brainshospital-com/animate.css">
+    <link rel="shortcut icon" href="/static/brainshospital-com/brains-favicon.ico" type="image/ico" />
+
+<div class="modal fade" id="overlay">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img src="/static/brainshospital-com/dengue-creative.webp" alt="popup" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="top-con">
+                <p><b>24/7 Helpline: +91 9148080000</b></p> 
+            	<a data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000" href="/Contact-Us" title="book an appointment">BOOK AN APPOINTMENT</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+    
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/"><div class="half-ellipse"><img src="brains-logo.webp" class="img-fluid" alt="logo"></div></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggleBtn">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-1"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/Doctors" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/founder">Founder</a></li>
+                        <li><a class="dropdown-item" href="/Doctors">Doctors</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/brains-hospital-specialities" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SPECIALITIES</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="specialities-menu">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <li><a class="dropdown-item" href="/brain-tumor-treatment-bangalore">Brain Tumor Treatment</a></li>
+                                <li><a class="dropdown-item" href="/spine-care-and-ortho-care-hospital-bangalore">Spine Care and Ortho Care</a></li>
+                                <li><a class="dropdown-item" href="/nerve-compression-treatment-bangalore">Nerve Compression Treatment</a></li>
+                                <li><a class="dropdown-item" href="/joint-and-bone-care-hospital">Joint and Bone Care Treatment</a></li>
+                                <li><a class="dropdown-item" href="/Heart-Care">Heart Care Treatment</a></li>
+                                <li><a class="dropdown-item" href="/Lung-Care">Lung Cancer Treatment</a></li>
+                                <li><a class="dropdown-item" href="/General-Medicine">General Medicine Doctor</a></li>
+                                <li><a class="dropdown-item" href="/Critical-care-hospital-bangalore">Critical Care Treatment</a></li>
+                                <li><a class="dropdown-item" href="/Vascular-Care">Vascular Care Treatment</a></li>
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <li><a class="dropdown-item" href="/Epilepsy-Treatment">Epilepsy Treatment</a></li>
+                                <li><a class="dropdown-item" href="/Surgical-Oncology">Surgical Oncology</a></li>
+                                <li><a class="dropdown-item" href="/Orthopedic-Treatment">Orthopedic Treatment</a></li>
+                                <li><a class="dropdown-item" href="/neck-pain-treatment-bangalore">Neck Pain Treatment</a></li>
+                                <li><a class="dropdown-item" href="/Parkinson-Disease">Parkinson Disease</a></li>
+                                <li><a class="dropdown-item" href="/Brain-Tumor-Wing">Brain Tumor Wing</a></li>
+                                <li><a class="dropdown-item" href="/Paediatric-Neuroscience">Paediatric Neuroscience</a></li>
+                                <li><a class="dropdown-item" href="/Neuro-Nutrition">Neuro Nutrition</a></li>
+                                <li><a class="dropdown-item" href="/Speech-Therapy">Speech Therapy</a></li>
+                                </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/Parkinsons-Clinic" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">CLINIC</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/Parkinsons-Clinic">Parkinson's Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Vertigo-Clinic">Vertigo Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Spine-care-clinic">Spine Care Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Multiple-Sclerosis-Clinic">Multiple Sclerosis Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Craniofacial-Clinic">Craniofacial Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Alzheimers-and-Dementia-Clinic">Alzheimer’s & Dementia Clinic</a></li>
+                        <li><a class="dropdown-item" href="/Motor-Neuron-Disease">Motor Neuron Disease Clinic</a></li>
+                        <li><a class="dropdown-item" href="/stroke-brain-attack-clinic">Stroke (Brain Attack) Clinic</a></li>
+                        <li><a class="dropdown-item" href="/ENT-clinic-at-brains-hospital">ENT Clinic at Brains Hospital</a></li>
+                        <li><a class="dropdown-item" href="/Neuro-genetics-clinic-at-Brains-Hospital">Neuro Genetic Clinic</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/Inpatient" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">INPATIENT</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/Admission-Procedures">Admission Procedures</a></li>
+                        <li><a class="dropdown-item" href="/Important-Guidelines">Important Guidelines</a></li>
+                        <li><a class="dropdown-item" href="/Registration">Registration</a></li>
+                        <li><a class="dropdown-item" href="/InsuranceMediclaim">Insurance/Mediclaim</a></li>
+                        <li><a class="dropdown-item" href="/Food">Food</a></li>
+                        <li><a class="dropdown-item" href="/Discharge-Process">Discharge Process</a></li>
+                        <li><a class="dropdown-item" href="/Feedback">Feedback</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/Brain-Voice" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">RESOURCES</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/Brain-Voice" >Brain Voice</a></li>
+                      <li><a class="dropdown-item" href="/Articles-by-Dr-Venkataramana" >Articles by Dr. Venkataramana</a></li>
+                      <li><a class="dropdown-item" href="/News-Brains" >News @Brains</a></li>
+                      <li><a class="dropdown-item" href="/Articles-by-Specialists" >Articles by Specialists</a></li>
+                      <li><a class="dropdown-item" href="/Brain-Wave-of-the-week" >Brain Wave of the Week</a></li>
+                      <li><a class="dropdown-item" href="/Basal-Ganglia-Support-Group" >Basal Ganglia Support Group</a></li>
+                      <li><a class="dropdown-item" href="/Brain-Attack-Stroke-Support-Group" >Brain Attack (Stroke) Support Group</a></li>
+                      <li><a class="dropdown-item" href="/CSR" >CSR</a></li>
+                      <li><a class="dropdown-item" href="/Intensive-Care-Unit" >Intensive Care Unit</a></li>
+                      <li><a class="dropdown-item" href="/World-Health-Day" >World Health Day</a></li>
+                      <li><a class="dropdown-item" href="/Donate-and-gift-lives" >Donate & Gift Lives</a></li>
+                      <li><a class="dropdown-item" href="/Patient-Stories" >Patient Stories</a></li>
+                      <li><a class="dropdown-item" href="/Case-Studies" >Case Studies</a></li>
+                      <li><a class="dropdown-item" href="/Golden-HourSocial-Initiative" >Golden Hour-Social Initiative</a></li>
+                      <li><a class="dropdown-item" href="/Maitri-Program" >Maitri Program</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/Gallery" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MEDIA</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/Gallery" >Gallery</a></li>
+                        <li><a class="dropdown-item" href="/Videos" >Videos</a></li>
+                    </ul>
+                </li>
+                     
+                <ul class="mobile-view">
+                  <li class="nav-item"><a class="nav-link" href="/INTERNATIONAL-PATIENTS">INTERNATIONAL PATIENTS</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/Diseases">DISEASES</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/Key-Procedures">KEY PROCEDURES</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/Contact-Us">CONTACT US</a></li>
+                </ul>
+
+                <input type="checkbox" id="menuToggle" class="fragment">
+                <label for="menuToggle" class="sec-nav">
+                    <span class="bar top"></span>
+                    <span class="bar middle"></span>
+                    <span class="bar bottom"></span>
+                </label>
+                <aside>
+                    <div class="aside-section aside-right">
+                       <ul class="aside-list navigation__list">
+                          <div class="dropdown">
+                                <li><a class="btn" href="/INTERNATIONAL-PATIENTS" role="button" aria-expanded="false">International Patients</a></li>
+                                <li><a class="btn" href="/Diseases" role="button" aria-expanded="false">Diseases</a></li>
+                                <li><a class="btn" href="/Key-Procedures" role="button" aria-expanded="false">Key Procedures</a></li>
+                                <li><a class="btn" href="/Contact-Us" role="button" aria-expanded="false">Contact Us </a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </aside>
+            </ul>
+        </div>
+    </div>
+</nav>
+                </header>
+            <div class="container-fluid">
+    <div class="inner-banner">
+        <img src="/static/brainshospital-com/brains-inner-page-banner.webp" class="img-fluid" alt="Doctors">
+    </div>
+</div>
+
+<div class="container-fluid brdcrmb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home </a></li><li class="breadcrumb-item"><a href="/founder">About </a></li><li class="breadcrumb-item active" aria-current="page">Doctors</li></ol>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="outer-container">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                    <div class="left-content">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                <div class="left-content-info">
+                                    <h2>Doctors</h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/dr-nk-venkataramana.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. N K VENKATARAMANA</p>
+<p><em>Founder, Chairman and Chief Neurosurgeon</em></p>
+</div>
+<div class="doc-more"><p>Dr N K Venkataramana is an internationally acclaimed neurosurgeon, researcher and academician. <a href="#myModal-1" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/dr-harsha-kj.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. HARSHA K J</p>
+<p><em>Neuro Interventional Specialist,</em></p>
+<p><em>Stroke Specialist &amp; Neuro Radiologist</em></p>
+</div>
+<div class="doc-more"><p>Dr Harsha is a highly qualified and experienced authority in stroke medicine. <a href="#myModal-2" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/dr-joshy-ev.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. JOSHY E.V.</p>
+<p><em>Senior Consultant Neurologist</em></p>
+</div>
+<div class="doc-more"><p>Dr. Joshy is starting Autoimmune Neurology treatment and Stem-cell therapy at Brains Hospital. <a href="#myModal-3" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/pavithra-venkateswaran.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. PAVITHRA VENKATESWARAN</p>
+<p><em>Consultant Neuroanesthesia &amp; Neuro Critical Care</em></p>
+</div>
+<div class="doc-more"><p>An eminent Anaesthetist with over 11 years of experience Dr. Pavithra has worked at reputed hospitals. <a href="#myModal-4" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/dr-prahlada-nb.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. PRAHLADA N.B</p>
+<p><em>ENT Surgeon</em></p>
+</div>
+<div class="doc-more"><p>Dr. Prahlada N.B is a graduate of JJM Medical College (Mysore University), Davanagere, Karnataka. <a href="#myModal-5" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/pramod-m.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. PRAMOD M</p>
+<p><em>Consultant Orthopaedic Surgeon</em></p>
+</div>
+<div class="doc-more"><p>Dr. Pramod M is one of the noted orthopaedic surgeons in Bangalore. <a href="#myModal-6" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<!--<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/krishna-shama-roa.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. KRISHNA SHAMA RAO</p>
+<p><em>Consultant Craniofacial Surgeon</em></p>
+</div>
+<div class="doc-more"><p>Dr.Krishna Shama Rao is a visionary Craniofacial Surgeon, reconstructing facial and skull deformities, since 39 years. <a href="#myModal-7" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>-->
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/nimmy.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. ASWANI BABY</p>
+<p><em>Speech &amp; Swallow Therapist</em></p>
+</div>
+<div class="doc-more"><p>Highly trained and experienced in speech and swallow therapy. <a href="#myModal-8" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<!--<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/wahid.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. A. H. WAHID</p>
+<p><em>Consultant General Physician</em></p>
+</div>
+<div class="doc-more"><p>Dr Wahid is a young, dynamic and dedicated doctor. <a href="#myModal-9" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>-->
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/oshin-thomas.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. OSHIN THOMAS</p>
+<p><em>ENT Surgeon</em></p>
+</div>
+<div class="doc-more"><p>Dr. Oshin Thomas, is a very young, dynamic and a talented ENT surgeon. <a href="#myModal-10" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/raj-kumar.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. RAJ KUMAR PANNEM</p>
+<p><em>Consultant, Neurosurgeon</em></p>
+</div>
+<div class="doc-more"><p>Dr. Raj Kumar Pannem, a dedicated Neurosurgeon and a clinician, believes in patient-centered care. <a href="#myModal-11" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/ashwith.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>DR. ASHWITH SHETTY</p>
+<p><em>Consultant Emergency &amp; MICU</em></p>
+</div>
+<div class="doc-more"><p>Dr Ashwith is a highly skilled physician who has over 14 years of experience. <a href="#myModal-13" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/sana.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>Dt. SANA THOUSIA</p>
+<p><em>Clinical Dietitian</em></p>
+</div>
+<div class="doc-more"><p>An eminent Nutritionist and a Clinical Dietitian, Sana has over 13 years of experience. <a href="#myModal-14" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/dr-subash.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>Dr. R. C. SUBHASH</p>
+<p><em>General &amp; Laparoscopic Surgeon, Bariatric Surgeon, Laser Proctologist</em></p>
+</div>
+<div class="doc-more"><p>Dr R C Subhash had a keen interest in surgery which encouraged him to obtain his MS in General Surgery. <a href="#myModal-15" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<!--<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/shalini.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>Dr. SHALINI RAO</p>
+<p><em>Consultant Paediatric Neurologist</em></p>
+<p><em>MBBS, MRCPCH ( UK), FRCPCH ( UK)</em></p>
+<p><em>CCT (UK)</em></p>
+</div>
+<div class="doc-more"><p>Dr Shalini Rao is an experienced child neurologist with experience in the management of complex epilepsies. <a href="#myModal-16" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/srinivasa.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>Dr. SRINIVASA REDDY POTHIREDDY</p>
+<p><em>Consultant Neurosurgeon, Brains Super Speciality Hospital Centre at The Oxford Medical College,
+Hospital & Research Centre, Yadavanahalli, Bengaluru.</em></p>
+</div>
+<div class="doc-more"><p>Dr. Srinivasa is expert at handling all kind of emergencies. <a href="#myModal-17" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>-->
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/varsha.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>Dr. VARSHA MANOHAR</p>
+<p><em>Paediatric Neurologist</em></p>
+</div>
+<div class="doc-more"><p>Dr. Varsha is a budding and energetic doctor who has completed her fellowship in paediatric neurology. <a href="#myModal-18" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/hari-kiran.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>Dr. HARI KIRAN</p>
+<p><em>Consultant Neurosurgeon</em></p>
+</div>
+<div class="doc-more"><p>Dr Hari is a committed neurosurgeon following dedicated work ethics. <a href="#myModal-19" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/adesh.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>Dr. ADESH J</p>
+<p><em>Consultant Neurosurgeon</em></p>
+</div>
+<div class="doc-more"><p>Dr. Adesh is proficient in comprehensive management of various cranial, spine and
+neuro-endovascular procedures. <a href="#myModal-20" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/pratap-kumar-pani.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>Dr. Pratap Kumar Pani</p>
+<p><em>Senior Consultant, Neurosurgery</em></p>
+</div>
+<div class="doc-more"><p>Dr. Pratap is one of the well-known Neurosurgeons in the country. <a href="#myModal-21" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+<div id="Doctors-border">
+<div class="row">
+<div class="col-lg-5 col-sm-5 col-md-5 col-xs-12">
+<div class="inner-doc-img"><img class="img-fluid" src="/static/brainshospital-com/boya-shalini.webp" alt="arrow" /></div>
+</div>
+<div class="col-lg-7 col-sm-7 col-md-7 col-xs-12">
+<div class="inner-doc-info">
+<p>Dr. Boya Shalini</p>
+<p><em>Consultant, Neuro Physician</em></p>
+</div>
+<div class="doc-more"><p>Dr Shalini is known for providing exceptional patient care with a focus on empathy and excellence. <a href="#myModal-22" data-bs-toggle="modal">View Profile</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div id="myModal-1" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/dr-nk-venkataramana.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<p>DR. N K VENKATARAMANA</p>
+<p><em>Founder Chairman and Chief Neurosurgeon</em></p>
+<p>QUALIFICATION</p>
+<p>MCh &ndash; Neurosurgery</p>
+<p>Fellowship In Micro Neurosurgery-Hanover (Germany)</p>
+<p>Fellowship In Endoscopy-Mainz (Germany)</p>
+<p>International Fellow Of American Association Of Neurological Surgeons</p>
+<p>Timings</p>
+<p>Only available at Brains Super Speciality Hospital, Lalbagh, From Monday to Saturday</p>
+<p>POSITIONS</p>
+<p>Founder: Comprehensive Trauma Consortium (Www.Sanjeevini.Org)</p>
+<p>Past President: Indian Society For Stereotactic And Functional Neurosurgery</p>
+<p>Past President - Neuro Endoscopy Society, India</p>
+<p>Chairman: MERRICART (Merricart.In)</p>
+<p>Chairman: ANSA &amp; Cell Space Research Foundation (Www.Ansaresearch.Org)</p>
+<p>Treasurer &ndash; AASPN</p>
+<p>Editor &ndash; Journal Of Neuroendoscopy</p>
+<p>Executive Member &ndash; International Federation Of Neuroendoscopy(IFNE)</p>
+<p>Editor In Chief &ndash; Journal Of Cerebro Vascular Science</p>
+<p>President: Indian Society For Paediatric Neurosurgery</p>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<img class="img-fluid" src="/static/brainshospital-com/certificate.webp" alt="arrow" />
+</div>
+</div>
+<p>PROFILE</p>
+<p>Dr N K Venkataramana is an internationally acclaimed neurosurgeon, researcher and academician. After training in micro neurology at Nordtstud Krankenhause in Hanover, Germany, he served as assistant professor in neurosurgery at the Bangalore-based National Institute of Mental Health and Neurosciences (NIMHANS). Later he founded the Manipal Institute for Neurological Disorders (MIND) at the Manipal Hospital in Bangalore and turned it into a leading facility. Alongside he pioneered 1062, the country's first GPS-enabled mobile trauma care service. Then Dr Venkataramana served as Vice Chairman of the Bangalore-based BGS Global Hospitals and Chief Neurosurgeon at the Global Institute of Neurosciences (BGS-GIN).</p>
+<p>The doctor has published more than a 100 papers in reputed journals, performed more than 25000 surgeries, participated and presided over many prestigious neurological conferences and delivered lectures and orations at national and international forums by invitation.</p>
+<p>A recipient of a number of prestigious awards and citations, Dr Venkataramana currently presides over the Indian Society for Paediatric Neurosurgery and is the editor-in-chief of the Journal of Cereberovascular Sciences. Previously he has been the President of the Indian Society for Functional and Stereotactic Neurosurgery and President, Neuroendoscopic Society-India.</p>
+<p>In late 2016, Dr Venkataramana founded his own boutique centre of excellence for comprehensive neuro care &mdash; the Bangalore Regenerative Advanced Institute of Neurosciences (Brains). Located in the heart of Bangalore at Lalbagh Siddapura Road, Jayanagar 1st Block, Brains is setting the golden standards in neuroscience with cutting edge services encompassing prevention, awareness, advocacy, acute and chronic care, regeneration, rehabilitation and research and training. Among the centre's primary focal areas is to infuse vitality to brain health.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-2" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/dr-harsha-kj.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. HARSHA K J</p>
+<p><em>Neuro Interventional Specialist,<br /> Stroke Specialist &amp; Neuro Radiologist</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>MD</p>
+<p>DM (SCTIMST)</p>
+<p>European Master Stroke Medicine EMSM (Austria)</p>
+<p>Clinical Stroke Fellow (Canada)</p>
+<p>International Certification In Neurosonology (ESN)</p>
+<p>Zurich Course In Neurointerventions (Switzer-Land)</p>
+<p>PROFILE</p>
+<p>Dr Harsha is a highly qualified and experienced authority in stroke medicine, neuro-interventional sur-gery/endovascular neurosurgery, neuro-imaging and neuro-sonology. In a distinguished professional career traversing premier institutes in India, Canada and Austria, he has acquired cutting edge expertise in a wide range of specialties such as hyperacute stroke thrombolysis and neuro-interventional surgery.</p>
+<p>His repertoire as a specialist includes endovascular neurosurgery, interventional neurology, interventional neuro-radiology, mechanical thrombectomy for stroke, coiling of aneurysms, AVM management, carotid stenting, and intracranial stenting. He has independently performed about 100 major interventional surgeries and more than 3000 DSAs. Dr Harsha has keen interest in medical research and academics and has published articles in reputed pub-lications, including a self-audited success story of neuro-interventional surgery, which appeared in an inter-national journal.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-3" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/dr-joshy-ev.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. JOSHY E V</p>
+<p><em>Senior Consultant Neurologist</em></p>
+<p>QUALIFICATION</p>
+<p>MD (Internal Medicine)</p>
+<p>DM Neurology (NIMHANS)</p>
+<p>Post-Doctoral Fellowship (University Of Southern California, USA)</p>
+<p>Member American Academy Of Neurology</p>
+<p>PROFILE</p>
+<p>With 34 years of practicing experience, Dr. Joshy is a veteran neurologist with a staggering academic and clinical record including 100,000 Neurology consultations in 9 years at Sri Sathya Sai Super-specialityHospital, apart from his administrative contributions as HOD Neurology Department, Hospital Executive Committee, Hospital Recruitment committee, Hospital Patient care committee, Hospital Welfare Society. Before that, he served 20 years as Chief Neurologist at Mafraqtertiary referral Hospital, Government of Abu Dhabi, UAE.</p>
+<p>Dr. Joshy is starting Autoimmune Neurology treatment and Stem-cell therapy at Brains Hospital. This will be a unique Holistic centre, first of its kind in India. Patients with various neurological problems who are not improving with treatment may contact him for further testing and specialised treatment. Among his key interests are the upcoming field of autoimmune neurology treatment with biologicals like Rituximab, stem-cell and upcoming gene therapy.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-4" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/pavithra-venkateswaran.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. PAVITHRA VENKATESWARAN</p>
+<p><em>Consultant Neuroanesthesia & Neuro Critical Care</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>MD PDF (Neuroanesthesia)</p>
+<p>PDF (Neurocriticalcare)</p>
+<p>Fellowship in Basic Pain Medicine</p>
+<p>PROFILE</p>
+<p>An eminent Anaesthetist with over 11 years of experience Dr. Pavithra has worked at reputed hospitals – Manipal Hospital, MS Ramaiah Institute of Neuro Sciences and NIMHANS before joining Brains Hospitals. She was involved in the management of serious neurological and neurosurgical conditions. She has several research papers and publications to her credit.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-5" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/dr-prahlada-nb.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. PRAHLADA N.B</p>
+<p><em>ENT Head and Neck Surgeon, Skull Base Surgeon</em></p>
+<p>PROFILE</p>
+<p>Dr. Prahlada N.B is a graduate of JJM Medical College (Mysore University), Davanagere, Karnataka. He completed his Master of Surgery in ENT-Head &amp; Neck Surgery from the most prestigious and premier Institute of India, the Post-Graduate Institute of Medical Education and Research (PGIMER), Chandigarh. Later, he received advanced training in Advanced Endoscopic Sinus Surgery, Ear &amp; Skull Base Surgery and Head &amp; Neck Cancer and Reconstructive Surgery, Micro-vascular reconstructive Surgery and Voice Surgery in various prestigious Institutes abroad.</p>
+<p>He has worked at several reputed hospitals across India. In 2000, he was awarded the Dr. RAF Cooper National Award for his Original Surgical technique, "Karnataka Flap for Mastoid Obliteration", first and only person to get this award in the state of Karnataka.</p>
+<p>As a resource person, he has delivered lectures, chaired sessions and demonstrated various surgeries in more than 200 national and international courses and conferences. He has trained more than 120 junior ENT Surgeons from India as well as abroad.</p>
+<p>Professor, Otorhinolaryngology at Basaveshwara Medical College and Hospital, Chitradurga, Karnataka, Dr. Prahlada has has worked for the Rotary International Ear project and is instrumental in conducting more than 450 camps in more than 19 countries and performing free surgeries for more than 45,000 poor patients with various Ear problems. Recognizing his yeoman service, the Rotary International has awarded him the most prestigious "Professional Excellence Award".</p>
+<p>His interest extends to entire specialty, from dura to pleura.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-6" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/pramod-m.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. PRAMOD M</p>
+<p><em>Consultant Orthopaedic Surgeon</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS, MRCS, DNB (ORTHO)</p>
+<p>Fellowship in Joint Replacement Surgery (Manipal University)</p>
+<p>Fellowship in Sports Medicine (Apollo Hospitals)</p>
+<p>ISAKOS Certified Fellowship in Minimally Invasive Hip &amp; Knee Surgery,</p>
+<p>St. Luke Medical Centre, Phoenix, Arizona (USA)</p>
+<p>PROFILE</p>
+<p>With over 15 years of experience in orthopaedic surgery, working in top corporate hospitals across Bengaluru, Dr. Pramod M is one of the noted orthopaedic surgeons in Bangalore.</p>
+<p>Dr Pramod M, graduated from one of the prestigious medical colleges in the country- Mysore Medical College.He did his post graduate training in the United Kingdom. He has special interests in sports medicine and advanced rehabilitation and has a sports medicine fellowship from Apollo Hospitals, Hyderabad. He has been practising knee and hip joint replacement surgery with a fellowship from Manipal University in 2013. He has been doing minimally invasive and robotic assisted surgery for the hip and knee following a fellowship at St. Luke Medical Centre, Phoenix Arizona, USA in 2017.</p>
+<p>In addition, Dr. Pramod has been doing a lot of social services in Leprosy deformity surgery and rehabilitation across the country and training new junior doctors.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--<div id="myModal-7" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/krishna-shama-roa.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. KRISHNA SHAMA RAO</p>
+<p><em>Consultant Craniofacial Surgeon</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS, FRCS (Eng) BDS, MDS, FDSRCS( Ed)</p>
+<p>PROFILE</p>
+<p>Dr.Krishna Shama Rao is a visionary Craniofacial Surgeon, reconstructing facial and skull deformities, since 39 years. In his career, he has performed close to 20,000 surgeries. He has been trained both in Dentistry and Medicine, with specialization in Craniofacial Surgery, Maxillofacial Surgery, with a background training in General Surgery and Plastic Surgery. Following his BDS from Nair Hospital in Mumbai n 1980, and MDS in Maxillofacial surgery from KMC Manipal, in 1984, he proceeded to work, at the Royal London Hospital and Medical College in 1989.</p>
+<p>He obtained fellowship in Maxillofacial Surgery, from the Royal College of Surgeons of England in 1990, and subsequently returned to India, to complete his MBBS at Kasturba Medical College in Mangalore. Subsequent to that, he completed his General Surgery rotation and obtained an FRCS from the Royal College of Surgeons of Edinburgh.</p>
+<p>He has contributed to several scientific articles and International textbooks. He was one of the founders and later the President of the Indian Society for Cleft Lip and Palate and Craniofacial Anomalies in 2007.</p>
+<p>His core specialty lies in the following niche areas:</p>
+<ul>
+<li><strong>.</strong>Cleft Lip and Palate Surgeries, since 1985.</li>
+<li><strong>.</strong>Craniofacial Surgeries, including management of Craniosynostosis and Hypertelorism, since 1993.</li>
+<li><strong>.</strong>Facial Cosmetic Surgery, including Orthognathic surgery, since 1993.</li>
+<li><strong>.</strong>Obstructive Sleep Apnoea- Medical (C-PAP, BI-PAP Devices) and Surgical management( Maxillo-Mandibular advancement surgeries) since 2016.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>-->
+<div id="myModal-8" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/nimmy.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. ASWANI BABY</p>
+<p><em>Speech &amp; Swallow Therapist</em></p>
+<p>QUALIFICATION</p>
+<p>Bachelor in Audiology and Speech Language Pathology (BASLP)</p>
+<p>PROFILE</p>
+<p>Highly trained and experienced in speech and swallow therapy, Aswani has performed diagnosis and treatment of receptive language disorders, expressive language disorders, aural rehabilitation, articulation, phonological processing, oral-motor functioning disorders, voice, fluency, and pragmatic language disorders in infants, pre-school and school-aged children, and adults for those who are monolingual and bilingual.</p>
+<p>Aswani has focused her clinical skills on treating younger patients with issues of orafacial myology, swallowing related disorders, articulation, phonological processing, apraxia, semantic language issues among pre-school aged children, bilingualism and pragmatics.</p>
+<p>CLINICALLY TRAINED AREAS &ndash;</p>
+<p>1. Diagnostic Audiology - Constant hands-on Pure tone audiometry, Immittance audiometry (tympanometry and reflexometry), Speech Audiometry, Special tests (for differential diagnosis of cochlear and retrocochlear pathology), Otoacoustic emission (OAE), Tinnitus Evaluation, Brainstem Evoked Responses Audiometry (BERA) and Cortical Auditory Evoked Potentials (CAP), Cochlear implants &ndash; Peri-operative and post- operative mapping.</p>
+<p>2. Rehabilitative Audiology - Hearing Aids (including assessment, fitting of Analog and latest technology, Digital hearing aids and counselling), Rehabilitation for hearing impaired (including auditory training for hearing aid users). Auditory verbal therapy for cochlear implants and Tinnitus Management, Retraining therapy, Ear Mould making and its modifications for achieving the desired acoustic variation. Counselling and management for central auditory processing disorders.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--<div id="myModal-9" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/wahid.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. A. H. WAHID</p>
+<p><em>Consultant General Physician</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>MD (General Medicine)</p>
+<p>Member of American College of Physicians</p>
+<p>PROFILE</p>
+<p>Dr Wahid is a young, dynamic and dedicated doctor. He is ever ready with his service in case of any emergency. Dr. Wahid completed his MBBS from Kasturba Medical College, Manipal University. He did his MD General Medicine from the prestigious Bangalore Medical College and Research Institute.</p>
+<p>He brings along with him an experience of over three years working at both private and government hospitals in Bangalore with special focus on Internal Medicine. During his tenure at these hospitals, he had handled Covid ward and Covid ICU during the pandemic.</p>
+<p>Dr. Wahid is expert in treating cases related to:</p>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<ul>
+<li><strong>.</strong>Diabetes</li>
+<li><strong>.</strong>Hypertension</li>
+<li><strong>.</strong>Cholesterol issues</li>
+<li><strong>.</strong>Thyroid issues</li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<ul>
+<li><strong>.</strong>Infections</li>
+<li><strong>.</strong>Vaccinations</li>
+<li><strong>.</strong>Anaemia</li>
+<li><strong>.</strong>General well-being</li>
+</ul>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>-->
+<div id="myModal-10" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/oshin-thomas.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. OSHIN THOMAS</p>
+<p><em>ENT Surgeon</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>MS ENT</p>
+<p>Fellowship in Otology</p>
+<p>PROFILE</p>
+<p>Dr. Oshin Thomas, is a very young, dynamic and a talented ENT surgeon. She has performed several ENT emergency procedures and holds the record of managing them independently, as well as assisting&nbsp;her fellow seniors. She has presented several papers at the national and international level and is a recipient of several awards too. Her research works have been published in several national and international journals.</p>
+<p>Expertise:</p>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<ul>
+<li><strong>.</strong>Hearing Disorders</li>
+<li><strong>.</strong>Vertigo</li>
+<li><strong>.</strong>Adenoiditis</li>
+<li><strong>.</strong>Tinnitus</li>
+<li><strong>.</strong>Tonsilitis</li>
+<li><strong>.</strong>Thyroid Disorders</li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<ul>
+<li><strong>.</strong>Allergic Rhinitis</li>
+<li><strong>.</strong>Sinusitis</li>
+<li><strong>.</strong>Headache</li>
+<li><strong>.</strong>Dysphagia</li>
+<li><strong>.</strong>Voice Disorders</li>
+<li><strong>.</strong>Gastric Reflux d/s</li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<ul>
+<li><strong>.</strong>Deviated Nasal Septum</li>
+<li><strong>.</strong>Snoring and Sleep Apnoea</li>
+<li><strong>.</strong>Head &amp; Neck Cancers</li>
+<li><strong>.</strong>Salivary Gland Disorders</li>
+<li><strong>.</strong>Eustachian Tube Disorders</li>
+</ul>
+</div>
+</div>
+<p>KEY SKILLS:</p>
+<ul>
+<li><strong>.</strong>Proficient in managing patients with various ENT disorders.</li>
+<li><strong>.</strong>Skilled in conducting various ENT surgery procedures.</li>
+<li><strong>.</strong>Knowledgeable in interpreting medical reports and conducting examinations, including vedio-laryngoscopy, Diagnostic Nasal endoscopy, and CT and MRI scans.</li>
+<li><strong>.</strong>Experienced in formulating and implementing patient care plans and providing pre- and post-operative care.</li>
+<li><strong>.</strong>Excellent communication and interpersonal skills, with the ability to interact with patients and healthcare professionals in a professional manner.</li>
+<li><strong>.</strong>Overall, I am committed to providing the best possible medical care to my patients with a patient-centric approach.</li>
+<li><strong>.</strong>Experienced in teaching online classes:</li>
+<li><strong>.</strong>https://youtu.be/nrxc805A6EY</li>
+<li><strong>.</strong>https://youtu.be/CciDN2XgI30</li>
+</ul>
+<p>PAPERS PRESENTED:</p>
+<p>INTERNATIONAL:</p>
+<ul>
+<li><strong>.</strong>&lsquo;Is It Wrong For Doctors To Be Human? Can Resident Doctors Learn To Function With Less Sleep?&rsquo; at the 7th Annual conference of ISSACON 2019, held at PGIMER, Chandigarh during March 2019.</li>
+</ul>
+<p>NATIONAL:</p>
+<ul>
+<li><strong>.</strong>&lsquo;The Determinants of Severe Thrombocytopenia in acute febrile illness&rsquo; at 7th National Conference on Students&rsquo; Medical Research 2014 Vector Borne Diseases- The Challenge and way Forward, January 2014, at GMC, Trivandrum, Kerala.</li>
+<li><strong>.</strong>&lsquo;Hamartomatous Polyp of the tonsil- A case report&rsquo; at NWZ-AOICON 2019 held at Chandigarh.</li>
+<li><strong>.</strong>&lsquo;Efficiency of selective coblation assisted posterior inferior nasal nerve (PINN) neurectomy for recalcitrant perennial allergic rhinitis&rsquo; at 17th South Zone conference and 39th annual Karnataka State Conference held at Kasturba medical College, 14th - 16th October, 2022.</li>
+<li><strong>.</strong>&lsquo;Optimised Speech coding Techniques In Cochlear Implants for Enhanced Comprehension of Indian Languages and Music: A Pilot Study&rsquo; at 40 th AOIKCON, Bangalore, 8 th &ndash; 10 th September, 2023.</li>
+<li><strong>.</strong>&lsquo;An Innovative artificial intelligence and machine learning algorithm to predict outcomes ofcochlear implantation in Vestibulocochlear Malformations&rsquo; at 40 th AOIKCON, Bangalore, 8 th &ndash; 10 th September, 2023.</li>
+</ul>
+<p>AWARDS RECEIVED:</p>
+<ul>
+<li><strong>.</strong>GOLD MEDAL for the BEST POSTER presentation- &lsquo;IS IT WRONG FOR DOCTORS TO BE HUMAN. CAN RESIDENT DOCTORS LEARN TO FUNCTION WITH LESS SLEEP?&rsquo; at the 7th Annual conference of ISSACON 2019, held at PGIMER, Chandigarh during March 2019.</li>
+<li>Secured SILVER MEDAL in the QUIZ competition conducted at PGIMER, Chandigarh</li>
+<li><strong>.</strong>SECOND PLACE in QUIZ held at 6th Annual Live Head/ Neck Surgical Workshop and Head and Neck Forum VII, Patel Hospital, Jalandhar,</li>
+<li><strong>.</strong>THIRD PLACE in QUIZ competition at 32th Annual Conference of All India Rhinology Society RHINOCON 2019 held at Chandigarh in September 2019</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-11" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/raj-kumar.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. RAJ KUMAR PANNEM</p>
+<p><em>Consultant, Neurosurgeon</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>MS, General Surgery</p>
+<p>MCh, Neurosurgery</p>
+<p>PROFILE</p>
+<p>Dr. Raj Kumar Pannem, a dedicated Neurosurgeon and a clinician, believes in patient-centered care. Throughout his clinical career, he has always been admired by patients and patient`s families for his empathy and humility. A well-trained Neurosurgeon, Dr Raj Kumar got his training in General Surgery from Andhra Medical College (King George Hospital), Andhra Pradesh &amp; his Neurosurgical training from the prestigious All India Institute of Medical Sciences (AIIMS), Rishikesh, Uttarkhand. Dr Raj is also well trained in Advanced Trauma Life Support (ATLS), and Basic Life Support (BLS).</p>
+<p>His expertise in managing head injuries, spine injuries, brain stroke both ischemic and haemorrhagic, brain and spine tumors, cervical spondylitis, degenerative spine disorders, sciatica, spine problems, Vascular neurosurgery and various other neurosurgical disorders is well known in the organizations wherever he served . Along with exceptional surgical experience, he also has a good experience in research and have various papers published in national and international renewed journals. He has also presented several papers at the neurosurgical conferences.</p>
+<p>His area of interest is vascular Neurosurgery. He treats all cerebrovascular aneurysms, subarachnoid hemorrhage, vascular malformations of brain and spine.</p>
+<p>His Expertise &amp; Specializations:</p>
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<ul>
+<li><strong>.</strong>Neurosurgery</li>
+<li><strong>.</strong>Vascular neurosurgery</li>
+<li><strong>.</strong>General Surgery</li>
+<li><strong>.</strong>Back pain</li>
+<li><strong>.</strong>Sciatica</li>
+<li><strong>.</strong>Degenerative spine disc disease</li>
+<li><strong>.</strong>Head injuries</li>
+<li><strong>.</strong>Spine Injuries</li>
+<li><strong>.</strong>Slip Disc</li>
+</ul>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<ul>
+<li><strong>.</strong>Spine Instability</li>
+<li><strong>.</strong>Headachey</li>
+<li><strong>.</strong>Brain tumors</li>
+<li><strong>.</strong>Spine tumors</li>
+<li><strong>.</strong>Degenerative spine disease</li>
+<li><strong>.</strong>Cervical spondylitis</li>
+<li><strong>.</strong>Neurovascular problems</li>
+<li><strong>.</strong>Stroke (Ischemic and haemorrhagic)</li>
+</ul>
+</div>
+</div>
+<p>Publications:</p>
+<ul>
+<li><strong>.</strong>New onset contralateral delayed extradural hematoma in an operated case of extradural hematoma: Life threatening if not diagnosed early, British Medical Journal Case reports.</li>
+<li><strong>.</strong>Impact of the COVID-19 pandemic and lockdown on non-COVID neurosurgical patients: lessons learned, Indian journal of Neurosurgery.</li>
+<li><strong>.</strong>Tubercular subdural empyema with tubercular abscess: Lessons learnt. Indian Journal of Neurosurgery.</li>
+<li><strong>.</strong>Cysticercosis presenting as an isolated cervical intramedullary lesion: A rare benign condition in a dangerous location. Indian Journal of Neurosurgery.</li>
+<li><strong>.</strong>Cerebral edema due to traumatic brain injury: Pathophysiology and role of novel targeted therapies, Indian Journal of Research.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--<div id="myModal-12" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/anirudh.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. ANIRUDH S</p>
+<p><em>Consultant Neurosurgeon</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>MS (General Surgery)</p>
+<p>MCh (Neurosurgery) (PGIMER)</p>
+<p>Fellowship in Functional Neurosurgery (Tokyo)</p>
+<p>PROFILE</p>
+<p>Dr Anirudh is a young, dynamic and an enthusiastic neurosurgeon with special skills in lestioning for movement disorders / dystonia, intrathecal baclofen pump and surgical correction of spasticity. His other area of interests includes Neurovascular surgeries and has an excellent expertise in treating aneurysms and neurovascular conflict.</p>
+<p>Dr. Anirudh, who has worked at several reputed hospitals across Bangalore, has published several research papers related to neuro and spine surgeries and has also contributed to several scientific articles.</p>
+<p>Special interests</p>
+<ul>
+<li><strong>.</strong>Functional neurosurgery with interest in lesioning for movement disorders / dystonia, intrathecal baclofen pump and surgical correction of spasticity.</li>
+<li><strong>.</strong>Neurovascular surgeries (aneurysms and neurovascular conflict).</li>
+<li><strong>.</strong>Kyphoplasty and vertebroplasty.</li>
+<li><strong>.</strong>Pituitary surgeries.</li>
+</ul>
+<p>Research and publications:</p>
+<ul>
+<li><strong>.</strong>Anirudh Srinivas, Lileswar Kaman, Prithivi Raj, Vikas Gautam, Divya Dahiya, Gurpreet Singh et al. Comparison of the efficacy of chlorhexidine gluconate versus povidone iodine as preoperative skin preparation for the prevention of surgical site infections in clean contaminated upper abdominal surgeries. Surgery Today. November 2015,&nbsp;Volume 45,&nbsp;Issue&nbsp;11,&nbsp;pp 1378-1384.</li>
+<li><strong>.</strong>Anirudh Srinivasan,&nbsp; Ashish Aggarwal ,&nbsp; Sachin Gaudihalli ,&nbsp; Manju Mohanty ,&nbsp; Manju Dhandapani ,Harminder Singh et al. Impact of early leucocytosis and elevated HS-CRP on delayed cerebral ischemia and neurological outcome following subarachnoid hemorrhage. World Neurosurg 2016; Feb 17.</li>
+<li><strong>.</strong>Meena RK, Dhandapani S, Gupta V, Anirudh S, Chatterjee D. Solid hemangioblastoma in the cerebellopontine angle: Importance of external carotid blood supply with regard to the probable site of origin and preoperative embolization.&nbsp;Surgical Neurology International. 2016;7(Suppl 1):S1-S4.</li>
+<li><strong>.</strong>Dhandapani S,&nbsp;Aggarwal A,&nbsp;Srinivasan A, Meena R, Gaudihalli S,&nbsp;Singh H,&nbsp;et al. Serum lipid profile spectrum and delayed cerebral ischemia following subarachnoid hemorrhage: Is there a relatioDhandapani S, Goudihalli S, Mukherjee KK, Singh H, Srinivasan A, Danish M, et al. Prospective study of the correlation between admission plasma homocysteine levels and neurological outcome following subarachnoid hemorrhage: A case for the reverse epidemiology paradox? Acta Neurochir (Wien) 2015;157:399‑407.Sciatica</li>
+<li><strong>.</strong>Srinivasan A, Dhandapani S, Kumar A. Pupil sparing oculomotor nerve paresis after anterior communicating artery aneurysm rupture: False localizing sign or acute microvascularischemia?. Surg Neurol Int 2015;6:46.</li>
+<li><strong>.</strong>Sachin Ranganatha Goudihalli,&nbsp; Anirudh Srinivasan ,&nbsp;B R Mittal,&nbsp; Sivashanmugam Dhandapani . Frontal lobe signs after posterior fossa surgery: is hypoperfusion ignored? Surg Neurol Int 2016; 17;7:20.</li>
+<li><strong>.</strong>Dhandapani S, Anirudh S, Garg R, Vasishta RK, Vyas S. Subependymoma causing conus-cauda syndrome: Cured by total excision. Neurol India 2013;61:675-7.</li>
+<li><strong>.</strong>Srinivasan A, Dhandapani S, Chatterjee D, Simha V. Renal small cell carcinoma presenting with solitary lumbar intradural metastasis. Neurol India 2014;62:561-3.</li>
+<li><strong>.</strong>Dhandapani S,&nbsp;Srinivasan A. Contiguous triple spinal dysraphism associated with Chiari malformation Type II and hydrocephalus: an embryological conundrum between the unified theory of Pang and the unified theory of McLone. J Neurosurg Pediatr.&nbsp;2016, Jan;17(1):103-6.</li>
+<li><strong>.</strong>Pandiarajan Vignesh, Deepti Suri, Amit Rawat, Yu Lung Lau, Ashim Das, Anirudh Srinivasan. Sclerosing cholangitis and intracranial lymphoma in a child with classical Wiskott&ndash;Aldrich syndrome. Pediatr Blood Cancer 2016;00: 1&ndash;4</li>
+<li><strong>.</strong>Anirudh S, Neeteesh K Roy. Spinal Dysraphism masking the presentation of Spinal dural arterio venous fistula (SDAVF)-Serendipity or congenital predisposition for early onset variant of SDAVF? Neurol India 2016;64:1380-1</li>
+<li><strong>.</strong>Srinivasan A, Bahl A, Bhagat H, Dutta P, Rai A, Devgun JS, Kaur R, Mukherjee KK. Impact of transsphenoidal surgery o.n asymptomatic cardiomyopathy in patients with acromegaly. A single-blinded study. Neurol India 2017;65:1312-6.</li>
+<li><strong>.</strong>Srinivasan A, Roy NK, Ghuman MS, Kumar A, Dhandapani S. Spinal dysraphism masking the presentation of spinal dural arteriovenous fistula: A serendipitous development or a congenital predisposition to an early-onset variant of spinal dural arteriovenous fistula?. Neurol India 2016;64:1380-1</li>
+<li><strong>.</strong>Anirudh Srinivasan. Letter to the Editor: Recurrent or residual craniopharyngioma: management options. J Neurosurg 2017&nbsp;;126(2): 658-9.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>-->
+<div id="myModal-13" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/ashwith.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. ASHWITH SHETTY</p>
+<p><em>Consultant Emergency &amp; MICU</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>FEM (Fellowship in Emergency Medicine)</p>
+<p>PROFILE</p>
+<p>Dr Ashwith is a highly skilled physician who has over 14 years of experience working in the Emergency and Trauma Department.</p>
+<p>A recipient of the Aryabhatta International award 2022 for his work in the field of Medicine, Dr. Ashwith is well trained in&nbsp;Focused Assessment with Sonography for Trauma. This apart, he is an expert in training for Advanced Stroke Life Support and also Basic Life Support.</p>
+<p>He has worked at the Emergency Departments&rsquo; of several prestigious institutions across the country and is well versed in handling trauma patients. Dr. Ashwith has participated in several International Conferences &amp; workshops related to Emergency Medicine. He also has a few publications to his credits.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-14" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/sana.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>Dt. SANA THOUSIA</p>
+<p><em>Clinical Dietitian</em></p>
+<p>QUALIFICATION</p>
+<p>MSc (Food Science &amp; Nutrition)</p>
+<p>PROFILE</p>
+<p>An eminent Nutritionist and a Clinical Dietitian, Sana has over 13 years of experience. She has worked at reputed hospitals and health centres in Bangalore. A highly dedicated dietitian, Sana has focused her clinical skills on guiding her patients by giving them customized diet according to the specific disease and disorders.</p>
+<p>She is also a diabetic educator. Her expertise has helped many GDM's and Type 1 Juvenile kids who are on insulin pump to manage their diabetes by carb count sessions. She is adept in handling ICU patients (Neuro, Cardio, Onco &amp; Gastro related) patients on Ryles Tube Feed and also parenteral nutrition.</p>
+<p>A lifetime member of IDA (Indian Dietitic Association) and IAPEN (Indian Association for Parenteral &amp; Enteral Nutrition) Sana has co-authored a book &ndash;&ldquo;The Basics of Human Civilization-Food, Agriculture &amp; Humanity.&rdquo;</p>
+<p>Apart from her clinical practice, Sana is also a certified pot designer, embroiderer, with a keen interest in fashion designing, singing and dancing.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-15" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/dr-subash.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. R C SUBASH</p>
+<p><em>General &amp; Laparoscopic Surgeon, Bariatric Surgeon, Laser Proctologist</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS, MS - General Surgery</p>
+<p>Fellowship in Hepatobiliary and Pancreatic Surgery</p>
+<p>PROFILE</p>
+<p>Dr R C Subhash had a keen interest in surgery which encouraged him to obtain his MS in General Surgery from the JJM Medical College, Davanagere after graduating from the Kempegowda Institute of Medical Sciences, Bangalore in 1999. Dr Subhash has over 20 years of experience conducting surgical procedures in many of the top corporate hospitals in Bangalore. He is a general surgeon specializing in laparoscopic surgeries, Bariatric surgeries, minimally invasive surgeries and laser proctology surgeries.</p>
+<p>His area of expertise includes Gastric Surgery, Gallbladder Surgery, Breast Surgery, Hernia and Piles surgeries.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--<div id="myModal-16" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/shalini.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. SHALINI RAO</p>
+<p><em>Consultant Paediatric Neurologist</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS, MRCPCH (UK), FRCPCH (UK)</p>
+<p>CCT (UK)</p>
+<p>PROFILE</p>
+<p>Dr Shalini Rao is an experienced child neurologist with experience in the management of complex epilepsies. She has experience in Neuro-disability, Behavioural disorders, Neuro-genetic and Neuro-metabolic conditions. She got her training from the University Hospital of Wales, UK. Worked as a registrar in the department of Paediatric Neurology over a period of two years. Obtained a certificate of completion of training in 2015. She also has a postgraduate certificate in medical education from Dundee university. </p>
+<p>She is dedicated to comprehensive care for the child and family, training and educating the patients and families about their child’s condition thereby empowering them to manage it optimally.</p>
+<p>Besides her clinical practice, Dr Shalini also works as a medical volunteer during her free time. A keen Himalayan trekker, she has also volunteered as a group doctor for a group of Kailash Manasa Sarovar pilgrims. A keen practitioner of Yoga and Meditation, she also enjoys listening to Indian Classical Music.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>-->
+<!--<div id="myModal-17" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/srinivasa.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. SRINIVASA REDDY POTHIREDDY</p>
+<p><em>Consultant Neurosurgeon, Brains Super Speciality Hospital Centre at The Oxford Medical College, Hospital &amp; Research Centre, Yadavanahalli, Bengaluru.</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>DrNB Neurosurgery</p>
+<p>PROFILE</p>
+<p>With over a decade of experience in the field of neurosurgery, Dr. Srinivasa is expert at handling all kind of emergencies which includes traumatic head injury, traumatic spinal cord injury, and also poly
+trauma in collaboration with other departments.</p>
+<p>He is also known for independently handling many surgeries like Traumatic contusions of frontal and temporal lobes, Subdural and Extradural hematoma evacuations, DHC with IPH evacuation, Burr Hole Evacuation of CSDH, Abscess tapping and drainage and Excision of the capsule, Intra-axial tumors , Convexity tumors like Meningioma, Micro - Lumbar Discectomy, Lumbar and Cervical Laminectomy, Spinal tumors of varies pathologies (EDEM, IDEM, IDIM lesion), Foramen Magnum Decompression with dural thinning technique and also with duroplasty, Tethered cords release, Congenital Spinal Deformity corrections, Shunt (VP and TP shunts) procedure, Spinal fusions (Cervical ACDF / ADR / Corpectomy and Fusion, Lumbar – TLIF, Cervical LMF, Spinal Fracture stabilization including 3600 stabilizations).</p>
+<p>Dr Srinivasa has also published several research papers and review articles in various journals.</p>
+<h4>KEY INTERESTS:</h4>
+<ul>
+<li><strong>.</strong>Ability to do all supra-tentorial and infra-tentorial cranial surgeries independently.</li>
+<li><strong>.</strong>Ability to do MIS – Lumbar Discectomy, Percutaneous Procedures like Kyphoplasty, Vertebroplasty and Fracture Stabilizations.</li>
+<li><strong>.</strong>Able to participate in the team work and plan accordingly as per requirement.</li>
+<li><strong>.</strong>Able to secure airway and CVC access in case of any emergencies and stabilize the patient as needed.</li>
+<li><strong>.</strong>Ability to handle all the latest equipment including navigation, microscope, and MIS Spine instruments.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>-->
+<div id="myModal-18" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/varsha.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>Dr. VARSHA MANOHAR</p>
+<p><em>Paediatric Neurologist</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS, MD Pediatrics, FIPN- Fellowship in Paediatric Neurology</p>
+<p>IGICH, Bangalore</p>
+<p>PROFILE</p>
+<p>Dr. Varsha is a budding and energetic doctor who has completed her fellowship in paediatric neurology from the prestigious Indira Gandhi Institute of Child Health, Bangalore. She is determined to provide outstanding service and care to children by taking a holistic approach.</p>
+<p>Her special interests are children with developmental disabilities, epilepsy, cerebral palsy, metabolic and genetic conditions, and neuro-infections like meningitis, autoimmune encephalitis, demyelinating disorders, headache, movement disorders like tremors, stroke, and nerve and muscle problems in children, spinal cord problems, speech delay, autism spectrum disorders, and ADHD.</p>
+<p>She is also interested in research and has publications in scientific journals. She believes in accurate diagnosis and tailored treatment plans and compassionate communication .She ensures that the parents fully understand the condition of their child and take an active role in the treatment for better outcomes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-19" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/hari-kiran.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>DR. HARI KIRAN</p>
+<p><em>Consultant Neurosurgeon.</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>MS General Surgery</p>
+<p>DNB Neurosurgery</p>
+<p>Fellowship in Cerebrovascular Surgery, Japan.</p>
+<p>PROFILE</p>
+<p>Dr Hari is a committed neurosurgeon following dedicated work ethics. He is adept in performing all emergency cranial and spine surgeries.</p>
+<p>Before joining BRAINS, Dr.Hari has worked at various reputed hospitals, including AIIMS, New Delhi, India’s top medical college and hospital.</p>
+<p>He has presented several papers and posters at different neuroscience events and conferences.</p>
+<h4>His core specialty lies in the following areas:</h4>
+<ul>
+<li><strong>.</strong>Competent in performing all emergency procedures and decision making.</li>
+<li><strong>.</strong>Able to perform Spine cases like laminectomy, fixations and spinal lesions.</li>
+<li><strong>.</strong>Good clinical skills.</li>
+<li><strong>.</strong>Hard working and team facilitator.</li>
+<li><strong>.</strong>Follows strict protocols.</li>
+</ul>
+<h4>Special Interests</h4>
+<ul>
+<li><strong>.</strong>Skull base</li>
+<li><strong>.</strong>Vascular</li>
+<li><strong>.</strong>Spine</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-20" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/adesh.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>Dr. ADESH J</p>
+<p><em>Consultant Neurosurgeon.</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>DNB Neurosurgery</p>
+<p>FINR (Zurich, Switzerland)</p>
+<p>PROFILE</p>
+<p>Dr. Adesh is proficient in comprehensive management of various cranial, spine and neuro-endovascular procedures. With over 8 years of experience, he is competent in the field of vascular surgeries and minimally invasive spine surgeries. He has prioritised patient centric approach to care, ensuring that each patient receives individualised attention and treatment. Dr. Adesh is committed in staying up to date with the latest advances in the field, willingness to work with all members of the team to improve the results and maximise patient satisfaction. Able to work under pressure and meet the ethical standards set forth by medical review boards. In addition to his clinical work, he is also actively engaged in research and teaching.</p>
+<p>Dr. Adesh also holds the forte of performing several cranial and spine procedures independently including Neurotrauma, spine fusions, microdiscectomy, gliomas, meningiomas, posterior fossa surgeries, awake craniotomy, pituitary surgery, aneurysm clipping, AVM excision, Minimally invasive spine surgeries and Robotic Neurosurgery. He is adept at performing Neuro-endovascular procedures like DSA, mechanical thrombectomy for acute stroke, carotid stenting, aneurysm coiling, embolization and well acquainted with the up to date technologies in neurosurgical practice.</p>
+<p>Dr. Adesh has presented several papers and attended many conferences including Neurological society of India (NSICON), Neurological surgeons society of India (NSSICON), Indian society of pediatric neurosurgery (INDSPN), Association of spine surgeons of India (ASSICON) and Stroke and Neurointervention Foundation (SNIF). He is also involved in the on-going National and International trials in the field of Neurosurgery and brain tumor.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-21" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/pratap-kumar-pani.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>Dr. Pratap Kumar Pani</p>
+<p><em>Senior Consultant, Neurosurgery.</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>MS General Surgery</p>
+<p>Mch Neurosurgery</p>
+<p>Fellowship in Gamma Knife, Stereotaxy &amp; Functional Neurosurgery, Japan</p>
+<p>PROFILE</p>
+<p>With over 32 years of experience in various fields of Neurosurgery, Dr. Pratap is one of the well-known Neurosurgeons in the country. He is known to have performed over 8000 surgeries for complex brain and spine diseases, which included advanced Spine, Navigation guided microscopic Brain and Vascular surgeries.</p>
+<p>Dr. Pani is known to have performed one of the first ever Anterior Odontoids screw fixation, Percutaneous Vertebroplasty &amp;Kyphoplasty. He is also credited with successfully operating one of the world’s largest brain tumor in a 7 year old child.</p>
+<p>Dr. Pani is one of the few neurosurgeons trained in Gamma Knife, Stereotaxy and Functional Neurosurgery. He is known to have performed over 100 Functional procedures which included Thalamotomy and Pallidotomy.
+He has delivered lectures in national and international conferences and has several publications to his credit.</p>
+<h4>His core specialty lies in the following areas:</h4>
+<ul>
+<li><strong>.</strong>Minimal Invasive Spinal Neurosurgery with Instrumentation.</li>
+<li><strong>.</strong>Tumor &amp; Vascular Surgery.</li>
+<li><strong>.</strong>Functional Neurosurgery.</li>
+<li><strong>.</strong>Gamma Knife Surgery.</li>
+<li><strong>.</strong>Endoscopic Neurosurgery.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal-22" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-bs-dismiss="modal"><span>&times;</span></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img class="img-fluid" src="/static/brainshospital-com/boya-shalini.webp" alt="arrow" /></div>
+<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+<p>Dr. Boya Shalini</p>
+<p><em>Consultant, Neuro Physician.</em></p>
+<p>QUALIFICATION</p>
+<p>MBBS</p>
+<p>MD Internal Medicine</p>
+<p>DM (Neurology), NIMHANS, Bengaluru.</p>
+<p>PROFILE</p>
+<p>A dynamic and young Neuro-physician, Dr Shalini is known for providing exceptional patient care with a focus on empathy and excellence. By adopting usage of cutting-edge technologies, she believes in providing advanced treatments for patients reeling under severe neurological conditions and bring about a difference in their lives.</p>
+<p>Dr Shalini considers active participation in multidisciplinary teams in order to promote innovative healthcare solution. Having a keen quest for knowledge enhancement she keeps herself occupied in clinical research.</p>
+<p>She has participated in several national level conferences and presented award winning papers.</p>
+<h4>Special Interests</h4>
+<ul>
+<li><strong>.</strong>Stroke management &amp; Epilepsy.</li>
+</ul>
+<h4>Professional Interests:</h4>
+<ul>
+<li><strong>.</strong>Lifelong learning and continuous research in Neurology to advance medical science.</li>
+<li><strong>.</strong>Providing exceptional patient care with a focus on empathy and excellence.</li>
+<li><strong>.</strong>Contributing to business development and the growth of healthcare services and departments.</li>
+<li><strong>.</strong>Active participation in multidisciplinary teams to promote innovative healthcare solutions.</li>
+</ul>
+<h4>Academic Excellence:</h4>
+<ul>
+<li><strong>.</strong>MBBS completed in First Division</li>
+<li><strong>.</strong>Distinction in Microbiology and Ophthalmology during MBBS</li>
+<li><strong>.</strong>MD in Internal Medicine completed in First Division</li>
+</ul>
+<h4>Conferences &amp; Presentations:</h4>
+<ul>
+<li><strong>.</strong>Multiple paper presentations at State-Level APICON 2015 (Tirupati)</li>
+<li><strong>.</strong>2nd Prize in Neurology Quiz at State-Level Neurology Conference (2015)</li>
+<li><strong>.</strong>Multiple poster presentations at National APICON 2017 (Mumbai)</li>
+<li><strong>.</strong>Participated in State-Level CME Quiz at St. John’s Institute of Medical Sciences</li>
+<li><strong>.</strong>Presented a poster at the National Level Conference, IANCON - Vizag (2024)</li>
+<li><strong>.</strong>2nd Prize in the Department of Neurology Annual Quiz at NIMHANS (2024)</li>
+<li><strong>.</strong>Associate Member of the Indian Academy of Neurology</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+                <footer>
+                    <div class="container-fluid footer">
+	<div class="container">
+		<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+					<div class="booking">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<a href="/Contact-Us">Book an Appointment</a>
+								<div class="call">
+								   <img src="call.webp" class="img-fluid" alt="call">
+								   <p>+91 91480 80000 / +91 8073012345</p>
+								</div>
+								<div class="opd-main">
+								  <img src="opd.webp" class="img-fluid" alt="opd">
+								  <p><b>OPD Hours</b></p>
+                                  <p>Monday to Saturday</p>
+                                  <p>09 AM to 05 PM, 05 PM to 08 PM</p>
+                                </div>
+                            </div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="bkng-1">
+								<div class="location">
+								  <img src="location.webp" class="img-fluid bounce2" alt="location">
+								  <p><b>Our Location</b></p>
+								  <p><b>Brains Super Speciality Hospital</b></p>
+                                  <p>192, T Mariyappa Road, Lalbagh, Siddapura,</p>
+                                  <p>Jayanagar 1st Block, Bengaluru - 560011,</p>
+                                  <p>Karnataka India.</p>
+                                </div>
+                                <div class="emergency">
+                                  <img src="emergency-services.webp" class="img-fluid" alt="location">
+                                  <p><b>Emergency Services available</b></p>
+                                  <p>24 hrs X 365 days, including Holidays</p>
+                                </div>
+							</div>  
+						</div>
+					</div>
+					<div class="quick-links">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<p><a href="/Patient-Stories" title="Patient Stories">Patient Stories</a></p>
+                                <p><a href="/Diseases" title="Diseases">Diseases</a></p>
+                                <p><a href="/Key-Procedures" title="Key Procedures">Key Procedures</a></p>
+                                <p><a href="/INTERNATIONAL-PATIENTS" title="International Patients">International Patients</a></p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<p><a href="/Gallery" title="Media">Media</a></p>
+                                <p><a href="/CSR" title="CSR">CSR</a></p>
+                                <p><a href="/Brain-Voice" title="Resources">Resources</a></p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<p><a href="/Privacy-Policy" title="Privacy Policy">Privacy Policy</a></p>
+                                <p><a href="/Disclaimer" title="Disclaimer">Disclaimer</a></p>
+								<p><a href="/static/brainshospital-com/sitemap.xml">Sitemap</a></p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<a href="https://in.linkedin.com/company/center-for-brain-and-spine-repair" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+								<a href="https://www.youtube.com/c/BRAINSHOSPITAL/featured" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+					<div class="barcode">
+                      <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.507436196616!2d77.5922195!3d12.9477201!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75e781fad36ecf06!2sBrains%20Hospital!5e0!3m2!1sen!2sin!4v1657947681523!5m2!1sen!2sin" target="blank"><img src="brains-hospital-location.webp" class="img-fluid" alt="brains hospital map"></a>
+                      <p>Scan here for the Location</p>
+                    </div>
+                </div>
+				<a href="javascript:" id="return-to-top" class="demo" style="display: inline;" title="return-to-top"><i class="fa fa-angle-up"></i></a>
+			</div>
+		</div>
+	</div>
+
+<div class="container-fluid footer-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="copy-ryt">
+					<p>© 2019-2025. Brains Super Speciality Hospital. All rights reserved.</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="design">
+                    <p>Powered By: <a href="https://lumos.in/">LUMOS.in</a></p>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/static/brainshospital-com/slick.js"></script>
+<script src="/static/brainshospital-com/custom.js"></script>
+                </footer>
+            
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" data-bs-toggle="tooltip" data-bs-title="Username">vidya</a>
+
+            <div>
+                <a href="/" class="btn btn-outline-secondary bi bi-house" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Naviate to website home page"></a>
+                    <a href="/site/websites" class="btn btn-outline-secondary bi bi-window-stack" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Manage websites"></a>
+                <a class="btn btn-outline-danger bi bi-box-arrow-right" href="/core/login?handler=logout&returnUrl=/a" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Logout"></a>
+            </div>
+        </div>
+    </nav>
+                <script src="/lib/jquery/dist/jquery.min.js"></script>
+                <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="/root-site.js" asp-append-version="true"></script>
+                <script>
+                    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))    
+                </script>
+        </body>
+
+    </html>
+<!--    *******************************************************************  -->
+<!--    * Website deployed using [ The Guild ] platform by [ PASKAN ]·····*  -->
+<!--    * All rights reserved - paskan.com································*  -->
+<!--    * Like to work with us? mail to info@·····························*  -->
+<!--    * Want to host your website on The Guild platform? mail to info@··*  -->
+<!--    *******************************************************************  -->
+ 
