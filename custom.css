@@ -1725,7 +1725,7 @@ p {
   font-size: 70px;
   font-family: 'Font Awesome 5 Brands';
   position: relative;
-  right: 45px;
+  right: 35px;
   line-height: 0;
   margin-right: -25px;
 }
@@ -2919,7 +2919,7 @@ button:focus {
 
   .left-content strong {
     margin-right: -17px;
-    right: 25px;
+    right: 35px;
   }
 
   .left-content {
