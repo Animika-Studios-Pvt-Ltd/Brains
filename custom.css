@@ -3130,9 +3130,8 @@ button:focus {
   }
 
   .half-ellipse img {
-    padding: 10px 35px;
+    padding: 0px 10px;
     position: relative;
-    top: 30px;
   }
 
   .dropdown ul li a {
@@ -3591,6 +3590,10 @@ button:focus {
     font-size: 15px;
   }
 
+  .half-ellipse img {
+    padding: 0px 35px;
+  }
+
   .nav-item a,
   .nav-item a:hover {
     font-size: 13px;
@@ -3900,6 +3903,10 @@ button:focus {
     font-size: 15px;
   }
 
+  .half-ellipse img {
+    padding: 0px 35px;
+  }
+
   .top-con p {
     float: left;
     padding: 10px 20px;
@@ -4161,6 +4168,10 @@ button:focus {
     font-size: 16px;
   }
 
+  .half-ellipse img {
+    padding: 0px 35px;
+  }
+
   .top-con p {
     float: left;
     padding: 10px 20px;
@@ -4210,10 +4221,6 @@ button:focus {
 
   .aside-right {
     width: 28%;
-  }
-
-  .half-ellipse {
-    height: 32vh;
   }
 
   .banner-text {
@@ -4518,12 +4525,8 @@ button:focus {
     margin-right: -15px;
   }
 
-  .half-ellipse {
-    height: 36vh;
-  }
-
   .half-ellipse img {
-    padding: 10px 50px;
+    padding: 0px 45px;
   }
 
   .banner-text {
@@ -4824,14 +4827,6 @@ button:focus {
     top: 97px;
   }
 
-  .half-ellipse {
-    height: 34vh;
-  }
-
-  .half-ellipse img {
-    padding: 10px 50px;
-  }
-
   .banner-text {
     position: relative;
     top: -58vh;
@@ -5082,10 +5077,6 @@ button:focus {
     width: 25%;
   }
 
-  .half-ellipse {
-    height: 32vh;
-  }
-
   .banner-text {
     position: relative;
     top: -62vh;
@@ -5274,10 +5265,6 @@ button:focus {
     width: 25%;
   }
 
-  .half-ellipse {
-    height: 32vh;
-  }
-
   .banner-text {
     position: relative;
     top: -62vh;
@@ -5464,10 +5451,6 @@ button:focus {
 
   .aside-right {
     width: 25%;
-  }
-
-  .half-ellipse {
-    height: 32vh;
   }
 
   .banner-text {
@@ -5661,10 +5644,6 @@ button:focus {
 
   .aside-right {
     width: 25%;
-  }
-
-  .half-ellipse {
-    height: 32vh;
   }
 
   .banner-text {
