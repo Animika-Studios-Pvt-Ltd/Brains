@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src: local('roboto-regular'), local('roboto-regular'),
-    url('/fonts/roboto-regular.ttf') format('truetype');
+    url('fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 300;
   src: local('roboto-light'), local('roboto-light'),
-    url('/fonts/roboto-light.ttf') format('truetype');
+    url('fonts/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: 100;
   src: local('roboto-thin'), local('roboto-thin'),
-    url('/fonts/roboto-thin.ttf') format('truetype');
+    url('fonts/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -27,14 +27,14 @@
   font-style: normal;
   font-weight: 600;
   src: local('mirador-medium'), local('mirador-medium'),
-    url('/fonts/mirador-medium.ttf') format('truetype')
+    url('fonts/Mirador-Medium.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'source-sans-pro-regular';
   font-style: normal;
   font-weight: 400;
-  src: local('source-sans-pro-regular'), local('source-sans-pro-regular'), url('/fonts/source-sans-pro-regular.ttf') format('truetype')
+  src: local('source-sans-pro-regular'), local('source-sans-pro-regular'), url('fonts/SourceSansPro-Regular.ttf') format('truetype')
 }
 
 html,
