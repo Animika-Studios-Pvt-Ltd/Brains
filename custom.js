@@ -37,9 +37,27 @@ function animateValue(e, t, i, o) {
     dots: !1,
     adaptiveHeight: !0,
     responsive: [
-      { breakpoint: 1121, settings: { slidesToShow: 3, adaptiveHeight: !0 } },
-      { breakpoint: 767, settings: { slidesToShow: 1, adaptiveHeight: !0 } },
-      { breakpoint: 768, settings: { slidesToShow: 3, adaptiveHeight: !0 } },
+      {
+        breakpoint: 1121,
+        settings: {
+          slidesToShow: 3,
+          adaptiveHeight: !0,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          adaptiveHeight: !0,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          adaptiveHeight: !0,
+        },
+      },
     ],
   }));
 var $slider = $(".client-slider"),
@@ -58,15 +76,27 @@ function padNumber(e) {
   responsive: [
     {
       breakpoint: 1121,
-      settings: { slidesToShow: 3, autoplay: !0, adaptiveHeight: !0 },
+      settings: {
+        slidesToShow: 3,
+        autoplay: !0,
+        adaptiveHeight: !0,
+      },
     },
     {
       breakpoint: 767,
-      settings: { slidesToShow: 1, autoplay: !0, adaptiveHeight: !0 },
+      settings: {
+        slidesToShow: 1,
+        autoplay: !0,
+        adaptiveHeight: !0,
+      },
     },
     {
       breakpoint: 991,
-      settings: { slidesToShow: 2, autoplay: !0, adaptiveHeight: !0 },
+      settings: {
+        slidesToShow: 2,
+        autoplay: !0,
+        adaptiveHeight: !0,
+      },
     },
   ],
 }),
@@ -81,5 +111,10 @@ function padNumber(e) {
       : $("#return-to-top").fadeOut(200);
   }),
   $("#return-to-top").click(function () {
-    $("body,html").animate({ scrollTop: 0 }, 500);
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500,
+    );
   }));
