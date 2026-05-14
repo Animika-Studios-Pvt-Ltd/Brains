@@ -1,40 +1,36 @@
 @font-face {
-  font-family: 'roboto-regular';
-  font-style: normal;
-  font-weight: 400;
-  src: local('roboto-regular'), local('roboto-regular'),
-    url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-family: 'roboto-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('roboto-regular'), local('roboto-regular'),
+    url('/static/brainshospital-com/roboto-regular.ttf') format('truetype');
 }
-
 @font-face {
-  font-family: 'roboto-light';
-  font-style: normal;
-  font-weight: 300;
-  src: local('roboto-light'), local('roboto-light'),
-    url('fonts/Roboto-Light.ttf') format('truetype');
+    font-family: 'roboto-light';
+    font-style: normal;
+    font-weight: 300;
+    src: local('roboto-light'), local('roboto-light'),
+    url('/static/brainshospital-com/roboto-light.ttf') format('truetype');
 }
-
 @font-face {
-  font-family: 'roboto-thin';
-  font-style: normal;
-  font-weight: 100;
-  src: local('roboto-thin'), local('roboto-thin'),
-    url('fonts/Roboto-Light.ttf') format('truetype');
+    font-family: 'roboto-thin';
+    font-style: normal;
+    font-weight: 100;
+    src: local('roboto-thin'), local('roboto-thin'),
+    url('/static/brainshospital-com/roboto-thin.ttf') format('truetype');
 }
-
 @font-face {
-  font-family: 'mirador-medium';
-  font-style: normal;
-  font-weight: 600;
-  src: local('mirador-medium'), local('mirador-medium'),
-    url('fonts/Mirador-Medium.ttf') format('truetype')
+    font-family: 'mirador-medium';
+    font-style: normal;
+    font-weight: 600;
+    src: local('mirador-medium'),local('mirador-medium'),
+    url('/static/brainshospital-com/mirador-medium.ttf') format('truetype')
 }
-
 @font-face {
-  font-family: 'source-sans-pro-regular';
-  font-style: normal;
-  font-weight: 400;
-  src: local('source-sans-pro-regular'), local('source-sans-pro-regular'), url('fonts/SourceSansPro-Regular.ttf') format('truetype')
+    font-family: 'source-sans-pro-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('source-sans-pro-regular'),local('source-sans-pro-regular'),url('/static/brainshospital-com/source-sans-pro-regular.ttf') format('truetype')
 }
 
 html,
