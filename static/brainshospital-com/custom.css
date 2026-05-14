@@ -1734,36 +1734,39 @@ p {
   font-size: 50px;
 }
 
-.ss-info:hover @-webkit-keyframes bounceRight {
-  transform: translateX(0)
+/* Fix malformed keyframes block */
+@-webkit-keyframes bounceRight {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-10px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+  }
+  100% {
+    -webkit-transform: translateX(-15px);
+  }
 }
 
-40% {
-  -webkit-transform: translateX(-10px);
-  transform: translateX(-10px);
+@keyframes bounceRight {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
 }
 
-60% {
-  -webkit-transform: translateX(-15px);
-  transform: translateX(-15px);
-}
-
-40% {
-  transform: translateX(-30px);
-}
-
-60% {
-  transform: translateX(-15px);
-}
-
-40% {
-  -ms-transform: translateX(-10px);
-  transform: translateX(-10px);
-}
-
-60% {
-  -ms-transform: translateX(-15px);
-  transform: translateX(-15px);
+.ss-info:hover {
+  animation: bounceRight 0.8s ease-in-out;
 }
 
 .card {
