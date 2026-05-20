@@ -1,36 +1,40 @@
 @font-face {
-    font-family: 'roboto-regular';
-    font-style: normal;
-    font-weight: 400;
-    src: local('roboto-regular'), local('roboto-regular'),
-    url('/static/brainshospital-com/roboto-regular.ttf') format('truetype');
+  font-family: 'roboto-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('roboto-regular'), local('roboto-regular'),
+    url('static/brainshospital-com/roboto-regular.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'roboto-light';
-    font-style: normal;
-    font-weight: 300;
-    src: local('roboto-light'), local('roboto-light'),
-    url('/static/brainshospital-com/roboto-light.ttf') format('truetype');
+  font-family: 'roboto-light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('roboto-light'), local('roboto-light'),
+    url('static/brainshospital-com/roboto-light.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'roboto-thin';
-    font-style: normal;
-    font-weight: 100;
-    src: local('roboto-thin'), local('roboto-thin'),
-    url('/static/brainshospital-com/roboto-thin.ttf') format('truetype');
+  font-family: 'roboto-thin';
+  font-style: normal;
+  font-weight: 100;
+  src: local('roboto-thin'), local('roboto-thin'),
+    url('static/brainshospital-com/roboto-thin.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'mirador-medium';
-    font-style: normal;
-    font-weight: 600;
-    src: local('mirador-medium'),local('mirador-medium'),
-    url('/static/brainshospital-com/mirador-medium.ttf') format('truetype')
+  font-family: 'mirador-medium';
+  font-style: normal;
+  font-weight: 600;
+  src: local('mirador-medium'), local('mirador-medium'),
+    url('static/brainshospital-com/mirador-medium.ttf') format('truetype')
 }
+
 @font-face {
-    font-family: 'source-sans-pro-regular';
-    font-style: normal;
-    font-weight: 400;
-    src: local('source-sans-pro-regular'),local('source-sans-pro-regular'),url('/static/brainshospital-com/source-sans-pro-regular.ttf') format('truetype')
+  font-family: 'source-sans-pro-regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('source-sans-pro-regular'), local('source-sans-pro-regular'), url('/static/brainshospital-com/source-sans-pro-regular.ttf') format('truetype')
 }
 
 html,
@@ -1739,12 +1743,15 @@ p {
   0% {
     -webkit-transform: translateX(0);
   }
+
   40% {
     -webkit-transform: translateX(-10px);
   }
+
   60% {
     -webkit-transform: translateX(-15px);
   }
+
   100% {
     -webkit-transform: translateX(-15px);
   }
@@ -1754,12 +1761,15 @@ p {
   0% {
     transform: translateX(0);
   }
+
   40% {
     transform: translateX(-10px);
   }
+
   60% {
     transform: translateX(-15px);
   }
+
   100% {
     transform: translateX(-15px);
   }
