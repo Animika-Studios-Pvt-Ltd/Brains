@@ -118,3 +118,66 @@ function padNumber(e) {
       500,
     );
   }));
+
+// Mobile navigation dropdown handling (screen sizes below 992px)
+$(document).ready(function () {
+  // Ensure the toggler button has the 'collapsed' class initially if the menu is closed
+  if (!$('#navbarSupportedContent').hasClass('show')) {
+    $('#navbarToggleBtn').addClass('collapsed');
+  }
+
+  // Mobile dropdown toggle on click (below 992px)
+  $('.navbar-nav .dropdown-toggle').on('click', function (e) {
+    if (window.innerWidth < 992) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      var $el = $(this);
+      var $parent = $el.parent('.dropdown');
+      var $menu = $el.next('.dropdown-menu');
+
+      // Close other dropdowns with slide animation
+      $('.navbar-nav .dropdown-toggle').not($el).removeClass('show');
+      $('.navbar-nav .dropdown').not($parent).removeClass('show');
+      $('.navbar-nav .dropdown-menu').not($menu).slideUp(300);
+
+      // Toggle current dropdown
+      $el.toggleClass('show');
+      $parent.toggleClass('show');
+      $menu.slideToggle(300);
+    }
+  });
+
+  // Reset dropdowns when mobile menu collapses
+  $('#navbarSupportedContent').on('hidden.bs.collapse', function () {
+    $('.navbar-nav .dropdown').removeClass('show');
+    $('.navbar-nav .dropdown-toggle').removeClass('show');
+    $('.navbar-nav .dropdown-menu').css('display', '').removeClass('show');
+  });
+
+  // Reset dropdown inline styles and classes on resizing back to desktop
+  $(window).on('resize', function () {
+    if (window.innerWidth >= 992) {
+      $('.navbar-nav .dropdown-menu').css('display', '');
+      $('.navbar-nav .dropdown').removeClass('show');
+      $('.navbar-nav .dropdown-toggle').removeClass('show');
+    }
+  });
+
+  // Close mobile menu when clicking outside of it
+  $(document).on('click', function (e) {
+    if (window.innerWidth < 992) {
+      var $collapse = $('#navbarSupportedContent');
+      var $toggler = $('#navbarToggleBtn');
+
+      // If the click was outside both the mobile menu and the toggler button
+      if (!$collapse.is(e.target) && $collapse.has(e.target).length === 0 &&
+          !$toggler.is(e.target) && $toggler.has(e.target).length === 0) {
+        if ($collapse.hasClass('show')) {
+          $toggler.trigger('click');
+        }
+      }
+    }
+  });
+});
+
