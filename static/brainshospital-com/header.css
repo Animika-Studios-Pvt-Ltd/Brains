@@ -401,7 +401,7 @@ input[type="checkbox"]:checked ~ aside .aside-right {
   display: none;
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .top-con {
     gap: 20px;
   }
@@ -892,4 +892,4 @@ input[type="checkbox"]:checked ~ aside .aside-right {
   .navbar-collapse {
     top: 75px;
   }
-}
+} */
