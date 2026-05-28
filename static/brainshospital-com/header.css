@@ -708,7 +708,7 @@ input[type="checkbox"]:checked ~ aside .aside-right {
 
 @media (max-width: 575px) {
   .top-con {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     gap: 5px;
