@@ -1,4 +1,5 @@
 @import url("header.css");
+@import url("hero.css");
 
 @font-face {
   font-family: "roboto-regular";
@@ -79,96 +80,7 @@ p {
   font-size: 17px;
 }
 
-.mobile-banner {
-  display: none;
-}
 
-.banner-bg {
-  margin-top: 0px;
-}
-
-.banner-text h2 {
-  font-family: "Mirador-Medium";
-  color: #fdfffe;
-}
-
-.banner-text {
-  position: relative;
-  top: -60vh;
-  left: 85vh;
-}
-
-.banner-text p {
-  color: #05dcfb;
-  font-size: 30px;
-  margin-top: 25px;
-}
-
-.banner-text a {
-  position: relative;
-  font-family: "Roboto-Regular";
-  background: #00ccff;
-  top: 3vh;
-  color: #011f41;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 30px;
-  padding: 10px 10px;
-  animation: pulseHighlight 1s infinite;
-  border-bottom-style: solid;
-  border-width: 5px;
-  border-bottom-color: #013473;
-}
-
-@keyframes pulseHighlight {
-  0% {
-    box-shadow: 0 0 10px rgb(6 173 198);
-  }
-
-  50% {
-    box-shadow: 0 0 20px rgb(6 173 196);
-  }
-
-  100% {
-    box-shadow: 0 0 10px rgb(6 173 196);
-  }
-}
-
-.banner-logos {
-  position: relative;
-  top: 12vh;
-}
-
-.control-btn-1 .carousel-control-next {
-  margin: 0 -40px;
-}
-
-.control-btn-1 {
-  position: absolute;
-  bottom: 30em;
-  right: 13em;
-}
-
-.control-btn-1 .fa-arrow-right,
-.control-btn-1 .fa-arrow-left {
-  background: none;
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 4px 5px;
-  border-radius: 100%;
-  transition: background 0.6s ease;
-}
-
-.control-btn-1 .fa-arrow-right:hover,
-.control-btn-1 .fa-arrow-left:hover {
-  background: #fff;
-  color: #134e97;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  opacity: 1;
-}
 
 .container-fluid {
   padding: 0;
@@ -1992,82 +1904,7 @@ button:focus {
     font-size: 15px;
   }
 
-  .banner-bg {
-    margin-top: 0px;
-  }
 
-  .banner-text {
-    position: relative;
-    top: -15vh;
-    left: 2%;
-    float: inline-end;
-  }
-
-  .mobile-banner p {
-    color: #000;
-    font-size: 18px;
-    position: relative;
-    top: 10px;
-    text-decoration: none;
-    /*background: transparent !important;
-    border-bottom-color: transparent !important;
-    border-bottom-style: none !important;
-    border-radius: 0 !important;
-    border-width: 0 !important;*/
-  }
-
-  .banner-text h2 {
-    font-size: 16px;
-    padding-left: 21vh;
-  }
-
-  /*.mobile-banner a {
-    position: relative;
-    font-family: 'Roboto-Regular';
-    background: #07adc5;
-    top: 2vh;
-    color: #011f41;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 10px 10px;
-    display: block;
-    width: 75%;
-    margin: 0 auto;
-    border-radius: 30px; 
-    border-bottom-style: solid;
-    border-width: 5px;
-    border-bottom-color: #013473;    
-}*/
-  .banner-logo-mobile {
-    position: relative;
-    top: 3vh;
-    text-align: center;
-  }
-
-  .mobile-banner {
-    position: relative;
-    top: -65px;
-    text-align: center;
-    display: block;
-  }
-
-  .control-btn-1 {
-    position: absolute;
-    bottom: 95px;
-    right: 10vh;
-  }
-
-  .control-btn-1 .fa-arrow-right,
-  .control-btn-1 .fa-arrow-left {
-    padding: 3px 4px;
-    margin-top: -15px;
-  }
-
-  .banner-text p,
-  .banner-text a,
-  .banner-logos {
-    display: none;
-  }
 
   .intro-img img {
     margin-top: 0vh;
@@ -2522,41 +2359,7 @@ button:focus {
     font-size: 15px;
   }
 
-  .banner-bg {
-    margin-top: 0px;
-  }
 
-  .banner-text {
-    position: relative;
-    top: -24vh;
-    left: 27vh;
-  }
-
-  .banner-text h2,
-  .banner-text p {
-    font-size: 15px;
-  }
-
-  .banner-text p {
-    color: #fff;
-  }
-
-  .banner-logos {
-    position: relative;
-    top: 1vh;
-    width: 18%;
-    left: 20vh;
-  }
-
-  .banner-text a {
-    font-size: 15px;
-  }
-
-  .control-btn-1 {
-    position: absolute;
-    bottom: 14em;
-    right: 6em;
-  }
 
   .intro-img img {
     margin-top: -10vh;
@@ -2908,32 +2711,8 @@ button:focus {
     font-size: 15px;
   }
 
-  .banner-text {
-    position: relative;
-    top: -40vh;
-    left: 55vh;
-  }
-
-  .banner-text h2,
-  .banner-text p {
-    font-size: 22px;
-  }
-
-  .control-btn-1 {
-    position: absolute;
-    bottom: 20em;
-    right: 9em;
-  }
-
-  .banner-text a,
   .booking a {
     font-size: 16px;
-  }
-
-  .banner-logos {
-    position: relative;
-    top: 5vh;
-    width: 30%;
   }
 
   .intro-img img {
@@ -3182,32 +2961,8 @@ button:focus {
     font-size: 15px;
   }
 
-  .banner-text {
-    position: relative;
-    top: -48vh;
-    left: 70vh;
-  }
-
-  .banner-text h2,
-  .banner-text p {
-    font-size: 24px;
-  }
-
-  .banner-text a,
   .booking a {
     font-size: 17px;
-  }
-
-  .banner-logos {
-    position: relative;
-    top: 45px;
-    width: 35%;
-  }
-
-  .control-btn-1 {
-    position: absolute;
-    bottom: 25em;
-    right: 10em;
   }
 
   .intro-img img {
@@ -3396,32 +3151,8 @@ button:focus {
     font-size: 16px;
   }
 
-  .banner-text {
-    position: relative;
-    top: -50vh;
-    left: 70vh;
-  }
-
-  .banner-text h2,
-  .banner-text p {
-    font-size: 25px;
-  }
-
-  .banner-text a,
   .booking a {
     font-size: 17px;
-  }
-
-  .banner-logos {
-    position: relative;
-    top: 45px;
-    width: 40%;
-  }
-
-  .control-btn-1 {
-    position: absolute;
-    bottom: 25em;
-    right: 10em;
   }
 
   .intro-img img {
@@ -3646,32 +3377,8 @@ button:focus {
     font-size: 16px;
   }
 
-  .banner-text {
-    position: relative;
-    top: -65vh;
-    left: 95vh;
-  }
-
-  .banner-text h2,
-  .banner-text p {
-    font-size: 27px;
-  }
-
-  .banner-text a,
   .booking a {
     font-size: 19px;
-  }
-
-  .control-btn-1 {
-    position: absolute;
-    bottom: 25em;
-    right: 10em;
-  }
-
-  .banner-logos {
-    position: relative;
-    top: 45px;
-    width: 50%;
   }
 
   .intro-img img {
@@ -3896,33 +3603,8 @@ button:focus {
     font-size: 16px;
   }
 
-  .banner-text {
-    position: relative;
-    top: -58vh;
-    left: 15%;
-    float: inline-end;
-  }
-
-  .banner-text h2,
-  .banner-text p {
-    font-size: 27px;
-  }
-
-  .banner-text a,
   .booking a {
     font-size: 19px;
-  }
-
-  .control-btn-1 {
-    position: absolute;
-    bottom: 25em;
-    right: 10em;
-  }
-
-  .banner-logos {
-    position: relative;
-    top: 45px;
-    width: 50%;
   }
 
   .intro-img img {
@@ -4126,27 +3808,8 @@ button:focus {
     font-size: 17px;
   }
 
-  .banner-text {
-    position: relative;
-    top: -62vh;
-    left: 25%;
-    float: inline-end;
-  }
-
-  .banner-text h2,
-  .banner-text p {
-    font-size: 35px;
-  }
-
-  .banner-text a,
   .booking a {
     font-size: 20px;
-  }
-
-  .banner-logos {
-    position: relative;
-    top: 55px;
-    width: 50%;
   }
 
   .intro-img img {
@@ -4294,27 +3957,8 @@ button:focus {
     font-size: 17px;
   }
 
-  .banner-text {
-    position: relative;
-    top: -62vh;
-    left: 25%;
-    float: inline-end;
-  }
-
-  .banner-text h2,
-  .banner-text p {
-    font-size: 35px;
-  }
-
-  .banner-text a,
   .booking a {
     font-size: 20px;
-  }
-
-  .banner-logos {
-    position: relative;
-    top: 55px;
-    width: 50%;
   }
 
   .intro-img img {
@@ -4462,27 +4106,8 @@ button:focus {
     font-size: 18px;
   }
 
-  .banner-text {
-    position: relative;
-    top: -65vh;
-    left: 17%;
-    float: inline-end;
-  }
-
-  .banner-text h2,
-  .banner-text p {
-    font-size: 35px;
-  }
-
-  .banner-text a,
   .booking a {
     font-size: 20px;
-  }
-
-  .banner-logos {
-    position: relative;
-    top: 55px;
-    width: 50%;
   }
 
   .intro-img img {
@@ -4635,27 +4260,8 @@ button:focus {
     font-size: 18px;
   }
 
-  .banner-text {
-    position: relative;
-    top: -65vh;
-    left: 17%;
-    float: inline-end;
-  }
-
-  .banner-text h2,
-  .banner-text p {
-    font-size: 35px;
-  }
-
-  .banner-text a,
   .booking a {
     font-size: 20px;
-  }
-
-  .banner-logos {
-    position: relative;
-    top: 55px;
-    width: 50%;
   }
 
   .intro-img img {
@@ -4797,4 +4403,12 @@ button:focus {
   .the-secret img {
     top: 4vh;
   }
+}
+
+/* Reset negative margins on the Founder section to prevent overlap with the absolute banner */
+.intro-img img {
+  margin-top: 60px !important;
+}
+.intro-text {
+  margin-top: 60px !important;
 }
