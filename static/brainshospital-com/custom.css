@@ -1,5 +1,6 @@
 @import url("header.css");
 @import url("hero.css");
+@import url("founder.css");
 
 @font-face {
   font-family: "roboto-regular";
@@ -84,48 +85,7 @@ p {
 
 .container-fluid {
   padding: 0;
-}
-
-.intro-text h2,
-.intro-text p b {
-  color: #134e97;
-}
-
-.intro-text p {
-  color: #000;
-}
-
-.intro-text {
-  padding: 60px 20vh 80px 20vh;
-  width: 130vh;
-  margin: -36vh 0px 0 -27vh;
-}
-
-.intro-img {
-  position: relative;
-  display: inline-block;
-}
-
-.intro-img img {
-  border-radius: 50%;
-  margin-top: -30vh;
-  position: relative;
-  z-index: 1;
-}
-
-.intro-before {
-  content: "";
-  position: absolute;
-  bottom: -12px;
-  right: -12px;
-  width: 430px;
-  height: 430px;
-  border-radius: 50%;
-  background: linear-gradient(50deg, #154e95, #09a3bf);
-  z-index: -1;
-}
-
-.intro-arrow,
+}.intro-arrow,
 .insights-arrow {
   margin-top: -5px;
 }
@@ -1902,26 +1862,7 @@ button:focus {
 
   p {
     font-size: 15px;
-  }
-
-
-
-  .intro-img img {
-    margin-top: 0vh;
-  }
-
-  .intro-before {
-    width: 101%;
-    height: 101%;
-  }
-
-  .intro-text {
-    padding: 60px 0vh 70px 20vh;
-    width: auto;
-    margin: -3vh 0px 0 -19vh;
-  }
-
-  .doc-types ul {
+  }.doc-types ul {
     flex-direction: column;
     align-items: stretch;
     top: 0;
@@ -2357,26 +2298,7 @@ button:focus {
 
   p {
     font-size: 15px;
-  }
-
-
-
-  .intro-img img {
-    margin-top: -10vh;
-  }
-
-  .intro-before {
-    width: 102%;
-    height: 147%;
-  }
-
-  .intro-text {
-    padding: 60px 0vh 70px 20vh;
-    width: auto;
-    margin: -16vh 0px 0 -19vh;
-  }
-
-  .doc-types ul {
+  }.doc-types ul {
     flex-direction: column;
     align-items: stretch;
     top: 0;
@@ -2713,24 +2635,7 @@ button:focus {
 
   .booking a {
     font-size: 16px;
-  }
-
-  .intro-img img {
-    margin-top: -20vh;
-  }
-
-  .intro-text {
-    padding: 60px 0vh 80px 20vh;
-    width: auto;
-    margin: -25vh 0px 0px -19vh;
-  }
-
-  .intro-before {
-    width: 100%;
-    height: 172%;
-  }
-
-  .doc-types span {
+  }.doc-types span {
     font-size: 20px;
   }
 
@@ -2963,24 +2868,7 @@ button:focus {
 
   .booking a {
     font-size: 17px;
-  }
-
-  .intro-img img {
-    margin-top: -25vh;
-  }
-
-  .intro-text {
-    padding: 60px 0vh 80px 12vh;
-    width: 80vh;
-    margin: -32vh 0px 0px -9vh;
-  }
-
-  .intro-before {
-    width: 100%;
-    height: 208%;
-  }
-
-  .doc-types {
+  }.doc-types {
     margin-top: 10vh;
     height: 20vh;
   }
@@ -3153,23 +3041,7 @@ button:focus {
 
   .booking a {
     font-size: 17px;
-  }
-
-  .intro-img img {
-    margin-top: -27vh;
-  }
-
-  .intro-text {
-    padding: 60px 5vh 80px 2vh;
-    width: 80vh;
-    margin: -34vh 0px 0px 0vh;
-  }
-
-  .intro-before {
-    width: 100%;
-  }
-
-  .doc-types {
+  }.doc-types {
     margin-top: 10vh;
     height: 22vh;
   }
@@ -3379,23 +3251,7 @@ button:focus {
 
   .booking a {
     font-size: 19px;
-  }
-
-  .intro-img img {
-    margin-top: -40vh;
-  }
-
-  .intro-text {
-    padding: 60px 0vh 80px 0vh;
-    width: 80vh;
-    margin: -47vh 0px 0px 2vh;
-  }
-
-  .intro-before {
-    width: 100%;
-  }
-
-  .doc-types {
+  }.doc-types {
     margin-top: 10vh;
     height: 32vh;
   }
@@ -3605,23 +3461,7 @@ button:focus {
 
   .booking a {
     font-size: 19px;
-  }
-
-  .intro-img img {
-    margin-top: -35vh;
-  }
-
-  .intro-text {
-    padding: 60px 0vh 80px 0vh;
-    width: 80vh;
-    margin: -41vh 0px 0px 2vh;
-  }
-
-  .intro-before {
-    width: 100%;
-  }
-
-  .doc-types {
+  }.doc-types {
     margin-top: 10vh;
     height: 27vh;
   }
@@ -3810,23 +3650,7 @@ button:focus {
 
   .booking a {
     font-size: 20px;
-  }
-
-  .intro-img img {
-    margin-top: -40vh;
-  }
-
-  .intro-text {
-    padding: 60px 20vh 80px 20vh;
-    width: 130vh;
-    margin: -47vh 0px 0 -27vh;
-  }
-
-  .intro-before {
-    width: 100%;
-  }
-
-  .doc-types {
+  }.doc-types {
     height: 27vh;
   }
 
@@ -3959,23 +3783,7 @@ button:focus {
 
   .booking a {
     font-size: 20px;
-  }
-
-  .intro-img img {
-    margin-top: -40vh;
-  }
-
-  .intro-text {
-    padding: 60px 20vh 80px 20vh;
-    width: 130vh;
-    margin: -47vh 0px 0 -27vh;
-  }
-
-  .intro-before {
-    width: 100%;
-  }
-
-  .doc-types {
+  }.doc-types {
     height: 27vh;
   }
 
@@ -4108,23 +3916,7 @@ button:focus {
 
   .booking a {
     font-size: 20px;
-  }
-
-  .intro-img img {
-    margin-top: -40vh;
-  }
-
-  .intro-text {
-    padding: 60px 20vh 80px 20vh;
-    width: 130vh;
-    margin: -46vh 0px 0 -27vh;
-  }
-
-  .intro-before {
-    width: 100%;
-  }
-
-  .doc-types {
+  }.doc-types {
     height: 27vh;
   }
 
@@ -4262,23 +4054,7 @@ button:focus {
 
   .booking a {
     font-size: 20px;
-  }
-
-  .intro-img img {
-    margin-top: -40vh;
-  }
-
-  .intro-text {
-    padding: 60px 20vh 80px 20vh;
-    width: 130vh;
-    margin: -46vh 0px 0 -27vh;
-  }
-
-  .intro-before {
-    width: 100%;
-  }
-
-  .doc-types {
+  }.doc-types {
     height: 27vh;
   }
 
@@ -4403,12 +4179,4 @@ button:focus {
   .the-secret img {
     top: 4vh;
   }
-}
-
-/* Reset negative margins on the Founder section to prevent overlap with the absolute banner */
-.intro-img img {
-  margin-top: 60px !important;
-}
-.intro-text {
-  margin-top: 60px !important;
 }

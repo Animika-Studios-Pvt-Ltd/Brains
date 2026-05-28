@@ -74,7 +74,7 @@
 }
 
 .banner-logos img {
-  max-height: 150px;
+  max-height: 180px;
   width: auto;
 }
 
@@ -159,7 +159,7 @@
     margin-top: 70px;
   }
   .banner-logos img {
-    max-height: 120px;
+    max-height: 160px;
   }
   .control-btn-1 .carousel-control-next,
   .control-btn-1 .carousel-control-prev,
@@ -192,7 +192,7 @@
     margin-top: 60px;
   }
   .banner-logos img {
-    max-height: 110px;
+    max-height: 150px;
   }
 }
 
@@ -217,7 +217,7 @@
     margin-top: 55px;
   }
   .banner-logos img {
-    max-height: 100px;
+    max-height: 140px;
   }
 }
 
@@ -243,7 +243,7 @@
     margin-top: 50px;
   }
   .banner-logos img {
-    max-height: 95px;
+    max-height: 130px;
   }
   .control-btn-1 .carousel-control-next,
   .control-btn-1 .carousel-control-prev,
@@ -277,7 +277,7 @@
     margin-top: 45px;
   }
   .banner-logos img {
-    max-height: 90px;
+    max-height: 120px;
   }
   .control-btn-1 {
     bottom: 15%;
@@ -307,7 +307,7 @@
     margin-top: 40px;
   }
   .banner-logos img {
-    max-height: 80px;
+    max-height: 110px;
   }
   .control-btn-1 {
     bottom: 14%;
@@ -337,7 +337,7 @@
     margin-top: 35px;
   }
   .banner-logos img {
-    max-height: 75px;
+    max-height: 100px;
   }
   .control-btn-1 {
     bottom: 12%;
@@ -375,7 +375,7 @@
     margin-top: 25px;
   }
   .banner-logos img {
-    max-height: 65px;
+    max-height: 90px;
   }
   .control-btn-1 {
     bottom: 10%;
@@ -406,7 +406,7 @@
     margin-top: 30px;
   }
   .banner-logos img {
-    max-height: 55px;
+    max-height: 80px;
   }
   .control-btn-1 {
     bottom: 8%;
@@ -441,7 +441,7 @@
     margin-top: 35px;
   }
   .banner-logos img {
-    max-height: 50px;
+    max-height: 70px;
   }
   .mobile-banner {
     display: none !important;
@@ -479,7 +479,7 @@
     margin-top: 20px;
   }
   .banner-logos img {
-    max-height: 50px;
+    max-height: 60px;
   }
   .control-btn-1 .carousel-control-next,
   .control-btn-1 .carousel-control-prev,
@@ -509,7 +509,7 @@
     margin-top: 12px;
   }
   .banner-logos img {
-    max-height: 44px;
+    max-height: 50px;
   }
   .control-btn-1 .carousel-control-next,
   .control-btn-1 .carousel-control-prev,
@@ -539,7 +539,7 @@
     margin-top: 8px;
   }
   .banner-logos img {
-    max-height: 34px;
+    max-height: 40px;
   }
   .control-btn-1 .carousel-control-next,
   .control-btn-1 .carousel-control-prev,
