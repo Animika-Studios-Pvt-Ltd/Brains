@@ -1,4 +1,4 @@
-/* ================= TOP HEADER ================= */
+/* --------- TOP HEADER --------- */
 .top-con {
   display: flex;
   justify-content: flex-end;
@@ -49,7 +49,7 @@
   color: #fff;
 }
 
-/* ================= NAVBAR ================= */
+/* --------- NAVBAR --------- */
 .navbar {
   margin: -10px 0 0 0;
   padding: 0;
@@ -63,7 +63,7 @@
   min-height: 60px;
 }
 
-/* ================= LOGO ================= */
+/* --------- LOGO --------- */
 .navbar-brand {
   position: absolute;
   left: 5px;
@@ -96,7 +96,7 @@
   top: -10px;
 }
 
-/* ================= NAV CONTENT ================= */
+/* --------- NAV CONTENT --------- */
 @media (min-width: 992px) {
   .navbar-collapse {
     display: flex !important;
@@ -127,7 +127,7 @@
   width: fit-content;
 }
 
-/* ================= DROPDOWN ================= */
+/* --------- DROPDOWN --------- */
 .dropdown {
   margin: 0 15px;
 }
@@ -169,7 +169,7 @@
   font-family: "Roboto-Regular" !important;
 }
 
-/* ================= SPECIALITIES MENU ================= */
+/* --------- SPECIALITIES MENU --------- */
 #specialities-menu {
   width: 600px;
   padding: 20px;
@@ -186,7 +186,7 @@
   font-size: 15px !important;
 }
 
-/* ================= MOBILE NAV TOGGLE ================= */
+/* --------- MOBILE NAV TOGGLE --------- */
 label.sec-nav {
   display: inline-block;
   cursor: pointer;
@@ -244,7 +244,7 @@ input[type="checkbox"]:checked ~ label .bottom {
   transform: translateY(-15px) rotate(-45deg);
 }
 
-/* ================= ASIDE MENU ================= */
+/* --------- ASIDE MENU --------- */
 .aside-section {
   bottom: 0;
   position: fixed;
@@ -308,7 +308,7 @@ input[type="checkbox"]:checked ~ aside .aside-right {
   font-size: 15px !important;
 }
 
-/* ================= MISC ================= */
+/* --------- MISC --------- */
 .mobile-view {
   display: none;
 }
@@ -423,14 +423,14 @@ input[type="checkbox"]:checked ~ aside .aside-right {
 }
 
 @media (max-width: 991px) {
-  /* ================= REMOVE CUSTOM ASIDE ================= */
+  /* --------- REMOVE CUSTOM ASIDE --------- */
   aside,
   label.sec-nav,
   input#menuToggle {
     display: none !important;
   }
 
-  /* ================= TOP HEADER ================= */
+  /* --------- TOP HEADER --------- */
   .top-con {
     justify-content: space-between;
     align-items: center;
@@ -449,7 +449,7 @@ input[type="checkbox"]:checked ~ aside .aside-right {
     border-bottom-width: 3px;
   }
 
-  /* ================= NAVBAR ================= */
+  /* --------- NAVBAR --------- */
   .navbar {
     margin: 10px 0 0 0;
     padding: 0;
@@ -461,7 +461,7 @@ input[type="checkbox"]:checked ~ aside .aside-right {
     align-items: center !important;
   }
 
-  /* ================= LOGO FIX ================= */
+  /* --------- LOGO FIX --------- */
   .navbar-brand {
     position: relative !important;
     left: auto !important;
@@ -482,7 +482,7 @@ input[type="checkbox"]:checked ~ aside .aside-right {
     max-width: 110px;
   }
 
-  /* ================= HAMBURGER ================= */
+  /* --------- HAMBURGER --------- */
   .navbar-toggler {
     border: none;
     box-shadow: none;
@@ -549,7 +549,7 @@ input[type="checkbox"]:checked ~ aside .aside-right {
     top: 9px;
   }
 
-  /* ================= MAIN MOBILE MENU ================= */
+  /* --------- MAIN MOBILE MENU --------- */
   .navbar-collapse {
     background: #124e96;
     position: absolute;
@@ -583,7 +583,7 @@ input[type="checkbox"]:checked ~ aside .aside-right {
     font-size: 16px;
   }
 
-  /* ================= DROPDOWN FIX ================= */
+  /* --------- DROPDOWN FIX --------- */
   .collapse .nav-item:hover .dropdown-menu {
     display: none;
   }
@@ -641,7 +641,7 @@ input[type="checkbox"]:checked ~ aside .aside-right {
     color: #06adc6 !important;
   }
 
-  /* ================= SPECIALITIES FIX ================= */
+  /* --------- SPECIALITIES FIX --------- */
   #specialities-menu {
     width: 100%;
     padding: 10px;
@@ -662,7 +662,7 @@ input[type="checkbox"]:checked ~ aside .aside-right {
     padding: 6px 12px !important;
   }
 
-  /* ================= MOBILE EXTRA MENU ================= */
+  /* --------- MOBILE EXTRA MENU --------- */
   .mobile-view {
     display: block;
     width: 100%;
