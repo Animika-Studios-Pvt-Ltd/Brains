@@ -467,29 +467,26 @@
     left: 58%;
   }
   .banner-text h2 {
-    font-size: 13px;
+    font-size: 14px;
   }
   .banner-text p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
   .banner-text a {
-    font-size: 9px;
-    padding: 3px 8px;
-    top: 8px;
-    border-bottom-width: 2px;
+    display: none !important;
   }
   .banner-logos {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .banner-logos img {
-    max-height: 45px;
+    max-height: 50px;
   }
   .control-btn-1 .carousel-control-next,
   .control-btn-1 .carousel-control-prev,
   .control-btn-1 .fa-arrow-right,
   .control-btn-1 .fa-arrow-left {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     padding: 0;
     font-size: 9px;
   }
@@ -506,23 +503,20 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
   .banner-text a {
-    font-size: 8px;
-    padding: 3px 6px;
-    top: 6px;
-    border-bottom-width: 2px;
+    display: none !important;
   }
   .banner-logos {
-    margin-top: 15px;
+    margin-top: 12px;
   }
   .banner-logos img {
-    max-height: 40px;
+    max-height: 44px;
   }
   .control-btn-1 .carousel-control-next,
   .control-btn-1 .carousel-control-prev,
   .control-btn-1 .fa-arrow-right,
   .control-btn-1 .fa-arrow-left {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     padding: 0;
     font-size: 8px;
   }
@@ -530,7 +524,7 @@
 
 @media (max-width: 360px) {
   .banner-text {
-    left: 58%;
+    left: 57%;
   }
   .banner-text h2 {
     font-size: 11px;
@@ -539,23 +533,20 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
   .banner-text a {
-    font-size: 6px;
-    padding: 2.5px 5px;
-    top: 3px;
-    border-bottom-width: 1px;
+    display: none !important;
   }
   .banner-logos {
-    margin-top: 10px;
+    margin-top: 8px;
   }
   .banner-logos img {
-    max-height: 30px;
+    max-height: 34px;
   }
   .control-btn-1 .carousel-control-next,
   .control-btn-1 .carousel-control-prev,
   .control-btn-1 .fa-arrow-right,
   .control-btn-1 .fa-arrow-left {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     padding: 0;
     font-size: 8px;
   }
