@@ -1,6 +1,7 @@
 @import url("header.css");
 @import url("homepage.css");
 @import url("footer.css");
+@import url("breadcrumb.css");
 
 @font-face {
   font-family: "roboto-regular";
@@ -192,11 +193,30 @@ p {
   }
 }
 
-/* -------------------------------------- REMAINING SECTIONS/PAGES CODE -------------------------------- */
-
-.container-fluid {
+/* -------------------------------------- BREADCRUMBS SECTION -------------------------------- */
+.breadcrumb {
+  margin-top: 10px;
+  margin-bottom: 20px;
   padding: 0;
+  background: 0 0;
 }
+
+.breadcrumb-item a {
+  font-family: "source-sans-pro-regular";
+  font-size: 17px;
+  color: #666;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  font-family: "source-sans-pro-regular";
+  font-size: 17px;
+  color: #3a3d40e0;
+  text-decoration: none;
+}
+
+
+/* -------------------------------------- REMAINING SECTIONS/PAGES CODE -------------------------------- */
 
 .slick-slider {
   position: relative;
@@ -377,27 +397,6 @@ p {
 
 #Doctors-border:hover {
   box-shadow: 0 1px 5px #b7b7b7;
-}
-
-.breadcrumb {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 0;
-  background: 0 0;
-}
-
-.breadcrumb-item a {
-  font-family: "source-sans-pro-regular";
-  font-size: 17px;
-  color: #666;
-  text-decoration: none;
-}
-
-.breadcrumb-item.active {
-  font-family: "source-sans-pro-regular";
-  font-size: 17px;
-  color: #3a3d40e0;
-  text-decoration: none;
 }
 
 .left-content-img img {
