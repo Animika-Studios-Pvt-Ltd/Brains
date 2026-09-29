@@ -28,7 +28,7 @@ function animateValue(e, t, i, o) {
       ((e.innerHTML = t + "+"), animateValue(e, t, i, o));
     });
   }),
-  $(".projetos-slider").slick({
+  $(".doctors-slider").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: !0,
@@ -60,8 +60,8 @@ function animateValue(e, t, i, o) {
       },
     ],
   }));
-var $slider = $(".client-slider"),
-  $paginationNumber = $(".pagination-number");
+var $slider = $(".excellence-slider"),
+  $paginationNumber = $(".excellence-pagination-number");
 function padNumber(e) {
   return e < 10 ? "0" + e : e;
 }
