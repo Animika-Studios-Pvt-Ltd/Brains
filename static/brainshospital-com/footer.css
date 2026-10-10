@@ -1,554 +1,489 @@
-/* ----------------------------------------------- HOMEPAGE FOOTER SECTION STYLES ----------------------------------------------- */
-.footer-section {
-  background: linear-gradient(to right, #154d97, #1167a2, #0d84af, #07a5c0);
-  padding: 25px 0px 25px 0px;
-  margin: 0 20vh -20vh 20vh;
-  border-radius: 20px;
-  width: auto;
-}
-
-.footer-booking-block a {
-  position: relative;
+/* --- Footer Section --- */
+.footer {
   font-family: "Roboto-Regular";
-  background: #00ccff;
-  top: 3vh;
-  color: #011f41;
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top-white {
+  background-color: #ffffff;
+  padding: 40px 0;
+  position: relative;
+}
+.footer-top-white::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #4cebd1, #1678b4);
+}
+.footer-hospital-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.footer-logo-wrap {
+  width: 25%;
+}
+.footer-logo-wrap .footer-logo {
+  max-width: 100%;
+}
+.footer-address-image {
+  width: 40%;
+}
+.footer-address-wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer-address-image .hospital-img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+.address-text {
+  width: 35%;
+}
+.address-text h5 {
+  color: #1a4f8d;
+  margin: 0 0 5px 0;
+  font-family: "Roboto-Regular";
   font-size: 20px;
-  border-radius: 30px;
-  padding: 10px 25px;
-  animation: pulseHighlight 1s infinite;
-  border-bottom-style: solid;
-  border-width: 5px;
-  border-bottom-color: #013473;
+  font-weight: 700;
+}
+.address-text p {
+  margin: 0;
+  font-family: "Roboto-Regular";
+  color: #1a4f8d;
+  line-height: 1.6;
 }
 
-.footer-call-info img {
-  position: relative;
-  top: 60px;
-  animation: trinn-trinn 1s ease-in-out infinite;
+.footer-emergency-banner {
+  background: linear-gradient(90deg, #3ecfd2 0%, #1a4f8d 60%);
+  border-radius: 70px;
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  margin: 0 auto;
 }
-
-.footer-call-info p {
-  position: relative;
-  top: 30px;
-  left: 45px;
-  color: #00cbfd;
+.banner-book-btn {
+  width: 25%;
 }
-
-.footer-opd-info img {
-  position: relative;
-  top: 45px;
-  animation: pulse 0.5s infinite ease-in-out alternate;
-}
-
-.footer-opd-info p {
-  position: relative;
-  top: 15px;
-  left: 45px;
-  color: #fff;
-}
-
-.footer-location-info img {
-  position: relative;
-  top: 33px;
-  left: -20px;
-}
-
-.footer-location-info p {
-  position: relative;
-  top: 0px;
-  left: 30px;
-  color: #fff;
-}
-
-.footer-emergency-info img {
-  position: relative;
-  top: 10px;
-  left: -20px;
-  animation: pulse 0.5s infinite ease-in-out alternate;
-}
-
-.footer-emergency-info p {
-  position: relative;
-  top: -20px;
-  left: 30px;
-  color: #fff;
-}
-
-.bounce2 {
-  animation: bounce2 2s ease infinite;
-}
-
-@keyframes bounce2 {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-
-  40% {
-    transform: translateY(-30px);
-  }
-
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-.footer-booking-block {
-  margin-left: 0px;
-  border-bottom: 2px solid #6f9bc2;
-}
-
-.footer-quick-links a {
+.banner-book-btn .btn-book-appointment {
+  background: #154d98;
+  color: #ffffff;
   text-decoration: none;
-  color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  display: inline-block;
 }
-
-.footer-quick-links {
-  position: relative;
-  top: 20px;
-  left: 0px;
+.banner-opd-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 25%;
 }
-
-.footer-quick-links .fa-youtube {
-  border: 1px solid #a1c7da;
-  border-radius: 50%;
-  padding: 7px 6px;
-  margin-left: 10px;
-  color: #a1c7da;
+.opd-text p {
+  margin: 0;
+  line-height: 1.4;
+  font-family: "Roboto-Regular";
 }
-
-.footer-quick-links .fa-linkedin {
-  border: 1px solid #a1c7da;
-  border-radius: 50%;
-  padding: 7px 8px;
-  margin-left: 0vh;
-  color: #a1c7da;
+.banner-emergency-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
-
-.footer-quick-links .fa-linkedin:hover,
-.footer-quick-links .fa-youtube:hover {
-  background: #154fa3;
-  border: 1px solid #154fa3;
+.emergency-title {
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  margin-bottom: 5px;
 }
-
-#return-to-top i {
-  color: #a1c7da;
-  margin: 0px;
-  left: 135vh;
-  top: -15px;
-  font-size: 19px;
-  border: 2px solid #a1c7da;
-  position: relative;
-  padding: 4px 5px;
-  border-radius: 50%;
+.emergency-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-
-.demo {
-  animation: bounce2 2s ease infinite;
+.emergency-contact p {
+  margin: 0;
+  line-height: 1.4;
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  color: #15b9c5;
 }
-
-#return-to-top .fa-angle-up:hover {
-  background: #154f98;
-  color: #fff !important;
+.footer-middle-gray {
+  background: #e3e8eb;
+  padding: 30px 0;
 }
-
-.footer-qr-code {
-  position: relative;
-  top: 30px;
-  text-align: center;
+.footer-links-grid {
+  display: flex;
+  justify-content: space-between;
 }
-
-.footer-qr-code img {
-  border-radius: 10px;
+.footer-links-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
-.footer-qr-code p {
-  position: relative;
-  top: 10px;
-  text-align: center;
-  color: #fff;
+.footer-links-grid ul li {
+  margin-bottom: 6px;
 }
-
-.footer-designer a {
+.footer-links-grid ul li a {
+  font-family: "Roboto-Regular";
+  color: #333333;
   text-decoration: none;
-  color: #000;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.footer-links-grid ul li a:hover {
+  color: #1a4f8d;
+}
+.barcode p { margin-bottom: 0; }
+.footer-social-icons {
+  margin-top: 15px;
+}
+.footer-social-icons a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+.footer-social-icons a:hover {
+  background: #1a4f8d;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.footer-social-icons i {
+  color: #6a6a6a;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.footer-social-icons a:hover i {
+  color: #ffffff;
 }
 
-.footer-designer p {
-  position: relative;
-  top: 22vh;
-  text-align: right;
+.footer-bottom-dark {
+  background: #d7dfe2;
+  padding: 6px 0;
+}
+.footer-bottom-dark .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom-dark p {
+  margin: 0;
+  font-family: "Roboto-Regular";
   font-size: 16px;
+  color: #696b6a;
 }
 
-.footer-bottom-bar {
-  background: #d9e4e6;
-  padding-bottom: 24vh;
-  position: relative;
-  z-index: -1;
+/* --- Footer Responsive --- */
+@media (max-width: 1440px) {
+  .footer-top-white { padding: 30px 0;}
+  .footer-logo-wrap { width: 25%; }
+  .footer-address-image { width: 38%; }
+  .address-text { width: 37%; padding-left: 30px; }
+  .footer-logo-wrap .footer-logo { max-width: 80%; }
+  .footer-address-image .hospital-img { max-width: 90%; }
+  .footer-emergency-banner { width: 100%; padding: 15px 20px; }
+  .banner-book-btn { width: 25%; }
+  .banner-opd-info { width: 30%; }
+  .banner-emergency-info { width: 45%; }
+  .address-text h5 { font-size: 19px; }
+  .address-text p { font-size: 18px; line-height: 1.5; }
+  .banner-book-btn .btn-book-appointment { font-size: 16px; padding: 11px 20px; margin-left: 25px; }
+  .opd-text p { font-size: 18px; }
+  .emergency-title { font-size: 19px; margin-bottom: 3px; }
+  .emergency-contact p { font-size: 18px; }
+  .barcode img { max-width: 140px; height: auto; }
+  .barcode { margin-left: 20px; }
+  .barcode p { font-size: 16px; }
+  .emergency-details { gap: 8px; }
+  .emergency-icon { width: 140px; height: auto; }
+  .footer-middle-gray { padding: 25px 0; }
 }
 
-.footer-copyright p {
-  position: relative;
-  top: 22vh;
-  font-size: 16px;
+@media (max-width: 1366px) {
+  .footer-top-white { padding: 30px 0 20px 0;}
+  .footer-hospital-info { margin-bottom: 20px;}
+  .address-text { padding-left: 20px; }
+  .footer-address-image .hospital-img { max-width: 88%; }
+  .address-text h5 { font-size: 18px; }
+  .address-text p { font-size: 17px; line-height: 1.4; }
+  .banner-book-btn .btn-book-appointment { font-size: 15px; padding: 11px 20px; margin-left: 15px; }
+  .opd-text p { font-size: 17px; }
+  .emergency-title { font-size: 18px; margin-bottom: 3px; }
+  .emergency-contact p { font-size: 17px; }
+  .footer-middle-gray { padding: 20px 0; }
+  .footer-links-grid ul li a { font-size: 17px; }
+  .barcode img { max-width: 120px; height: auto; }
+  .barcode { margin-left: 15px; }
+  .barcode p { font-size: 14px; }
+}
+
+@media (max-width: 1200px) {
+  .footer-logo-wrap { width: 23%; }
+  .footer-address-image { width: 37%; }
+  .address-text { width: 43%; padding-left: 10px; }
+  .address-text h5 { font-size: 16px; }
+  .address-text p { font-size: 15px; line-height: 1.3; }
+  .banner-book-btn { width: 23%; }
+  .banner-opd-info { width: 28%; }
+  .banner-emergency-info { width: 49%; }
+  .banner-book-btn .btn-book-appointment { font-size: 14px; padding: 8px 14px; margin-left: 0; }
+  .opd-icon { width: 70px; height: auto; }
+  .opd-text p { font-size: 16px; }
+  .emergency-icon { width: 120px; height: auto; }
+  .emergency-title { font-size: 17px; margin-bottom: 3px; }
+  .emergency-contact p { font-size: 16px; }
+  .footer-middle-gray { padding: 15px 0; }
+  .footer-links-grid ul li a { font-size: 16px; }
+  .barcode img { max-width: 110px; height: auto; }
+  .barcode { margin-left: 10px; }
+  .barcode p { font-size: 15px; margin-top: 5px; }
+}
+
+@media (max-width: 991px) {
+  .footer-hospital-info {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  text-align: left;
+  align-items: flex-start;
+}
+  .footer-address-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .footer-logo-wrap {
+    width: 35%;
+    justify-content: flex-start;
+    order: 1;
+  }
+  .address-text {
+    width: 60%;
+    justify-content: flex-start;
+    order: 2;
+  }
+  .address-text h5 { font-size: 17px; }
+  .address-text p { font-size: 16px; line-height: 1.3; }
+  .footer-address-image {
+    width: 70%;
+    margin: 10px auto 0 auto;
+    order: 3;
+  }
+  .banner-book-btn,
+  .banner-opd-info,
+  .banner-emergency-info {
+    justify-content: center;
+  }
+  .banner-book-btn,
+  .banner-opd-info {
+    width: 48%;
+  }
+  .banner-book-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .opd-text p {
+    font-size: 17px;
+  }
+  .banner-emergency-info {
+    width: 100%;
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .banner-book-btn .btn-book-appointment {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .emergency-title { font-size: 20px;}
+  .emergency-contact p {
+    font-size: 18px;
+    text-align: left;
+  }
+  .footer-links-grid ul li a {
+    font-size: 16px;
+  }
+  .banner-opd-info {
+    flex-direction: row;
+    align-items: center;
+    margin-left: -30px;
+  }
+  .footer-emergency-banner {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .footer-bottom-dark .container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
-  .footer-call-info {
-    display: none;
-  }
-
-  .footer-section {
-    padding: 20px 10px 20px 10px;
-    margin: 0 0vh -20vh 0vh;
-    display: flex;
+  .footer-top-white { padding: 20px 0;}
+  .footer-emergency-banner {
     flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
-
-  .footer-qr-code img {
-    width: 100px;
+  .address-text h5 { font-size: 16px; }
+  .address-text p { font-size: 15px; line-height: 1.2; }
+    .footer-social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+  .banner-book-btn,
+  .banner-opd-info,
+  .banner-emergency-info {
+    width: 100%;
   }
-
-  .footer-qr-code,
-  .footer-qr-code p {
-    text-align: left;
+  .banner-book-btn .btn-book-appointment {
+    font-size: 14px;
+    padding: 8px 16px;
   }
-
-  .footer-location-info img,
-  .footer-emergency-info img {
-    left: -8px;
+  .opd-text p {
+    font-size: 15px;
   }
-
-  #return-to-top i {
-    left: 38vh;
-    top: 2vh;
-  }
-
-  .footer-designer p {
-    position: relative;
-    text-align: left;
-    top: 23vh;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .footer-section {
-    padding: 20px 10px 20px 10px;
-    margin: 0 0vh -20vh 0vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-qr-code {
-    top: 95px;
-    left: 10px;
-  }
-
-  .footer-location-info img,
-  .footer-emergency-info img {
-    left: -8px;
-  }
-
-  #return-to-top i {
-    left: 80vh;
-    top: -4vh;
-  }
-
-  .footer-designer p {
-    position: relative;
-    top: 23vh;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1099px) {
-  .footer-booking-block a {
+  .emergency-title {
     font-size: 16px;
   }
-
-  .footer-section {
-    padding: 25px 10px 25px 23px;
-    margin: 0 50px -21vh 50px;
+  .emergency-contact p {
+    font-size: 14px;
   }
-
-  .footer-qr-code {
-    top: 40px;
-    width: 90%;
+   .footer-middle-gray .footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
   }
-
-  .footer-qr-code p {
-    left: 5px;
+  .footer-middle-gray .footer-links-grid ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
-
-  .footer-copyright p {
-    left: 5vh;
+  .footer-middle-gray .footer-links-grid ul li {
+    margin-bottom: 5px;
+    text-align: center;
   }
-
-  .footer-designer p {
-    text-align: unset;
-    left: 33vh;
+  .footer-middle-gray .barcode {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 10px;
   }
-
-  #return-to-top i {
-    left: 98vh;
+    .footer-bottom-dark .container {
+    gap: 4px;
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-@media (min-width: 1100px) and (max-width: 1199px) {
-  .footer-booking-block a {
-    font-size: 17px;
-  }
-
-  .footer-section {
-    padding: 25px 10px 25px 23px;
-    margin: 0 110px -21vh 110px;
-  }
-
-  .footer-qr-code {
-    top: 40px;
-    width: 90%;
-  }
-
-  .footer-qr-code p {
-    left: 5px;
-  }
-
-  .footer-copyright p {
-    left: 5vh;
-  }
-
-  .footer-designer p {
-    text-align: unset;
-    left: 33vh;
-  }
-
-  #return-to-top i {
-    left: 100vh;
+  .footer-bottom-dark p {
+    font-size: 15px;
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1320px) {
-  .footer-booking-block a {
-    font-size: 17px;
+@media (max-width: 575px) {
+  .footer-emergency-banner {
+    border-radius: 50px;
   }
-
-  .footer-section {
-    padding: 25px 10px 25px 23px;
-    margin: 0 110px -22vh 110px;
+  .banner-book-btn .btn-book-appointment {
+    font-size: 13px;
+    padding: 6px 12px;
   }
-
-  .footer-qr-code {
-    top: 40px;
-    width: 90%;
+  .opd-text p {
+    font-size: 14px;
   }
-
-  .footer-qr-code p {
-    left: 5px;
+  .address-text h5 {
+    font-size: 15px;
   }
-
-  .footer-copyright p {
-    left: 9vh;
-    top: 23vh;
+  .address-text p {
+    font-size: 13px;
   }
-
-  .footer-designer p {
-    text-align: unset;
-    left: 33vh;
-    top: 23vh;
+  .emergency-icon { width: 100px;}
+  .emergency-title {
+    font-size: 15px;
   }
-
-  #return-to-top i {
-    left: 118vh;
+  .emergency-contact p {
+    font-size: 13px;
   }
-}
-
-@media (min-width: 1321px) and (max-width: 1400px) {
-  .footer-booking-block a {
-    font-size: 19px;
+  .footer-logo-wrap .footer-logo { max-width: 45%; }
+  .footer-hospital-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-
-  .footer-section {
-    padding: 25px 10px 25px 23px;
-    margin: 0 130px -22vh 130px;
+  .footer-hospital-info .footer-logo-wrap,
+  .footer-hospital-info .address-text,
+  .footer-hospital-info .footer-address-image {
+    width: 100%;
+    text-align: center;
+    margin: 0;
   }
-
-  .footer-qr-code {
-    top: 40px;
-    width: 90%;
+  .footer-address-image .hospital-img {
+    max-width: 70%;
+    height: auto;
   }
-
-  .footer-qr-code p {
-    left: 15px;
-  }
-
-  .footer-copyright p {
-    left: 5vh;
-    top: 23vh;
-  }
-
-  .footer-designer p {
-    text-align: unset;
-    left: 55vh;
-    top: 23vh;
-  }
-
-  #return-to-top i {
-    left: 150vh;
+    .footer-bottom-dark p {
+    font-size: 14px;
   }
 }
 
-@media (min-width: 1401px) and (max-width: 1499px) {
-  .footer-booking-block a {
-    font-size: 19px;
+@media (max-width: 480px) {
+  .banner-book-btn .btn-book-appointment {
+    font-size: 12px;
+    padding: 5px 10px;
   }
-
-  .footer-section {
-    padding: 25px 10px 25px 23px;
-    margin: 0 130px -22vh 130px;
+  .opd-text p {
+    font-size: 13px;
   }
-
-  .footer-qr-code {
-    top: 40px;
-    width: 90%;
+  .emergency-title {
+    font-size: 14px;
   }
-
-  .footer-qr-code p {
-    left: 15px;
+      .footer-bottom-dark p {
+    font-size: 13px;
   }
-
-  .footer-copyright p {
-    left: 13vh;
-    top: 23vh;
-  }
-
-  .footer-designer p {
-    text-align: unset;
-    left: 50vh;
-    top: 23vh;
-  }
-
-  #return-to-top i {
-    left: 140vh;
-  }
+.barcode img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+}
 }
 
-@media (min-width: 1500px) and (max-width: 1599px) {
-  .footer-booking-block a {
-    font-size: 20px;
+@media (max-width: 360px) {
+  .banner-book-btn .btn-book-appointment {
+    font-size: 11px;
+    padding: 4px 8px;
   }
-
-  .footer-section {
-    margin: 0 140px -22vh 140px;
-    padding: 25px 0px 25px 30px;
+  .opd-text p {
+    font-size: 12px;
   }
-
-  .footer-copyright p,
-  .footer-designer p {
-    top: 23vh;
+  .address-text h5 {
+    font-size: 14px;
   }
-
-  .footer-copyright p {
-    left: 7vh;
+  .address-text p {
+    font-size: 12px;
   }
-
-  .footer-designer p {
-    left: -6vh;
-  }
-
-  #return-to-top i {
-    left: 150vh;
-    top: -2px;
-  }
-}
-
-@media (min-width: 1600px) and (max-width: 1730px) {
-  .footer-booking-block a {
-    font-size: 20px;
-  }
-
-  .footer-section {
-    margin: 0 140px -22vh 140px;
-    padding: 25px 0px 25px 30px;
-  }
-
-  .footer-copyright p,
-  .footer-designer p {
-    top: 23vh;
-  }
-
-  .footer-copyright p {
-    left: 7vh;
-  }
-
-  .footer-designer p {
-    left: -6vh;
-  }
-
-  #return-to-top i {
-    left: 158vh;
-    top: -2px;
-  }
-}
-
-@media (min-width: 1731px) and (max-width: 1830px) {
-  .footer-booking-block a {
-    font-size: 20px;
-  }
-
-  .footer-section {
-    margin: 0 140px -22vh 140px;
-    padding: 25px 0px 25px 30px;
-  }
-
-  .footer-copyright p,
-  .footer-designer p {
-    top: 23vh;
-  }
-
-  .footer-copyright p {
-    left: 7vh;
-  }
-
-  .footer-designer p {
-    left: -6vh;
-  }
-
-  #return-to-top i {
-    left: 162vh;
-    top: -2px;
-  }
-}
-
-@media (min-width: 1831px) and (max-width: 1919px) {
-  .footer-booking-block a {
-    font-size: 20px;
-  }
-
-  .footer-section {
-    margin: 0 140px -22vh 140px;
-    padding: 25px 0px 25px 30px;
-  }
-
-  .footer-copyright p,
-  .footer-designer p {
-    top: 23vh;
-  }
-
-  .footer-copyright p {
-    left: 7vh;
-  }
-
-  .footer-designer p {
-    left: -6vh;
-  }
-
-  #return-to-top i {
-    left: 162vh;
-    top: -2px;
+  .footer-middle-gray .footer-links-grid {
+    grid-template-columns: 1fr;
   }
 }
