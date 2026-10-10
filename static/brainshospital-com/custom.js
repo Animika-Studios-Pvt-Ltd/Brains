@@ -10,16 +10,6 @@ function animateValue(e, t, i, o) {
 }
 (AOS.init(),
   document.addEventListener("DOMContentLoaded", function () {
-    let e = document.getElementById("menuToggle"),
-      t = document.querySelector('label[for="menuToggle"]');
-    (t.addEventListener("click", function () {
-      e.checked = e.checked;
-    }),
-      window.addEventListener("scroll", function t() {
-        e.checked = !1;
-      }));
-  }),
-  document.addEventListener("DOMContentLoaded", function () {
     let e = document.querySelectorAll(".count");
     e.forEach((e) => {
       let t = parseInt(e.getAttribute("data-start"), 10),
@@ -118,66 +108,94 @@ function padNumber(e) {
       500,
     );
   }));
+document.addEventListener("DOMContentLoaded", () => {
+  // ==========================================
+  // 1. Search Toggle
+  // ==========================================
+  const searchIcon = document.getElementById("searchIcon");
+  const searchContainer = document.getElementById("searchContainer");
+  const searchInput = document.getElementById("searchInput");
 
-// Mobile navigation dropdown handling (screen sizes below 992px)
-$(document).ready(function () {
-  // Ensure the toggler button has the 'collapsed' class initially if the menu is closed
-  if (!$('#navbarSupportedContent').hasClass('show')) {
-    $('#navbarToggleBtn').addClass('collapsed');
+  if (searchIcon && searchContainer) {
+    searchIcon.addEventListener("click", () => {
+      searchContainer.classList.toggle("active");
+      if (searchContainer.classList.contains("active")) {
+        searchInput.focus();
+      }
+    });
   }
 
-  // Mobile dropdown toggle on click (below 992px)
-  $('.navbar-nav .dropdown-toggle').on('click', function (e) {
-    if (window.innerWidth < 992) {
-      e.preventDefault();
-      e.stopPropagation();
+  // ==========================================
+  // 2. Sidebar Toggle
+  // ==========================================
+  const hamburger = document.querySelector(".header-hamburger");
+  const sidebar = document.getElementById("sidebarMenu");
+  const sidebarClose = document.getElementById("sidebarClose");
+  const sidebarOverlay = document.getElementById("sidebarOverlay");
 
-      var $el = $(this);
-      var $parent = $el.parent('.dropdown');
-      var $menu = $el.next('.dropdown-menu');
+  const sidebarDropdowns = document.querySelectorAll(".header-sidebar-nav-list .header-has-dropdown > a");
 
-      // Close other dropdowns with slide animation
-      $('.navbar-nav .dropdown-toggle').not($el).removeClass('show');
-      $('.navbar-nav .dropdown').not($parent).removeClass('show');
-      $('.navbar-nav .dropdown-menu').not($menu).slideUp(300);
-
-      // Toggle current dropdown
-      $el.toggleClass('show');
-      $parent.toggleClass('show');
-      $menu.slideToggle(300);
-    }
-  });
-
-  // Reset dropdowns when mobile menu collapses
-  $('#navbarSupportedContent').on('hidden.bs.collapse', function () {
-    $('.navbar-nav .dropdown').removeClass('show');
-    $('.navbar-nav .dropdown-toggle').removeClass('show');
-    $('.navbar-nav .dropdown-menu').css('display', '').removeClass('show');
-  });
-
-  // Reset dropdown inline styles and classes on resizing back to desktop
-  $(window).on('resize', function () {
-    if (window.innerWidth >= 992) {
-      $('.navbar-nav .dropdown-menu').css('display', '');
-      $('.navbar-nav .dropdown').removeClass('show');
-      $('.navbar-nav .dropdown-toggle').removeClass('show');
-    }
-  });
-
-  // Close mobile menu when clicking outside of it
-  $(document).on('click', function (e) {
-    if (window.innerWidth < 992) {
-      var $collapse = $('#navbarSupportedContent');
-      var $toggler = $('#navbarToggleBtn');
-
-      // If the click was outside both the mobile menu and the toggler button
-      if (!$collapse.is(e.target) && $collapse.has(e.target).length === 0 &&
-          !$toggler.is(e.target) && $toggler.has(e.target).length === 0) {
-        if ($collapse.hasClass('show')) {
-          $toggler.trigger('click');
+  if (hamburger && sidebar && sidebarClose && sidebarOverlay) {
+    const closeSidebar = () => {
+      sidebar.classList.remove("active");
+      sidebarOverlay.classList.remove("active");
+      
+      // Close all open dropdowns inside the sidebar
+      sidebarDropdowns.forEach(link => {
+        const parentLi = link.parentElement;
+        if (parentLi.classList.contains("active")) {
+          parentLi.classList.remove("active");
+          const icon = link.querySelector("i");
+          if (icon) {
+            icon.style.transform = "rotate(0deg)";
+          }
         }
+      });
+    };
+
+    hamburger.addEventListener("click", () => {
+      sidebar.classList.add("active");
+      sidebarOverlay.classList.add("active");
+    });
+
+    sidebarClose.addEventListener("click", closeSidebar);
+    sidebarOverlay.addEventListener("click", closeSidebar);
+
+    window.addEventListener("scroll", () => {
+      if (sidebar.classList.contains("active")) {
+        closeSidebar();
       }
-    }
+    });
+  }
+
+  // Sidebar Dropdown Toggle
+  sidebarDropdowns.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const parentLi = link.parentElement;
+      
+      // Close all other open dropdowns
+      sidebarDropdowns.forEach(otherLink => {
+        if (otherLink !== link) {
+          const otherParent = otherLink.parentElement;
+          if (otherParent.classList.contains("active")) {
+            otherParent.classList.remove("active");
+            const otherIcon = otherLink.querySelector("i");
+            if (otherIcon) {
+              otherIcon.style.transform = "rotate(0deg)";
+            }
+          }
+        }
+      });
+
+      parentLi.classList.toggle("active");
+      
+      const icon = link.querySelector("i");
+      if (icon) {
+        icon.style.transition = "transform 0.3s ease";
+        icon.style.transform = parentLi.classList.contains("active") ? "rotate(180deg)" : "rotate(0deg)";
+      }
+    });
   });
 });
 
