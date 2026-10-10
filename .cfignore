@@ -1,4 +1,5 @@
-.git
-.vscode
-.gitignore
+.git/
+.git/**
+.vscode/
+.cfignore
 wrangler.jsonc
