@@ -4,59 +4,115 @@
 @import url("breadcrumb.css");
 
 @font-face {
-  font-family: "roboto-regular";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local("roboto-regular"),
-    local("roboto-regular"),
-    url("roboto-regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "roboto-light";
-  font-style: normal;
-  font-weight: 300;
-  src:
-    local("roboto-light"),
-    local("roboto-light"),
-    url("roboto-light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "roboto-thin";
-  font-style: normal;
-  font-weight: 100;
-  src:
-    local("roboto-thin"),
-    local("roboto-thin"),
-    url("roboto-thin.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "mirador-medium";
+  font-family: "Mirador-Medium";
   font-style: normal;
   font-weight: 600;
   src:
-    local("mirador-medium"),
-    local("mirador-medium"),
+    local("Mirador-Medium"),
     url("mirador-medium.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: "source-sans-pro-regular";
+  font-family: "Lora-Italic";
+  font-style: italic;
+  src:
+    local("Lora-Italic"),
+    url("Lora-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  font-style: bold;
+  font-weight: 700;
+  src:
+    local("RobotoCondensed-Bold"),
+    url("RobotoCondensed-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("Roboto-Medium"),
+    url("Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: 400;
   src:
-    local("source-sans-pro-regular"),
-    local("source-sans-pro-regular"),
-    url("sourcesanspro-regular.ttf") format("truetype");
+    local("Roboto-Regular"),
+    url("roboto-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("Roboto-Light"),
+    url("roboto-light.ttf") format("truetype");
 }
 
-/* ----------------------------------------------- GLOBAL & BASE TYPOGRAPHY STYLES ----------------------------------------------- */
 html,
 body {
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Mirador-Medium";
+  font-size: 50px;
+  color: #144e97;
+  letter-spacing: 0.02em;
+}
+
+p, li, a {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+}
+
+/* --- Global Responsive Styles --- */
+@media (max-width: 1440px) {
+  h2 { font-size: 45px; }
+  p, li, a { font-size: 17.5px; }
+}
+
+@media (max-width: 1366px) {
+  h2 { font-size: 43px; }
+  p, li, a { font-size: 17.2px; }
+}
+
+@media (max-width: 1200px) {
+  h2 { font-size: 40px; }
+  p, li, a { font-size: 17px; }
+}
+
+@media (max-width: 1024px) {
+  h2 { font-size: 36px; }
+  p, li, a { font-size: 16px; }
+}
+
+@media (max-width: 991px) {
+  h2 { font-size: 32px; }
+  p, li, a { font-size: 16px; }
+}
+
+@media (max-width: 767px) {
+  h2 { font-size: 28px; }
+  p, li, a { font-size: 15px; }
+}
+
+@media (max-width: 575px) {
+  h2 { font-size: 26px; }
+  p, li, a { font-size: 15px; }
+}
+
+@media (max-width: 480px) {
+  h2 { font-size: 24px; }
+  p, li, a { font-size: 14px; }
+}
+
+@media (max-width: 360px) {
+  h2 { font-size: 22px; }
+  p, li, a { font-size: 13px; }
 }
 
 .button {
@@ -70,129 +126,6 @@ body {
   padding: 7px 50px;
   position: relative;
 }
-
-h2 {
-  font-family: "Mirador-Medium";
-  font-size: 40px;
-  letter-spacing: 0.02em;
-}
-
-p {
-  font-family: "Roboto-Light";
-  margin: 0;
-  font-size: 17px;
-}
-
-@media (max-width: 767px) {
-  h2 {
-    font-size: 25px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  h2 {
-    font-size: 30px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1099px) {
-  h2 {
-    font-size: 34px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 1100px) and (max-width: 1199px) {
-  h2 {
-    font-size: 35px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1320px) {
-  h2 {
-    font-size: 35px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1321px) and (max-width: 1400px) {
-  h2 {
-    font-size: 35px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1401px) and (max-width: 1499px) {
-  h2 {
-    font-size: 35px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1500px) and (max-width: 1599px) {
-  h2 {
-    font-size: 45px;
-  }
-
-  p {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1600px) and (max-width: 1730px) {
-  h2 {
-    font-size: 45px;
-  }
-
-  p {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1731px) and (max-width: 1830px) {
-  h2 {
-    font-size: 45px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1831px) and (max-width: 1919px) {
-  h2 {
-    font-size: 45px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-}
-
 /* -------------------------------------- BREADCRUMBS SECTION -------------------------------- */
 .breadcrumb {
   margin-top: 10px;
@@ -214,7 +147,6 @@ p {
   color: #3a3d40e0;
   text-decoration: none;
 }
-
 
 /* -------------------------------------- REMAINING SECTIONS/PAGES CODE -------------------------------- */
 
