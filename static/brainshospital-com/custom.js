@@ -362,27 +362,80 @@ document.addEventListener("DOMContentLoaded", () => {
       window.requestAnimationFrame(step);
     };
 
-    const openCapsulesOneByOne = () => {
-      achieveItems.forEach((item, index) => {
-        setTimeout(() => {
+    const closeCapsuleItem = (item) => {
+      item.classList.remove("open");
+      const numEl = item.querySelector(".achieve-num");
+      if (numEl) {
+        numEl.textContent = "0";
+      }
+    };
+
+    const openCapsuleItem = (item, delay = 0) => {
+      setTimeout(() => {
+        if (!item.classList.contains("open")) {
           item.classList.add("open");
           const numEl = item.querySelector(".achieve-num");
           if (numEl) {
             const target = parseInt(numEl.getAttribute("data-target-num"), 10) || 1000;
             rollNumber(numEl, target, 1100);
           }
-        }, 300 + index * 300); // initial delay + 300ms between each capsule
-      });
+        }
+      }, delay);
+    };
+
+    let lastActiveMobilePage = -1;
+
+    const openCapsulesForPage = (pageIndex, forceReopen = false) => {
+      const firstIdx = pageIndex * 2;
+      const secondIdx = firstIdx + 1;
+
+      // Close other capsules if navigating between screens on mobile
+      if (window.innerWidth <= 768) {
+        achieveItems.forEach((item, idx) => {
+          if (idx !== firstIdx && idx !== secondIdx) {
+            closeCapsuleItem(item);
+          }
+        });
+      }
+
+      if (forceReopen) {
+        if (achieveItems[firstIdx]) closeCapsuleItem(achieveItems[firstIdx]);
+        if (achieveItems[secondIdx]) closeCapsuleItem(achieveItems[secondIdx]);
+      }
+
+      if (achieveItems[firstIdx]) {
+        openCapsuleItem(achieveItems[firstIdx], 80);
+      }
+      if (achieveItems[secondIdx]) {
+        openCapsuleItem(achieveItems[secondIdx], 320);
+      }
+    };
+
+    const openCapsulesOneByOne = () => {
+      if (window.innerWidth <= 768) {
+        // On mobile, determine active page and open its visible capsules
+        if (achieveGrid) {
+          const maxScrollLeft = achieveGrid.scrollWidth - achieveGrid.clientWidth;
+          const pageRatio = maxScrollLeft > 0 ? achieveGrid.scrollLeft / maxScrollLeft : 0;
+          const activeIdx = Math.min(2, Math.max(0, Math.round(pageRatio * 2)));
+          lastActiveMobilePage = activeIdx;
+          openCapsulesForPage(activeIdx, true);
+        } else {
+          lastActiveMobilePage = 0;
+          openCapsulesForPage(0, true);
+        }
+      } else {
+        achieveItems.forEach((item, index) => {
+          openCapsuleItem(item, 300 + index * 300);
+        });
+      }
     };
 
     const closeCapsules = () => {
       achieveItems.forEach((item) => {
-        item.classList.remove("open");
-        const numEl = item.querySelector(".achieve-num");
-        if (numEl) {
-          numEl.textContent = "0";
-        }
+        closeCapsuleItem(item);
       });
+      lastActiveMobilePage = -1;
     };
 
     const achieveObserver = new IntersectionObserver(
@@ -394,20 +447,81 @@ document.addEventListener("DOMContentLoaded", () => {
               openCapsulesOneByOne();
             }
           } else {
-            // Re-close when scrolled out of view so it can replay on scroll back
+            // Re-close when scrolled out of view so it can replay on scroll back / scroll up
             hasAnimatedCapsules = false;
             closeCapsules();
           }
         });
       },
       {
-        threshold: 0.2,
+        threshold: 0.15,
       }
     );
     achieveObserver.observe(achieveSection);
 
-    // Horizontal wheel navigation for carousel mode on small laptops / tablets (<= 768px)
+    // Also detect vertical window scroll up entering the section to guarantee re-opening
+    let lastScrollY = window.scrollY;
+    window.addEventListener(
+      "scroll",
+      () => {
+        const currentScrollY = window.scrollY;
+        const rect = achieveSection.getBoundingClientRect();
+        const isInView = rect.top < window.innerHeight * 0.85 && rect.bottom > window.innerHeight * 0.15;
+
+        // When scrolling up and section comes into view, re-open capsules if closed
+        if (currentScrollY < lastScrollY && isInView && !hasAnimatedCapsules) {
+          hasAnimatedCapsules = true;
+          openCapsulesOneByOne();
+        }
+        lastScrollY = currentScrollY;
+      },
+      { passive: true }
+    );
+
+    // Horizontal wheel navigation & dot synchronization for carousel mode (<= 768px)
     const achieveGrid = document.querySelector(".achievements .achievement-grid");
+    const achieveDotsContainer = document.getElementById("achieveDots");
+
+    // Initialize dots for Achievements
+    if (achieveGrid && achieveDotsContainer) {
+      const totalAchievePages = 3; // 6 items shown 2 at a time = 3 pages
+      achieveDotsContainer.innerHTML = "";
+      for (let i = 0; i < totalAchievePages; i++) {
+        const dot = document.createElement("span");
+        dot.className = "dot" + (i === 0 ? " active" : "");
+        dot.setAttribute("data-page", i);
+        dot.addEventListener("click", () => {
+          const maxScrollLeft = achieveGrid.scrollWidth - achieveGrid.clientWidth;
+          const targetScroll = (maxScrollLeft / (totalAchievePages - 1)) * i;
+          achieveGrid.scrollTo({ left: targetScroll, behavior: "smooth" });
+          // Open the capsules for this target page immediately upon clicking dot
+          openCapsulesForPage(i);
+        });
+        achieveDotsContainer.appendChild(dot);
+      }
+
+      const updateAchieveDots = () => {
+        const maxScrollLeft = achieveGrid.scrollWidth - achieveGrid.clientWidth;
+        if (maxScrollLeft <= 0) return;
+        const pageRatio = achieveGrid.scrollLeft / maxScrollLeft;
+        const activeIdx = Math.min(totalAchievePages - 1, Math.max(0, Math.round(pageRatio * (totalAchievePages - 1))));
+        const dots = achieveDotsContainer.querySelectorAll(".dot");
+        dots.forEach((d, idx) => {
+          d.classList.toggle("active", idx === activeIdx);
+        });
+
+        // When scrolling/swiping into a screen (forward or backward), re-open the screen capsules
+        if (window.innerWidth <= 768) {
+          if (lastActiveMobilePage !== activeIdx) {
+            lastActiveMobilePage = activeIdx;
+            openCapsulesForPage(activeIdx, true);
+          }
+        }
+      };
+
+      achieveGrid.addEventListener("scroll", updateAchieveDots);
+    }
+
     if (achieveGrid) {
       let isAchieveScrolling = false;
       achieveSection.addEventListener(
@@ -456,8 +570,41 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
   const teamSection = document.querySelector(".team");
   const teamTrack = document.getElementById("teamTrack");
+  const teamDotsContainer = document.getElementById("teamDots");
 
   if (teamSection && teamTrack) {
+    const totalTeamMembers = teamTrack.querySelectorAll(".team-member").length;
+
+    // Initialize dots for Team carousel on mobile
+    if (teamDotsContainer && totalTeamMembers > 0) {
+      teamDotsContainer.innerHTML = "";
+      for (let i = 0; i < totalTeamMembers; i++) {
+        const dot = document.createElement("span");
+        dot.className = "dot" + (i === 0 ? " active" : "");
+        dot.setAttribute("data-slide", i);
+        dot.addEventListener("click", () => {
+          const members = teamTrack.querySelectorAll(".team-member");
+          if (members[i]) {
+            members[i].scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
+          }
+        });
+        teamDotsContainer.appendChild(dot);
+      }
+
+      const updateTeamDots = () => {
+        const members = teamTrack.querySelectorAll(".team-member");
+        if (members.length === 0) return;
+        const itemWidth = members[0].offsetWidth + 20;
+        const currentIdx = Math.min(members.length - 1, Math.max(0, Math.round(teamTrack.scrollLeft / itemWidth)));
+        const dots = teamDotsContainer.querySelectorAll(".dot");
+        dots.forEach((d, idx) => {
+          d.classList.toggle("active", idx === currentIdx);
+        });
+      };
+
+      teamTrack.addEventListener("scroll", updateTeamDots);
+    }
+
     let isTeamScrolling = false;
 
     teamSection.addEventListener(
