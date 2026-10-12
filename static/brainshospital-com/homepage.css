@@ -1067,6 +1067,7 @@
   align-items: center;
   gap: 20px;
   color: white;
+  text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
   margin: 0;
@@ -1084,6 +1085,7 @@
 
 .centres .centre-card:hover {
   background: rgba(21, 185, 197, 0.3);
+  color: white;
 }
 .centres .centre-card img {
   width: auto;
