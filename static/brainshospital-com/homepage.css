@@ -1771,6 +1771,7 @@
   background-color: #ffffff;
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .kv-grid {
   display: grid;
