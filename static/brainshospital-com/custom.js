@@ -295,40 +295,62 @@ document.addEventListener("DOMContentLoaded", () => {
   if (ipSection && ipMenuLinks.length > 0) {
     let isScrollingIp = false;
 
-    ipSection.addEventListener(
+    window.addEventListener(
       "wheel",
       (e) => {
-        if (window.innerWidth <= 991) return; // Do not intercept scroll on tablet/mobile
+        if (window.innerWidth <= 991) return; // Desktop/laptop only
+
+        const rect = ipSection.getBoundingClientRect();
+        // Check if the section occupies the viewport or mouse is scrolling through it
+        const isPartiallyVisible = rect.top < window.innerHeight * 0.7 && rect.bottom > window.innerHeight * 0.3;
+        if (!isPartiallyVisible) return;
 
         // Find current active index
         const currentIndex = Array.from(ipMenuLinks).findIndex((l) =>
           l.classList.contains("active")
         );
 
-        if (e.deltaY > 20) {
-          // Scrolling down: advance to next item if not at the end
+        if (e.deltaY > 15) {
+          // Scrolling down
           if (currentIndex < ipMenuLinks.length - 1) {
             e.preventDefault();
+            // Snap section into comfortable viewing position
+            if (Math.abs(rect.top - 20) > 30) {
+              window.scrollTo({
+                top: window.scrollY + rect.top - 20,
+                behavior: "smooth",
+              });
+            }
+
             if (!isScrollingIp) {
               isScrollingIp = true;
               activateIpIndex(currentIndex + 1);
               setTimeout(() => {
                 isScrollingIp = false;
-              }, 450);
+              }, 400);
             }
           }
-        } else if (e.deltaY < -20) {
-          // Scrolling up: go back to previous item if not at the beginning
+          // If at the last item (currentIndex === 5), allow native scrolling down to Achievements!
+        } else if (e.deltaY < -15) {
+          // Scrolling up
           if (currentIndex > 0) {
             e.preventDefault();
+            if (Math.abs(rect.top - 20) > 30) {
+              window.scrollTo({
+                top: window.scrollY + rect.top - 20,
+                behavior: "smooth",
+              });
+            }
+
             if (!isScrollingIp) {
               isScrollingIp = true;
               activateIpIndex(currentIndex - 1);
               setTimeout(() => {
                 isScrollingIp = false;
-              }, 450);
+              }, 400);
             }
           }
+          // If at the first item (currentIndex === 0), allow native scrolling up!
         }
       },
       { passive: false }
@@ -607,10 +629,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let isTeamScrolling = false;
 
-    teamSection.addEventListener(
+    window.addEventListener(
       "wheel",
       (e) => {
-        const tolerance = 10;
+        if (window.innerWidth <= 768) return; // Desktop/laptop view
+
+        const rect = teamSection.getBoundingClientRect();
+        // Check if team section is in view
+        const isPartiallyVisible = rect.top < window.innerHeight * 0.7 && rect.bottom > window.innerHeight * 0.3;
+        if (!isPartiallyVisible) return;
+
+        const tolerance = 15;
         const maxScrollLeft = teamTrack.scrollWidth - teamTrack.clientWidth;
         if (maxScrollLeft <= tolerance) return;
 
@@ -618,6 +647,14 @@ document.addEventListener("DOMContentLoaded", () => {
           // Scrolling down: scroll doctors to the right if not yet at the end
           if (teamTrack.scrollLeft < maxScrollLeft - tolerance) {
             e.preventDefault();
+            // Snap section into comfortable viewing position
+            if (Math.abs(rect.top - 20) > 30) {
+              window.scrollTo({
+                top: window.scrollY + rect.top - 20,
+                behavior: "smooth",
+              });
+            }
+
             if (!isTeamScrolling) {
               isTeamScrolling = true;
               const step = teamTrack.firstElementChild ? teamTrack.firstElementChild.offsetWidth + 20 : 250;
@@ -627,10 +664,18 @@ document.addEventListener("DOMContentLoaded", () => {
               }, 250);
             }
           }
+          // If at the end of teamTrack, allow normal scroll down to Centres of Excellence!
         } else if (e.deltaY < -15) {
           // Scrolling up: scroll doctors back to the left if not yet at the beginning
           if (teamTrack.scrollLeft > tolerance) {
             e.preventDefault();
+            if (Math.abs(rect.top - 20) > 30) {
+              window.scrollTo({
+                top: window.scrollY + rect.top - 20,
+                behavior: "smooth",
+              });
+            }
+
             if (!isTeamScrolling) {
               isTeamScrolling = true;
               const step = teamTrack.firstElementChild ? teamTrack.firstElementChild.offsetWidth + 20 : 250;
@@ -640,6 +685,7 @@ document.addEventListener("DOMContentLoaded", () => {
               }, 250);
             }
           }
+          // If at the beginning of teamTrack, allow normal scroll up to Achievements!
         }
       },
       { passive: false }
@@ -838,12 +884,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const psSection = document.querySelector(".patients-speak");
     if (psSection) {
       let isPsScrolling = false;
-      psSection.addEventListener(
+      window.addEventListener(
         "wheel",
         (e) => {
-          if (e.deltaY > 20) {
+          if (window.innerWidth <= 768) return; // Desktop/laptop only
+
+          const rect = psSection.getBoundingClientRect();
+          // Check if Patient's Speak section is in view
+          const isPartiallyVisible = rect.top < window.innerHeight * 0.7 && rect.bottom > window.innerHeight * 0.3;
+          if (!isPartiallyVisible) return;
+
+          if (e.deltaY > 15) {
             if (currentSlide < totalSlides - 1) {
               e.preventDefault();
+              // Snap section into comfortable viewing position
+              if (Math.abs(rect.top - 20) > 30) {
+                window.scrollTo({
+                  top: window.scrollY + rect.top - 20,
+                  behavior: "smooth",
+                });
+              }
+
               if (!isPsScrolling) {
                 isPsScrolling = true;
                 goToPsSlide(currentSlide + 1);
@@ -852,9 +913,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 }, 480);
               }
             }
-          } else if (e.deltaY < -20) {
+            // If on the last slide, allow normal scroll down to Associations!
+          } else if (e.deltaY < -15) {
             if (currentSlide > 0) {
               e.preventDefault();
+              if (Math.abs(rect.top - 20) > 30) {
+                window.scrollTo({
+                  top: window.scrollY + rect.top - 20,
+                  behavior: "smooth",
+                });
+              }
+
               if (!isPsScrolling) {
                 isPsScrolling = true;
                 goToPsSlide(currentSlide - 1);
@@ -863,6 +932,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }, 480);
               }
             }
+            // If on the first slide, allow normal scroll up to Super Specialities!
           }
         },
         { passive: false }
