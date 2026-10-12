@@ -1593,18 +1593,19 @@
 
 /* Brain Voice (Right) */
 .brain-voice {
-  background: linear-gradient(180deg, #3ecfd2 0%, #154f8b 100%);
-  border-radius: 15px;
-  padding: 30px 40px 20px 40px;
-  color: white;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   width: 90%;
 }
-.brain-voice h2 {
-  color: #0b2e59;
-  margin: 0;
+.brain-voice .bv-card {
+  background: linear-gradient(135deg, #4ce0cf 0%, #15bcc7 55%, #0eaec2 100%);
+  border-radius: 15px;
+  padding: 30px 40px 10px 40px;
+  color: white;
+}
+.brain-voice .bv-card h2 {
+  margin: 0 0 20px 0;
   text-align: center;
 }
 .brain-voice .bv-newsletter {
@@ -1681,10 +1682,12 @@
   position: relative;
 }
 .brain-voice .bv-video-thumbnail {
+  display: block;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 .brain-voice .bv-video-thumbnail img {
   width: 100%;
@@ -1704,12 +1707,21 @@
   font-size: 32px;
   cursor: pointer;
   border-radius: 10px 0 0 10px;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.5s ease;
+}
+.brain-voice .bv-video-thumbnail:hover .bv-play-btn {
+  transform: translateX(-5px);
+  box-shadow: -4px 2px 12px rgba(0, 0, 0, 0.15);
+}
+.brain-voice .bv-video-thumbnail:active .bv-play-btn,
+.brain-voice .bv-play-btn:active {
+  transform: translateX(-8px);
 }
 .brain-voice .bv-video-text h4 {
   font-family: "Roboto-Regular";
   font-size: 20px;
-  margin: 0 0 10px 0;
-  color: #15b9c5;
+  margin: 0 0 4px 0;
+  color: #000000;
 }
 .brain-voice .bv-video-text p {
   margin: 0;
@@ -1720,7 +1732,8 @@
 @media (max-width: 1440px) {
   .knowledge-and-voice-section { padding: 70px 0; }
   .kv-grid { gap: 35px; width: 92%; }
-  .brain-voice { padding: 25px 35px 20px 35px; gap: 35px; }
+  .brain-voice { gap: 35px; }
+  .brain-voice .bv-card { padding: 25px 35px 20px 35px; }
   .brain-voice .bv-newsletter-content h4 { font-size: 30px; }
   .know-your-brain h2 { margin-bottom: 25px; }
   .know-your-brain .kyb-article h4 { font-size: 23px; }
@@ -1729,7 +1742,8 @@
 @media (max-width: 1366px) {
   .knowledge-and-voice-section { padding: 60px 0; }
   .kv-grid { gap: 30px; width: 94%; }
-  .brain-voice { padding: 25px 30px 20px 30px; gap: 30px; }
+  .brain-voice { gap: 30px; }
+  .brain-voice .bv-card { padding: 25px 30px 20px 30px; }
   .brain-voice .bv-newsletter-content h4 { font-size: 28px; }
   .brain-voice .bv-date { font-size: 16px; margin-bottom: 15px; }
   .know-your-brain .kyb-article h4 { font-size: 22px; }
@@ -1739,17 +1753,19 @@
 @media (max-width: 1200px) {
   .knowledge-and-voice-section { padding: 50px 0; }
   .kv-grid { gap: 40px; width: 95%; }
-  .brain-voice { padding: 25px 20px 20px 20px; gap: 25px; }
+  .brain-voice { gap: 25px; }
+  .brain-voice .bv-card { padding: 25px 20px 20px 20px; }
   .brain-voice .bv-newsletter-content h4 { font-size: 26px; }
   .know-your-brain .kyb-article p { font-size: 15px; }
   .brain-voice .bv-links .bv-link-download { font-size: 18px; }
 }
 
 @media (max-width: 991px) {
-  .kv-grid { grid-template-columns: 1fr; gap: 20px; }
+  .kv-grid { grid-template-columns: 1fr; gap: 10px; }
   .know-your-brain { padding: 0; max-width: 600px; margin: 0 auto; }
-  .brain-voice { margin: 20px auto 0 auto; max-width: 600px; }
+  .brain-voice { margin: 20px auto 0 auto; max-width: 600px; width: 100%; }
   .brain-voice .bv-newsletter-content { margin-top: 0; }
+  .know-your-brain .kyb-article { margin-bottom: 30px;}
   .know-your-brain .kyb-article h4 { font-size: 20px; }
   .brain-voice .bv-newsletter-content h4 { font-size: 24px; }
 }
@@ -1758,15 +1774,17 @@
 @media (max-width: 767px) {
   .kv-grid { gap: 10px; }
   .knowledge-and-voice-section { padding: 25px 0; }
-  .brain-voice { margin: 0 auto;}
+  .brain-voice { margin: 0 auto; }
+  .brain-voice .bv-card {  width: 90%; margin: 0 auto; }
   .brain-voice .bv-newsletter { flex-direction: column; text-align: center; gap: 20px; }
   .brain-voice .bv-newsletter-images { flex: 0 0 auto; width: 80%; max-width: 250px; margin: 0 auto; }
   .brain-voice .bv-links { align-items: center; }
   .brain-voice .bv-form { align-items: center; width: 100%; }
-  .brain-voice .bv-video-thumbnail { max-width: 400px; margin: 0 auto 15px auto; }
+  .brain-voice .bv-video-thumbnail { max-width: 90%; margin: 0 auto 15px auto; }
   .brain-voice .bv-play-btn { width: 60px; height: 60px; font-size: 24px; bottom: 35%; }
-  .brain-voice .bv-video-text { text-align: center; }
+  .brain-voice .bv-video-text { width: 90%; margin: 0 auto; }
   .know-your-brain h2 { margin-bottom: 15px; }
+  .know-your-brain .kyb-article { margin-bottom: 20px;}
   .know-your-brain .kyb-article h4 { font-size: 18px; }
   .know-your-brain .kyb-article p { font-size: 14px; }
   .brain-voice .bv-video-text h4 { font-size: 18px; }
@@ -1776,6 +1794,7 @@
 @media (max-width: 575px) {
   .knowledge-and-voice-section { padding: 60px 0 20px 0; }
   .brain-voice { width: 100%;}
+  .brain-voice .bv-card { width: 100%; padding: 20px 15px; }
   .brain-voice .bv-newsletter-content h4 { font-size: 22px; }
   .brain-voice .bv-links .bv-link-download { font-size: 16px; }
   .brain-voice .bv-links .bv-link-previous { font-size: 14px; }
@@ -1783,6 +1802,9 @@
   .brain-voice .bv-form button { font-size: 14px; padding: 8px 20px; }
   .know-your-brain .kyb-article h4 { font-size: 16px; }
   .know-your-brain .kyb-readmore a { font-size: 14px; }
+   .brain-voice .bv-video-thumbnail { max-width: 100%; }
+  .brain-voice .bv-play-btn { width: 48px; height: 48px; font-size: 18px; bottom: 35%; border-radius: 8px 0 0 8px; }
+  .brain-voice .bv-video-text { width: 100%;}
   .brain-voice .bv-video-text h4 { font-size: 16px; }
   .brain-voice .bv-video-text p { font-size: 13px; }
 }
