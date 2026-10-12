@@ -2704,7 +2704,6 @@
 .patients-speak .ps-caption {
   margin: 0;
   text-align: center;
-  font-weight: 500;
   color: #c9f5f8;
   letter-spacing: 0.02em;
   transition: opacity 0.35s ease, transform 0.35s ease;
@@ -2753,13 +2752,21 @@
   .patients-speak .ps-bg-banner {
     background-image: none !important;
     background-color: #164f97;
-    height: 350px;
+    height: 375px;
     display: flex;
     align-items: center;
   }
 
   .patients-speak .ps-inner-content {
     width: 100%;
+  }
+
+  .patients-speak .ps-video-box {
+    margin-top: 10px;
+  }
+
+  .patients-speak .ps-controls-bottom {
+    bottom: -100px;
   }
 }
 
@@ -2819,11 +2826,30 @@
   }
 
   .patients-speak .ps-circle-text {
-    margin-top: -30px;
+    margin-top: -50px;
+    width: 60%;
+  }
+
+  .patients-speak .ps-circle-text h2 {
+    margin-bottom: 12px;
+  }
+
+  .patients-speak .ps-circle-text p {
+    font-size: 13.5px;
+    line-height: 1.45;
+    margin-bottom: 14px;
+  }
+
+  .patients-speak .ps-circle-text a {
+    font-size: 14px;
   }
 
   .patients-speak .ps-carousel-item img {
     height: 200px;
+  }
+
+  .patients-speak .ps-controls-bottom {
+    bottom: -70px;
   }
 
   .patients-speak .ps-controls-bottom button {
