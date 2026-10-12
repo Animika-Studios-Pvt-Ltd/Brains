@@ -48,7 +48,17 @@
   background-color: #0b5ed7;
   color: #fff;
 }
+.hero-slide {
+  display: none;
+}
+.hero-slide.active {
+  display: block;
+}
 .hero-carousel-controls {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  z-index: 10;
   display: flex;
   gap: 6px;
   margin-top: 50px;
@@ -1330,6 +1340,7 @@
 }
 .patients-speak .ps-bg-banner {
   width: 100%;
+  background-image: url("patients-speak-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
