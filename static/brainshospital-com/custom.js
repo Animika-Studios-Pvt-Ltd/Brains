@@ -8,8 +8,7 @@ function animateValue(e, t, i, o) {
     };
   window.requestAnimationFrame(a);
 }
-(AOS.init(),
-  document.addEventListener("DOMContentLoaded", function () {
+(document.addEventListener("DOMContentLoaded", function () {
     let e = document.querySelectorAll(".count");
     e.forEach((e) => {
       let t = parseInt(e.getAttribute("data-start"), 10),
@@ -211,6 +210,9 @@ document.addEventListener("DOMContentLoaded", () => {
         slide.style.display = i === index ? "block" : "none";
         if(i === index) {
             slide.classList.add("active");
+            if (typeof AOS !== "undefined") {
+              AOS.refresh();
+            }
         } else {
             slide.classList.remove("active");
         }
@@ -258,78 +260,243 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ==========================================
-  // 4. International Patients Tab Switching
+  // 4. International Patients Tab Switching & Mouse Scroll
   // ==========================================
+  const ipSection = document.querySelector(".international-patients");
   const ipMenuLinks = document.querySelectorAll(".ip-menu-list li");
   const ipCards = document.querySelectorAll(".ip-card-item");
 
-  ipMenuLinks.forEach((link) => {
+  const activateIpIndex = (index) => {
+    if (index < 0 || index >= ipMenuLinks.length) return;
+    ipMenuLinks.forEach((l) => l.classList.remove("active"));
+    ipCards.forEach((c) => c.classList.remove("active"));
+
+    const activeLink = ipMenuLinks[index];
+    activeLink.classList.add("active");
+    const targetId = activeLink.getAttribute("data-target");
+    const activeCard = document.getElementById(targetId);
+    if (activeCard) {
+      activeCard.classList.add("active");
+    }
+
+    const wrapper = document.querySelector(".ip-card-wrapper");
+    if (wrapper) {
+      wrapper.setAttribute("data-active-col", index % 2 === 0 ? "left" : "right");
+    }
+  };
+
+  ipMenuLinks.forEach((link, idx) => {
     link.addEventListener("click", () => {
-      ipMenuLinks.forEach((l) => l.classList.remove("active"));
-      ipCards.forEach((c) => c.classList.remove("active"));
-
-      link.classList.add("active");
-      const targetId = link.getAttribute("data-target");
-      document.getElementById(targetId).classList.add("active");
-
-      const allLinks = Array.from(ipMenuLinks);
-      const index = allLinks.indexOf(link);
-      const wrapper = document.querySelector(".ip-card-wrapper");
-      if (wrapper) {
-        wrapper.setAttribute("data-active-col", index % 2 === 0 ? "left" : "right");
-      }
+      activateIpIndex(idx);
     });
   });
-  // ==========================================
-  // 5. Team Carousel Logic
-  // ==========================================
-  const teamTrack = document.getElementById("teamTrack");
-  const teamPrev = document.getElementById("teamPrev");
-  const teamNext = document.getElementById("teamNext");
 
-  if (teamTrack && teamPrev && teamNext) {
-    const updateTeamNav = () => {
-      // Prev button
-      if (teamTrack.scrollLeft <= 0) {
-        teamPrev.disabled = true;
-        teamPrev.style.opacity = "0.4";
-        teamPrev.style.cursor = "default";
-      } else {
-        teamPrev.disabled = false;
-        teamPrev.style.opacity = "1";
-        teamPrev.style.cursor = "pointer";
-      }
+  // Mouse wheel scroll effect over the International Patients section (desktop only)
+  if (ipSection && ipMenuLinks.length > 0) {
+    let isScrollingIp = false;
 
-      // Next button
-      if (teamTrack.scrollLeft + teamTrack.clientWidth >= teamTrack.scrollWidth - 5) {
-        teamNext.disabled = true;
-        teamNext.style.opacity = "0.4";
-        teamNext.style.cursor = "default";
-      } else {
-        teamNext.disabled = false;
-        teamNext.style.opacity = "1";
-        teamNext.style.cursor = "pointer";
-      }
+    ipSection.addEventListener(
+      "wheel",
+      (e) => {
+        if (window.innerWidth <= 991) return; // Do not intercept scroll on tablet/mobile
+
+        // Find current active index
+        const currentIndex = Array.from(ipMenuLinks).findIndex((l) =>
+          l.classList.contains("active")
+        );
+
+        if (e.deltaY > 20) {
+          // Scrolling down: advance to next item if not at the end
+          if (currentIndex < ipMenuLinks.length - 1) {
+            e.preventDefault();
+            if (!isScrollingIp) {
+              isScrollingIp = true;
+              activateIpIndex(currentIndex + 1);
+              setTimeout(() => {
+                isScrollingIp = false;
+              }, 450);
+            }
+          }
+        } else if (e.deltaY < -20) {
+          // Scrolling up: go back to previous item if not at the beginning
+          if (currentIndex > 0) {
+            e.preventDefault();
+            if (!isScrollingIp) {
+              isScrollingIp = true;
+              activateIpIndex(currentIndex - 1);
+              setTimeout(() => {
+                isScrollingIp = false;
+              }, 450);
+            }
+          }
+        }
+      },
+      { passive: false }
+    );
+  }
+  // ==========================================
+  // 4. Achievements Capsule Open-by-One Scroll Effect
+  // ==========================================
+  const achieveSection = document.querySelector(".achievements");
+  const achieveItems = document.querySelectorAll(".achievement-item");
+
+  if (achieveSection && achieveItems.length > 0) {
+    let hasAnimatedCapsules = false;
+
+    const rollNumber = (el, target, duration = 1200) => {
+      let startTime = null;
+      const step = (timestamp) => {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        // Ease out quad
+        const easeProgress = 1 - (1 - progress) * (1 - progress);
+        const currentVal = Math.floor(easeProgress * target);
+        if (progress < 1) {
+          el.textContent = currentVal;
+          window.requestAnimationFrame(step);
+        } else {
+          // Add the '+' sign only when target is reached
+          el.textContent = target + "+";
+        }
+      };
+      window.requestAnimationFrame(step);
     };
 
-    // Initialize button states
-    setTimeout(updateTeamNav, 100);
-    window.addEventListener("resize", updateTeamNav);
-    teamTrack.addEventListener("scroll", updateTeamNav);
+    const openCapsulesOneByOne = () => {
+      achieveItems.forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add("open");
+          const numEl = item.querySelector(".achieve-num");
+          if (numEl) {
+            const target = parseInt(numEl.getAttribute("data-target-num"), 10) || 1000;
+            rollNumber(numEl, target, 1100);
+          }
+        }, 300 + index * 300); // initial delay + 300ms between each capsule
+      });
+    };
 
-    teamPrev.addEventListener("click", () => {
-      if(!teamPrev.disabled) {
-        const itemWidth = teamTrack.firstElementChild.offsetWidth + 20; // item width + gap
-        teamTrack.scrollBy({ left: -itemWidth, behavior: "smooth" });
-      }
-    });
+    const closeCapsules = () => {
+      achieveItems.forEach((item) => {
+        item.classList.remove("open");
+        const numEl = item.querySelector(".achieve-num");
+        if (numEl) {
+          numEl.textContent = "0";
+        }
+      });
+    };
 
-    teamNext.addEventListener("click", () => {
-      if(!teamNext.disabled) {
-        const itemWidth = teamTrack.firstElementChild.offsetWidth + 20;
-        teamTrack.scrollBy({ left: itemWidth, behavior: "smooth" });
+    const achieveObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (!hasAnimatedCapsules) {
+              hasAnimatedCapsules = true;
+              openCapsulesOneByOne();
+            }
+          } else {
+            // Re-close when scrolled out of view so it can replay on scroll back
+            hasAnimatedCapsules = false;
+            closeCapsules();
+          }
+        });
+      },
+      {
+        threshold: 0.2,
       }
-    });
+    );
+    achieveObserver.observe(achieveSection);
+
+    // Horizontal wheel navigation for carousel mode on small laptops / tablets (<= 768px)
+    const achieveGrid = document.querySelector(".achievements .achievement-grid");
+    if (achieveGrid) {
+      let isAchieveScrolling = false;
+      achieveSection.addEventListener(
+        "wheel",
+        (e) => {
+          if (window.innerWidth > 768) return; // Only apply when in carousel layout mode (<= 768px)
+          const tolerance = 10;
+          const maxScrollLeft = achieveGrid.scrollWidth - achieveGrid.clientWidth;
+          if (maxScrollLeft <= tolerance) return;
+
+          if (e.deltaY > 15) {
+            // Scrolling down: advance carousel to the right if not at the very end
+            if (achieveGrid.scrollLeft < maxScrollLeft - tolerance) {
+              e.preventDefault();
+              if (!isAchieveScrolling) {
+                isAchieveScrolling = true;
+                const step = achieveGrid.firstElementChild ? (achieveGrid.firstElementChild.offsetWidth + 16) * 2 : 280;
+                achieveGrid.scrollBy({ left: step, behavior: "smooth" });
+                setTimeout(() => {
+                  isAchieveScrolling = false;
+                }, 280);
+              }
+            }
+          } else if (e.deltaY < -15) {
+            // Scrolling up: move carousel back to the left if not at the start
+            if (achieveGrid.scrollLeft > tolerance) {
+              e.preventDefault();
+              if (!isAchieveScrolling) {
+                isAchieveScrolling = true;
+                const step = achieveGrid.firstElementChild ? (achieveGrid.firstElementChild.offsetWidth + 16) * 2 : 280;
+                achieveGrid.scrollBy({ left: -step, behavior: "smooth" });
+                setTimeout(() => {
+                  isAchieveScrolling = false;
+                }, 280);
+              }
+            }
+          }
+        },
+        { passive: false }
+      );
+    }
+  }
+
+  // ==========================================
+  // 5. Team Section Mouse Wheel & Touch Scroll
+  // ==========================================
+  const teamSection = document.querySelector(".team");
+  const teamTrack = document.getElementById("teamTrack");
+
+  if (teamSection && teamTrack) {
+    let isTeamScrolling = false;
+
+    teamSection.addEventListener(
+      "wheel",
+      (e) => {
+        const tolerance = 10;
+        const maxScrollLeft = teamTrack.scrollWidth - teamTrack.clientWidth;
+        if (maxScrollLeft <= tolerance) return;
+
+        if (e.deltaY > 15) {
+          // Scrolling down: scroll doctors to the right if not yet at the end
+          if (teamTrack.scrollLeft < maxScrollLeft - tolerance) {
+            e.preventDefault();
+            if (!isTeamScrolling) {
+              isTeamScrolling = true;
+              const step = teamTrack.firstElementChild ? teamTrack.firstElementChild.offsetWidth + 20 : 250;
+              teamTrack.scrollBy({ left: step, behavior: "smooth" });
+              setTimeout(() => {
+                isTeamScrolling = false;
+              }, 250);
+            }
+          }
+        } else if (e.deltaY < -15) {
+          // Scrolling up: scroll doctors back to the left if not yet at the beginning
+          if (teamTrack.scrollLeft > tolerance) {
+            e.preventDefault();
+            if (!isTeamScrolling) {
+              isTeamScrolling = true;
+              const step = teamTrack.firstElementChild ? teamTrack.firstElementChild.offsetWidth + 20 : 250;
+              teamTrack.scrollBy({ left: -step, behavior: "smooth" });
+              setTimeout(() => {
+                isTeamScrolling = false;
+              }, 250);
+            }
+          }
+        }
+      },
+      { passive: false }
+    );
   }
 
   // ==========================================
@@ -359,7 +526,6 @@ document.addEventListener("DOMContentLoaded", () => {
         spPrev.style.opacity = "1";
         spPrev.style.cursor = "pointer";
       }
-
       // Next button
       if (spTrack.scrollLeft + spTrack.clientWidth >= spTrack.scrollWidth - 5) {
         spNext.disabled = true;
@@ -458,7 +624,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const updatePsContent = () => {
       if (psTextElement && psCaptionElement && patientStories[currentSlide]) {
         psTextElement.style.opacity = "0";
+        psTextElement.style.transform = "translateY(10px)";
         psCaptionElement.style.opacity = "0";
+        psCaptionElement.style.transform = "translateY(10px)";
         setTimeout(() => {
           const fullText = patientStories[currentSlide].text;
           const maxLen = 200;
@@ -466,8 +634,10 @@ document.addEventListener("DOMContentLoaded", () => {
           psTextElement.textContent = displayText;
           psCaptionElement.textContent = patientStories[currentSlide].caption;
           psTextElement.style.opacity = "1";
+          psTextElement.style.transform = "translateY(0)";
           psCaptionElement.style.opacity = "1";
-        }, 300);
+          psCaptionElement.style.transform = "translateY(0)";
+        }, 280);
       }
     };
 
@@ -497,23 +667,60 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updatePsNav();
 
+    const goToPsSlide = (index) => {
+      if (index < 0 || index >= totalSlides) return;
+      currentSlide = index;
+      psTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+      updatePsNav();
+      updatePsContent();
+    };
+
     psPrev.addEventListener("click", () => {
       if (currentSlide > 0) {
-        currentSlide--;
-        psTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-        updatePsNav();
-        updatePsContent();
+        goToPsSlide(currentSlide - 1);
       }
     });
 
     psNext.addEventListener("click", () => {
       if (currentSlide < totalSlides - 1) {
-        currentSlide++;
-        psTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-        updatePsNav();
-        updatePsContent();
+        goToPsSlide(currentSlide + 1);
       }
     });
+
+    // Mouse wheel scroll support for Patient's Speak
+    const psSection = document.querySelector(".patients-speak");
+    if (psSection) {
+      let isPsScrolling = false;
+      psSection.addEventListener(
+        "wheel",
+        (e) => {
+          if (e.deltaY > 20) {
+            if (currentSlide < totalSlides - 1) {
+              e.preventDefault();
+              if (!isPsScrolling) {
+                isPsScrolling = true;
+                goToPsSlide(currentSlide + 1);
+                setTimeout(() => {
+                  isPsScrolling = false;
+                }, 480);
+              }
+            }
+          } else if (e.deltaY < -20) {
+            if (currentSlide > 0) {
+              e.preventDefault();
+              if (!isPsScrolling) {
+                isPsScrolling = true;
+                goToPsSlide(currentSlide - 1);
+                setTimeout(() => {
+                  isPsScrolling = false;
+                }, 480);
+              }
+            }
+          }
+        },
+        { passive: false }
+      );
+    }
 
     // Move Heading outside circle on Mobile
     const psHeading = document.querySelector(".ps-circle-text h2");

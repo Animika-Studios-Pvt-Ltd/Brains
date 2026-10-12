@@ -542,12 +542,26 @@
 }
 .ip-card-item {
   display: none;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 .ip-card-item.active {
   display: flex;
   align-items: center;
   gap: 30px;
   width: 100%;
+  animation: ipCardFadeIn 0.45s ease forwards;
+}
+@keyframes ipCardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .ip-card-img {
   border-radius: 50%;
@@ -662,73 +676,162 @@
 }
 
 @media (max-width: 767px) {
-  .international-patients { padding: 20px 0; }
+  .international-patients { padding: 30px 0; }
   .international-patients h2 { margin-bottom: 20px; }
   .ip-menu-list li { font-size: 15px; }
   .ip-menu-list li .ip-num { font-size: 22px; margin-right: 5px; }
   .ip-menu-list li.active { font-size: 15px; white-space: normal; line-height: 1.3; }
   
-  .ip-card-item.active { flex-direction: row; text-align: left; gap: 15px; }
-  .ip-card-img { width: 110px; height: 110px; margin: 0; }
+  .ip-card-wrapper { margin-left: 0; }
+  .ip-card-inner {
+    padding: 24px 20px;
+    min-height: auto;
+    height: auto;
+    border-radius: 20px;
+  }
+  .ip-card-item.active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 16px;
+    width: 100%;
+  }
+  .ip-card-img { width: 100px; height: 100px; margin: 0; flex-shrink: 0; }
   .ip-card-header { margin-bottom: 10px; display: block; }
-  .ip-card-list { grid-template-columns: 1fr; gap: 5px; }
+  .ip-card-list { grid-template-columns: 1fr; gap: 6px; }
   
   .ip-card-arrow {
     border-top: 20px solid #e4eef0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
   }
-  .ip-card-inner { padding: 30px 20px 15px 20px; min-height: auto; }
-  .ip-read-more { margin-top: 20px;}
+  .ip-read-more { margin-top: 20px; }
 }
+
 @media (max-width: 575px) {
-  .international-patients { padding: 20px 0; }
-  .international-patients h2 { margin-bottom: 15px; }
+  .international-patients {
+    padding: 25px 0 35px 0;
+    overflow-x: hidden;
+  }
+  .international-patients h2 { margin-bottom: 20px; }
   .ip-menu-list { display: none !important; }
   .ip-card-arrow { display: none !important; }
-  .ip-card-inner { flex-direction: column; padding: 20px 20px 15px 20px; min-height: auto;  }
-  .ip-card-item {
+  .ip-card-wrapper { margin-left: 0; width: 100%; overflow: hidden; }
+
+  .ip-card-inner {
     display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 16px;
+    min-height: auto !important;
+    height: auto !important;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #104c97 0%, #1389aa 60%, #15b9c5 100%);
+    box-shadow: 0 10px 30px rgba(16, 76, 151, 0.15);
+    overflow: hidden;
+  }
+
+  .ip-card-item {
+    display: flex !important;
     flex-direction: row;
+    align-items: flex-start;
     text-align: left;
-    gap: 15px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 14px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
     width: 100%;
   }
+
   .ip-card-item:last-child {
     padding-bottom: 0;
-    margin-bottom: 0;
     border-bottom: none;
   }
 
-  .ip-card-header { display: flex; flex-direction: row; align-items: baseline; gap: 8px; margin-bottom: 5px; }
-  .ip-card-title { font-size: 18px; }
-  .ip-card-num { font-size: 20px; color: #83eefe; }
-  .ip-card-list li { font-size: 14px; }
-  .ip-card-img { width: 100px; height: 100px; margin: 0 auto; }
-  .ip-read-more { margin-top: 10px;}
+  .ip-card-img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    margin: 4px 0 0 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  }
+
+  .ip-card-content-right {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ip-card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .ip-card-num {
+    font-size: 22px;
+    font-weight: 700;
+    color: #83eefe;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .ip-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .ip-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ip-card-list li {
+    font-size: 13.5px;
+    line-height: 1.35;
+    padding-left: 14px;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .ip-card-list li::before {
+    top: 6px;
+    width: 5px;
+    height: 5px;
+  }
+
+  .ip-read-more {
+    margin-top: 15px;
+    display: inline-block;
+  }
 }
 
 @media (max-width: 480px) {
-  .international-patients h2 { margin-bottom: 10px; }
-  .international-patients { padding: 15px 0; }
-  .ip-card-title { font-size: 16px; }
-  .ip-card-num { font-size: 18px; }
+  .international-patients { padding: 20px 0 30px 0; }
+  .international-patients h2 { margin-bottom: 16px; font-size: 22px; }
+  .ip-card-inner { padding: 18px 14px; border-radius: 16px; gap: 14px; }
+  .ip-card-img { width: 72px; height: 72px; }
+  .ip-card-num { font-size: 20px; }
+  .ip-card-title { font-size: 15px; }
   .ip-card-list li { font-size: 13px; }
-  .ip-card-img { width: 85px; height: 85px; }
-  .ip-card-inner { border-radius: 15px; }
-  .ip-card-item { margin-bottom: 12px; }
+  .ip-card-item { gap: 12px; padding-bottom: 14px; }
 }
 
 @media (max-width: 360px) {
-  .international-patients { padding: 10px 0; }
+  .international-patients { padding: 15px 0 25px 0; }
+  .international-patients h2 { font-size: 20px; margin-bottom: 12px; }
+  .ip-card-inner { padding: 15px 12px; border-radius: 14px; }
+  .ip-card-img { width: 62px; height: 62px; }
+  .ip-card-num { font-size: 18px; }
   .ip-card-title { font-size: 14px; }
-  .ip-card-num { font-size: 16px; }
   .ip-card-list li { font-size: 12px; }
-  .ip-card-img { width: 70px; height: 70px; }
-  .ip-card-item { gap: 10px; margin-bottom: 8px; }
+  .ip-card-item { gap: 10px; padding-bottom: 12px; }
 }
 
 /* --- Achievements Section --- */
@@ -752,10 +855,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  overflow: visible;
 }
 .achievements .achieve-top {
   position: relative;
   width: 100%;
+  z-index: 3;
+  transition: transform 0.75s cubic-bezier(0.34, 1.4, 0.64, 1);
+  will-change: transform;
+}
+.achievements .achievement-item:not(.open) .achieve-top {
+  transform: translateY(55px);
+}
+.achievements .achievement-item.open .achieve-top {
+  transform: translateY(0);
 }
 .achievements .achieve-top img {
   width: 100%;
@@ -781,6 +895,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  transition: opacity 0.6s ease, transform 0.75s cubic-bezier(0.34, 1.4, 0.64, 1);
+  will-change: opacity, transform;
+}
+.achievements .achievement-item:not(.open) .achieve-mid {
+  opacity: 0;
+  transform: scale(0.3);
+  pointer-events: none;
+}
+.achievements .achievement-item.open .achieve-mid {
+  opacity: 1;
+  transform: scale(1);
 }
 .achievements .achieve-mid img {
   max-width: 100%;
@@ -789,6 +915,15 @@
 .achievements .achieve-bottom {
   position: relative;
   width: 100%;
+  z-index: 3;
+  transition: transform 0.75s cubic-bezier(0.34, 1.4, 0.64, 1);
+  will-change: transform;
+}
+.achievements .achievement-item:not(.open) .achieve-bottom {
+  transform: translateY(-55px);
+}
+.achievements .achievement-item.open .achieve-bottom {
+  transform: translateY(0);
 }
 .achievements .achieve-bottom img {
   width: 100%;
@@ -838,46 +973,92 @@
   .achievements .achieve-text { font-size: 16px; }
 }
 
-@media (max-width: 767px) {
-  .achievements { padding: 25px 0; }
-  .achievements h2 { margin-bottom: 20px;}
+@media (max-width: 768px) {
+  .achievements { padding: 30px 0 25px 0; overflow-x: hidden; }
+  .achievements h2 { margin-bottom: 25px; }
+
+  /* Carousel layout showing 2 items side-by-side */
   .achievements .achievement-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding: 10px 15px 30px 15px;
+    gap: 16px;
+    margin: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
+  .achievements .achievement-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .achievements .achievement-item {
+    flex: 0 0 calc(50% - 8px);
+    max-width: calc(50% - 8px);
+    min-width: calc(50% - 8px);
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+
   .achievements .achieve-top,
   .achievements .achieve-mid,
-  .achievements .achieve-bottom { width: 70%; }
-  .achievements .achieve-mid { width: 70%; }
-  .achievements .achieve-mid img { width: 50%; }
-  .achievements .achieve-num { font-size: 36px; }
-  .achievements .achieve-text { font-size: 15px; }
+  .achievements .achieve-bottom {
+    width: 82%;
+    margin: 0 auto;
+  }
+  .achievements .achieve-mid img { width: 55%; }
+  .achievements .achieve-num { font-size: 30px; }
+  .achievements .achieve-text { font-size: 13.5px; }
 }
 
 @media (max-width: 575px) {
-  .achievements { padding: 20px 0; }
-  .achievements .achieve-num { font-size: 28px; }
-  .achievements .achieve-text { font-size: 14px; }
-}
-
-@media (max-width: 480px) {
-  .achievements { padding: 15px 0; }
+  .achievements { padding: 25px 0 20px 0; }
   .achievements .achievement-grid {
-    grid-template-columns: repeat(2, 1fr);
-    width: 90%;
-    gap: 20px 15px;
+    gap: 12px;
+    padding: 10px 12px 25px 12px;
+  }
+  .achievements .achievement-item {
+    flex: 0 0 calc(50% - 6px);
+    max-width: calc(50% - 6px);
+    min-width: calc(50% - 6px);
   }
   .achievements .achieve-top,
   .achievements .achieve-mid,
-  .achievements .achieve-bottom { width: 100%; }
-  .achievements .achieve-mid img { width: 60%; }
-  .achievements .achieve-num { font-size: 24px; }
-  .achievements .achieve-text { font-size: 12px; }
+  .achievements .achieve-bottom {
+    width: 90%;
+  }
+  .achievements .achieve-num { font-size: 26px; }
+  .achievements .achieve-text { font-size: 12.5px; }
 }
+
+@media (max-width: 480px) {
+  .achievements { padding: 20px 0 15px 0; }
+  .achievements .achievement-grid {
+    gap: 10px;
+    padding: 8px 10px 20px 10px;
+  }
+  .achievements .achievement-item {
+    flex: 0 0 calc(50% - 5px);
+    max-width: calc(50% - 5px);
+    min-width: calc(50% - 5px);
+  }
+  .achievements .achieve-top,
+  .achievements .achieve-mid,
+  .achievements .achieve-bottom {
+    width: 96%;
+  }
+  .achievements .achieve-mid img { width: 60%; }
+  .achievements .achieve-num { font-size: 22px; }
+  .achievements .achieve-text { font-size: 11.5px; }
+}
+
 @media (max-width: 360px) {
-  .achievements .achievement-grid { width: 80%; }
-  .achievements .achieve-num { font-size: 20px; }
-  .achievements .achieve-text { font-size: 11px; }
+  .achievements .achieve-num { font-size: 19px; }
+  .achievements .achieve-text { font-size: 10.5px; }
 }
 
 /* --- Team Section --- */
@@ -918,7 +1099,7 @@
 }
 .team-carousel-container {
   position: relative;
-  padding: 0 60px;
+  padding: 0 10px;
 }
 .team .team-grid {
   display: flex;
@@ -929,6 +1110,8 @@
   text-align: center;
   padding-bottom: 20px;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
 }
 .team .team-grid::-webkit-scrollbar {
   display: none;
@@ -1371,6 +1554,19 @@
   height: 100%;
   object-fit: contain;
   z-index: 1;
+  animation: psCirclePulse 6s ease-in-out infinite alternate;
+  filter: drop-shadow(0 15px 30px rgba(0, 50, 120, 0.35));
+}
+@keyframes psCirclePulse {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.025) rotate(0.8deg);
+  }
+  100% {
+    transform: scale(1.04) rotate(-0.5deg);
+  }
 }
 .patients-speak .ps-circle-text {
   position: relative;
@@ -1383,10 +1579,12 @@
 .patients-speak .ps-circle-text h2 {
   color: white;
   margin-bottom: 25px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 .patients-speak .ps-circle-text p {
   line-height: 1.6;
   margin-bottom: 25px;
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .patients-speak .ps-circle-text a {
   font-family: "Roboto-Regular";
@@ -1396,6 +1594,11 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  transition: all 0.3s ease;
+}
+.patients-speak .ps-circle-text a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
 }
 .patients-speak .ps-video-box {
   flex: 1;
@@ -1409,30 +1612,46 @@
   margin-top: 50px;
   position: relative;
   max-width: 380px;
+  transition: transform 0.4s ease;
 }
 .patients-speak .ps-carousel-container {
   width: 100%;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 18px;
   margin-bottom: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 45px rgba(0, 20, 60, 0.45);
+  border: 3px solid rgba(100, 220, 240, 0.25);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+}
+.patients-speak .ps-carousel-container:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 25px 55px rgba(0, 20, 60, 0.6);
 }
 .patients-speak .ps-carousel-track {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .patients-speak .ps-carousel-item {
   flex: 0 0 100%;
+  overflow: hidden;
 }
 .patients-speak .ps-carousel-item img {
   width: 100%;
   height: 260px;
   display: block;
   object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.patients-speak .ps-carousel-container:hover .ps-carousel-item img {
+  transform: scale(1.05);
 }
 .patients-speak .ps-caption {
   margin: 0;
   text-align: center;
+  font-weight: 500;
+  color: #c9f5f8;
+  letter-spacing: 0.02em;
+  transition: opacity 0.35s ease, transform 0.35s ease;
 }
 .patients-speak .ps-controls-bottom {
   position: absolute;
