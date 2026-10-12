@@ -1240,6 +1240,7 @@
   margin: 20px auto;
   border-radius: 25px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .centres h2 {
   text-align: center;
