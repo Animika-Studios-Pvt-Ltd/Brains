@@ -1038,11 +1038,25 @@
                   target="_blank">Download</a>
                 <a href="Brain-Voice.html" class="bv-link-previous">View Previous Publications</a>
               </div>
-              <form class="bv-form">
-                <input type="email" placeholder="Email ID" />
-                <button type="submit">SUBSCRIBE</button>
+              <form class="bv-form" id="bvForm">
+                <input type="email" id="bvEmail" placeholder="Enter your Email ID" required />
+                <button type="submit" id="bvSubmitBtn">SUBSCRIBE</button>
               </form>
             </div>
+          </div>
+        </div>
+
+        <!-- Brain Voice Subscription Success Popup Modal -->
+        <div class="bv-popup-overlay" id="bvPopupOverlay">
+          <div class="bv-popup-modal">
+            <div class="bv-popup-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <h3 class="bv-popup-title">Thank You For Subscribing!</h3>
+            <p class="bv-popup-text">
+              We've sent the latest <strong>3 editions</strong> of Brain Voice directly to your email.
+            </p>
+            <button type="button" class="bv-popup-btn" id="bvPopupOkBtn">Got It</button>
           </div>
         </div>
 

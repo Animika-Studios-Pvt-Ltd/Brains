@@ -3156,9 +3156,122 @@
   border: none;
   border-radius: 20px;
   padding: 10px 30px;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brain-voice .bv-form button:hover:not(:disabled) {
+  background: #103c6b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 60, 107, 0.3);
+}
+
+.brain-voice .bv-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* --- Newsletter Success Popup Modal --- */
+.bv-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(16, 76, 151, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.bv-popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bv-popup-modal {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 440px;
+  padding: 36px 28px 30px 28px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(16, 76, 151, 0.25);
+  transform: scale(0.85) translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.bv-popup-overlay.active .bv-popup-modal {
+  transform: scale(1) translateY(0);
+}
+
+.bv-popup-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35);
+  animation: bvIconPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both;
+}
+
+@keyframes bvIconPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.bv-popup-title {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #104c97;
+  margin: 0 0 10px 0;
+}
+
+.bv-popup-text {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #4b5563;
+  margin: 0 0 24px 0;
+}
+
+.bv-popup-btn {
+  background: linear-gradient(90deg, #104c97, #15b9c5);
+  color: #ffffff;
+  border: none;
+  padding: 12px 36px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(16, 76, 151, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bv-popup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 76, 151, 0.35);
 }
 
 .brain-voice .bv-video {

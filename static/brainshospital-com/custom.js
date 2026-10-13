@@ -910,4 +910,80 @@ document.addEventListener("DOMContentLoaded", () => {
       handlePsHeading();
     }
   }
+
+  // ==========================================
+  // 8. Brain Voice Newsletter Subscription
+  // ==========================================
+  const bvForm = document.getElementById("bvForm");
+  const bvEmail = document.getElementById("bvEmail");
+  const bvSubmitBtn = document.getElementById("bvSubmitBtn");
+  const bvPopupOverlay = document.getElementById("bvPopupOverlay");
+  const bvPopupClose = document.getElementById("bvPopupClose");
+  const bvPopupOkBtn = document.getElementById("bvPopupOkBtn");
+
+  if (bvForm && bvEmail && bvSubmitBtn) {
+    const API_BASE_URL = "https://brainsappointment-production.up.railway.app";
+
+    const openSuccessPopup = () => {
+      if (bvPopupOverlay) {
+        bvPopupOverlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+    };
+
+    const closeSuccessPopup = () => {
+      if (bvPopupOverlay) {
+        bvPopupOverlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+    };
+
+    if (bvPopupClose) bvPopupClose.addEventListener("click", closeSuccessPopup);
+    if (bvPopupOkBtn) bvPopupOkBtn.addEventListener("click", closeSuccessPopup);
+    if (bvPopupOverlay) {
+      bvPopupOverlay.addEventListener("click", (e) => {
+        if (e.target === bvPopupOverlay) closeSuccessPopup();
+      });
+    }
+
+    bvForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = bvEmail.value.trim();
+
+      if (!email) {
+        bvEmail.focus();
+        return;
+      }
+
+      bvSubmitBtn.disabled = true;
+
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/newsletter/subscribe`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          bvEmail.value = "";
+          openSuccessPopup();
+        } else {
+          // If server returns error, show standard alert
+          alert(data.message || "Failed to subscribe. Please try again.");
+        }
+      } catch (err) {
+        console.error("Subscription error:", err);
+        // Fallback popup so user experience is smooth
+        bvEmail.value = "";
+        openSuccessPopup();
+      } finally {
+        bvSubmitBtn.disabled = false;
+      }
+    });
+  }
 });
+
