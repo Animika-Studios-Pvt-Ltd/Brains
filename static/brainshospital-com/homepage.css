@@ -586,11 +586,9 @@
   font-size: 16px;
   color: #144e97;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.founder-section .founder-quote-row a:hover {
-  text-decoration: underline;
-}
 
 /* --- Founder Section Responsive Styles --- */
 @media (max-width: 1440px) {
@@ -1720,6 +1718,7 @@
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-x pan-y;
     width: 100%;
     padding: 10px 15px 30px 15px;
     gap: 16px;
@@ -1736,8 +1735,13 @@
     flex: 0 0 calc(50% - 8px);
     max-width: calc(50% - 8px);
     min-width: calc(50% - 8px);
+    scroll-snap-align: none;
+  }
+
+  /* Snap strictly on every pair (items 1, 3, 5) so 2 pills always advance together */
+  .achievements .achievement-item:nth-child(odd) {
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
+    scroll-snap-stop: always;
   }
 
   .achievements .achieve-top,
@@ -2027,6 +2031,13 @@
 
   .team-carousel-container {
     padding: 0 40px;
+  }
+
+  .team .team-grid {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x pan-y;
   }
 
   .team-carousel-prev,
@@ -3172,27 +3183,73 @@
   position: absolute;
   right: 0;
   bottom: 40%;
-  width: 80px;
-  height: 80px;
-  background: #2ea8bf;
+  padding: 0 18px 0 16px;
+  height: 60px;
+  background: linear-gradient(135deg, #2ea8bf 0%, #158b9f 100%);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  gap: 8px;
   cursor: pointer;
   border-radius: 10px 0 0 10px;
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.5s ease;
+  box-shadow: -3px 4px 15px rgba(21, 139, 159, 0.35);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  overflow: hidden;
+}
+
+.brain-voice .bv-play-btn i {
+  font-size: 20px;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+  animation: bvPlayPulse 1.8s ease-in-out infinite;
+}
+
+.brain-voice .bv-play-text {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: inline-block;
+  animation: bvTextShimmer 2.4s ease-in-out infinite;
+}
+
+@keyframes bvPlayPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.18);
+  }
+}
+
+@keyframes bvTextShimmer {
+  0%, 100% {
+    opacity: 0.95;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-2px);
+  }
 }
 
 .brain-voice .bv-video-thumbnail:hover .bv-play-btn {
-  transform: translateX(-5px);
-  box-shadow: -4px 2px 12px rgba(0, 0, 0, 0.15);
+  transform: translateX(-6px);
+  background: linear-gradient(135deg, #104c97 0%, #15b9c5 100%);
+  box-shadow: -6px 6px 20px rgba(16, 76, 151, 0.45);
+  padding: 0 20px 0 16px;
+}
+
+.brain-voice .bv-video-thumbnail:hover .bv-play-btn i {
+  transform: scale(1.15);
 }
 
 .brain-voice .bv-video-thumbnail:active .bv-play-btn,
 .brain-voice .bv-play-btn:active {
-  transform: translateX(-8px);
+  transform: translateX(-10px) scale(0.97);
 }
 
 .brain-voice .bv-video-text h4 {
@@ -3391,10 +3448,17 @@
   }
 
   .brain-voice .bv-play-btn {
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
+    height: 50px;
+    padding: 0 14px 0 12px;
     bottom: 35%;
+  }
+
+  .brain-voice .bv-play-btn i {
+    font-size: 16px;
+  }
+
+  .brain-voice .bv-play-text {
+    font-size: 13px;
   }
 
   .brain-voice .bv-video-text {
@@ -3476,11 +3540,19 @@
   }
 
   .brain-voice .bv-play-btn {
-    width: 48px;
-    height: 48px;
-    font-size: 18px;
+    height: 44px;
+    padding: 0 12px 0 10px;
     bottom: 35%;
     border-radius: 8px 0 0 8px;
+    gap: 6px;
+  }
+
+  .brain-voice .bv-play-btn i {
+    font-size: 14px;
+  }
+
+  .brain-voice .bv-play-text {
+    font-size: 12px;
   }
 
   .brain-voice .bv-video-text {

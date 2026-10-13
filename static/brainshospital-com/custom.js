@@ -291,9 +291,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Mouse wheel scroll effect over the International Patients section (desktop only)
+  // Mouse wheel / trackpad scroll effect for International Patients section (desktop only)
+  // Ensures all 6 cards must be navigated through before the page can scroll down to Achievements
   if (ipSection && ipMenuLinks.length > 0) {
     let isScrollingIp = false;
+    let ipAccumulatedDelta = 0;
 
     window.addEventListener(
       "wheel",
@@ -301,56 +303,54 @@ document.addEventListener("DOMContentLoaded", () => {
         if (window.innerWidth <= 991) return; // Desktop/laptop only
 
         const rect = ipSection.getBoundingClientRect();
-        // Check if the section occupies the viewport or mouse is scrolling through it
-        const isPartiallyVisible = rect.top < window.innerHeight * 0.7 && rect.bottom > window.innerHeight * 0.3;
-        if (!isPartiallyVisible) return;
+        // Section is in view if top is near top of viewport or section dominates the viewport
+        const isInView = rect.top <= window.innerHeight * 0.4 && rect.bottom >= window.innerHeight * 0.4;
+        if (!isInView) {
+          ipAccumulatedDelta = 0;
+          return;
+        }
 
-        // Find current active index
+        // Find current active index (0 to 5 for 6 cards)
         const currentIndex = Array.from(ipMenuLinks).findIndex((l) =>
           l.classList.contains("active")
         );
 
-        if (e.deltaY > 15) {
+        if (e.deltaY > 0) {
           // Scrolling down
+          // If not yet at the last card (index 5: Pre-discharge Checklist), lock page scroll and step forward
           if (currentIndex < ipMenuLinks.length - 1) {
             e.preventDefault();
-            // Snap section into comfortable viewing position
-            if (Math.abs(rect.top - 20) > 30) {
-              window.scrollTo({
-                top: window.scrollY + rect.top - 20,
-                behavior: "smooth",
-              });
-            }
-
-            if (!isScrollingIp) {
+            ipAccumulatedDelta += e.deltaY;
+            if (ipAccumulatedDelta > 30 && !isScrollingIp) {
               isScrollingIp = true;
+              ipAccumulatedDelta = 0;
               activateIpIndex(currentIndex + 1);
               setTimeout(() => {
                 isScrollingIp = false;
-              }, 400);
+              }, 240);
             }
+          } else {
+            // Already at card 6 (06 Pre-discharge Checklist): allow normal scrolling down to Achievements!
+            ipAccumulatedDelta = 0;
           }
-          // If at the last item (currentIndex === 5), allow native scrolling down to Achievements!
-        } else if (e.deltaY < -15) {
+        } else if (e.deltaY < 0) {
           // Scrolling up
+          // If not yet at the first card (index 0), lock page scroll and step backward
           if (currentIndex > 0) {
             e.preventDefault();
-            if (Math.abs(rect.top - 20) > 30) {
-              window.scrollTo({
-                top: window.scrollY + rect.top - 20,
-                behavior: "smooth",
-              });
-            }
-
-            if (!isScrollingIp) {
+            ipAccumulatedDelta += e.deltaY;
+            if (ipAccumulatedDelta < -30 && !isScrollingIp) {
               isScrollingIp = true;
+              ipAccumulatedDelta = 0;
               activateIpIndex(currentIndex - 1);
               setTimeout(() => {
                 isScrollingIp = false;
-              }, 400);
+              }, 240);
             }
+          } else {
+            // Already at card 1 (01): allow normal scrolling up!
+            ipAccumulatedDelta = 0;
           }
-          // If at the first item (currentIndex === 0), allow native scrolling up!
         }
       },
       { passive: false }
@@ -460,45 +460,30 @@ document.addEventListener("DOMContentLoaded", () => {
       lastActiveMobilePage = -1;
     };
 
+    // Ensure all capsules start strictly closed on page load
+    closeCapsules();
+
     const achieveObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
+          // Require at least 35% of the section to be clearly visible on screen before opening
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
             if (!hasAnimatedCapsules) {
               hasAnimatedCapsules = true;
               openCapsulesOneByOne();
             }
-          } else {
-            // Re-close when scrolled out of view so it can replay on scroll back / scroll up
+          } else if (!entry.isIntersecting) {
+            // Re-close when completely scrolled out of view so it can replay on scroll back
             hasAnimatedCapsules = false;
             closeCapsules();
           }
         });
       },
       {
-        threshold: 0.15,
+        threshold: [0, 0.35],
       }
     );
     achieveObserver.observe(achieveSection);
-
-    // Also detect vertical window scroll up entering the section to guarantee re-opening
-    let lastScrollY = window.scrollY;
-    window.addEventListener(
-      "scroll",
-      () => {
-        const currentScrollY = window.scrollY;
-        const rect = achieveSection.getBoundingClientRect();
-        const isInView = rect.top < window.innerHeight * 0.85 && rect.bottom > window.innerHeight * 0.15;
-
-        // When scrolling up and section comes into view, re-open capsules if closed
-        if (currentScrollY < lastScrollY && isInView && !hasAnimatedCapsules) {
-          hasAnimatedCapsules = true;
-          openCapsulesOneByOne();
-        }
-        lastScrollY = currentScrollY;
-      },
-      { passive: true }
-    );
 
     // Horizontal wheel navigation & dot synchronization for carousel mode (<= 768px)
     const achieveGrid = document.querySelector(".achievements .achievement-grid");
@@ -513,9 +498,14 @@ document.addEventListener("DOMContentLoaded", () => {
         dot.className = "dot" + (i === 0 ? " active" : "");
         dot.setAttribute("data-page", i);
         dot.addEventListener("click", () => {
-          const maxScrollLeft = achieveGrid.scrollWidth - achieveGrid.clientWidth;
-          const targetScroll = (maxScrollLeft / (totalAchievePages - 1)) * i;
-          achieveGrid.scrollTo({ left: targetScroll, behavior: "smooth" });
+          const targetItem = achieveGrid.children[i * 2];
+          if (targetItem) {
+            achieveGrid.scrollTo({ left: targetItem.offsetLeft - 15, behavior: "smooth" });
+          } else {
+            const maxScrollLeft = achieveGrid.scrollWidth - achieveGrid.clientWidth;
+            const targetScroll = (maxScrollLeft / (totalAchievePages - 1)) * i;
+            achieveGrid.scrollTo({ left: targetScroll, behavior: "smooth" });
+          }
           // Open the capsules for this target page immediately upon clicking dot
           openCapsulesForPage(i);
         });
@@ -543,48 +533,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       achieveGrid.addEventListener("scroll", updateAchieveDots);
     }
-
-    if (achieveGrid) {
-      let isAchieveScrolling = false;
-      achieveSection.addEventListener(
-        "wheel",
-        (e) => {
-          if (window.innerWidth > 768) return; // Only apply when in carousel layout mode (<= 768px)
-          const tolerance = 10;
-          const maxScrollLeft = achieveGrid.scrollWidth - achieveGrid.clientWidth;
-          if (maxScrollLeft <= tolerance) return;
-
-          if (e.deltaY > 15) {
-            // Scrolling down: advance carousel to the right if not at the very end
-            if (achieveGrid.scrollLeft < maxScrollLeft - tolerance) {
-              e.preventDefault();
-              if (!isAchieveScrolling) {
-                isAchieveScrolling = true;
-                const step = achieveGrid.firstElementChild ? (achieveGrid.firstElementChild.offsetWidth + 16) * 2 : 280;
-                achieveGrid.scrollBy({ left: step, behavior: "smooth" });
-                setTimeout(() => {
-                  isAchieveScrolling = false;
-                }, 280);
-              }
-            }
-          } else if (e.deltaY < -15) {
-            // Scrolling up: move carousel back to the left if not at the start
-            if (achieveGrid.scrollLeft > tolerance) {
-              e.preventDefault();
-              if (!isAchieveScrolling) {
-                isAchieveScrolling = true;
-                const step = achieveGrid.firstElementChild ? (achieveGrid.firstElementChild.offsetWidth + 16) * 2 : 280;
-                achieveGrid.scrollBy({ left: -step, behavior: "smooth" });
-                setTimeout(() => {
-                  isAchieveScrolling = false;
-                }, 280);
-              }
-            }
-          }
-        },
-        { passive: false }
-      );
-    }
   }
 
   // ==========================================
@@ -607,7 +555,10 @@ document.addEventListener("DOMContentLoaded", () => {
         dot.addEventListener("click", () => {
           const members = teamTrack.querySelectorAll(".team-member");
           if (members[i]) {
-            members[i].scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
+            teamTrack.scrollTo({
+              left: members[i].offsetLeft - (teamTrack.offsetLeft || 0),
+              behavior: "smooth"
+            });
           }
         });
         teamDotsContainer.appendChild(dot);
@@ -616,8 +567,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const updateTeamDots = () => {
         const members = teamTrack.querySelectorAll(".team-member");
         if (members.length === 0) return;
-        const itemWidth = members[0].offsetWidth + 20;
-        const currentIdx = Math.min(members.length - 1, Math.max(0, Math.round(teamTrack.scrollLeft / itemWidth)));
+        const maxScrollLeft = teamTrack.scrollWidth - teamTrack.clientWidth;
+        if (maxScrollLeft <= 0) return;
+        const pageRatio = teamTrack.scrollLeft / maxScrollLeft;
+        const currentIdx = Math.min(
+          totalTeamMembers - 1,
+          Math.max(0, Math.round(pageRatio * (totalTeamMembers - 1)))
+        );
         const dots = teamDotsContainer.querySelectorAll(".dot");
         dots.forEach((d, idx) => {
           d.classList.toggle("active", idx === currentIdx);
@@ -635,57 +591,33 @@ document.addEventListener("DOMContentLoaded", () => {
         if (window.innerWidth <= 768) return; // Desktop/laptop view
 
         const rect = teamSection.getBoundingClientRect();
-        // Check if team section is in view
-        const isPartiallyVisible = rect.top < window.innerHeight * 0.7 && rect.bottom > window.innerHeight * 0.3;
-        if (!isPartiallyVisible) return;
+        // Check if team section is in active view
+        const isInView = rect.top <= window.innerHeight * 0.45 && rect.bottom >= window.innerHeight * 0.45;
+        if (!isInView) return;
 
         const tolerance = 15;
         const maxScrollLeft = teamTrack.scrollWidth - teamTrack.clientWidth;
         if (maxScrollLeft <= tolerance) return;
 
-        if (e.deltaY > 15) {
-          // Scrolling down: scroll doctors to the right if not yet at the end
+        // If trackpad user is swiping horizontally, let native track handle it
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+
+        if (e.deltaY > 0) {
+          // Scrolling down: lock page scroll and slide doctors to the right until reaching the end
           if (teamTrack.scrollLeft < maxScrollLeft - tolerance) {
             e.preventDefault();
-            // Snap section into comfortable viewing position
-            if (Math.abs(rect.top - 20) > 30) {
-              window.scrollTo({
-                top: window.scrollY + rect.top - 20,
-                behavior: "smooth",
-              });
-            }
-
-            if (!isTeamScrolling) {
-              isTeamScrolling = true;
-              const step = teamTrack.firstElementChild ? teamTrack.firstElementChild.offsetWidth + 20 : 250;
-              teamTrack.scrollBy({ left: step, behavior: "smooth" });
-              setTimeout(() => {
-                isTeamScrolling = false;
-              }, 250);
-            }
+            const step = Math.max(Math.abs(e.deltaY) * 1.6, 60);
+            teamTrack.scrollBy({ left: step, behavior: "auto" });
           }
-          // If at the end of teamTrack, allow normal scroll down to Centres of Excellence!
-        } else if (e.deltaY < -15) {
-          // Scrolling up: scroll doctors back to the left if not yet at the beginning
+          // Once at the very end of doctors: page can naturally scroll down to Centres of Excellence!
+        } else if (e.deltaY < 0) {
+          // Scrolling up: lock page scroll and slide doctors back to the left until reaching the start
           if (teamTrack.scrollLeft > tolerance) {
             e.preventDefault();
-            if (Math.abs(rect.top - 20) > 30) {
-              window.scrollTo({
-                top: window.scrollY + rect.top - 20,
-                behavior: "smooth",
-              });
-            }
-
-            if (!isTeamScrolling) {
-              isTeamScrolling = true;
-              const step = teamTrack.firstElementChild ? teamTrack.firstElementChild.offsetWidth + 20 : 250;
-              teamTrack.scrollBy({ left: -step, behavior: "smooth" });
-              setTimeout(() => {
-                isTeamScrolling = false;
-              }, 250);
-            }
+            const step = Math.max(Math.abs(e.deltaY) * 1.6, 60);
+            teamTrack.scrollBy({ left: -step, behavior: "auto" });
           }
-          // If at the beginning of teamTrack, allow normal scroll up to Achievements!
+          // Once at the very start of doctors: page can naturally scroll up to Achievements!
         }
       },
       { passive: false }
@@ -880,59 +812,60 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Mouse wheel scroll support for Patient's Speak
+    // Mouse wheel / trackpad scroll support for Patient's Speak
+    // Ensures all patient stories must be stepped through before page can scroll down to Associations
     const psSection = document.querySelector(".patients-speak");
     if (psSection) {
       let isPsScrolling = false;
+      let psAccumulatedDelta = 0;
+
       window.addEventListener(
         "wheel",
         (e) => {
           if (window.innerWidth <= 768) return; // Desktop/laptop only
 
           const rect = psSection.getBoundingClientRect();
-          // Check if Patient's Speak section is in view
-          const isPartiallyVisible = rect.top < window.innerHeight * 0.7 && rect.bottom > window.innerHeight * 0.3;
-          if (!isPartiallyVisible) return;
+          // Check if Patient's Speak section is in active view
+          const isInView = rect.top <= window.innerHeight * 0.45 && rect.bottom >= window.innerHeight * 0.45;
+          if (!isInView) {
+            psAccumulatedDelta = 0;
+            return;
+          }
 
-          if (e.deltaY > 15) {
+          if (e.deltaY > 0) {
+            // Scrolling down: lock page scroll and step forward through slides until the last slide
             if (currentSlide < totalSlides - 1) {
               e.preventDefault();
-              // Snap section into comfortable viewing position
-              if (Math.abs(rect.top - 20) > 30) {
-                window.scrollTo({
-                  top: window.scrollY + rect.top - 20,
-                  behavior: "smooth",
-                });
-              }
-
-              if (!isPsScrolling) {
+              psAccumulatedDelta += e.deltaY;
+              if (psAccumulatedDelta > 30 && !isPsScrolling) {
                 isPsScrolling = true;
+                psAccumulatedDelta = 0;
                 goToPsSlide(currentSlide + 1);
                 setTimeout(() => {
                   isPsScrolling = false;
-                }, 480);
+                }, 240);
               }
+            } else {
+              // On the last slide: allow natural page scroll down to Associations!
+              psAccumulatedDelta = 0;
             }
-            // If on the last slide, allow normal scroll down to Associations!
-          } else if (e.deltaY < -15) {
+          } else if (e.deltaY < 0) {
+            // Scrolling up: lock page scroll and step backward through slides until the first slide
             if (currentSlide > 0) {
               e.preventDefault();
-              if (Math.abs(rect.top - 20) > 30) {
-                window.scrollTo({
-                  top: window.scrollY + rect.top - 20,
-                  behavior: "smooth",
-                });
-              }
-
-              if (!isPsScrolling) {
+              psAccumulatedDelta += e.deltaY;
+              if (psAccumulatedDelta < -30 && !isPsScrolling) {
                 isPsScrolling = true;
+                psAccumulatedDelta = 0;
                 goToPsSlide(currentSlide - 1);
                 setTimeout(() => {
                   isPsScrolling = false;
-                }, 480);
+                }, 240);
               }
+            } else {
+              // On the first slide: allow natural page scroll up to Super Specialities!
+              psAccumulatedDelta = 0;
             }
-            // If on the first slide, allow normal scroll up to Super Specialities!
           }
         },
         { passive: false }
