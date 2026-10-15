@@ -358,6 +358,8 @@ header::after {
   .header-logo-img { 
     max-width: 80%; 
     content: url("brains-logo-footer.webp");
+    aspect-ratio: 287 / 137;
+    object-fit: contain;
   }
   .header-top-action { margin-bottom: 20px; justify-content: end;}
   .header-helpline-text { font-size: 14px; padding: 5px 10px 5px 12px; margin-left: -26px; }
