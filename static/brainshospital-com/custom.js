@@ -1,112 +1,3 @@
-function animateValue(e, t, i, o) {
-  let n = null,
-    a = (r) => {
-      n || (n = r);
-      let l = Math.min((r - n) / o, 1);
-      ((e.innerHTML = Math.floor(l * (i - t) + t) + "+"),
-        l < 1 && window.requestAnimationFrame(a));
-    };
-  window.requestAnimationFrame(a);
-}
-(document.addEventListener("DOMContentLoaded", function () {
-    let e = document.querySelectorAll(".count");
-    e.forEach((e) => {
-      let t = parseInt(e.getAttribute("data-start"), 10),
-        i = parseInt(e.getAttribute("data-end"), 10),
-        o = parseInt(e.getAttribute("data-duration"), 20);
-      ((e.innerHTML = t + "+"), animateValue(e, t, i, o));
-    });
-  }),
-  $(".doctors-slider").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: !0,
-    autoplaySpeed: 1e3,
-    arrows: !0,
-    dots: !1,
-    adaptiveHeight: !0,
-    responsive: [
-      {
-        breakpoint: 1121,
-        settings: {
-          slidesToShow: 3,
-          adaptiveHeight: !0,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          adaptiveHeight: !0,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          adaptiveHeight: !0,
-        },
-      },
-    ],
-  }));
-var $slider = $(".excellence-slider"),
-  $paginationNumber = $(".excellence-pagination-number");
-function padNumber(e) {
-  return e < 10 ? "0" + e : e;
-}
-($slider.slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: !0,
-  autoplaySpeed: 1e3,
-  arrows: !0,
-  dots: !1,
-  adaptiveHeight: !0,
-  responsive: [
-    {
-      breakpoint: 1121,
-      settings: {
-        slidesToShow: 3,
-        autoplay: !0,
-        adaptiveHeight: !0,
-      },
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        autoplay: !0,
-        adaptiveHeight: !0,
-      },
-    },
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2,
-        autoplay: !0,
-        adaptiveHeight: !0,
-      },
-    },
-  ],
-}),
-  $slider.on("init reInit afterChange", function (e, t, i) {
-    var o = t.currentSlide + 1,
-      n = t.slideCount;
-    $paginationNumber.text(padNumber(o) + "/" + padNumber(n));
-  }),
-  $(window).scroll(function () {
-    $(this).scrollTop() >= 50
-      ? $("#return-to-top").fadeIn(200)
-      : $("#return-to-top").fadeOut(200);
-  }),
-  $("#return-to-top").click(function () {
-    $("body,html").animate(
-      {
-        scrollTop: 0,
-      },
-      500,
-    );
-  }));
 document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
   // 1. Search Toggle
@@ -213,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeSidebar = () => {
       sidebar.classList.remove("active");
       sidebarOverlay.classList.remove("active");
-      
+
       // Close all open dropdowns inside the sidebar
       sidebarDropdowns.forEach(link => {
         const parentLi = link.parentElement;
@@ -247,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       const parentLi = link.parentElement;
-      
+
       // Close all other open dropdowns
       sidebarDropdowns.forEach(otherLink => {
         if (otherLink !== link) {
@@ -263,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       parentLi.classList.toggle("active");
-      
+
       const icon = link.querySelector("i");
       if (icon) {
         icon.style.transition = "transform 0.3s ease";
@@ -279,20 +170,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroNext = document.getElementById("heroNext");
   if (heroSlides.length > 0 && heroPrev && heroNext) {
     let currentHero = 0;
-    
+
     const showHeroSlide = (index) => {
       heroSlides.forEach((slide, i) => {
         slide.style.display = i === index ? "block" : "none";
-        if(i === index) {
-            slide.classList.add("active");
-            if (typeof AOS !== "undefined") {
-              AOS.refresh();
-            }
+        if (i === index) {
+          slide.classList.add("active");
+          if (typeof AOS !== "undefined") {
+            AOS.refresh();
+          }
         } else {
-            slide.classList.remove("active");
+          slide.classList.remove("active");
         }
       });
-      
+
       // Disable or enable previous button
       if (index === 0) {
         heroPrev.disabled = true;
@@ -303,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
         heroPrev.style.opacity = "1";
         heroPrev.style.cursor = "pointer";
       }
-      
+
       // Disable or enable next button
       if (index === heroSlides.length - 1) {
         heroNext.disabled = true;
@@ -714,7 +605,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const updateCounter = () => {
       spCurrentIndex.textContent = currentItem;
     };
-    
+
     const updateSpNav = () => {
       // Prev button
       if (spTrack.scrollLeft <= 0) {
