@@ -179,7 +179,7 @@ header::after {
     color: #333;
   }
   .header-search-container.active .header-search-input {
-    width: 250px; /* increased width */
+    width: 180px; 
     padding: 0 10px;
     border-bottom: 1px solid #144e97;
   }
