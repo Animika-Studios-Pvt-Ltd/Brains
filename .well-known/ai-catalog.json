@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/schemas/ai-catalog.schema.json",
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Brains Super Speciality Hospital",
+    "documentationUrl": "https://brainshospital.com/llms.txt",
+    "logoUrl": "https://brainshospital.com/static/brainshospital-com/brains-logo.webp"
+  },
+  "entries": []
+}
