@@ -46,6 +46,8 @@
 .address-text {
   width: 35%;
 }
+.address-text h2,
+.address-text h3,
 .address-text h5 {
   color: #1a4f8d;
   margin: 0 0 5px 0;
@@ -186,7 +188,14 @@
   margin: 0;
   font-family: "Roboto-Regular";
   font-size: 16px;
-  color: #696b6a;
+  color: #44484a;
+}
+.footer-bottom-dark a {
+  color: #0f4990;
+  text-decoration: underline;
+}
+.footer-bottom-dark a:hover {
+  color: #082d5b;
 }
 
 /* --- Footer Responsive --- */

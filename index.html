@@ -26,8 +26,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="static/brainshospital-com/slick.css" />
   <link rel="stylesheet" type="text/css" href="static/brainshospital-com/custom.css" />
+  <link rel="preload" as="image" href="static/brainshospital-com/banner-1.webp" fetchpriority="high" />
   <link rel="stylesheet" type="text/css" href="static/brainshospital-com/animate.css" />
-  <link rel="stylesheet" href="root-site.css" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLZTQML145"></script>
@@ -283,6 +283,7 @@
     <div class="header-sidebar-overlay" id="sidebarOverlay"></div>
   </header>
 
+  <main id="main-content">
   <!-- Hero Section -->
   <section class="hero-section" data-aos="fade-up" data-aos-duration="850">
     <div class="container-fluid position-relative">
@@ -322,7 +323,7 @@
             <!-- Right Image -->
             <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 hero-image" data-aos="fade-left"
               data-aos-duration="900" data-aos-delay="150">
-              <img src="static/brainshospital-com/banner-2.webp" alt="Brain and Spine Care 2" class="hero-img-circle" />
+              <img src="static/brainshospital-com/banner-2.webp" alt="Brain and Spine Care 2" class="hero-img-circle" loading="lazy" />
             </div>
           </div>
         </div>
@@ -341,7 +342,7 @@
             <!-- Right Image -->
             <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 hero-image" data-aos="fade-left"
               data-aos-duration="900" data-aos-delay="150">
-              <img src="static/brainshospital-com/banner-3.webp" alt="Brain and Spine Care 2" class="hero-img-circle" />
+              <img src="static/brainshospital-com/banner-3.webp" alt="Brain and Spine Care 2" class="hero-img-circle" loading="lazy" />
             </div>
           </div>
         </div>
@@ -360,7 +361,7 @@
             <!-- Right Image -->
             <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 hero-image" data-aos="fade-left"
               data-aos-duration="900" data-aos-delay="150">
-              <img src="static/brainshospital-com/banner-4.webp" alt="Brain and Spine Care 2" class="hero-img-circle" />
+              <img src="static/brainshospital-com/banner-4.webp" alt="Brain and Spine Care 2" class="hero-img-circle" loading="lazy" />
             </div>
           </div>
         </div>
@@ -379,7 +380,7 @@
             <!-- Right Image -->
             <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 hero-image" data-aos="fade-left"
               data-aos-duration="900" data-aos-delay="150">
-              <img src="static/brainshospital-com/banner-5.webp" alt="Brain and Spine Care 2" class="hero-img-circle" />
+              <img src="static/brainshospital-com/banner-5.webp" alt="Brain and Spine Care 2" class="hero-img-circle" loading="lazy" />
             </div>
           </div>
         </div>
@@ -398,16 +399,16 @@
             <!-- Right Image -->
             <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 hero-image" data-aos="fade-left"
               data-aos-duration="900" data-aos-delay="150">
-              <img src="static/brainshospital-com/banner-6.webp" alt="Brain and Spine Care 2" class="hero-img-circle" />
+              <img src="static/brainshospital-com/banner-6.webp" alt="Brain and Spine Care 2" class="hero-img-circle" loading="lazy" />
             </div>
           </div>
         </div>
       </div>
       <div class="hero-carousel-controls">
-        <button class="hero-carousel-prev" id="heroPrev">
+        <button class="hero-carousel-prev" id="heroPrev" aria-label="Previous hero slide">
           <i class="fas fa-chevron-left"></i>
         </button>
-        <button class="hero-carousel-next" id="heroNext">
+        <button class="hero-carousel-next" id="heroNext" aria-label="Next hero slide">
           <i class="fas fa-chevron-right"></i>
         </button>
       </div>
@@ -421,7 +422,7 @@
       <div class="row founder-info-row">
         <!-- Left Image -->
         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="900">
-          <img src="static/brainshospital-com/dr-n-k-venkataramana.webp" alt="Dr N K Venkataramana" />
+          <img src="static/brainshospital-com/dr-n-k-venkataramana.webp" alt="Dr N K Venkataramana" loading="lazy" />
         </div>
         <!-- Right Info -->
         <div class="col-lg-8 col-md-8" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
@@ -499,7 +500,7 @@
               <!-- Card 1 -->
               <div class="ip-card-item active" id="ip-card-1" data-aos="fade-right" data-aos-duration="650">
                 <div class="ip-card-img">
-                  <img src="static/brainshospital-com/appointments-&-medical-opinion.webp" alt="Appointments" />
+                  <img src="static/brainshospital-com/appointments-&-medical-opinion.webp" alt="Appointments" loading="lazy" />
                 </div>
                 <div class="ip-card-content-right">
                   <div class="ip-card-header">
@@ -518,7 +519,7 @@
               <!-- Card 2 -->
               <div class="ip-card-item" id="ip-card-2" data-aos="fade-left" data-aos-duration="650">
                 <div class="ip-card-img">
-                  <img src="static/brainshospital-com/plan-your-travel.webp" alt="Plan Travel" />
+                  <img src="static/brainshospital-com/plan-your-travel.webp" alt="Plan Travel" loading="lazy" />
                 </div>
                 <div class="ip-card-content-right">
                   <div class="ip-card-header">
@@ -535,7 +536,7 @@
               <!-- Card 3 -->
               <div class="ip-card-item" id="ip-card-3" data-aos="fade-right" data-aos-duration="650">
                 <div class="ip-card-img">
-                  <img src="static/brainshospital-com/registration-&-visa-assistance.webp" alt="Registration" />
+                  <img src="static/brainshospital-com/registration-&-visa-assistance.webp" alt="Registration" loading="lazy" />
                 </div>
                 <div class="ip-card-content-right">
                   <div class="ip-card-header">
@@ -554,7 +555,7 @@
               <!-- Card 4 -->
               <div class="ip-card-item" id="ip-card-4" data-aos="fade-left" data-aos-duration="650">
                 <div class="ip-card-img">
-                  <img src="static/brainshospital-com/treatment-planning.webp" alt="Treatment" />
+                  <img src="static/brainshospital-com/treatment-planning.webp" alt="Treatment" loading="lazy" />
                 </div>
                 <div class="ip-card-content-right">
                   <div class="ip-card-header">
@@ -570,7 +571,7 @@
               <!-- Card 5 -->
               <div class="ip-card-item" id="ip-card-5" data-aos="fade-right" data-aos-duration="650">
                 <div class="ip-card-img">
-                  <img src="static/brainshospital-com/patient-support-services.webp" alt="Support" />
+                  <img src="static/brainshospital-com/patient-support-services.webp" alt="Support" loading="lazy" />
                 </div>
                 <div class="ip-card-content-right">
                   <div class="ip-card-header">
@@ -590,7 +591,7 @@
               <!-- Card 6 -->
               <div class="ip-card-item" id="ip-card-6" data-aos="fade-left" data-aos-duration="650">
                 <div class="ip-card-img">
-                  <img src="static/brainshospital-com/pre-discharge-checklist.webp" alt="Checklist" />
+                  <img src="static/brainshospital-com/pre-discharge-checklist.webp" alt="Checklist" loading="lazy" />
                 </div>
                 <div class="ip-card-content-right">
                   <div class="ip-card-header">
@@ -621,79 +622,79 @@
       <div class="achievement-grid">
         <div class="achievement-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">
           <div class="achieve-top">
-            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top">
+            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top" loading="lazy">
             <span class="achieve-num" data-target-num="10000">10000+</span>
           </div>
           <div class="achieve-mid">
-            <img src="static/brainshospital-com/neuro-surgeries.webp" class="img-fluid" alt="Icon">
+            <img src="static/brainshospital-com/neuro-surgeries.webp" class="img-fluid" alt="Icon" loading="lazy">
           </div>
           <div class="achieve-bottom">
-            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom">
+            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom" loading="lazy">
             <span class="achieve-text">Neuro<br>Surgeries</span>
           </div>
         </div>
         <div class="achievement-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
           <div class="achieve-top">
-            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top">
+            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top" loading="lazy">
             <span class="achieve-num" data-target-num="2000">2000+</span>
           </div>
           <div class="achieve-mid">
-            <img src="static/brainshospital-com/endoscopic-neuro-surgeries.webp" class="img-fluid" alt="Icon">
+            <img src="static/brainshospital-com/endoscopic-neuro-surgeries.webp" class="img-fluid" alt="Icon" loading="lazy">
           </div>
           <div class="achieve-bottom">
-            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom">
+            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom" loading="lazy">
             <span class="achieve-text">Endoscopic<br>NeuroSurgeries</span>
           </div>
         </div>
         <div class="achievement-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="250">
           <div class="achieve-top">
-            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top">
+            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top" loading="lazy">
             <span class="achieve-num" data-target-num="10000">10000+</span>
           </div>
           <div class="achieve-mid">
-            <img src="static/brainshospital-com/spinal-surgeries.webp" class="img-fluid" alt="Icon">
+            <img src="static/brainshospital-com/spinal-surgeries.webp" class="img-fluid" alt="Icon" loading="lazy">
           </div>
           <div class="achieve-bottom">
-            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom">
+            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom" loading="lazy">
             <span class="achieve-text">Spinal<br>Surgeries</span>
           </div>
         </div>
         <div class="achievement-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="350">
           <div class="achieve-top">
-            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top">
+            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top" loading="lazy">
             <span class="achieve-num" data-target-num="3000">3000+</span>
           </div>
           <div class="achieve-mid">
-            <img src="static/brainshospital-com/brain-tumor-surgeries.webp" class="img-fluid" alt="Icon">
+            <img src="static/brainshospital-com/brain-tumor-surgeries.webp" class="img-fluid" alt="Icon" loading="lazy">
           </div>
           <div class="achieve-bottom">
-            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom">
+            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom" loading="lazy">
             <span class="achieve-text">Brain Tumor<br>Surgeries</span>
           </div>
         </div>
         <div class="achievement-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="450">
           <div class="achieve-top">
-            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top">
+            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top" loading="lazy">
             <span class="achieve-num" data-target-num="5000">5000+</span>
           </div>
           <div class="achieve-mid">
-            <img src="static/brainshospital-com/paediatric-neuro-surgeries.webp" class="img-fluid" alt="Icon">
+            <img src="static/brainshospital-com/paediatric-neuro-surgeries.webp" class="img-fluid" alt="Icon" loading="lazy">
           </div>
           <div class="achieve-bottom">
-            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom">
+            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom" loading="lazy">
             <span class="achieve-text">Paediatric<br>NeuroSurgeries</span>
           </div>
         </div>
         <div class="achievement-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="550">
           <div class="achieve-top">
-            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top">
+            <img src="static/brainshospital-com/achievements-top.webp" class="img-fluid" alt="Top" loading="lazy">
             <span class="achieve-num" data-target-num="2000">2000+</span>
           </div>
           <div class="achieve-mid">
-            <img src="static/brainshospital-com/spinal-tumor-surgeries.webp" class="img-fluid" alt="Icon">
+            <img src="static/brainshospital-com/spinal-tumor-surgeries.webp" class="img-fluid" alt="Icon" loading="lazy">
           </div>
           <div class="achieve-bottom">
-            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom">
+            <img src="static/brainshospital-com/achievements-bottom.webp" class="img-fluid" alt="Bottom" loading="lazy">
             <span class="achieve-text">Spinal Tumor<br>Surgeries</span>
           </div>
         </div>
@@ -711,41 +712,41 @@
       <div class="team-carousel-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
         <div class="team-grid" id="teamTrack">
           <div class="team-member">
-            <img src="static/brainshospital-com/dr-n-k-venkataramana.webp" alt="Dr. N K Venkataramana" />
-            <h4>Dr. N K Venkataramana</h4>
+            <img src="static/brainshospital-com/dr-n-k-venkataramana.webp" alt="Dr. N K Venkataramana" loading="lazy" />
+            <h3>Dr. N K Venkataramana</h3>
             <p>Chief Neurosurgeon and<br />Managing Director</p>
           </div>
           <div class="team-member">
-            <img src="static/brainshospital-com/dr-harsha.webp" alt="Dr. Harsha K J" />
-            <h4>Dr. Harsha K J</h4>
+            <img src="static/brainshospital-com/dr-harsha.webp" alt="Dr. Harsha K J" loading="lazy" />
+            <h3>Dr. Harsha K J</h3>
             <p>
               Neuro Interventional<br />Specialist, Stroke Specialist<br />&
               Neuro Radiologist
             </p>
           </div>
           <div class="team-member">
-            <img src="static/brainshospital-com/dr-joshy.webp" alt="Dr. Joshy E.V." />
-            <h4>Dr. Joshy E.V.</h4>
+            <img src="static/brainshospital-com/dr-joshy.webp" alt="Dr. Joshy E.V." loading="lazy" />
+            <h3>Dr. Joshy E.V.</h3>
             <p>Senior Consultant<br />Neurologist</p>
           </div>
           <div class="team-member">
-            <img src="static/brainshospital-com/dr-pavithra-venkateswaran.webp" alt="Dr. Pavithra Venkateswaran" />
-            <h4>Dr. Pavithra Venkateswaran</h4>
+            <img src="static/brainshospital-com/dr-pavithra-venkateswaran.webp" alt="Dr. Pavithra Venkateswaran" loading="lazy" />
+            <h3>Dr. Pavithra Venkateswaran</h3>
             <p>Consultant<br />Neuroanesthesia & Neuro<br />Critical Care</p>
           </div>
           <div class="team-member">
-            <img src="static/brainshospital-com/dr-prahlada-n-b.webp" alt="DR. Prahlada N.B" />
-            <h4>DR. Prahlada N.B</h4>
+            <img src="static/brainshospital-com/dr-prahlada-n-b.webp" alt="DR. Prahlada N.B" loading="lazy" />
+            <h3>DR. Prahlada N.B</h3>
             <p>ENT Surgeon</p>
           </div>
           <div class="team-member">
-            <img src="static/brainshospital-com/dr-ashwani-baby.webp" alt="Mrs. Aswani Baby" />
-            <h4>Mrs. Aswani Baby</h4>
+            <img src="static/brainshospital-com/dr-ashwani-baby.webp" alt="Mrs. Aswani Baby" loading="lazy" />
+            <h3>Mrs. Aswani Baby</h3>
             <p>Speech & Swallow Therapist</p>
           </div>
           <div class="team-member">
-            <img src="static/brainshospital-com/dr-pani.webp" alt="Dr. Pratap Kumar Pani" />
-            <h4>Dr. Pratap Kumar Pani</h4>
+            <img src="static/brainshospital-com/dr-pani.webp" alt="Dr. Pratap Kumar Pani" loading="lazy" />
+            <h3>Dr. Pratap Kumar Pani</h3>
             <p>Senior Consultant, Neurosurgery</p>
           </div>
         </div>
@@ -763,51 +764,51 @@
         <!-- Row 1 -->
         <a href="brain-tumor-treatment-bangalore.html" class="centre-card" data-aos="fade-right" data-aos-duration="750"
           data-aos-delay="50">
-          <img src="static/brainshospital-com/brain trauma.webp" alt="Brain Trauma" />
+          <img src="static/brainshospital-com/brain trauma.webp" alt="Brain Trauma" loading="lazy" />
           <span>Brain Trauma | Spinal Trauma | Poly Trauma</span>
           <i class="fas fa-chevron-right"></i>
         </a>
         <a href="Motor-Neuron-Disease.html" class="centre-card" data-aos="fade-left" data-aos-duration="750"
           data-aos-delay="50">
-          <img src="static/brainshospital-com/center-for-motor-neuron-disease.webp" alt="Motor Neuron Disease" />
+          <img src="static/brainshospital-com/center-for-motor-neuron-disease.webp" alt="Motor Neuron Disease" loading="lazy" />
           <span>Centre For Motor Neuron Disease</span>
           <i class="fas fa-chevron-right"></i>
         </a>
         <!-- Row 2 -->
         <a href="nerve-compression-treatment-bangalore.html" class="centre-card" data-aos="fade-right"
           data-aos-duration="750" data-aos-delay="100">
-          <img src="static/brainshospital-com/neuro-critical-care.webp" alt="Neuro Critical Care" />
+          <img src="static/brainshospital-com/neuro-critical-care.webp" alt="Neuro Critical Care" loading="lazy" />
           <span>Neuro Critical Care</span>
           <i class="fas fa-chevron-right"></i>
         </a>
         <a href="#" class="centre-card" data-aos="fade-left" data-aos-duration="750" data-aos-delay="100">
-          <img src="static/brainshospital-com/neuro-rehabilitation.webp" alt="Neuro Rehabilitation" />
+          <img src="static/brainshospital-com/neuro-rehabilitation.webp" alt="Neuro Rehabilitation" loading="lazy" />
           <span>Neuro Rehabilitation</span>
           <i class="fas fa-chevron-right"></i>
         </a>
         <!-- Row 3 -->
         <a href="Critical-care-hospital-bangalore.html" class="centre-card" data-aos="fade-right"
           data-aos-duration="750" data-aos-delay="150">
-          <img src="static/brainshospital-com/general-critical-care.webp" alt="General Critical Care" />
+          <img src="static/brainshospital-com/general-critical-care.webp" alt="General Critical Care" loading="lazy" />
           <span>General Critical Care</span>
           <i class="fas fa-chevron-right"></i>
         </a>
         <a href="Spine-care-clinic.html" class="centre-card" data-aos="fade-left" data-aos-duration="750"
           data-aos-delay="150">
-          <img src="static/brainshospital-com/center-for-spine.webp" alt="Center For Spine" />
+          <img src="static/brainshospital-com/center-for-spine.webp" alt="Center For Spine" loading="lazy" />
           <span>Center For Spine</span>
           <i class="fas fa-chevron-right"></i>
         </a>
         <!-- Row 4 -->
         <a href="stroke-brain-attack-clinic.html" class="centre-card" data-aos="fade-right" data-aos-duration="750"
           data-aos-delay="200">
-          <img src="static/brainshospital-com/center-for-stroke.webp" alt="Center For Stroke" />
+          <img src="static/brainshospital-com/center-for-stroke.webp" alt="Center For Stroke" loading="lazy" />
           <span>Center For Stroke</span>
           <i class="fas fa-chevron-right"></i>
         </a>
         <a href="#" class="centre-card" data-aos="fade-left" data-aos-duration="750" data-aos-delay="200">
           <img src="static/brainshospital-com/centre-for-minimally-invasive-neurosurgery.webp"
-            alt="Minimally Invasive Neurosurgery" />
+            alt="Minimally Invasive Neurosurgery" loading="lazy" />
           <span>Centre For Minimally Invasive Neurosurgery, Microsurgery,
             Endoscopy, Stereotaxy</span>
           <i class="fas fa-chevron-right"></i>
@@ -815,13 +816,13 @@
         <!-- Row 5 -->
         <a href="Parkinsons-Clinic.html" class="centre-card" data-aos="fade-right" data-aos-duration="750"
           data-aos-delay="250">
-          <img src="static/brainshospital-com/center-for-parkinson's-disease.webp" alt="Parkinson's Disease" />
+          <img src="static/brainshospital-com/center-for-parkinson's-disease.webp" alt="Parkinson's Disease" loading="lazy" />
           <span>Center For Parkinson's Disease</span>
           <i class="fas fa-chevron-right"></i>
         </a>
         <a href="Brain-Tumor-Wing.html" class="centre-card" data-aos="fade-left" data-aos-duration="750"
           data-aos-delay="250">
-          <img src="static/brainshospital-com/center-for-neuro-oncology.webp" alt="Neuro Oncology" />
+          <img src="static/brainshospital-com/center-for-neuro-oncology.webp" alt="Neuro Oncology" loading="lazy" />
           <span>Centre For Neuro Oncology</span>
           <i class="fas fa-chevron-right"></i>
         </a>
@@ -839,96 +840,96 @@
           <!-- Cards -->
           <div class="speciality-card active">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/neurosurgery.webp" alt="Neurosurgery" />
+              <img src="static/brainshospital-com/neurosurgery.webp" alt="Neurosurgery" loading="lazy" />
             </div>
-            <h4>Neurosurgery</h4>
+            <h3>Neurosurgery</h3>
             <a href="nerve-compression-treatment-bangalore.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/vascular-surgery.webp" alt="Vascular Surgery" />
+              <img src="static/brainshospital-com/vascular-surgery.webp" alt="Vascular Surgery" loading="lazy" />
             </div>
-            <h4>Vascular Surgery</h4>
+            <h3>Vascular Surgery</h3>
             <a href="Vascular-Care.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
               <img src="static/brainshospital-com/plastic-&-reconstructive-surgery.webp"
-                alt="Plastic & Reconstructive Surgery" />
+                alt="Plastic & Reconstructive Surgery" loading="lazy" />
             </div>
-            <h4>Plastic & Reconstructive Surgery</h4>
+            <h3>Plastic & Reconstructive Surgery</h3>
             <a href="Patient-Stories.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/general-surgery.webp" alt="General Surgery" />
+              <img src="static/brainshospital-com/general-surgery.webp" alt="General Surgery" loading="lazy" />
             </div>
-            <h4>General Surgery</h4>
+            <h3>General Surgery</h3>
             <a href="General-Medicine.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/surgical-oncology.webp" alt="Surgical Oncology" />
+              <img src="static/brainshospital-com/surgical-oncology.webp" alt="Surgical Oncology" loading="lazy" />
             </div>
-            <h4>Surgical Oncology</h4>
+            <h3>Surgical Oncology</h3>
             <a href="Surgical-Oncology.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/gastroenterology.webp" alt="Gastroenterology" />
+              <img src="static/brainshospital-com/gastroenterology.webp" alt="Gastroenterology" loading="lazy" />
             </div>
-            <h4>Gastroenterology</h4>
+            <h3>Gastroenterology</h3>
             <a href="Doctors.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/orthopaedics.webp" alt="Orthopaedics" />
+              <img src="static/brainshospital-com/orthopaedics.webp" alt="Orthopaedics" loading="lazy" />
             </div>
-            <h4>Orthopaedics</h4>
+            <h3>Orthopaedics</h3>
             <a href="Orthopedic-Treatment.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/medical-oncology.webp" alt="Medical Oncology" />
+              <img src="static/brainshospital-com/medical-oncology.webp" alt="Medical Oncology" loading="lazy" />
             </div>
-            <h4>Medical Oncology</h4>
+            <h3>Medical Oncology</h3>
             <a href="Surgical-Oncology.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/cardiology.webp" alt="Cardiology" />
+              <img src="static/brainshospital-com/cardiology.webp" alt="Cardiology" loading="lazy" />
             </div>
-            <h4>Cardiology</h4>
+            <h3>Cardiology</h3>
             <a href="Heart-Care.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/general-medicine.webp" alt="General Medicine" />
+              <img src="static/brainshospital-com/general-medicine.webp" alt="General Medicine" loading="lazy" />
             </div>
-            <h4>General Medicine</h4>
+            <h3>General Medicine</h3>
             <a href="General-Medicine.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/pulmonology.webp" alt="Pulmonology" />
+              <img src="static/brainshospital-com/pulmonology.webp" alt="Pulmonology" loading="lazy" />
             </div>
-            <h4>Pulmonology</h4>
+            <h3>Pulmonology</h3>
             <a href="Lung-Care.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
           <div class="speciality-card">
             <div class="icon-wrapper">
-              <img src="static/brainshospital-com/surgical-gastroenterology.webp" alt="Surgical Gastroenterology" />
+              <img src="static/brainshospital-com/surgical-gastroenterology.webp" alt="Surgical Gastroenterology" loading="lazy" />
             </div>
-            <h4>Surgical Gastroenterology</h4>
+            <h3>Surgical Gastroenterology</h3>
             <a href="Doctors.html">Explore More <i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
         <div class="super-specialities-controls">
-          <button class="super-specialities-prev" id="spPrev">
+          <button class="super-specialities-prev" id="spPrev" aria-label="Previous speciality">
             <i class="fas fa-chevron-left"></i>
           </button>
           <span class="super-specialities-counter"><span id="spCurrentIndex">1</span> of 12</span>
-          <button class="super-specialities-next" id="spNext">
+          <button class="super-specialities-next" id="spNext" aria-label="Next speciality">
             <i class="fas fa-chevron-right"></i>
           </button>
         </div>
@@ -941,7 +942,7 @@
     <div class="ps-bg-banner">
       <div class="container ps-inner-content">
         <div class="ps-circle-box" data-aos="zoom-in" data-aos-duration="850">
-          <img src="static/brainshospital-com/patients-speak-text.webp" alt="Background Circle" class="ps-circle-img" />
+          <img src="static/brainshospital-com/patients-speak-text.webp" alt="Background Circle" class="ps-circle-img" loading="lazy" />
           <div class="ps-circle-text">
             <h2>Patient's Speak</h2>
             <p>
@@ -956,31 +957,31 @@
           <div class="ps-carousel-container">
             <div class="ps-carousel-track" id="psCarouselTrack">
               <div class="ps-carousel-item">
-                <img src="static/brainshospital-com/patients-speak-image.webp" alt="Patient Story 10" />
+                <img src="static/brainshospital-com/patients-speak-image.webp" alt="Patient Story 10" loading="lazy" />
               </div>
               <div class="ps-carousel-item">
-                <img src="static/brainshospital-com/patient-story-10.webp" alt="Patient Story 10" />
+                <img src="static/brainshospital-com/patient-story-10.webp" alt="Patient Story 10" loading="lazy" />
               </div>
               <div class="ps-carousel-item">
-                <img src="static/brainshospital-com/patient-story-11.webp" alt="Patient Story 11" />
+                <img src="static/brainshospital-com/patient-story-11.webp" alt="Patient Story 11" loading="lazy" />
               </div>
               <div class="ps-carousel-item">
-                <img src="static/brainshospital-com/patient-story-12.webp" alt="Patient Story 12" />
+                <img src="static/brainshospital-com/patient-story-12.webp" alt="Patient Story 12" loading="lazy" />
               </div>
               <div class="ps-carousel-item">
-                <img src="static/brainshospital-com/patient-story-13.webp" alt="Patient Story 13" />
+                <img src="static/brainshospital-com/patient-story-13.webp" alt="Patient Story 13" loading="lazy" />
               </div>
               <div class="ps-carousel-item">
-                <img src="static/brainshospital-com/patient-story-16.webp" alt="Patient Story 16" />
+                <img src="static/brainshospital-com/patient-story-16.webp" alt="Patient Story 16" loading="lazy" />
               </div>
             </div>
           </div>
           <p class="ps-caption">Stroke is reversible. Time is key.</p>
           <div class="ps-controls-bottom">
-            <button class="ps-nav-prev" id="psNavPrev">
+            <button class="ps-nav-prev" id="psNavPrev" aria-label="Previous video">
               <i class="fas fa-chevron-left"></i>
             </button>
-            <button class="ps-nav-next" id="psNavNext">
+            <button class="ps-nav-next" id="psNavNext" aria-label="Next video">
               <i class="fas fa-chevron-right"></i>
             </button>
           </div>
@@ -998,8 +999,8 @@
 
         <!-- Section 1 -->
         <div class="kyb-article" data-aos="fade-right" data-aos-duration="750" data-aos-delay="50">
-          <img src="static/brainshospital-com/world-parkinson's-day.webp" alt="World Parkinson's Day" />
-          <h4>World Parkinson's Day</h4>
+          <img src="static/brainshospital-com/world-parkinson's-day.webp" alt="World Parkinson's Day" loading="lazy" />
+          <h3>World Parkinson's Day</h3>
           <p>
             Parkinson's Disease: Causes, symptoms, diagnosis, treatment...
           </p>
@@ -1010,8 +1011,8 @@
 
         <!-- Section 2 -->
         <div class="kyb-article" data-aos="fade-right" data-aos-duration="750" data-aos-delay="150">
-          <img src="static/brainshospital-com/brain-tumours-in-children.webp" alt="Brain Tumours in Children" />
-          <h4>Brain Tumours in Children</h4>
+          <img src="static/brainshospital-com/brain-tumours-in-children.webp" alt="Brain Tumours in Children" loading="lazy" />
+          <h3>Brain Tumours in Children</h3>
           <p>Brain cancer does not spare any age group...</p>
           <div class="kyb-readmore">
             <a href="brain-tumors-in-children.html">Read Paediatric Brain Tumour Guide <i class="fas fa-chevron-right"></i></a>
@@ -1028,10 +1029,10 @@
           <div class="bv-newsletter">
             <div class="bv-newsletter-images">
               <img src="static/brainshospital-com/brain-voice.webp" alt="Newsletters"
-                onerror="this.style.display = 'none'" />
+                onerror="this.style.display = 'none'" loading="lazy" />
             </div>
             <div class="bv-newsletter-content">
-              <h4>Monthly Newsletter</h4>
+              <h3>Monthly Newsletter</h3>
               <span class="bv-date">Feb 2025</span>
               <div class="bv-links">
                 <a href="static/brainshospital-com/the-secret-of-brain-wellness-media-kit.pdf" class="bv-link-download"
@@ -1064,14 +1065,14 @@
         <div class="bv-video" data-aos="fade-left" data-aos-duration="750" data-aos-delay="150">
           <a href="https://youtu.be/EqRj8gV04I4?si=P0yFzRrxtpytcR6y" target="_blank" rel="noopener noreferrer"
             class="bv-video-thumbnail">
-            <img src="static/brainshospital-com/vd.webp" alt="Brain Trauma Video" />
+            <img src="static/brainshospital-com/vd.webp" alt="Brain Trauma Video" loading="lazy" />
             <div class="bv-play-btn">
               <i class="fas fa-play"></i>
               <span class="bv-play-text">Watch</span>
             </div>
           </a>
           <div class="bv-video-text">
-            <h4>
+            <h3>
               What is brain trauma? How it affects one & the society at large?
             </h4>
             <p>
@@ -1093,46 +1094,48 @@
         <div class="logo-scroll-track">
           <div class="logo-set">
             <img src="static/brainshospital-com/neurological-society-of-india.webp" class="img-fluid"
-              alt="Alliance 1" />
+              alt="Alliance 1" loading="lazy" />
             <img src="static/brainshospital-com/american-society-of-neurological-surgeons.webp" class="img-fluid"
-              alt="Alliance 2" />
+              alt="Alliance 2" loading="lazy" />
             <img src="static/brainshospital-com/congress-of-neurological-surgeons-usa.webp" class="img-fluid"
-              alt="Alliance 3" />
+              alt="Alliance 3" loading="lazy" />
             <img src="static/brainshospital-com/dandy-neurological-society-usa.webp" class="img-fluid"
-              alt="Alliance 4" />
+              alt="Alliance 4" loading="lazy" />
             <img src="static/brainshospital-com/indspn-indian-society-of-paediatric-neurosurgery.webp" class="img-fluid"
-              alt="Alliance 5" />
+              alt="Alliance 5" loading="lazy" />
             <img src="static/brainshospital-com/indian-society-of-stererotatic-and-functional-neurosurgery.webp"
-              class="img-fluid" alt="Alliance 6" />
+              class="img-fluid" alt="Alliance 6" loading="lazy" />
             <img src="static/brainshospital-com/cerebrovascular-society-of-india.webp" class="img-fluid"
-              alt="Alliance 7" />
+              alt="Alliance 7" loading="lazy" />
             <img src="static/brainshospital-com/ness-neuroendoscopy-society-of-india.webp" class="img-fluid"
-              alt="Alliance 8" />
-            <img src="static/brainshospital-com/neur-trauma-society-of-india.webp" class="img-fluid" alt="Alliance 9" />
+              alt="Alliance 8" loading="lazy" />
+            <img src="static/brainshospital-com/neur-trauma-society-of-india.webp" class="img-fluid" alt="Alliance 9" loading="lazy" />
           </div>
           <div class="logo-set">
             <img src="static/brainshospital-com/neurological-society-of-india.webp" class="img-fluid"
-              alt="Alliance 1" />
+              alt="Alliance 1" loading="lazy" />
             <img src="static/brainshospital-com/american-society-of-neurological-surgeons.webp" class="img-fluid"
-              alt="Alliance 2" />
+              alt="Alliance 2" loading="lazy" />
             <img src="static/brainshospital-com/congress-of-neurological-surgeons-usa.webp" class="img-fluid"
-              alt="Alliance 3" />
+              alt="Alliance 3" loading="lazy" />
             <img src="static/brainshospital-com/dandy-neurological-society-usa.webp" class="img-fluid"
-              alt="Alliance 4" />
+              alt="Alliance 4" loading="lazy" />
             <img src="static/brainshospital-com/indspn-indian-society-of-paediatric-neurosurgery.webp" class="img-fluid"
-              alt="Alliance 5" />
+              alt="Alliance 5" loading="lazy" />
             <img src="static/brainshospital-com/indian-society-of-stererotatic-and-functional-neurosurgery.webp"
-              class="img-fluid" alt="Alliance 6" />
+              class="img-fluid" alt="Alliance 6" loading="lazy" />
             <img src="static/brainshospital-com/cerebrovascular-society-of-india.webp" class="img-fluid"
-              alt="Alliance 7" />
+              alt="Alliance 7" loading="lazy" />
             <img src="static/brainshospital-com/ness-neuroendoscopy-society-of-india.webp" class="img-fluid"
-              alt="Alliance 8" />
-            <img src="static/brainshospital-com/neur-trauma-society-of-india.webp" class="img-fluid" alt="Alliance 9" />
+              alt="Alliance 8" loading="lazy" />
+            <img src="static/brainshospital-com/neur-trauma-society-of-india.webp" class="img-fluid" alt="Alliance 9" loading="lazy" />
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
@@ -1141,14 +1144,14 @@
         <div class="footer-hospital-info align-items-center" data-aos="fade-up" data-aos-duration="700">
           <div class="footer-logo-wrap text-center">
             <img src="static/brainshospital-com/brains-logo-footer.webp" alt="BrainS Logo"
-              class="footer-logo img-fluid" />
+              class="footer-logo img-fluid" loading="lazy" />
           </div>
           <div class="footer-address-image text-center">
             <img src="static/brainshospital-com/hospita-location.webp" alt="Hospital Building"
-              class="hospital-img img-fluid" />
+              class="hospital-img img-fluid" loading="lazy" />
           </div>
           <div class="address-text">
-            <h5>Our Location</h5>
+            <h3>Our Location</h3>
             <p>
               Brains Super Speciality Hospital<br />
               192, T Mariyappa Road, Lalbagh, Siddapura,<br />
@@ -1164,7 +1167,7 @@
             <a href="https://app.brainshospital.com" class="btn-book-appointment">BOOK AN APPOINTMENT</a>
           </div>
           <div class="banner-opd-info">
-            <img src="static/brainshospital-com/opd-hours.webp" alt="OPD Hours" class="opd-icon" />
+            <img src="static/brainshospital-com/opd-hours.webp" alt="OPD Hours" class="opd-icon" loading="lazy" />
             <div class="opd-text">
               <p>
                 Monday to Saturday<br />
@@ -1176,7 +1179,7 @@
           <div class="banner-emergency-info">
             <div class="emergency-title">Emergency Services available</div>
             <div class="emergency-details">
-              <img src="static/brainshospital-com/24x365.webp" alt="24/365 Days" class="emergency-icon" />
+              <img src="static/brainshospital-com/24x365.webp" alt="24/365 Days" class="emergency-icon" loading="lazy" />
               <div class="emergency-contact">
                 <p>
                   Including Holidays<br />
@@ -1221,14 +1224,14 @@
           <div class="barcode">
             <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15553.507436196616!2d77.5922195!3d12.9477201!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x75e781fad36ecf06!2sBrains%20Hospital!5e0!3m2!1sen!2sin!4v1657947681523!5m2!1sen!2sin"
               target="blank"><img src="static/brainshospital-com/brains-location-scanner.webp" class="img-fluid"
-                alt="brains hospital map" /></a>
+                alt="brains hospital map" loading="lazy" /></a>
             <p>Scan for Location</p>
           </div>
         </div>
         <div class="footer-social-icons">
-          <a href="https://www.youtube.com/channel/UCtzP9K4la8Mf8Vj9vVd5JNA" target="_blank"><i
+          <a href="https://www.youtube.com/channel/UCtzP9K4la8Mf8Vj9vVd5JNA" target="_blank" aria-label="Brains Hospital YouTube Channel"><i
               class="fab fa-youtube"></i></a>
-          <a href="https://www.linkedin.com/company/center-for-brain-and-spine-repair/home/" target="_blank"><i
+          <a href="https://www.linkedin.com/company/center-for-brain-and-spine-repair/home/" target="_blank" aria-label="Brains Hospital LinkedIn Page"><i
               class="fab fa-linkedin-in"></i></a>
         </div>
       </div>

@@ -1,12 +1,12 @@
 @import url("header.css");
 @import url("homepage.css");
 @import url("footer.css");
-@import url("breadcrumb.css");
 
 @font-face {
   font-family: "Mirador-Medium";
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src:
     local("Mirador-Medium"),
     url("mirador-medium.ttf") format("truetype");
@@ -14,6 +14,7 @@
 @font-face {
   font-family: "Lora-Italic";
   font-style: italic;
+  font-display: swap;
   src:
     local("Lora-Italic"),
     url("Lora-Italic.ttf") format("truetype");
@@ -22,6 +23,7 @@
   font-family: "RobotoCondensed-Bold";
   font-style: bold;
   font-weight: 700;
+  font-display: swap;
   src:
     local("RobotoCondensed-Bold"),
     url("RobotoCondensed-Bold.ttf") format("truetype");
@@ -30,6 +32,7 @@
   font-family: "Roboto-Medium";
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src:
     local("Roboto-Medium"),
     url("Roboto-Medium.ttf") format("truetype");
@@ -38,6 +41,7 @@
   font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src:
     local("Roboto-Regular"),
     url("roboto-regular.ttf") format("truetype");
@@ -46,6 +50,7 @@
   font-family: "Roboto-Light";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src:
     local("Roboto-Light"),
     url("roboto-light.ttf") format("truetype");
