@@ -10,102 +10,113 @@ function animateValue(e, t, i, o) {
 }
 (document.addEventListener("DOMContentLoaded", function () {
     let e = document.querySelectorAll(".count");
-    e.forEach((e) => {
-      let t = parseInt(e.getAttribute("data-start"), 10),
-        i = parseInt(e.getAttribute("data-end"), 10),
-        o = parseInt(e.getAttribute("data-duration"), 20);
-      ((e.innerHTML = t + "+"), animateValue(e, t, i, o));
-    });
+    if (e.length > 0) {
+      e.forEach((e) => {
+        let t = parseInt(e.getAttribute("data-start"), 10),
+          i = parseInt(e.getAttribute("data-end"), 10),
+          o = parseInt(e.getAttribute("data-duration"), 20);
+        ((e.innerHTML = t + "+"), animateValue(e, t, i, o));
+      });
+    }
   }),
-  $(".doctors-slider").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: !0,
-    autoplaySpeed: 1e3,
-    arrows: !0,
-    dots: !1,
-    adaptiveHeight: !0,
-    responsive: [
-      {
-        breakpoint: 1121,
-        settings: {
-          slidesToShow: 3,
-          adaptiveHeight: !0,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          adaptiveHeight: !0,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          adaptiveHeight: !0,
-        },
-      },
-    ],
-  }));
-var $slider = $(".excellence-slider"),
-  $paginationNumber = $(".excellence-pagination-number");
-function padNumber(e) {
-  return e < 10 ? "0" + e : e;
-}
-($slider.slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: !0,
-  autoplaySpeed: 1e3,
-  arrows: !0,
-  dots: !1,
-  adaptiveHeight: !0,
-  responsive: [
-    {
-      breakpoint: 1121,
-      settings: {
-        slidesToShow: 3,
+  $(function () {
+    const $docSlider = $(".doctors-slider");
+    if ($docSlider.length > 0) {
+      $docSlider.slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
         autoplay: !0,
+        autoplaySpeed: 1e3,
+        arrows: !0,
+        dots: !1,
         adaptiveHeight: !0,
-      },
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
+        responsive: [
+          {
+            breakpoint: 1121,
+            settings: {
+              slidesToShow: 3,
+              adaptiveHeight: !0,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              adaptiveHeight: !0,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              adaptiveHeight: !0,
+            },
+          },
+        ],
+      });
+    }
+
+    const $slider = $(".excellence-slider");
+    const $paginationNumber = $(".excellence-pagination-number");
+    if ($slider.length > 0) {
+      $slider.slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
         autoplay: !0,
+        autoplaySpeed: 1e3,
+        arrows: !0,
+        dots: !1,
         adaptiveHeight: !0,
-      },
-    },
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2,
-        autoplay: !0,
-        adaptiveHeight: !0,
-      },
-    },
-  ],
-}),
-  $slider.on("init reInit afterChange", function (e, t, i) {
-    var o = t.currentSlide + 1,
-      n = t.slideCount;
-    $paginationNumber.text(padNumber(o) + "/" + padNumber(n));
-  }),
-  $(window).scroll(function () {
-    $(this).scrollTop() >= 50
-      ? $("#return-to-top").fadeIn(200)
-      : $("#return-to-top").fadeOut(200);
-  }),
-  $("#return-to-top").click(function () {
-    $("body,html").animate(
-      {
-        scrollTop: 0,
-      },
-      500,
-    );
+        responsive: [
+          {
+            breakpoint: 1121,
+            settings: {
+              slidesToShow: 3,
+              autoplay: !0,
+              adaptiveHeight: !0,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              autoplay: !0,
+              adaptiveHeight: !0,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              autoplay: !0,
+              adaptiveHeight: !0,
+            },
+          },
+        ],
+      });
+      $slider.on("init reInit afterChange", function (e, t, i) {
+        var o = t.currentSlide + 1,
+          n = t.slideCount;
+        $paginationNumber.text(padNumber(o) + "/" + padNumber(n));
+      });
+    }
+
+    const $returnToTop = $("#return-to-top");
+    if ($returnToTop.length > 0) {
+      $(window).scroll(function () {
+        $(this).scrollTop() >= 50
+          ? $returnToTop.fadeIn(200)
+          : $returnToTop.fadeOut(200);
+      });
+      $returnToTop.click(function () {
+        $("body,html").animate(
+          {
+            scrollTop: 0,
+          },
+          500,
+        );
+      });
+    }
   }));
 document.addEventListener("DOMContentLoaded", () => {
   // ==========================================
@@ -280,12 +291,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (heroSlides.length > 0 && heroPrev && heroNext) {
     let currentHero = 0;
     
-    const showHeroSlide = (index) => {
+    const showHeroSlide = (index, isInit = false) => {
       heroSlides.forEach((slide, i) => {
         slide.style.display = i === index ? "block" : "none";
         if(i === index) {
             slide.classList.add("active");
-            if (typeof AOS !== "undefined") {
+            if (!isInit && typeof AOS !== "undefined") {
               AOS.refresh();
             }
         } else {
@@ -317,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Initialize button states on load
-    showHeroSlide(currentHero);
+    showHeroSlide(currentHero, true);
 
     heroPrev.addEventListener("click", () => {
       if (currentHero > 0) {
