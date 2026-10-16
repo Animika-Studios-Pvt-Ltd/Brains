@@ -7,26 +7,46 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("searchInput");
 
   if (searchIcon && searchContainer) {
-    // Toggle search container visibility
-    searchIcon.addEventListener("click", () => {
+    let resultsContainer;
+
+    const positionResults = () => {
+      if (!resultsContainer) return;
+
+      const anchor = searchContainer.getBoundingClientRect();
+      const gutter = 16;
+      const maxPanelWidth = window.innerWidth <= 575 ? 320 : 360;
+      const panelWidth = Math.min(maxPanelWidth, window.innerWidth - gutter * 2);
+      const panelLeft = Math.max(gutter, Math.min(anchor.right - panelWidth, window.innerWidth - gutter - panelWidth));
+      const panelTop = anchor.bottom + 12;
+      const pointerPosition = Math.max(20, Math.min(panelWidth - 38, anchor.right - panelLeft - 16));
+
+      resultsContainer.style.setProperty("--search-results-top", `${panelTop}px`);
+      resultsContainer.style.setProperty("--search-results-left", `${panelLeft}px`);
+      resultsContainer.style.setProperty("--search-results-width", `${panelWidth}px`);
+      resultsContainer.style.setProperty("--search-results-pointer", `${pointerPosition}px`);
+      resultsContainer.style.setProperty("--search-results-max-height", `${Math.max(150, window.innerHeight - panelTop - gutter)}px`);
+    };
+
+    const toggleSearch = () => {
       searchContainer.classList.toggle("active");
       if (searchContainer.classList.contains("active")) {
         searchInput.focus();
+        positionResults();
+      } else if (resultsContainer) {
+        resultsContainer.style.display = "none";
+      }
+    };
+    searchIcon.addEventListener("click", toggleSearch);
+    searchIcon.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        toggleSearch();
       }
     });
 
     // Create results container
-    const resultsContainer = document.createElement("div");
+    resultsContainer = document.createElement("div");
     resultsContainer.className = "header-search-results";
-    resultsContainer.style.position = "absolute";
-    resultsContainer.style.top = "100%";
-    resultsContainer.style.left = "0";
-    resultsContainer.style.right = "0";
-    resultsContainer.style.maxHeight = "300px";
-    resultsContainer.style.overflowY = "auto";
-    resultsContainer.style.background = "#fff";
-    resultsContainer.style.border = "1px solid #ccc";
-    resultsContainer.style.zIndex = "1000";
     resultsContainer.style.display = "none";
     searchContainer.appendChild(resultsContainer);
 
@@ -46,16 +66,19 @@ document.addEventListener("DOMContentLoaded", () => {
         return text.includes(trimmed);
       });
       if (matches.length === 0) {
-        resultsContainer.innerHTML = "<div style='padding:8px;color:#666;'>No results</div>";
+        resultsContainer.innerHTML = "<div class='header-search-results__empty'>No pages found. Try a different search term.</div>";
+        positionResults();
         resultsContainer.style.display = "block";
         return;
       }
       resultsContainer.innerHTML = matches
         .map(
           (link) =>
-            `<a href="${link.href}" style="display:block;padding:8px;color:#333;text-decoration:none;" onmouseover="this.style.background='#f0f0f0';" onmouseout="this.style.background='transparent';">${link.textContent.trim()}</a>`
+            `<a href="${link.href}">${link.textContent.trim()}</a>`
         )
         .join("");
+      resultsContainer.insertAdjacentHTML("afterbegin", `<span class="header-search-results__label">${matches.length} matching page${matches.length === 1 ? "" : "s"}</span>`);
+      positionResults();
       resultsContainer.style.display = "block";
     };
 
@@ -71,6 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const q = e.target.value;
       debounce(() => renderResults(q), 200);
     });
+
+    window.addEventListener("resize", positionResults);
 
     // Hide results when clicking outside and clear search
     document.addEventListener("click", (e) => {
