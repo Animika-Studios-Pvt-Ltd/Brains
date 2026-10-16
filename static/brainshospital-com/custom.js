@@ -625,10 +625,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (spTrack && spPrev && spNext && spCurrentIndex) {
     let currentItem = 1;
-    const totalItems = spTrack.children.length;
+    const spCards = Array.from(spTrack.querySelectorAll(".speciality-card"));
+    const totalItems = spCards.length;
+    const firstSpecialityCard = spTrack.firstElementChild;
+    let specialityItemWidth = 0;
+
+    const setSpecialityItemWidth = (width) => {
+      const cardGap = parseFloat(window.getComputedStyle(spTrack).columnGap) || 0;
+      specialityItemWidth = width + cardGap;
+    };
 
     const updateCounter = () => {
       spCurrentIndex.textContent = currentItem;
+    };
+
+    const setActiveSpeciality = (index) => {
+      const validIndex = Math.max(0, Math.min(index, totalItems - 1));
+      spCards.forEach((card, cardIndex) => card.classList.toggle("active", cardIndex === validIndex));
+      currentItem = validIndex + 1;
+      updateCounter();
     };
 
     const updateSpNav = () => {
@@ -654,59 +669,55 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
 
-    // Initialize states
-    setTimeout(updateSpNav, 100);
-    window.addEventListener("resize", updateSpNav);
+    // Cache card dimensions outside the scroll handler to avoid forced layout reads.
+    if (firstSpecialityCard && "ResizeObserver" in window) {
+      const specialityResizeObserver = new ResizeObserver((entries) => {
+        setSpecialityItemWidth(entries[0].contentRect.width);
+        updateSpNav();
+      });
+      specialityResizeObserver.observe(firstSpecialityCard);
+    } else if (firstSpecialityCard) {
+      const refreshSpecialityLayout = () => {
+        window.requestAnimationFrame(() => {
+          setSpecialityItemWidth(firstSpecialityCard.getBoundingClientRect().width);
+          updateSpNav();
+        });
+      };
+      window.addEventListener("resize", refreshSpecialityLayout);
+      refreshSpecialityLayout();
+    }
+
+    // Initialize navigation once the browser has completed initial layout.
+    window.requestAnimationFrame(updateSpNav);
 
     spPrev.addEventListener("click", () => {
       if (!spPrev.disabled) {
-        if (currentItem > 1) {
-          currentItem--;
-        } else {
-          currentItem = 1;
-        }
-        updateCounter();
-        const itemWidth = spTrack.firstElementChild.offsetWidth + 50; // item width + gap
-        spTrack.scrollBy({ left: -itemWidth, behavior: "smooth" });
+        const nextIndex = Math.max(0, currentItem - 2);
+        setActiveSpeciality(nextIndex);
+        spTrack.scrollBy({ left: -specialityItemWidth, behavior: "smooth" });
       }
     });
 
     spNext.addEventListener("click", () => {
       if (!spNext.disabled) {
-        if (currentItem < totalItems) {
-          currentItem++;
-        } else {
-          currentItem = totalItems;
-        }
-        updateCounter();
-        const itemWidth = spTrack.firstElementChild.offsetWidth + 50;
-        spTrack.scrollBy({ left: itemWidth, behavior: "smooth" });
+        const nextIndex = Math.min(totalItems - 1, currentItem);
+        setActiveSpeciality(nextIndex);
+        spTrack.scrollBy({ left: specialityItemWidth, behavior: "smooth" });
       }
     });
 
     // Optional: Update counter on manual scroll
     spTrack.addEventListener("scroll", () => {
       updateSpNav();
-      const itemWidth = spTrack.firstElementChild.offsetWidth + 50;
       const scrollLeft = spTrack.scrollLeft;
-      const newIndex = Math.round(scrollLeft / itemWidth) + 1;
-      if (newIndex >= 1 && newIndex <= totalItems) {
-        currentItem = newIndex;
-        updateCounter();
+      if (specialityItemWidth) {
+        setActiveSpeciality(Math.round(scrollLeft / specialityItemWidth));
       }
     });
 
     // Update active card on hover or click
-    const spCards = spTrack.querySelectorAll(".speciality-card");
-    spCards.forEach((card) => {
-      const activateCard = () => {
-        spCards.forEach((c) => c.classList.remove("active"));
-        card.classList.add("active");
-        // Update carousel counter based on active card
-        const index = Array.from(spCards).indexOf(card) + 1;
-        currentItem = index;
-        updateCounter();
-      };
+    spCards.forEach((card, index) => {
+      const activateCard = () => setActiveSpeciality(index);
       card.addEventListener("mouseenter", activateCard);
       card.addEventListener("click", activateCard);
     });
