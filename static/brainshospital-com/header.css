@@ -439,9 +439,9 @@ header::after {
 
 @media (max-width: 1366px) {
   .header-logo-img { max-width: 85%; }
-   .header-top-action { margin-bottom: 20px;}
+  .header-top-action { margin-bottom: 20px;}
   .header-helpline-text { font-size: 16px; margin-left: -28px; }
-  .header-book-btn { font-size: 13px; padding: 6px 14px; }
+  .header-book-btn { font-size: 14px; padding: 6px 14px; }
   .header-helpline-img { max-width: 75%; }
   .header-nav-list { gap: 12px; }
   .header-nav-list li a { font-size: 14px; }
