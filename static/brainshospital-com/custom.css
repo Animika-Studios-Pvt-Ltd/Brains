@@ -1732,3 +1732,112 @@ button:focus {
     top: 4vh;
   }
 }
+
+/* ==========================================================================
+   SITEMAP PAGE STYLES (Screenshot Match)
+   ========================================================================== */
+.sitemap-main-section {
+  padding: 40px 0 80px 0;
+  background-color: #ffffff;
+}
+
+.sitemap-main-title {
+  text-align: center;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  color: #144e97;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.sitemap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px 50px;
+}
+
+.sitemap-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.sitemap-category-title {
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #144e97; /* Brand Blue */
+  margin-bottom: 18px;
+  letter-spacing: 0.01em;
+}
+
+.sitemap-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 2-column layout for long categories (like Specialities) */
+.sitemap-link-list.two-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 25px;
+}
+
+.sitemap-link-list li {
+  margin-bottom: 11px;
+  line-height: 1.4;
+}
+
+.sitemap-link-list li a {
+  display: inline-flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: #333333;
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 16.5px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.sitemap-link-list li a::before {
+  content: "-\00a0"; /* hyphen with non-breaking space matching the screenshot dash */
+  color: #555555;
+  margin-right: 4px;
+}
+
+.sitemap-link-list li a:hover {
+  color: #144e97;
+  transform: translateX(3px);
+}
+
+@media (max-width: 991px) {
+  .sitemap-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 30px;
+  }
+  .sitemap-main-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sitemap-grid {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
+  .sitemap-link-list.two-cols {
+    grid-template-columns: 1fr;
+  }
+  .sitemap-main-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  .sitemap-category-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+}
+
