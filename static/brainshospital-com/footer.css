@@ -111,6 +111,9 @@
   align-items: center;
   gap: 10px;
 }
+.phone-br { display: none; }
+.phone-sep { display: inline; }
+
 .emergency-contact p {
   margin: 0;
   line-height: 1.4;
@@ -378,8 +381,11 @@
   .emergency-title {
     font-size: 16px;
   }
+  .phone-br { display: inline; }
+  .phone-sep { display: none; }
   .emergency-contact p {
     font-size: 14px;
+    white-space: nowrap;
   }
    .footer-middle-gray .footer-links-grid {
     display: grid;
@@ -432,8 +438,11 @@
   .emergency-title {
     font-size: 15px;
   }
+  .phone-br { display: inline; }
+  .phone-sep { display: none; }
   .emergency-contact p {
     font-size: 13px;
+    white-space: nowrap;
   }
   .footer-logo-wrap .footer-logo { max-width: 45%; }
   .footer-hospital-info {
