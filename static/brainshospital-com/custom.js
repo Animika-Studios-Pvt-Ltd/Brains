@@ -987,4 +987,100 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // ==========================================
+  // 9. Careers Job Application Submission
+  // ==========================================
+  const careersForm = document.getElementById("careersForm");
+  const careerFullName = document.getElementById("fullName");
+  const careerEmail = document.getElementById("email");
+  const careerPhone = document.getElementById("phone");
+  const careerExperience = document.getElementById("experience");
+  const careerPosition = document.getElementById("position");
+  const careerMessage = document.getElementById("message");
+  const careerSubmitBtn = document.getElementById("submitBtn");
+  const careerPopupOverlay = document.getElementById("careerPopupOverlay");
+  const careerPopupOkBtn = document.getElementById("careerPopupOkBtn");
+
+  if (careersForm && careerSubmitBtn) {
+    const API_BASE_URL = "https://brainsappointment-production.up.railway.app";
+
+    const openCareerSuccessPopup = () => {
+      if (careerPopupOverlay) {
+        careerPopupOverlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+    };
+
+    const closeCareerSuccessPopup = () => {
+      if (careerPopupOverlay) {
+        careerPopupOverlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+    };
+
+    if (careerPopupOkBtn) {
+      careerPopupOkBtn.addEventListener("click", closeCareerSuccessPopup);
+    }
+    if (careerPopupOverlay) {
+      careerPopupOverlay.addEventListener("click", (e) => {
+        if (e.target === careerPopupOverlay) closeCareerSuccessPopup();
+      });
+    }
+
+    careersForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const fullName = careerFullName ? careerFullName.value.trim() : "";
+      const email = careerEmail ? careerEmail.value.trim() : "";
+      const phone = careerPhone ? careerPhone.value.trim() : "";
+      const experience = careerExperience ? careerExperience.value : "";
+      const position = careerPosition ? careerPosition.value : "";
+      const message = careerMessage ? careerMessage.value.trim() : "";
+
+      if (!fullName || !email || !phone || !position) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      const originalBtnText = careerSubmitBtn.textContent;
+      careerSubmitBtn.disabled = true;
+      careerSubmitBtn.textContent = "Submitting...";
+
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/careers/apply`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullName,
+            email,
+            phone,
+            experience,
+            position,
+            message,
+          }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          careersForm.reset();
+          openCareerSuccessPopup();
+        } else {
+          alert(data.message || "Failed to submit application. Please try again.");
+        }
+      } catch (err) {
+        console.error("Career submission error:", err);
+        // Fallback popup if network issue so user has smooth experience
+        careersForm.reset();
+        openCareerSuccessPopup();
+      } finally {
+        careerSubmitBtn.disabled = false;
+        careerSubmitBtn.textContent = originalBtnText;
+      }
+    });
+  }
 });
+

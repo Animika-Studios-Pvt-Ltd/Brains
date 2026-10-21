@@ -272,6 +272,105 @@
       margin-top: 14px;
     }
 
+    /* --- Careers Success Popup Modal (Same style as Newsletter) --- */
+    .career-popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(10, 61, 107, 0.55);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999999;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+    }
+
+    .career-popup-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .career-popup-modal {
+      position: relative;
+      background: #ffffff;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 480px;
+      padding: 38px 30px 32px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(10, 61, 107, 0.28);
+      transform: scale(0.85) translateY(20px);
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .career-popup-overlay.active .career-popup-modal {
+      transform: scale(1) translateY(0);
+    }
+
+    .career-popup-icon {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin: 0 auto 20px auto;
+      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35);
+      animation: careerIconPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both;
+    }
+
+    @keyframes careerIconPop {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .career-popup-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0a3d6b;
+      margin: 0 0 10px 0;
+    }
+
+    .career-popup-text {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #4b5563;
+      margin: 0 0 24px 0;
+    }
+
+    .career-popup-btn {
+      background: linear-gradient(90deg, #104c97, #15b9c5);
+      color: #ffffff;
+      border: none;
+      padding: 12px 38px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(16, 76, 151, 0.25);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .career-popup-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(16, 76, 151, 0.35);
+    }
+
     /* Responsive */
     @media (max-width: 767px) {
       .careers-hero h1 { font-size: 1.8rem; }
@@ -567,7 +666,7 @@
       <h2 class="section-title" data-aos="fade-up">Current Openings</h2>
       <p class="section-subtitle" id="openingsStatus" data-aos="fade-up" data-aos-delay="50">Explore opportunities across departments</p>
 
-      <!-- <div data-aos="fade-up" data-aos-delay="100">
+      <div data-aos="fade-up" data-aos-delay="100">
         <div class="job-card">
           <div class="job-icon"><i class="fas fa-brain"></i></div>
           <div class="job-info">
@@ -661,7 +760,7 @@
           </div>
           <a href="#apply" class="btn-apply">Apply Now</a>
         </div>
-      </div>  -->
+      </div>
     </div>
   </section>
 
@@ -671,7 +770,7 @@
       <h2 class="section-title" data-aos="fade-up">Apply Now</h2>
       <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">Fill in your details and we will get back to you shortly</p>
       <div class="apply-form-wrapper" data-aos="fade-up" data-aos-delay="100">
-        <form id="careersForm" onsubmit="submitCareerForm(event)">
+        <form id="careersForm">
           <div class="row g-3">
             <div class="col-md-6">
               <label for="fullName" class="form-label">Full Name *</label>
@@ -714,6 +813,20 @@
       </div>
     </div>
   </section>
+
+  <!-- Careers Application Success Popup Modal (Same design as Newsletter) -->
+  <div class="career-popup-overlay" id="careerPopupOverlay">
+    <div class="career-popup-modal">
+      <div class="career-popup-icon">
+        <i class="fas fa-check"></i>
+      </div>
+      <h3 class="career-popup-title">Application Submitted!</h3>
+      <p class="career-popup-text">
+        Thank you for applying to <strong>Brains Super Speciality Hospital</strong>. We have sent a confirmation email to your inbox and our recruitment team will review your application.
+      </p>
+      <button type="button" class="career-popup-btn" id="careerPopupOkBtn">Got It</button>
+    </div>
+  </div>
 
   <!-- ====== FOOTER ====== -->
   <footer class="footer">
@@ -847,23 +960,6 @@
         document.getElementById('submitBtn').disabled = true;
       }
     });
-
-    function submitCareerForm(e) {
-      e.preventDefault();
-      const btn = document.getElementById('submitBtn');
-      btn.textContent = 'Submitting...';
-      btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = 'Application Submitted!';
-        btn.style.background = 'linear-gradient(135deg,#28a745,#1a7a30)';
-        document.getElementById('careersForm').reset();
-        setTimeout(() => {
-          btn.textContent = 'Submit Application';
-          btn.style.background = '';
-          btn.disabled = false;
-        }, 4000);
-      }, 1200);
-    }
   </script>
 </body>
 
