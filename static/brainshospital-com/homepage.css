@@ -1952,6 +1952,13 @@
   right: 0;
 }
 
+.team .team-member a {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 110px;
+  cursor: pointer;
+}
+
 .team .team-member img {
   width: 180px;
   height: 230px;

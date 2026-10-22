@@ -1082,5 +1082,58 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // ==========================================
+  // 12. Doctor Profile Hash Navigation & Modal Auto-Open
+  // ==========================================
+  const doctorModalMap = {
+    "dr-nk-venkataramana": "myModal-1",
+    "dr-harsha-kj": "myModal-2",
+    "dr-joshy-ev": "myModal-3",
+    "dr-pavithra-venkateswaran": "myModal-4",
+    "dr-prahlada-nb": "myModal-5",
+    "dr-aswani-baby": "myModal-8",
+    "dr-pratap-kumar-pani": "myModal-21",
+  };
+
+  const handleDoctorProfileHash = () => {
+    const rawHash = window.location.hash;
+    if (!rawHash) return;
+    const cleanId = rawHash.replace(/^#/, "");
+
+    let targetCard = document.getElementById(cleanId);
+    let modalId = doctorModalMap[cleanId];
+
+    if (!modalId && cleanId.startsWith("myModal-")) {
+      modalId = cleanId;
+      for (const [cId, mId] of Object.entries(doctorModalMap)) {
+        if (mId === modalId) {
+          targetCard = document.getElementById(cId);
+          break;
+        }
+      }
+    }
+
+    if (targetCard) {
+      setTimeout(() => {
+        targetCard.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 150);
+    }
+
+    if (modalId) {
+      const modalEl = document.getElementById(modalId);
+      if (modalEl && typeof bootstrap !== "undefined" && bootstrap.Modal) {
+        setTimeout(() => {
+          const modalInstance = bootstrap.Modal.getOrCreateInstance(modalEl);
+          modalInstance.show();
+        }, 400);
+      }
+    }
+  };
+
+  if (window.location.hash) {
+    setTimeout(handleDoctorProfileHash, 150);
+  }
+  window.addEventListener("hashchange", handleDoctorProfileHash);
 });
 
