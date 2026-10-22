@@ -36,7 +36,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </noscript>
   <link rel="stylesheet" type="text/css" href="static/brainshospital-com/custom.css" />
-  <link rel="preload" as="image" href="static/brainshospital-com/banner-1.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="static/brainshospital-com/banner-1-mobile.webp" media="(max-width: 768px)" fetchpriority="high" />
+  <link rel="preload" as="image" href="static/brainshospital-com/banner-1.webp" media="(min-width: 769px)" fetchpriority="high" />
   <link rel="preload" as="image" href="static/brainshospital-com/banner-2.webp" />
   <link rel="preload" as="image" href="static/brainshospital-com/dr-n-k-venkataramana.webp" fetchpriority="high" />
 
@@ -386,7 +387,10 @@
               </div>
               <!-- Right Image -->
               <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 hero-image">
-                <img src="static/brainshospital-com/banner-1.webp" alt="Brain and Spine Care" class="hero-img-circle" />
+                <picture>
+                  <source media="(max-width: 768px)" srcset="static/brainshospital-com/banner-1-mobile.webp" />
+                  <img src="static/brainshospital-com/banner-1.webp" width="996" height="658" alt="Brain and Spine Care" class="hero-img-circle" fetchpriority="high" />
+                </picture>
               </div>
             </div>
           </div>
