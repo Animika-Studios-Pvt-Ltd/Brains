@@ -28,6 +28,9 @@
 .footer-logo-wrap {
   width: 25%;
 }
+.footer-logo-wrap a {
+  display: inline-block;
+}
 .footer-logo-wrap .footer-logo {
   max-width: 100%;
 }
