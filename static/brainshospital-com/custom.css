@@ -1,6 +1,7 @@
 @import "header.css";
 @import "homepage.css";
 @import "footer.css";
+@import "breadcrumbs.css";
 
 /* Override Font Awesome's blocking icon-font behaviour without changing its CDN source. */
 @font-face {
@@ -147,28 +148,6 @@ p, li, a {
   padding: 7px 50px;
   position: relative;
 }
-/* -------------------------------------- BREADCRUMBS SECTION -------------------------------- */
-.breadcrumb {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 0;
-  background: 0 0;
-}
-
-.breadcrumb-item a {
-  font-family: "source-sans-pro-regular";
-  font-size: 17px;
-  color: #666;
-  text-decoration: none;
-}
-
-.breadcrumb-item.active {
-  font-family: "source-sans-pro-regular";
-  font-size: 17px;
-  color: #3a3d40e0;
-  text-decoration: none;
-}
-
 /* -------------------------------------- REMAINING SECTIONS/PAGES CODE -------------------------------- */
 
 .slick-slider {
@@ -1279,10 +1258,6 @@ button:focus {
     font-size: 17px;
   }
 
-  .breadcrumb {
-    margin-bottom: 30px;
-  }
-
   .left-content-info {
     margin-top: 0;
   }
@@ -1856,4 +1831,3 @@ button:focus {
     margin-bottom: 12px;
   }
 }
-
