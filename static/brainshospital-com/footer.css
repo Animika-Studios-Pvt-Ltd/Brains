@@ -65,7 +65,7 @@
 .footer-emergency-banner {
   background: linear-gradient(90deg, #3ecfd2 0%, #1a4f8d 60%);
   border-radius: 70px;
-  padding: 25px 30px;
+  padding: 15px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,13 +73,13 @@
   margin: 0 auto;
 }
 .banner-book-btn {
-  width: 25%;
+  width: 20%;
 }
 .banner-book-btn .btn-book-appointment {
   background: #154d98;
   color: #ffffff;
   text-decoration: none;
-  padding: 12px 24px;
+  padding: 10px 20px;
   border-radius: 25px;
   font-family: "Roboto-Regular";
   font-size: 18px;
@@ -87,10 +87,57 @@
 }
 .banner-opd-info {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 20%;
+}
+.opd-discount-line {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: nowrap;
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.3;
+}
+.opd-charges-text {
+  font-family: "Roboto-Light";
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 0;
+  line-height: 1.3;
+  border-bottom: 1px solid #8ff8fb;
+}
+.opd-discount-line .opd-off-img {
+  height: 30px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.opd-discount-line span {
+  line-height: 1.3;
+}
+.opd-timing-line {
+  display: flex;
   align-items: center;
   gap: 10px;
-  width: 25%;
+  margin-left: 10px;
 }
+.opd-timing-line .timing-icon {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+.opd-timing-text {
+  font-family: "Roboto-Light";
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+}
+/* Legacy selector kept for backwards compat */
 .opd-text p {
   margin: 0;
   line-height: 1.4;
@@ -119,7 +166,7 @@
   line-height: 1.4;
   font-family: "Roboto-Regular";
   font-size: 20px;
-  color: #15b9c5;
+  color: #88fdf7;
 }
 .footer-middle-gray {
   background: #e3e8eb;
@@ -211,7 +258,10 @@
   .footer-address-image .hospital-img { max-width: 90%; }
   .footer-emergency-banner { width: 100%; padding: 15px 20px; }
   .banner-book-btn { width: 25%; }
-  .banner-opd-info { width: 30%; }
+  .banner-opd-info { width: 30%; flex-direction: column; }
+  .opd-discount-line { font-size: 16px; }
+  .opd-discount-line .opd-off-img { height: 34px; }
+  .opd-timing-text { font-size: 14px; }
   .banner-emergency-info { width: 45%; }
   .address-text h5 { font-size: 19px; }
   .address-text p { font-size: 18px; line-height: 1.5; }
@@ -255,7 +305,9 @@
   .banner-opd-info { width: 28%; }
   .banner-emergency-info { width: 49%; }
   .banner-book-btn .btn-book-appointment { font-size: 14px; padding: 8px 14px; margin-left: 0; }
-  .opd-icon { width: 70px; height: auto; }
+  .opd-discount-line { font-size: 14px; }
+  .opd-discount-line .opd-off-img { height: 30px; }
+  .opd-timing-text { font-size: 13px; }
   .opd-text p { font-size: 16px; }
   .emergency-icon { width: 120px; height: auto; }
   .emergency-title { font-size: 17px; margin-bottom: 3px; }
@@ -336,9 +388,9 @@
     font-size: 16px;
   }
   .banner-opd-info {
-    flex-direction: row;
-    align-items: center;
-    margin-left: -30px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
   }
   .footer-emergency-banner {
     flex-wrap: wrap;
