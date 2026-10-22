@@ -2,8 +2,8 @@
 @import "homepage.css";
 @import "footer.css";
 @import "breadcrumbs.css";
+@import "gallery.css";
 
-/* Override Font Awesome's blocking icon-font behaviour without changing its CDN source. */
 @font-face {
   font-family: "Font Awesome 6 Free";
   font-style: normal;
@@ -734,10 +734,6 @@ p, li, a {
   margin: 100px 100px;
 }
 
-.modal-dialog .carousel-control-prev {
-  rotate: 180deg;
-}
-
 .left-content {
   margin-bottom: 50px;
 }
@@ -751,27 +747,6 @@ p, li, a {
 
 .modal-body img {
   border-radius: 5px;
-}
-
-.gallery {
-  margin: 10px 0;
-}
-
-.gallery p {
-  text-align: center;
-  line-height: normal;
-  margin-bottom: 40px;
-  margin-top: 10px;
-}
-
-.gallery-content {
-  position: absolute;
-  width: 40%;
-  left: 515px;
-}
-
-.gallery-content h4 {
-  font-family: "source-sans-pro-regular";
 }
 
 .modal-header .close {
@@ -794,10 +769,6 @@ p, li, a {
   border: 1px solid red;
   border-radius: 50%;
   padding: 0 8px 3px 8px;
-}
-
-.gallery-body {
-  margin: 35px auto;
 }
 
 button:focus {

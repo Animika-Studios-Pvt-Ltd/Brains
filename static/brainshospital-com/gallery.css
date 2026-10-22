@@ -1,0 +1,75 @@
+/* -------------------------------------- GALLERY PAGE STYLES -------------------------------------- */
+
+/* --- 1. Gallery Grid Items --- */
+.gallery-section {
+  padding: 30px 0;
+}
+
+.gallery-section h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.gallery-section .row {
+  row-gap: 30px;
+}
+
+.gallery {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.gallery a {
+  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.gallery img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery a:hover img {
+  transform: scale(1.01);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.gallery p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* --- 2. Gallery Modal Box --- */
+.gallery-content {
+  position: absolute;
+  width: 40%;
+  left: 515px;
+}
+
+.gallery-content h4 {
+  font-family: "source-sans-pro-regular", "Roboto-Regular";
+  color: #144e97;
+  font-size: 20px;
+  margin: 0;
+}
+
+.gallery-body {
+  margin: 35px auto;
+}
+
+/* --- 3. Gallery Carousel Section --- */
+.gallery-img {
+  text-align: center;
+}
+
+.gallery-img img {
+  border-radius: 10px;
+}
+
+.gallery-carousel-control-prev {
+  rotate: 180deg;
+}
