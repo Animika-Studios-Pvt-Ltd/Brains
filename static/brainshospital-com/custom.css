@@ -1,8 +1,3 @@
-@import "header.css";
-@import "homepage.css";
-@import "footer.css";
-@import "breadcrumbs.css";
-@import "gallery.css";
 
 @font-face {
   font-family: "Font Awesome 6 Free";
@@ -1812,3 +1807,194 @@ button:focus {
     margin-bottom: 12px;
   }
 }
+
+/* ==========================================================================
+   BREADCRUMBS STYLES (Bundled)
+   ========================================================================== */
+.breadcrumb {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0;
+  background: 0 0;
+}
+
+.breadcrumb-item,
+.breadcrumb-item a,
+.breadcrumb-item.active,
+.breadcrumb-item.active a {
+  font-family: "source-sans-pro-regular";
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.breadcrumb-item a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-item a:hover {
+  color: #15b9c5;
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item.active a {
+  color: #144e97;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+  .breadcrumb-item,
+  .breadcrumb-item a,
+  .breadcrumb-item.active,
+  .breadcrumb-item.active a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .breadcrumb-item,
+  .breadcrumb-item a,
+  .breadcrumb-item.active,
+  .breadcrumb-item.active a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .breadcrumb {
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+  .breadcrumb-item,
+  .breadcrumb-item a,
+  .breadcrumb-item.active,
+  .breadcrumb-item.active a {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumb {
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+  .breadcrumb-item,
+  .breadcrumb-item a,
+  .breadcrumb-item.active,
+  .breadcrumb-item.active a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .breadcrumb {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .breadcrumb-item,
+  .breadcrumb-item a,
+  .breadcrumb-item.active,
+  .breadcrumb-item.active a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    margin-bottom: 12px;
+  }
+  .breadcrumb-item,
+  .breadcrumb-item a,
+  .breadcrumb-item.active,
+  .breadcrumb-item.active a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .breadcrumb {
+    margin-bottom: 10px;
+  }
+  .breadcrumb-item,
+  .breadcrumb-item a,
+  .breadcrumb-item.active,
+  .breadcrumb-item.active a {
+    font-size: 11px;
+  }
+}
+
+/* ==========================================================================
+   GALLERY PAGE STYLES (Bundled)
+   ========================================================================== */
+.gallery-section {
+  padding: 30px 0;
+}
+
+.gallery-section h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.gallery-section .row {
+  row-gap: 30px;
+}
+
+.gallery {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.gallery a {
+  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.gallery img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery a:hover img {
+  transform: scale(1.01);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.gallery p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.gallery-content {
+  position: absolute;
+  width: 40%;
+  left: 515px;
+}
+
+.gallery-content h4 {
+  font-family: "source-sans-pro-regular", "Roboto-Regular";
+  color: #144e97;
+  font-size: 20px;
+  margin: 0;
+}
+
+.gallery-body {
+  margin: 35px auto;
+}
+
+.gallery-img {
+  text-align: center;
+}
+
+.gallery-img img {
+  border-radius: 10px;
+}
+
+.gallery-carousel-control-prev {
+  rotate: 180deg;
+}
