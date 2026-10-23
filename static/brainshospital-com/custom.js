@@ -1063,19 +1063,22 @@ document.addEventListener("DOMContentLoaded", () => {
           }),
         });
 
-        const data = await response.json();
-
-        if (response.ok && data.success) {
-          careersForm.reset();
-          openCareerSuccessPopup();
+        if (response.ok) {
+          const data = await response.json().catch(() => ({}));
+          if (data.success !== false) {
+            careersForm.reset();
+            openCareerSuccessPopup();
+          } else {
+            alert(data.message || "Failed to submit application. Please try again.");
+          }
         } else {
-          alert(data.message || "Failed to submit application. Please try again.");
+          const errData = await response.json().catch(() => ({}));
+          console.error("Backend error status:", response.status, errData);
+          alert(errData.message || `Unable to submit application (Server returned ${response.status}). Please try again or contact HR directly.`);
         }
       } catch (err) {
         console.error("Career submission error:", err);
-        // Fallback popup if network issue so user has smooth experience
-        careersForm.reset();
-        openCareerSuccessPopup();
+        alert("Network error: Could not reach the server. Please check your connection and try again.");
       } finally {
         careerSubmitBtn.disabled = false;
         careerSubmitBtn.textContent = originalBtnText;
