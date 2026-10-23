@@ -36,6 +36,8 @@
 
 .hero-image img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 996 / 658;
 }
 
 .hero-btn {
