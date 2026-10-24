@@ -46,8 +46,6 @@
 /* --- 2. Gallery Modal Box --- */
 .gallery-content {
   position: absolute;
-  width: 40%;
-  left: 515px;
 }
 
 .gallery-content h4 {
