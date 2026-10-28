@@ -928,7 +928,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const openSuccessPopup = () => {
       if (bvPopupOverlay) {
-        bvPopupOverlay.style.display = "flex";
         bvPopupOverlay.classList.add("active");
         document.body.style.overflow = "hidden";
       }
@@ -937,7 +936,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeSuccessPopup = () => {
       if (bvPopupOverlay) {
         bvPopupOverlay.classList.remove("active");
-        bvPopupOverlay.style.display = "none";
         document.body.style.overflow = "";
       }
     };
