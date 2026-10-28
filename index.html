@@ -40,7 +40,10 @@
   <noscript>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </noscript>
-  <link rel="stylesheet" type="text/css" href="static/brainshospital-com/custom.css" />
+  <link rel="preload" href="static/brainshospital-com/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="static/brainshospital-com/custom.css" />
+  </noscript>
   <link rel="preload" href="static/brainshospital-com/homepage.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript>
     <link rel="stylesheet" type="text/css" href="static/brainshospital-com/homepage.css" />
