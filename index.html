@@ -43,34 +43,47 @@
   <link rel="preload" as="image" href="static/brainshospital-com/banner-2.webp" />
   <link rel="preload" as="image" href="static/brainshospital-com/dr-n-k-venkataramana.webp" fetchpriority="high" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLZTQML145"></script>
+  <!-- Deferred Google Tag Manager & GA4 for Maximum Page Performance -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-LLZTQML145");
-  </script>
+    function gtag() { dataLayer.push(arguments); }
 
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        "gtm.start": new Date().getTime(),
-        event: "gtm.js",
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-MQ5G4DK");
+    let gtmInitialized = false;
+    function loadAnalyticsScripts() {
+      if (gtmInitialized) return;
+      gtmInitialized = true;
+
+      // 1. Google Analytics 4 (gtag.js)
+      const ga = document.createElement("script");
+      ga.async = true;
+      ga.src = "https://www.googletagmanager.com/gtag/js?id=G-LLZTQML145";
+      document.head.appendChild(ga);
+      gtag("js", new Date());
+      gtag("config", "G-LLZTQML145");
+
+      // 2. Google Tag Manager Container
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MQ5G4DK");
+    }
+
+    // Trigger on first user engagement (scroll, touch, click, mouse move) or after 3.5s
+    const triggerEvents = ["scroll", "mousemove", "touchstart", "keydown", "click"];
+    triggerEvents.forEach(function (e) {
+      window.addEventListener(e, loadAnalyticsScripts, { once: true, passive: true });
+    });
+    setTimeout(loadAnalyticsScripts, 3500);
   </script>
-  <!-- End Google Tag Manager -->
 
   <!-- Structured Data / JSON-LD for Google Search & SEO -->
   <script type="application/ld+json">
