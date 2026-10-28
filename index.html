@@ -19,13 +19,8 @@
   <link rel="preconnect" href="https://unpkg.com" crossorigin />
 
   <!-- Bootstrap & Font Awesome -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"
-    onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  </noscript>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
@@ -40,14 +35,8 @@
   <noscript>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </noscript>
-  <link rel="preload" href="static/brainshospital-com/custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" type="text/css" href="static/brainshospital-com/custom.css" />
-  </noscript>
-  <link rel="preload" href="static/brainshospital-com/homepage.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript>
-    <link rel="stylesheet" type="text/css" href="static/brainshospital-com/homepage.css" />
-  </noscript>
+  <link rel="stylesheet" type="text/css" href="static/brainshospital-com/custom.css" />
+  <link rel="stylesheet" type="text/css" href="static/brainshospital-com/homepage.css" />
   <link rel="preload" as="image" href="static/brainshospital-com/banner-1-mobile.webp" media="(max-width: 768px)"
     fetchpriority="high" />
   <link rel="preload" as="image" href="static/brainshospital-com/banner-1.webp" media="(min-width: 769px)"
@@ -1217,7 +1206,7 @@
           </div>
 
           <!-- Brain Voice Subscription Success Popup Modal -->
-          <div class="bv-popup-overlay" id="bvPopupOverlay">
+          <div class="bv-popup-overlay" id="bvPopupOverlay" style="display: none;">
             <div class="bv-popup-modal">
               <div class="bv-popup-icon">
                 <i class="fas fa-check"></i>
