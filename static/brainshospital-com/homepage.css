@@ -1968,9 +1968,9 @@
   object-fit: cover;
   margin: 0 auto 20px auto;
   border: none;
-  background: #becad6;
+  background: transparent;
   display: block;
-  padding-top: 15px;
+  padding: 0;
 }
 
 .team .team-member h3, .team .team-member h4 {
