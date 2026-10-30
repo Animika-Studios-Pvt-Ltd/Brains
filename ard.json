@@ -1,0 +1,9 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Brains Super Speciality Hospital",
+    "documentationUrl": "https://brainshospital.com/llms.txt",
+    "logoUrl": "https://brainshospital.com/static/brainshospital-com/brains-logo.webp"
+  },
+  "entries": []
+}
