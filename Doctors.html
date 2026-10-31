@@ -302,279 +302,787 @@
     </div>
   </div>
 
+
   <!-- =====================================================================
-       SPECIALTY FILTER TABS
+       DESIGN 1: MODERN & CLEAN - DOCTOR DIRECTORY
        ===================================================================== -->
-  <div class="container my-4">
-    <div class="doctors-control-bar">
-      <div class="doctor-filter-tabs justify-content-center" id="doctorFilterTabs">
-        <button type="button" class="filter-btn active" data-filter="all">
-          All Doctors
-        </button>
-        <button type="button" class="filter-btn" data-filter="neurosurgery">
-          Neurosurgery
-        </button>
-        <button type="button" class="filter-btn" data-filter="neurology">
-          Neurology &amp; Stroke
-        </button>
-        <button type="button" class="filter-btn" data-filter="critical-care">
-          Neuro Critical Care
-        </button>
-        <button type="button" class="filter-btn" data-filter="specialized">
-          ENT &amp; Therapy
+  <div class="doctors-page-wrapper">
+    <div class="container py-4">
+
+      <!-- Hero Intro & Trust Stats -->
+      <div class="doctors-hero-intro text-center">
+        <span class="badge-pill-header">OUR DOCTORS</span>
+        <h1 class="doctors-main-heading">Find the Right Specialist for Your Health</h1>
+        <p class="doctors-main-subheading">
+          Our team of experienced doctors and specialists are dedicated to providing world-class care with compassion and expertise.
+        </p>
+      </div>
+
+      <!-- Search & Filter Bar -->
+      <div class="doctors-search-filter-card">
+        <div class="row g-2 align-items-center">
+          <div class="col-lg-8 col-md-7 col-6">
+            <div class="search-input-wrap">
+              <i class="fas fa-search search-icon"></i>
+              <input type="text" id="doctorSearchInput" class="form-control doctor-search-input" placeholder="Search doctor by name..." autocomplete="off" />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 col-6">
+            <select id="specialtySelect" class="form-select doctor-specialty-select">
+              <option value="all">All Specialities</option>
+              <option value="neurosurgery">Neurosurgery</option>
+              <option value="neurology">Neurology</option>
+              <option value="neuro-interventional">Neuro Interventional</option>
+              <option value="critical-care">Neuro Critical Care</option>
+              <option value="ent">ENT</option>
+              <option value="speech-therapy">Speech &amp; Nutrition</option>
+              <option value="emergency">Emergency &amp; MICU</option>
+            </select>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Section Title & Sort By -->
+      <div class="doctors-list-header d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+        <div class="doctors-header-left">
+          <h2 class="doctors-section-title mb-0">Our Doctors</h2>
+          <small class="text-muted doctors-count-text">Showing <strong id="doctorVisibleCount">19</strong> verified specialists</small>
+        </div>
+        <div class="doctors-sort-wrapper d-flex align-items-center gap-2">
+          <span class="text-muted small text-nowrap">Sort by</span>
+          <select id="doctorSortSelect" class="form-select form-select-sm sort-select">
+            <option value="default">Name (A - Z)</option>
+            <option value="name-desc">Name (Z - A)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Doctor Cards Grid -->
+      <div class="row g-4 doctor-cards-grid" id="doctorsGrid">
+
+      <div id="dr-nk-venkataramana" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="neurosurgery" data-name="Dr. N K Venkataramana" data-keywords="dr nk venkataramana founder chairman chief neurosurgeon brain spine surgery microneurosurgery endoscopy">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/dr-nk-venkataramana.webp" alt="Dr. N K Venkataramana" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. N K Venkataramana</h3>
+            <p class="doc-designation">Founder, Chairman & Chief Neurosurgeon</p>
+            <div class="doc-specialty-tag">Neurosurgery</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>35+ Years Experience</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, MS, MCh (Neurosurgery)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+              <a href="https://app.brainshospital.com" class="btn-clean-book" title="Book Appointment">Book</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-joshy-ev" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="neurology" data-name="Dr. Joshy E.V." data-keywords="dr joshy ev senior consultant neurologist autoimmune neurology stem cell therapy">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Joshy-E-V.webp" alt="Dr. Joshy E.V." class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Joshy E.V.</h3>
+            <p class="doc-designation">Senior Consultant Neurologist</p>
+            <div class="doc-specialty-tag">Neurology</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>25+ Years Experience</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, MD, DM (Neurology)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-harsha-kj" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="neuro-interventional" data-name="Dr. Harsha K.J." data-keywords="dr harsha kj consultant neuro interventional stroke specialist neuro radiologist mechanical thrombectomy aneurysm">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Harsha-K-J.webp" alt="Dr. Harsha K.J." class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Harsha K.J.</h3>
+            <p class="doc-designation">Consultant Neuro Interventional</p>
+            <div class="doc-specialty-tag">Neuro Interventional</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>15+ Years Experience</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, MD, DM, EMSM (Austria)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-pavithra-venkateswaran" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="critical-care" data-name="Dr. Pavithra Venkateswaran" data-keywords="dr pavithra venkateswaran consultant neuroanesthesia neuro critical care pain medicine">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Pavithra-V.webp" alt="Dr. Pavithra Venkateswaran" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Pavithra Venkateswaran</h3>
+            <p class="doc-designation">Consultant Neuroanesthesia</p>
+            <div class="doc-specialty-tag">Neuro Critical Care</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>15+ Years Experience</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, MD, PDF (Neuroanaesthesia)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-pratap-kumar-pani" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="neurosurgery" data-name="Dr. Pratap Kumar Pani" data-keywords="dr pratap kumar pani senior consultant neurosurgery minimally invasive spine brain surgery gamma knife">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Pratap-Kumar.webp" alt="Dr. Pratap Kumar Pani" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Pratap Kumar Pani</h3>
+            <p class="doc-designation">Senior Consultant, Neurosurgery</p>
+            <div class="doc-specialty-tag">Neurosurgery</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>20+ Years Experience</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, MS, MCh (Neurosurgery)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-prahlada-nb" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="ent" data-name="Dr. Prahlada N.B." data-keywords="dr prahlada nb ent head neck surgeon skull base surgery reconstructive voice">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/dr-prahlada-n-b.webp" alt="Dr. Prahlada N.B." class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Prahlada N.B.</h3>
+            <p class="doc-designation">ENT Head & Neck Surgeon</p>
+            <div class="doc-specialty-tag">ENT</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>20+ Years Experience</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, MS (ENT), DNB</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-aswani-baby" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="speech-therapy" data-name="Dr. Aswani Baby" data-keywords="dr aswani baby speech swallow therapist audiologist baslp rehabilitation">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Aswani-Baby.webp" alt="Dr. Aswani Baby" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Aswani Baby</h3>
+            <p class="doc-designation">Speech & Swallow Therapist</p>
+            <div class="doc-specialty-tag">Speech Therapy</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>10+ Years Experience</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>BASLP, MASLP</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-sankalp-c-aavarti" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="neurosurgery" data-name="Dr. Sankalp C Aavarti" data-keywords="dr sankalp c aavarti consultant neurosurgeon brain spine tumours spine injuries stereotactic neuronavigation">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Sankalp.webp" alt="Dr. Sankalp C Aavarti" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Sankalp C Aavarti</h3>
+            <p class="doc-designation">Consultant Neurosurgeon</p>
+            <div class="doc-specialty-tag">Neurosurgery</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>Brain & Spine Surgery</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, MS, MCh (Neurosurgery)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-aarthi-g" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="ent" data-name="Dr. Aarthi G" data-keywords="dr aarthi g paediatric ent surgeon children ent hearing nose sinus allergy airway">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Arthi.webp" alt="Dr. Aarthi G" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Aarthi G</h3>
+            <p class="doc-designation">Paediatric ENT Surgeon</p>
+            <div class="doc-specialty-tag">ENT</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>Paediatric ENT Specialist</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, MS (ENT), Fellowship</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-vijay-reddy" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="critical-care" data-name="Dr. Vijay Reddy" data-keywords="dr vijay reddy consultant anaesthetist airway management regional blocks critical care">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Vijay-Reddy.webp" alt="Dr. Vijay Reddy" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Vijay Reddy</h3>
+            <p class="doc-designation">Consultant Anaesthetist</p>
+            <div class="doc-specialty-tag">Neuro Critical Care</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>5+ Years Experience</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, DNB (Anaesthesia)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-elwin-jacob" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="critical-care" data-name="Dr. Elwin Jacob" data-keywords="dr elwin jacob junior consultant anaesthesiology neuroanaesthesia critical care maxillofacial">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Elwin-Jacob.webp" alt="Dr. Elwin Jacob" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Elwin Jacob</h3>
+            <p class="doc-designation">Junior Consultant, Anaesthesiology</p>
+            <div class="doc-specialty-tag">Neuro Critical Care</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>Neuro & Critical Care</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, DNB (Anaesthesiology)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-raiya-aimen" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="speech-therapy" data-name="Dr. Raiya Aimen" data-keywords="dr raiya aimen clinical dietitian therapeutic diets diabetes kidney heart nutrition counselling">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Raiya-Aimen.webp" alt="Dr. Raiya Aimen" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Raiya Aimen</h3>
+            <p class="doc-designation">Clinical Dietitian</p>
+            <div class="doc-specialty-tag">Clinical Nutrition</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>Therapeutic Nutrition</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Food, Nutrition & Dietetics</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-abhiraj-r" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="emergency" data-name="Dr. Abhiraj R" data-keywords="dr abhiraj r duty doctor internal medicine surgery neurology emergency management micu">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Abhiraj-R.webp" alt="Dr. Abhiraj R" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Abhiraj R</h3>
+            <p class="doc-designation">Duty Doctor</p>
+            <div class="doc-specialty-tag">Emergency & MICU</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>Emergency Management</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-jayanthi-anandhi" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="neurosurgery" data-name="Dr. Jayanthi Anandhi" data-keywords="dr jayanthi anandhi neurosurgery round the clock patient assessment coordinated care">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Jayanthi.webp" alt="Dr. Jayanthi Anandhi" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Jayanthi Anandhi</h3>
+            <p class="doc-designation">Neurosurgery Specialist</p>
+            <div class="doc-specialty-tag">Neurosurgery</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>5+ Years Experience</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MCh (Neurosurgery)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-sinchana-bhagavan" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="critical-care" data-name="Dr. Sinchana Bhagavan" data-keywords="dr sinchana bhagavan anaesthesiologist paediatric neuro obstetric trauma anaesthesia critical care">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Sinchana.webp" alt="Dr. Sinchana Bhagavan" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Sinchana Bhagavan</h3>
+            <p class="doc-designation">Anaesthesiologist</p>
+            <div class="doc-specialty-tag">Neuro Critical Care</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>Paediatric & Trauma Care</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, MD (Anaesthesiology)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-adharsh-s" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="critical-care" data-name="Dr. Adharsh S" data-keywords="dr adharsh s neuro anaesthesia neuro critical care difficult airway management nerve blocks">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Adharsh.webp" alt="Dr. Adharsh S" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Adharsh S</h3>
+            <p class="doc-designation">Junior Consultant, Neuro-Anaesthesia</p>
+            <div class="doc-specialty-tag">Neuro Critical Care</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>Robotic & Nerve Blocks</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS, PG (Anaesth), ACLS</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-vishnudatha" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="emergency" data-name="Dr. Vishnudatha" data-keywords="dr vishnudatha duty doctor mbbs clinical assessment diagnosis patient management">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Vishnudatha.webp" alt="Dr. Vishnudatha" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Vishnudatha</h3>
+            <p class="doc-designation">Duty Doctor</p>
+            <div class="doc-specialty-tag">Emergency & MICU</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>Clinical Diagnosis & Care</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MBBS</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-abhishek-pandya" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="neurosurgery" data-name="Dr. Abhishek Pandya" data-keywords="dr abhishek pandya consultant neurosurgeon drnb clinical assessment diagnosis patient management">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Abhishek-Pandya.webp" alt="Dr. Abhishek Pandya" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Abhishek Pandya</h3>
+            <p class="doc-designation">Consultant Neurosurgeon</p>
+            <div class="doc-specialty-tag">Neurosurgery</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>Neurosurgery Specialist</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>DrNB (Neurosurgery)</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="dr-geeta-sundar" class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 doctor-card-item" data-specialty="neurosurgery" data-name="Dr. Geeta Sundar" data-keywords="dr geeta sundar consultant neurosurgeon complex brain spine neuro trauma vascular skull base">
+        <div class="doctor-clean-card">
+          <div class="card-main-body">
+            <div class="card-photo-wrap">
+            <img src="static/brainshospital-com/Dr-Geeta-Sundar.webp" alt="Dr. Geeta Sundar" class="doctor-photo-img" loading="lazy" />
+          </div>
+            <div class="card-content-wrap">
+            <h3 class="doc-name">Dr. Geeta Sundar</h3>
+            <p class="doc-designation">Consultant Neurosurgeon</p>
+            <div class="doc-specialty-tag">Neurosurgery</div>
+            <div class="doc-meta-info">
+              <div class="meta-item">
+                <i class="far fa-clock"></i>
+                <span>Complex Brain & Spine</span>
+              </div>
+              <div class="meta-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Consultant Neurosurgeon</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="card-action-buttons">
+              <a href="#doctorProfileModal" data-bs-toggle="modal" class="btn-clean-profile">View Profile</a>
+            </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Empty State Message -->
+      <div id="doctorNoResults" class="text-center py-5 d-none">
+        <div class="mb-3">
+          <i class="fas fa-user-doctor text-muted" style="font-size: 54px; opacity: 0.5;"></i>
+        </div>
+        <h4 style="font-family: 'Mirador-Medium', serif; color: var(--primary-navy);">No Matching Doctors Found</h4>
+        <p class="text-muted">We couldn't find any specialist matching your search. Try adjusting keywords or resetting the filter.</p>
+        <button type="button" class="btn btn-outline-primary rounded-pill px-4" id="resetFilterEmptyBtn">
+          Reset All Filters
         </button>
       </div>
+
+
+
     </div>
-
-    <!-- Live Results Info -->
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="results-count-badge">
-        <span>Showing <strong id="doctorVisibleCount">7</strong> specialists available for consultation</span>
-      </div>
-      <div class="d-none d-md-block text-muted" style="font-size: 13.5px;">
-        <i class="fas fa-map-marker-alt text-primary me-1"></i> Brains Hospital, Lalbagh Siddapura Road, Bangalore
-      </div>
-    </div>
-
-    <!-- =====================================================================
-         DOCTOR CARDS GRID
-         ===================================================================== -->
-    <div class="row doctor-cards-grid" id="doctorsGrid">
-
-      <!-- Doctor 1: Dr N K Venkataramana -->
-      <div id="dr-nk-venkataramana" class="col-lg-6 col-md-6 col-12 doctor-card-item" data-specialty="neurosurgery" data-keywords="dr nk venkataramana founder chairman chief neurosurgeon brain surgery microneurosurgery endoscopy">
-        <div class="doctor-card">
-          <div class="doctor-card-top">
-            <div class="doctor-avatar-wrap">
-              <img class="doctor-avatar-img" src="static/brainshospital-com/dr-nk-venkataramana.webp" alt="Dr. N K Venkataramana" />
-              <div class="doctor-verified-badge" title="Verified Senior Consultant"><i class="fas fa-check"></i></div>
-            </div>
-            <div class="doctor-intro-head">
-              <span class="doctor-specialty-badge"><i class="fas fa-award me-1"></i> Neurosurgery &amp; Leadership</span>
-              <h3 class="doctor-card-name">DR. N K VENKATARAMANA</h3>
-              <p class="doctor-card-designation">Founder, Chairman &amp; Chief Neurosurgeon</p>
-            </div>
-          </div>
-          <div class="doctor-card-body">
-            <div class="doctor-highlight-pill">
-              <i class="fas fa-user-graduate"></i>
-              <span><strong>MCh (Neurosurgery)</strong> &bull; Micro Neurosurgery (Hanover, Germany)</span>
-            </div>
-            <p class="doctor-card-excerpt">
-              Dr N K Venkataramana is an internationally acclaimed neurosurgeon, researcher and academician.
-            </p>
-            <div class="doctor-card-actions">
-              <a href="#myModal-1" data-bs-toggle="modal" class="btn-doc-profile">
-                <i class="fas fa-id-card"></i> View Full Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Doctor 2: Dr Harsha K J -->
-      <div id="dr-harsha-kj" class="col-lg-6 col-md-6 col-12 doctor-card-item" data-specialty="neurology" data-keywords="dr harsha kj neuro interventional specialist stroke specialist neuro radiologist mechanical thrombectomy aneurysm">
-        <div class="doctor-card">
-          <div class="doctor-card-top">
-            <div class="doctor-avatar-wrap">
-              <img class="doctor-avatar-img" src="static/brainshospital-com/dr-harsha-kj.webp" alt="Dr. Harsha K J" />
-              <div class="doctor-verified-badge" title="Verified Specialist"><i class="fas fa-check"></i></div>
-            </div>
-            <div class="doctor-intro-head">
-              <span class="doctor-specialty-badge"><i class="fas fa-bolt me-1"></i> Stroke &amp; Interventions</span>
-              <h3 class="doctor-card-name">DR. HARSHA K J</h3>
-              <p class="doctor-card-designation">Neuro Interventional Specialist &amp; Stroke Specialist</p>
-            </div>
-          </div>
-          <div class="doctor-card-body">
-            <div class="doctor-highlight-pill">
-              <i class="fas fa-user-graduate"></i>
-              <span><strong>DM (SCTIMST)</strong> &bull; European Master Stroke Medicine (Austria)</span>
-            </div>
-            <p class="doctor-card-excerpt">
-              Dr Harsha is a highly qualified and experienced authority in stroke medicine.
-            </p>
-            <div class="doctor-card-actions">
-              <a href="#myModal-2" data-bs-toggle="modal" class="btn-doc-profile">
-                <i class="fas fa-id-card"></i> View Full Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Doctor 3: Dr Joshy E.V. -->
-      <div id="dr-joshy-ev" class="col-lg-6 col-md-6 col-12 doctor-card-item" data-specialty="neurology" data-keywords="dr joshy ev senior consultant neurologist autoimmune neurology stem cell therapy rituximab gene therapy">
-        <div class="doctor-card">
-          <div class="doctor-card-top">
-            <div class="doctor-avatar-wrap">
-              <img class="doctor-avatar-img" src="static/brainshospital-com/dr-joshy-ev.webp" alt="Dr. Joshy E.V." />
-              <div class="doctor-verified-badge" title="Verified Specialist"><i class="fas fa-check"></i></div>
-            </div>
-            <div class="doctor-intro-head">
-              <span class="doctor-specialty-badge"><i class="fas fa-dna me-1"></i> Autoimmune Neurology</span>
-              <h3 class="doctor-card-name">DR. JOSHY E.V.</h3>
-              <p class="doctor-card-designation">Senior Consultant Neurologist</p>
-            </div>
-          </div>
-          <div class="doctor-card-body">
-            <div class="doctor-highlight-pill">
-              <i class="fas fa-user-graduate"></i>
-              <span><strong>DM Neurology (NIMHANS)</strong> &bull; Post-Doctoral Fellowship (USC, USA)</span>
-            </div>
-            <p class="doctor-card-excerpt">
-              Dr. Joshy is starting Autoimmune Neurology treatment and Stem-cell therapy at Brains Hospital.
-            </p>
-            <div class="doctor-card-actions">
-              <a href="#myModal-3" data-bs-toggle="modal" class="btn-doc-profile">
-                <i class="fas fa-id-card"></i> View Full Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Doctor 4: Dr Pavithra Venkateswaran -->
-      <div id="dr-pavithra-venkateswaran" class="col-lg-6 col-md-6 col-12 doctor-card-item" data-specialty="critical-care" data-keywords="dr pavithra venkateswaran neuroanesthesia neuro critical care pain medicine nimhans">
-        <div class="doctor-card">
-          <div class="doctor-card-top">
-            <div class="doctor-avatar-wrap">
-              <img class="doctor-avatar-img" src="static/brainshospital-com/pavithra-venkateswaran.webp" alt="Dr. Pavithra Venkateswaran" />
-              <div class="doctor-verified-badge" title="Verified Specialist"><i class="fas fa-check"></i></div>
-            </div>
-            <div class="doctor-intro-head">
-              <span class="doctor-specialty-badge"><i class="fas fa-heart-pulse me-1"></i> Neuro Critical Care</span>
-              <h3 class="doctor-card-name">DR. PAVITHRA VENKATESWARAN</h3>
-              <p class="doctor-card-designation">Consultant Neuroanesthesia &amp; Neuro Critical Care</p>
-            </div>
-          </div>
-          <div class="doctor-card-body">
-            <div class="doctor-highlight-pill">
-              <i class="fas fa-user-graduate"></i>
-              <span><strong>MD &bull; PDF (Neuroanesthesia)</strong> &bull; PDF (Neurocriticalcare)</span>
-            </div>
-            <p class="doctor-card-excerpt">
-              An eminent Anaesthetist with over 11 years of experience Dr. Pavithra has worked at reputed hospitals.
-            </p>
-            <div class="doctor-card-actions">
-              <a href="#myModal-4" data-bs-toggle="modal" class="btn-doc-profile">
-                <i class="fas fa-id-card"></i> View Full Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Doctor 5: Dr Prahlada N.B -->
-      <div id="dr-prahlada-nb" class="col-lg-6 col-md-6 col-12 doctor-card-item" data-specialty="specialized" data-keywords="dr prahlada nb ent surgeon head and neck skull base karnataka flap microvascular">
-        <div class="doctor-card">
-          <div class="doctor-card-top">
-            <div class="doctor-avatar-wrap">
-              <img class="doctor-avatar-img" src="static/brainshospital-com/dr-prahlada-nb.webp" alt="Dr. Prahlada N.B" />
-              <div class="doctor-verified-badge" title="Verified Specialist"><i class="fas fa-check"></i></div>
-            </div>
-            <div class="doctor-intro-head">
-              <span class="doctor-specialty-badge"><i class="fas fa-head-side-mask me-1"></i> ENT &amp; Skull Base</span>
-              <h3 class="doctor-card-name">DR. PRAHLADA N.B</h3>
-              <p class="doctor-card-designation">ENT Head &amp; Neck Surgeon, Skull Base Surgeon</p>
-            </div>
-          </div>
-          <div class="doctor-card-body">
-            <div class="doctor-highlight-pill">
-              <i class="fas fa-user-graduate"></i>
-              <span><strong>MS (ENT-Head &amp; Neck) PGIMER</strong> &bull; Dr RAF Cooper National Award</span>
-            </div>
-            <p class="doctor-card-excerpt">
-              Dr. Prahlada N.B is a graduate of JJM Medical College (Mysore University), Davanagere, Karnataka.
-            </p>
-            <div class="doctor-card-actions">
-              <a href="#myModal-5" data-bs-toggle="modal" class="btn-doc-profile">
-                <i class="fas fa-id-card"></i> View Full Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Doctor 6: Dr Pratap Kumar Pani -->
-      <div id="dr-pratap-kumar-pani" class="col-lg-6 col-md-6 col-12 doctor-card-item" data-specialty="neurosurgery" data-keywords="dr pratap kumar pani senior consultant neurosurgery gamma knife stereotaxy spine navigation">
-        <div class="doctor-card">
-          <div class="doctor-card-top">
-            <div class="doctor-avatar-wrap">
-              <img class="doctor-avatar-img" src="static/brainshospital-com/pratap-kumar-pani.webp" alt="Dr. Pratap Kumar Pani" />
-              <div class="doctor-verified-badge" title="Verified Specialist"><i class="fas fa-check"></i></div>
-            </div>
-            <div class="doctor-intro-head">
-              <span class="doctor-specialty-badge"><i class="fas fa-bone me-1"></i> Minimally Invasive Spine &amp; Brain</span>
-              <h3 class="doctor-card-name">DR. PRATAP KUMAR PANI</h3>
-              <p class="doctor-card-designation">Senior Consultant, Neurosurgery</p>
-            </div>
-          </div>
-          <div class="doctor-card-body">
-            <div class="doctor-highlight-pill">
-              <i class="fas fa-user-graduate"></i>
-              <span><strong>MCh (Neurosurgery)</strong> &bull; Gamma Knife &amp; Stereotaxy (Japan)</span>
-            </div>
-            <p class="doctor-card-excerpt">
-              With over 32 years of experience in various fields of Neurosurgery, Dr. Pratap is one of the well-known Neurosurgeons in the country.
-            </p>
-            <div class="doctor-card-actions">
-              <a href="#myModal-21" data-bs-toggle="modal" class="btn-doc-profile">
-                <i class="fas fa-id-card"></i> View Full Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Doctor 7: Dr Aswani Baby -->
-      <div id="dr-aswani-baby" class="col-lg-6 col-md-6 col-12 doctor-card-item" data-specialty="specialized" data-keywords="dr aswani baby speech swallow therapist audiologist baslp rehabilitation">
-        <div class="doctor-card">
-          <div class="doctor-card-top">
-            <div class="doctor-avatar-wrap">
-              <img class="doctor-avatar-img" src="static/brainshospital-com/nimmy.webp" alt="Dr. Aswani Baby" />
-              <div class="doctor-verified-badge" title="Verified Specialist"><i class="fas fa-check"></i></div>
-            </div>
-            <div class="doctor-intro-head">
-              <span class="doctor-specialty-badge"><i class="fas fa-comments me-1"></i> Speech &amp; Swallow Rehabilitation</span>
-              <h3 class="doctor-card-name">DR. ASWANI BABY</h3>
-              <p class="doctor-card-designation">Speech &amp; Swallow Therapist</p>
-            </div>
-          </div>
-          <div class="doctor-card-body">
-            <div class="doctor-highlight-pill">
-              <i class="fas fa-user-graduate"></i>
-              <span><strong>BASLP</strong> &bull; Diagnostic &amp; Rehabilitative Audiology Specialist</span>
-            </div>
-            <p class="doctor-card-excerpt">
-              Highly trained and experienced in speech and swallow therapy.
-            </p>
-            <div class="doctor-card-actions">
-              <a href="#myModal-8" data-bs-toggle="modal" class="btn-doc-profile">
-                <i class="fas fa-id-card"></i> View Full Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Empty State Message when search has 0 matches -->
-    <div id="doctorNoResults" class="text-center py-5 d-none">
-      <div class="mb-3">
-        <i class="fas fa-user-doctor text-muted" style="font-size: 54px; opacity: 0.5;"></i>
-      </div>
-      <h4 style="font-family: 'Mirador-Medium', serif; color: var(--primary-navy);">No Matching Doctors Found</h4>
-      <p class="text-muted">We couldn't find any specialist matching your search. Try adjusting keywords or resetting the filter.</p>
-      <button type="button" class="btn btn-outline-primary rounded-pill px-4" id="resetDoctorFiltersBtn">
-        Reset All Filters
-      </button>
-    </div>
-
+  </div>
 
   <!-- Doctor Profile Modals Container -->
   <div class="doctor-modals-wrapper">
+
+  <!-- =====================================================================
+       DOCTOR PROFILE POPUP MODAL (MATCHING DESIGN 1 PROFILE VIEW)
+       ===================================================================== -->
+  <div id="doctorProfileModal" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content doctor-profile-modal-content">
+        <div class="modal-header border-0 pb-0">
+          <nav aria-label="breadcrumb" class="profile-modal-breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="Doctors.html">Doctors</a></li>
+              <li class="breadcrumb-item active" id="modalBreadcrumbName" aria-current="page">Doctor Profile</li>
+            </ol>
+          </nav>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 p-md-4 pt-2">
+          
+          <!-- Top Profile Header Box -->
+          <div class="profile-header-card">
+            <div class="row align-items-center g-4">
+              <!-- Left: Doctor Avatar -->
+              <div class="col-lg-3 col-md-4 col-12 text-center text-md-start">
+                <div class="profile-avatar-frame">
+                  <img id="modalDocPhoto" src="static/brainshospital-com/dr-nk-venkataramana.webp" alt="Doctor" class="profile-avatar-img" />
+                </div>
+              </div>
+
+              <!-- Middle: Doctor Bio & Key Info -->
+              <div class="col-lg-5 col-md-8 col-12">
+                <h2 id="modalDocName" class="profile-title mb-1">Dr. N K Venkataramana</h2>
+                <p id="modalDocDesignation" class="profile-subtitle mb-2">Founder, Chairman &amp; Chief Neurosurgeon</p>
+                <div class="mb-3">
+                  <span id="modalDocSpecialtyBadge" class="profile-specialty-pill">Neurosurgery</span>
+                </div>
+
+                <div class="profile-meta-list">
+                  <div class="meta-row">
+                    <i class="fas fa-shield-alt text-primary"></i>
+                    <span id="modalDocExperience">35+ Years Experience</span>
+                  </div>
+                  <div class="meta-row">
+                    <i class="fas fa-check-square text-primary"></i>
+                    <span id="modalDocQualification">MBBS, MS, MCh</span>
+                  </div>
+                  <div class="meta-row">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                    <span>Brains Super Speciality Hospital</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Appointment Actions Card -->
+              <div class="col-lg-4 col-12">
+                <div class="profile-booking-box">
+                  <a id="modalDocPhoneBtn" href="tel:+919148080000" class="btn btn-booking-call w-100 mb-0">
+                    <i class="fas fa-phone-alt me-2"></i> <span id="modalDocPhoneText">Call +91 91480 80000</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile Nav Tabs -->
+          <div class="profile-tabs-wrapper mt-4">
+            <ul class="nav nav-tabs profile-nav-tabs" id="docProfileTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab-overview" data-bs-toggle="tab" data-bs-target="#tabContent-overview" type="button" role="tab" aria-selected="true">
+                  Overview
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-qualifications" data-bs-toggle="tab" data-bs-target="#tabContent-qualifications" type="button" role="tab" aria-selected="false">
+                  Qualifications
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-experience" data-bs-toggle="tab" data-bs-target="#tabContent-experience" type="button" role="tab" aria-selected="false">
+                  Experience
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-expertise" data-bs-toggle="tab" data-bs-target="#tabContent-expertise" type="button" role="tab" aria-selected="false">
+                  Expertise
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-awards" data-bs-toggle="tab" data-bs-target="#tabContent-awards" type="button" role="tab" aria-selected="false">
+                  Awards &amp; Recognition
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-publications" data-bs-toggle="tab" data-bs-target="#tabContent-publications" type="button" role="tab" aria-selected="false">
+                  Publications
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Content Panes -->
+            <div class="tab-content profile-tab-content p-3 pt-4" id="docProfileTabContent">
+              <!-- Tab 1: Overview -->
+              <div class="tab-pane fade show active" id="tabContent-overview" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-lg-7 col-12">
+                    <h4 class="content-heading" id="modalAboutTitle">About Doctor</h4>
+                    <p id="modalDocAbout" class="content-paragraph text-muted">
+                      Doctor biography...
+                    </p>
+                  </div>
+                  <div class="col-lg-5 col-12">
+                    <div class="expertise-card-box">
+                      <h5 class="expertise-card-title">Areas of Expertise</h5>
+                      <ul id="modalDocExpertiseList" class="expertise-styled-list">
+                        <li>Neurosurgery</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 2: Qualifications -->
+              <div class="tab-pane fade" id="tabContent-qualifications" role="tabpanel">
+                <h4 class="content-heading text-nowrap">Qualifications &amp; Fellowships</h4>
+                <p id="modalDocQualificationsDetail" class="content-paragraph text-muted">
+                  Qualifications details...
+                </p>
+              </div>
+
+              <!-- Tab 3: Experience -->
+              <div class="tab-pane fade" id="tabContent-experience" role="tabpanel">
+                <h4 class="content-heading">Clinical Experience &amp; Positions</h4>
+                <p id="modalDocExperienceDetail" class="content-paragraph text-muted">
+                  Experience details...
+                </p>
+              </div>
+
+              <!-- Tab 4: Expertise -->
+              <div class="tab-pane fade" id="tabContent-expertise" role="tabpanel">
+                <h4 class="content-heading">Specialised Procedures &amp; Conditions Treated</h4>
+                <ul id="modalDocExpertiseTabList" class="expertise-styled-list">
+                  <li>Procedure 1</li>
+                </ul>
+              </div>
+
+              <!-- Tab 5: Awards -->
+              <div class="tab-pane fade" id="tabContent-awards" role="tabpanel">
+                <h4 class="content-heading">Awards, Honors &amp; Leadership</h4>
+                <p id="modalDocAwardsDetail" class="content-paragraph text-muted">
+                  Awards details...
+                </p>
+              </div>
+
+              <!-- Tab 6: Publications -->
+              <div class="tab-pane fade" id="tabContent-publications" role="tabpanel">
+                <h4 class="content-heading">Scientific Publications &amp; Research</h4>
+                <p id="modalDocPublicationsDetail" class="content-paragraph text-muted">
+                  Publications details...
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal 1: Dr N K Venkataramana -->
   <div id="myModal-1" class="modal fade" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -2607,7 +3115,7 @@
           </div>
         </div>
         <div class="modal-footer py-2 px-4 bg-white border-top d-flex justify-content-center align-items-center">
-          <button type="button" class="btn btn-outline-primary btn-sm rounded-pill px-4" data-bs-target="#myModal-1" data-bs-toggle="modal">
+          <button type="button" class="btn btn-outline-primary btn-sm rounded-pill px-4" data-bs-target="#doctorProfileModal" data-bs-toggle="modal">
             <i class="fas fa-arrow-left me-1"></i> Back to Dr. Profile
           </button>
         </div>
@@ -2744,23 +3252,34 @@
       (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
     );
 
-    // Interactive Doctor Specialty Filter Tabs
+    // Interactive Doctor Directory (Search, Filter Tabs, Select & Sort)
     document.addEventListener('DOMContentLoaded', function () {
-      const filterButtons = document.querySelectorAll('#doctorFilterTabs .filter-btn');
-      const doctorCards = document.querySelectorAll('#doctorsGrid .doctor-card-item');
+      const searchInput = document.getElementById('doctorSearchInput');
+      const specialtySelect = document.getElementById('specialtySelect');
+      const filterPills = document.querySelectorAll('#specialtyPills .spec-pill');
+      const sortSelect = document.getElementById('doctorSortSelect');
+      const resetBtn = document.getElementById('resetDoctorFiltersBtn');
+      const resetEmptyBtn = document.getElementById('resetFilterEmptyBtn');
       const countEl = document.getElementById('doctorVisibleCount');
       const noResultsEl = document.getElementById('doctorNoResults');
+      const grid = document.getElementById('doctorsGrid');
 
       let currentSpecialty = 'all';
+      let currentQuery = '';
 
-      function updateFiltering() {
+      function applyFilterAndSearch() {
+        const cards = Array.from(grid.querySelectorAll('.doctor-card-item'));
         let visibleCount = 0;
 
-        doctorCards.forEach(card => {
-          const specialty = card.getAttribute('data-specialty') || '';
-          const matchesSpecialty = (currentSpecialty === 'all') || (specialty === currentSpecialty);
+        cards.forEach(card => {
+          const cardSpecialty = card.getAttribute('data-specialty') || '';
+          const cardKeywords = (card.getAttribute('data-keywords') || '').toLowerCase();
+          const cardName = (card.getAttribute('data-name') || '').toLowerCase();
 
-          if (matchesSpecialty) {
+          const matchesSpecialty = (currentSpecialty === 'all') || (cardSpecialty === currentSpecialty);
+          const matchesQuery = !currentQuery || cardKeywords.includes(currentQuery) || cardName.includes(currentQuery);
+
+          if (matchesSpecialty && matchesQuery) {
             card.classList.remove('d-none');
             visibleCount++;
           } else {
@@ -2768,30 +3287,715 @@
           }
         });
 
-        if (countEl) {
-          countEl.textContent = visibleCount;
-        }
-
+        if (countEl) countEl.textContent = visibleCount;
         if (noResultsEl) {
-          if (visibleCount === 0) {
-            noResultsEl.classList.remove('d-none');
-          } else {
-            noResultsEl.classList.add('d-none');
-          }
+          if (visibleCount === 0) noResultsEl.classList.remove('d-none');
+          else noResultsEl.classList.add('d-none');
         }
       }
 
-      filterButtons.forEach(btn => {
-        btn.addEventListener('click', function () {
-          filterButtons.forEach(b => b.classList.remove('active'));
-          this.classList.add('active');
-          currentSpecialty = this.getAttribute('data-filter') || 'all';
-          updateFiltering();
+      function setSpecialty(specialty) {
+        currentSpecialty = specialty;
+        // Update pills
+        filterPills.forEach(pill => {
+          pill.classList.toggle('active', pill.getAttribute('data-filter') === specialty);
+        });
+        // Update select
+        if (specialtySelect) specialtySelect.value = specialty;
+        applyFilterAndSearch();
+      }
+
+      // Filter pills click
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', function () {
+          setSpecialty(this.getAttribute('data-filter') || 'all');
         });
       });
 
-      updateFiltering();
+      // Specialty select change
+      if (specialtySelect) {
+        specialtySelect.addEventListener('change', function () {
+          setSpecialty(this.value);
+        });
+      }
+
+      // Live search input
+      if (searchInput) {
+        searchInput.addEventListener('input', function () {
+          currentQuery = this.value.trim().toLowerCase();
+          applyFilterAndSearch();
+        });
+      }
+
+      // Sort Select
+      if (sortSelect) {
+        sortSelect.addEventListener('change', function () {
+          const cards = Array.from(grid.querySelectorAll('.doctor-card-item'));
+          const sortVal = this.value;
+
+          cards.sort((a, b) => {
+            const nameA = (a.getAttribute('data-name') || '').toLowerCase();
+            const nameB = (b.getAttribute('data-name') || '').toLowerCase();
+            if (sortVal === 'name-desc') {
+              return nameB.localeCompare(nameA);
+            }
+            return nameA.localeCompare(nameB);
+          });
+
+          cards.forEach(card => grid.appendChild(card));
+        });
+      }
+
+      // Reset
+      function resetAll() {
+        if (searchInput) searchInput.value = '';
+        currentQuery = '';
+        setSpecialty('all');
+        if (sortSelect) sortSelect.value = 'default';
+      }
+
+      if (resetBtn) resetBtn.addEventListener('click', resetAll);
+      if (resetEmptyBtn) resetEmptyBtn.addEventListener('click', resetAll);
+
+      applyFilterAndSearch();
     });
+
+
+    // Doctor Profiles Data Store for Design 1 Profile View Modal
+    const DOCTOR_PROFILES = [
+  {
+    "id": "dr-nk-venkataramana",
+    "name": "Dr. N K Venkataramana",
+    "designation": "Founder Chairman & Chief Neurosurgeon",
+    "specialty": "Neurosurgery",
+    "specialtyCode": "neurosurgery",
+    "experience": "35+ Years Experience (20,000+ Surgeries)",
+    "qualification": "MBBS, MS, MCh (Neurosurgery)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 91480 80000",
+    "phoneClean": "9148080000",
+    "image": "static/brainshospital-com/dr-nk-venkataramana.webp",
+    "about": "<p>Dr N K Venkataramana is an internationally acclaimed neurosurgeon, researcher and academician. After training in micro neurology at Nordtstud Krankenhause in Hanover, Germany, he served as assistant professor in neurosurgery at the Bangalore-based National Institute of Mental Health and Neurosciences (NIMHANS). Later he founded the Manipal Institute for Neurological Disorders (MIND) at the Manipal Hospital in Bangalore and turned it into a leading facility. Alongside he pioneered 1062, the country's first GPS-enabled mobile trauma care service. Then Dr Venkataramana served as Vice Chairman of the Bangalore-based BGS Global Hospitals and Chief Neurosurgeon at the Global Institute of Neurosciences (BGS-GIN).</p>\n<p>The doctor has published more than a 100 papers in reputed journals, performed more than 20,000 surgeries, participated and presided over many prestigious neurological conferences and delivered lectures and orations at national and international forums by invitation.</p>\n<p>A recipient of a number of prestigious awards and citations, Dr Venkataramana currently presides over the Indian Society for Paediatric Neurosurgery and is the editor-in-chief of the Journal of Cerebrovascular Sciences. Previously he has been the President of the Indian Society for Functional and Stereotactic Neurosurgery and President, Neuroendoscopic Society-India.</p>\n<p>In late 2016, Dr Venkataramana founded his own boutique centre of excellence for comprehensive neuro care &mdash; the Bangalore Regenerative Advanced Institute of Neurosciences (Brains). Located in the heart of Bangalore at Lalbagh Siddapura Road, Jayanagar 1st Block, Brains is setting the golden standards in neuroscience with cutting edge services encompassing prevention, awareness, advocacy, acute and chronic care, regeneration, rehabilitation and research and training.</p>\n<div class=\"mt-4 p-3 bg-light rounded-3 border text-center\">\n  <h6 class=\"fw-bold mb-2\" style=\"color: #0e3b79;\"><i class=\"fas fa-certificate text-primary me-2\"></i>Official Certification</h6>\n  <a href=\"#certificateModal\" data-bs-toggle=\"modal\" class=\"certificate-thumb-link d-inline-block\" title=\"Click to view full certificate\">\n    <img class=\"img-fluid rounded border shadow-sm\" src=\"static/brainshospital-com/certificate.webp\" alt=\"Certification\" style=\"max-height: 200px; cursor: pointer;\" />\n    <span class=\"d-block mt-2 text-primary fw-medium\" style=\"font-size: 13px;\">\n      <i class=\"fas fa-search-plus me-1\"></i> Click to Enlarge Certificate\n    </span>\n  </a>\n</div>",
+    "expertise": [
+      "Brain Tumor & Skull Base Surgery",
+      "Minimally Invasive Spine Surgery",
+      "Stereotactic & Functional Neurosurgery",
+      "Epilepsy Surgery & Deep Brain Stimulation",
+      "Paediatric Neurosurgery & Endoscopy",
+      "Complex Vascular Brain & Spine Disorders"
+    ],
+    "qualificationsDetail": "<ul>\n  <li><strong>MCh &ndash; Neurosurgery</strong></li>\n  <li><strong>Fellowship In Micro Neurosurgery</strong> &ndash; Hanover (Germany)</li>\n  <li><strong>Fellowship In Endoscopy</strong> &ndash; Mainz (Germany)</li>\n  <li><strong>International Fellow</strong> of American Association Of Neurological Surgeons (AANS)</li>\n  <li><strong>MBBS</strong></li>\n</ul>\n<div class=\"mt-3 p-3 bg-light rounded-3 border text-center\">\n  <a href=\"#certificateModal\" data-bs-toggle=\"modal\" class=\"certificate-thumb-link d-inline-block\" title=\"Click to view full certificate\">\n    <img class=\"img-fluid rounded border shadow-sm\" src=\"static/brainshospital-com/certificate.webp\" alt=\"Certification\" style=\"max-height: 180px; cursor: pointer;\" />\n    <span class=\"d-block mt-2 text-primary fw-medium\" style=\"font-size: 13px;\">\n      <i class=\"fas fa-search-plus me-1\"></i> View Neuroendoscopy Society India Certificate\n    </span>\n  </a>\n</div>",
+    "experienceDetail": "<ul>\n  <li><strong>Founder:</strong> Comprehensive Trauma Consortium (<a href=\"http://www.sanjeevini.org\" target=\"_blank\">www.sanjeevini.org</a>)</li>\n  <li><strong>Past President:</strong> Indian Society For Stereotactic And Functional Neurosurgery</li>\n  <li><strong>Past President:</strong> Neuro Endoscopy Society, India</li>\n  <li><strong>President:</strong> Indian Society For Paediatric Neurosurgery</li>\n  <li><strong>Chairman:</strong> MERRICART (<a href=\"http://merricart.in\" target=\"_blank\">merricart.in</a>)</li>\n  <li><strong>Chairman:</strong> ANSA &amp; Cell Space Research Foundation (<a href=\"http://www.ansaresearch.org\" target=\"_blank\">www.ansaresearch.org</a>)</li>\n  <li><strong>Treasurer:</strong> AASPN</li>\n  <li><strong>Executive Member:</strong> International Federation Of Neuroendoscopy (IFNE)</li>\n  <li><strong>Former Vice Chairman &amp; Chief Neurosurgeon:</strong> BGS Global Hospitals &amp; Global Institute of Neurosciences</li>\n  <li><strong>Founder:</strong> Manipal Institute for Neurological Disorders (MIND)</li>\n  <li><strong>Assistant Professor:</strong> NIMHANS, Bangalore</li>\n</ul>",
+    "awardsDetail": "<ul>\n  <li>Recipient of numerous prestigious national and international awards and citations in neurosurgery and neuroendoscopy.</li>\n  <li>Pioneered 1062, India's first GPS-enabled mobile trauma care service saving thousands of lives.</li>\n  <li>Delivered prestigious orations, keynote addresses, and surgical demonstrations worldwide by invitation.</li>\n</ul>",
+    "publicationsDetail": "<ul>\n  <li>Published over <strong>100 papers</strong> in reputed peer-reviewed medical and surgical journals.</li>\n  <li><strong>Editor-in-Chief:</strong> Journal of Cerebro Vascular Sciences.</li>\n  <li><strong>Editor:</strong> Journal of Neuroendoscopy.</li>\n  <li>Author and contributor to major international neurosurgical texts and clinical research protocols.</li>\n</ul>"
+  },
+  {
+    "id": "dr-joshy-ev",
+    "name": "Dr. Joshy E.V.",
+    "designation": "Senior Consultant Neurologist",
+    "specialty": "Neurology",
+    "specialtyCode": "neurology",
+    "experience": "25+ Years Experience (100,000+ Consultations)",
+    "qualification": "MBBS, MD (Internal Medicine), DM (Neurology), Post-Doctoral",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 91480 80000",
+    "phoneClean": "9148080000",
+    "image": "static/brainshospital-com/Dr-Joshy-E-V.webp",
+    "about": "<p>With over 34 years of practicing experience, Dr. Joshy is a veteran neurologist with a staggering academic and clinical record including over 100,000 Neurology consultations in 9 years at Sri Sathya Sai Super-speciality Hospital, apart from his administrative contributions as HOD Neurology Department, Hospital Executive Committee, Hospital Recruitment committee, Hospital Patient care committee, and Hospital Welfare Society.</p>\n<p>Before that, he served 20 years as Chief Neurologist at the Railway Hospital Perambur, Chennai, where he was involved in establishing the Neurology and ICU service in the early 1980s. He also has the rare credit of treating and managing complicated brain infection cases like Cryptococcal Meningitis (over 300 cases) and Neurotuberculosis (over 500 cases).</p>\n<p>Dr. Joshy is leading Autoimmune Neurology treatment and Stem-cell therapy at Brains Hospital &mdash; creating a unique Holistic centre for patients who have not responded to conventional neurological treatments.</p>",
+    "expertise": [
+      "Autoimmune Neurology & Neuroimmunology",
+      "Stem-Cell Regenerative Neurological Therapy",
+      "Complex Neuro-Infections (Meningitis & Encephalitis)",
+      "Refractory Epilepsy & Movement Disorders",
+      "Neuromuscular Diseases & Stroke Rehabilitation"
+    ],
+    "qualificationsDetail": "<ul>\n  <li><strong>MD (Internal Medicine)</strong></li>\n  <li><strong>DM Neurology</strong> &ndash; National Institute of Mental Health and Neurosciences (NIMHANS)</li>\n  <li><strong>Post-Doctoral Fellowship</strong> &ndash; University of Southern California (USC), USA</li>\n  <li><strong>Member</strong> &ndash; American Academy of Neurology (AAN)</li>\n  <li><strong>MBBS</strong></li>\n</ul>",
+    "experienceDetail": "<ul>\n  <li><strong>HOD &amp; Senior Neurologist:</strong> Sri Sathya Sai Super-speciality Hospital (9 years, over 100,000 patient consultations)</li>\n  <li><strong>Chief Neurologist:</strong> Southern Railway Headquarters Hospital, Perambur, Chennai (20 years)</li>\n  <li><strong>Clinical Lead:</strong> Autoimmune Neurology &amp; Stem-Cell Regenerative Therapy, Brains Hospital</li>\n  <li>Treated and managed more than 300 Cryptococcal Meningitis and 500+ Neurotuberculosis cases with outstanding outcomes.</li>\n</ul>",
+    "awardsDetail": "<ul>\n  <li>Life Member, Neurological Society of India (NSI).</li>\n  <li>Active Member, American Academy of Neurology (AAN).</li>\n  <li>Distinguished Service Citations for healthcare delivery in tertiary neurological centers.</li>\n</ul>",
+    "publicationsDetail": "<ul>\n  <li>Authored comprehensive clinical papers on neurological infections, autoimmune neuropathies, and neuromuscular disorders.</li>\n  <li>Frequent lecturer and panelist at national neuroscience congresses.</li>\n</ul>"
+  },
+  {
+    "id": "dr-harsha-kj",
+    "name": "Dr. Harsha K.J.",
+    "designation": "Consultant Neuro Interventional, Stroke Specialist & Neuro Radiologist",
+    "specialty": "Neuro Interventional",
+    "specialtyCode": "neuro-interventional",
+    "experience": "15+ Years Experience",
+    "qualification": "MBBS, MD, DM (SCTIMST), EMSM (Austria)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 91480 80000",
+    "phoneClean": "9148080000",
+    "image": "static/brainshospital-com/Dr-Harsha-K-J.webp",
+    "about": "<p>Dr Harsha is a highly qualified and experienced authority in stroke medicine, neuro-interventional surgery / endovascular neurosurgery, neuro-imaging and neuro-sonology. In a distinguished professional career traversing premier institutes in India, Canada and Austria, he has acquired cutting edge expertise in a wide range of specialties such as hyperacute stroke thrombolysis, mechanical thrombectomy, aneurysm coiling, intra and extra cranial stenting, brain and spinal AVM and dural AVF embolization.</p>\n<p>His repertoire as a specialist includes endovascular neurosurgery, interventional neurology, interventional neuro-radiology, mechanical thrombectomy for acute stroke, emergency cranial and spine vascular interventions, diagnostic cerebral and spinal angiograms.</p>",
+    "expertise": [
+      "Acute Ischemic Stroke & Mechanical Thrombectomy",
+      "Endovascular Brain Aneurysm Coiling & Flow Diverters",
+      "Arteriovenous Malformation (AVM) Embolization",
+      "Carotid & Intracranial Stenting",
+      "Diagnostic 3D Digital Subtraction Angiography (DSA)",
+      "Neuro-Imaging & Transcranial Doppler Sonology"
+    ],
+    "qualificationsDetail": "<ul>\n  <li><strong>MBBS</strong></li>\n  <li><strong>MD</strong> (Radiodiagnosis)</li>\n  <li><strong>DM</strong> (Neuroimaging &amp; Interventional Neuroradiology) &ndash; SCTIMST</li>\n  <li><strong>European Master in Stroke Medicine (EMSM)</strong> &ndash; Danube University, Austria</li>\n  <li><strong>Clinical Stroke Fellowship</strong> &ndash; University of Calgary, Canada</li>\n  <li><strong>International Certification in Neurosonology</strong> &ndash; European Society of Neurosonology (ESN)</li>\n  <li><strong>Zurich Course in Interventional Neuroradiology</strong> &ndash; Switzerland</li>\n</ul>",
+    "experienceDetail": "<ul>\n  <li>Extensive fellowship and clinical practice at leading neuroscience institutes in India, Canada, and Austria.</li>\n  <li>Specialist in hyperacute stroke protocols, mechanical thrombectomy, and complex endovascular aneurysm embolization.</li>\n  <li>Decade of specialized high-volume neurointerventional catheterization procedures.</li>\n</ul>",
+    "awardsDetail": "<ul>\n  <li>International Certification in Neurosonology (ESN).</li>\n  <li>Selected and awarded prestigious Clinical Stroke Fellowship in Canada.</li>\n  <li>Faculty member and presenter at international stroke and neurointerventional symposia.</li>\n</ul>",
+    "publicationsDetail": "<ul>\n  <li>Published clinical studies on mechanical thrombectomy, acute ischemic stroke management, and intracranial stent placement.</li>\n  <li>Authored book chapters and scientific papers in European and American stroke and neuroradiology journals.</li>\n</ul>"
+  },
+  {
+    "id": "dr-pavithra-venkateswaran",
+    "name": "Dr. Pavithra Venkateswaran",
+    "designation": "Consultant Neuroanaesthesia & Neuro Critical Care",
+    "specialty": "Neuro Critical Care",
+    "specialtyCode": "critical-care",
+    "experience": "15+ Years Experience",
+    "qualification": "MBBS, MD, PDF (Neuroanaesthesia), PDF (Neurocritical Care)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 91480 80000",
+    "phoneClean": "9148080000",
+    "image": "static/brainshospital-com/Dr-Pavithra-V.webp",
+    "about": "<p>An eminent Anaesthetist and Neurocritical Care specialist with extensive clinical experience, Dr. Pavithra has worked at renowned tertiary centers including Manipal Hospital, MS Ramaiah Institute of Neuro Sciences, and NIMHANS before joining Brains Super Speciality Hospital.</p>\n<p>She is deeply involved in the peri-operative and intensive care management of complex neurological and neurosurgical conditions, difficult airway management, advanced hemodynamic monitoring, and targeted post-operative neurocritical resuscitation.</p>",
+    "expertise": [
+      "Neuroanaesthesia for Complex Brain & Spine Surgeries",
+      "Neurocritical Care & Severe Brain Injury Management",
+      "Targeted Temperature Management & Resuscitation",
+      "Difficult Airway Management & Fiberoptic Intubation",
+      "Invasive Neuromonitoring & Pain Medicine"
+    ],
+    "qualificationsDetail": "<ul>\n  <li><strong>MBBS</strong></li>\n  <li><strong>MD</strong> (Anaesthesiology)</li>\n  <li><strong>PDF (Neuroanaesthesia)</strong></li>\n  <li><strong>PDF (Neurocritical Care)</strong></li>\n  <li><strong>Fellowship in Basic Pain Medicine</strong></li>\n</ul>",
+    "experienceDetail": "<ul>\n  <li><strong>Consultant:</strong> Brains Super Speciality Hospital, Bangalore</li>\n  <li><strong>Specialist:</strong> MS Ramaiah Institute of Neuro Sciences</li>\n  <li><strong>Clinical Fellow:</strong> NIMHANS, Bangalore</li>\n  <li><strong>Anaesthetist:</strong> Manipal Hospital, Bangalore</li>\n</ul>",
+    "awardsDetail": "<ul>\n  <li>Member, Indian Society of Neuroanaesthesiology and Critical Care (ISNACC).</li>\n  <li>Member, Indian College of Anaesthesiologists (ICA).</li>\n</ul>",
+    "publicationsDetail": "<ul>\n  <li>Several clinical research papers and case reports in indexed anaesthesiology and neurocritical care journals.</li>\n  <li>Presentations at national ISNACC conferences on brain protection and neuro-resuscitation.</li>\n</ul>"
+  },
+  {
+    "id": "dr-pratap-kumar-pani",
+    "name": "Dr. Pratap Kumar Pani",
+    "designation": "Senior Consultant, Neurosurgery",
+    "specialty": "Neurosurgery",
+    "specialtyCode": "neurosurgery",
+    "experience": "20+ Years Experience (8,000+ Surgeries)",
+    "qualification": "MBBS, MS (General Surgery), MCh (Neurosurgery), Fellowship (Japan)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 91480 80000",
+    "phoneClean": "9148080000",
+    "image": "static/brainshospital-com/Dr-Pratap-Kumar.webp",
+    "about": "<p>With over 32 years of experience in various fields of Neurosurgery, Dr. Pratap Kumar Pani is one of the most respected neurosurgeons in India. He has performed over 8,000 successful surgeries for complex brain and spine diseases, including advanced spine surgery, navigation-guided microscopic brain tumour resections, and vascular surgeries.</p>\n<p>Dr. Pani pioneered one of the first ever Anterior Odontoid screw fixations, Percutaneous Vertebroplasty & Kyphoplasty procedures in the region. He is also one of the rare neurosurgeons formally trained in Gamma Knife, Stereotactic and Functional Neurosurgery in Japan, having independently performed over 100 Functional Stereotactic surgeries for Parkinson's disease and Movement Disorders.</p>",
+    "expertise": [
+      "Minimally Invasive Spine & Endoscopic Spine Surgery",
+      "Brain Tumour & Vascular Micro-Neurosurgery",
+      "Gamma Knife Radiosurgery & Stereotaxy",
+      "Functional Neurosurgery for Parkinson's & Tremors",
+      "Anterior Odontoid Screw Fixation & Vertebroplasty",
+      "Cranial & Spinal Trauma Reconstruction"
+    ],
+    "qualificationsDetail": "<ul>\n  <li><strong>MBBS</strong></li>\n  <li><strong>MS (General Surgery)</strong></li>\n  <li><strong>MCh (Neurosurgery)</strong></li>\n  <li><strong>Fellowship in Gamma Knife, Stereotaxy &amp; Functional Neurosurgery</strong> &ndash; Japan</li>\n  <li><strong>Endoscopic Spine &amp; Brain Surgery Fellowship</strong></li>\n</ul>",
+    "experienceDetail": "<ul>\n  <li>Over 8,000 complex cranial and spinal surgeries performed across 32 years of clinical practice.</li>\n  <li>Pioneer of Anterior Odontoid Screw Fixation and Percutaneous Vertebroplasty.</li>\n  <li>Over 100 stereotactic and functional neurosurgeries for Parkinson's and movement disorders.</li>\n  <li>Senior Consultant at leading neuroscience centers in India.</li>\n</ul>",
+    "awardsDetail": "<ul>\n  <li>Member, Neurological Society of India (NSI).</li>\n  <li>Member, Indian Society for Stereotactic and Functional Neurosurgery (ISSFN).</li>\n  <li>Invited faculty for Gamma Knife and Stereotactic neurosurgical conventions.</li>\n</ul>",
+    "publicationsDetail": "<ul>\n  <li>Author of landmark clinical reports on odontoid screw fixation and percutaneous spine stabilization.</li>\n  <li>Presented award-winning papers on Gamma Knife radiosurgery and functional neurosurgery.</li>\n</ul>"
+  },
+  {
+    "id": "dr-prahlada-nb",
+    "name": "Dr. Prahlada N.B.",
+    "designation": "ENT Head and Neck Surgeon, Skull Base Surgeon",
+    "specialty": "ENT",
+    "specialtyCode": "ent",
+    "experience": "20+ Years Experience (200+ Courses & 120+ Surgeons Trained)",
+    "qualification": "MBBS, MS (ENT - PGIMER Chandigarh), DNB, DLORCS (England)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 91480 80000",
+    "phoneClean": "9148080000",
+    "image": "static/brainshospital-com/dr-prahlada-n-b.webp",
+    "about": "<p>Dr. Prahlada N.B is a distinguished graduate of JJM Medical College (Mysore University), Davanagere, Karnataka. He completed his Master of Surgery in ENT-Head & Neck Surgery from the premier Post-Graduate Institute of Medical Education and Research (PGIMER), Chandigarh. Later, he received advanced international training in Advanced Endoscopic Sinus Surgery, Ear & Skull Base Surgery, Head & Neck Cancer and Reconstructive Surgery, Micro-vascular Reconstructive Surgery, and Voice Surgery across prestigious institutes abroad.</p>\n<p>In 2000, he was awarded the prestigious <strong>Dr. RAF Cooper National Award</strong> for his Original Surgical technique. As an acclaimed resource person, he has delivered lectures, chaired scientific sessions, and demonstrated surgeries in more than 200 national and international courses and workshops, training over 120 ENT and Skull Base surgeons. He served as Professor of Otorhinolaryngology at Basaveshwara Medical College and has served the Rotary International Ear Camps across rural India.</p>",
+    "expertise": [
+      "Endoscopic Skull Base & Pituitary Surgery",
+      "Advanced Endoscopic Sinus Surgery (FESS)",
+      "Micro-Vascular Head & Neck Reconstructive Surgery",
+      "Microsurgery of Ear & Hearing Restoration",
+      "Head & Neck Cancer Resection",
+      "Voice Surgery & Phonosurgery"
+    ],
+    "qualificationsDetail": "<ul>\n  <li><strong>MS (ENT &ndash; Head and Neck Surgery)</strong> &ndash; PGIMER, Chandigarh</li>\n  <li><strong>MBBS</strong> &ndash; JJM Medical College, Davanagere</li>\n  <li><strong>DNB</strong> (Otorhinolaryngology)</li>\n  <li><strong>Advanced Fellowships:</strong> Endoscopic Sinus Surgery, Skull Base Surgery &amp; Microvascular Reconstruction (International Institutes)</li>\n</ul>",
+    "experienceDetail": "<ul>\n  <li><strong>Professor &amp; Head:</strong> Otorhinolaryngology, Basaveshwara Medical College &amp; Hospital</li>\n  <li>Demonstrated live surgeries and conducted hands-on surgical workshops for over 200 courses across India and internationally.</li>\n  <li>Trained more than 120 practicing surgeons in endoscopic skull base and microscopic ear surgeries.</li>\n  <li>Extensive charitable service operating across Rotary International community ear camps.</li>\n</ul>",
+    "awardsDetail": "<ul>\n  <li><strong>Dr. RAF Cooper National Award (2000)</strong> for Original Surgical Technique in ENT.</li>\n  <li>Keynote Speaker and Gold Medal recipient at Association of Otolaryngologists of India (AOI) forums.</li>\n</ul>",
+    "publicationsDetail": "<ul>\n  <li>Published pioneering surgical techniques and clinical series on skull base approaches and micro-vascular reconstructive surgery.</li>\n  <li>Author of instructional chapters on endoscopic sinus surgery.</li>\n</ul>"
+  },
+  {
+    "id": "dr-aswani-baby",
+    "name": "Aswani Baby",
+    "designation": "Speech & Swallow Therapist",
+    "specialty": "Speech Therapy",
+    "specialtyCode": "speech-therapy",
+    "experience": "10+ Years Experience",
+    "qualification": "BASLP (Bachelor in Audiology and Speech Language Pathology)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 91480 80000",
+    "phoneClean": "9148080000",
+    "image": "static/brainshospital-com/Dr-Aswani-Baby.webp",
+    "about": "<p>Highly trained and experienced in speech, language, and swallow rehabilitation, Aswani has performed comprehensive diagnosis and treatment of receptive and expressive language disorders, aural rehabilitation, articulation and phonological processing, oral-motor functioning disorders, voice, fluency, and pragmatic language disorders in infants, children, and adult patients.</p>\n<p>Aswani has focused her specialized clinical skills on treating post-stroke and post-surgical neurogenic dysphagia (swallowing difficulties), orofacial myology, cognitive-communication rehabilitation, and fitting advanced hearing aids and assistive devices.</p>",
+    "expertise": [
+      "Post-Stroke Neurogenic Dysphagia (Swallowing Therapy)",
+      "Cognitive Communication & Aphasia Rehabilitation",
+      "Paediatric Speech & Expressive Language Therapy",
+      "Voice, Fluency & Stuttering Therapy",
+      "Hearing Assessment & Digital Hearing Aid Fitting",
+      "Orofacial Myology & Motor Speech Disorders"
+    ],
+    "qualificationsDetail": "<ul>\n  <li><strong>Bachelor in Audiology and Speech Language Pathology (BASLP)</strong></li>\n  <li>Specialized Training in Neurogenic Dysphagia and Swallow Rehabilitation</li>\n  <li>Certified in Orofacial Myology &amp; Cognitive Communication Therapy</li>\n</ul>",
+    "experienceDetail": "<ul>\n  <li>10+ years specializing in hospital neuro-rehabilitation, stroke recovery, and paediatric developmental therapy.</li>\n  <li>Comprehensive swallow diagnostics and bedside rehabilitation for ICU and post-operative cranial surgical patients.</li>\n</ul>",
+    "awardsDetail": "<ul>\n  <li>Registered Member, Rehabilitation Council of India (RCI).</li>\n  <li>Member, Indian Speech and Hearing Association (ISHA).</li>\n</ul>",
+    "publicationsDetail": "<ul>\n  <li>Clinical presentations on bedside dysphagia protocols and aural rehabilitation outcomes in stroke patients.</li>\n</ul>"
+  },
+  {
+    "id": "dr-sankalp-c-aavarti",
+    "name": "Dr. Sankalp C Aavarti",
+    "designation": "Consultant Neurosurgeon",
+    "specialty": "Neurosurgery",
+    "specialtyCode": "neurosurgery",
+    "experience": "Brain & Spine Surgery",
+    "qualification": "MBBS, MS (General Surgery), MCh (Neurosurgery)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Sankalp.webp",
+    "about": "<p>Dr. Sankalp C Aavarti is a distinguished Consultant Neurosurgeon specializing in comprehensive brain and spine surgeries, neurotrauma emergencies, and neuronavigation-guided stereotactic surgeries.</p>",
+    "expertise": [
+      "Brain and Spine Tumour Resection",
+      "Complex Spine Injuries & Fixation",
+      "Neurosurgical & Neuro-Trauma Emergencies",
+      "Stereotactic & Neuronavigation-Guided Surgery",
+      "Minimally Invasive Cranial Procedures"
+    ],
+    "qualificationsDetail": "<ul><li>MBBS</li><li>MS (General Surgery)</li><li>MCh (Neurosurgery)</li></ul>",
+    "experienceDetail": "Experienced neurosurgeon managing high-volume cranial surgeries and spinal trauma cases at leading tertiary hospitals.",
+    "awardsDetail": "Active member of national and state neurosurgical societies.",
+    "publicationsDetail": "Author of clinical presentations in neurosurgery conferences."
+  },
+  {
+    "id": "dr-aarthi-g",
+    "name": "Dr. Aarthi G",
+    "designation": "Paediatric ENT Surgeon",
+    "specialty": "ENT",
+    "specialtyCode": "ent",
+    "experience": "Paediatric ENT Specialist",
+    "qualification": "MBBS, MS (ENT), Fellowship in Paediatric ENT",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Arthi.webp",
+    "about": "<p>Dr. Aarthi G is an experienced Paediatric ENT Surgeon focusing on specialized ear, nose, throat, and complex airway issues in infants and children.</p>",
+    "expertise": [
+      "Paediatric ENT & Hearing Evaluation",
+      "Paediatric Airway & Stridor Management",
+      "Endoscopic Sinus Surgery for Children",
+      "Allergy & Sleep-Disordered Breathing",
+      "Swallowing and Feeding Disorders in Infants"
+    ],
+    "qualificationsDetail": "<ul><li>MBBS</li><li>MS (ENT)</li><li>Fellowship in Paediatric ENT</li></ul>",
+    "experienceDetail": "Specialist in pediatric airway reconstruction and pediatric cochlear and ear disease.",
+    "awardsDetail": "Honored with fellowships in specialized pediatric ENT surgical programs.",
+    "publicationsDetail": "Research papers on pediatric airway and sinus pathology."
+  },
+  {
+    "id": "dr-vijay-reddy",
+    "name": "Dr. Vijay Reddy",
+    "designation": "Consultant Anaesthetist",
+    "specialty": "Neuro Critical Care",
+    "specialtyCode": "critical-care",
+    "experience": "5+ Years Experience",
+    "qualification": "MBBS, DNB (Anaesthesia)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Vijay-Reddy.webp",
+    "about": "<p>Dr. Vijay Reddy brings over 5 years of rich experience in neuroanaesthesia, advanced airway management, and post-operative critical care resuscitation.</p>",
+    "expertise": [
+      "Pre-operative Neurological Evaluation",
+      "Advanced Difficult Airway Management",
+      "Ultrasound-Guided Regional Nerve Blocks",
+      "Post-Operative Neuro Critical Care",
+      "Hemodynamic Monitoring in Complex Surgery"
+    ],
+    "qualificationsDetail": "<ul><li>MBBS</li><li>DNB (Anaesthesia)</li></ul>",
+    "experienceDetail": "5+ years managing peri-operative neurosurgical cases and intensive resuscitation.",
+    "awardsDetail": "Member of Indian Society of Anaesthesiologists.",
+    "publicationsDetail": "Clinical presentations in anaesthetic airway forums."
+  },
+  {
+    "id": "dr-elwin-jacob",
+    "name": "Dr. Elwin Jacob",
+    "designation": "Junior Consultant, Anaesthesiology",
+    "specialty": "Neuro Critical Care",
+    "specialtyCode": "critical-care",
+    "experience": "Neuro & Critical Care",
+    "qualification": "MBBS, DNB (Anaesthesiology)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Elwin-Jacob.webp",
+    "about": "<p>Dr. Elwin Jacob specializes in neuroanaesthesia, maxillofacial anaesthetic care, and neurocritical ICU patient management.</p>",
+    "expertise": [
+      "Neuroanaesthesia for Brain & Spine Surgery",
+      "Maxillofacial & Craniofacial Anaesthesia",
+      "Intensive Neurocritical Care Monitoring",
+      "Acute Pain Protocols & Regional Blocks"
+    ],
+    "qualificationsDetail": "<ul><li>MBBS</li><li>DNB (Anaesthesiology)</li></ul>",
+    "experienceDetail": "Clinical practice in tertiary neuroscience surgical units and critical care.",
+    "awardsDetail": "Member of Indian Society of Anaesthesiologists.",
+    "publicationsDetail": "Case studies in neurosurgical anesthesia management."
+  },
+  {
+    "id": "dr-raiya-aimen",
+    "name": "Dr. Raiya Aimen",
+    "designation": "Clinical Dietitian",
+    "specialty": "Clinical Nutrition",
+    "specialtyCode": "speech-therapy",
+    "experience": "Therapeutic Nutrition",
+    "qualification": "Food, Nutrition and Dietetics",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Raiya-Aimen.webp",
+    "about": "<p>Dr. Raiya Aimen specializes in clinical nutrition, designing therapeutic diets for post-surgical recovery, ICU nutrition, and complex metabolic conditions.</p>",
+    "expertise": [
+      "Therapeutic Diets for Diabetic & Renal Care",
+      "ICU Enteral & Parenteral Nutrition Support",
+      "Neurological Recovery & Brain Health Diets",
+      "Lifestyle Disease Nutrition Counseling",
+      "Cardiac & Critical Care Dietary Protocols"
+    ],
+    "qualificationsDetail": "<ul><li>Bachelor/Master in Food, Nutrition and Dietetics</li></ul>",
+    "experienceDetail": "Clinical experience in tertiary hospital enteral and critical nutrition planning.",
+    "awardsDetail": "Certified Clinical Nutritionist.",
+    "publicationsDetail": "Dietary protocols for neurological rehabilitation."
+  },
+  {
+    "id": "dr-abhiraj-r",
+    "name": "Dr. Abhiraj R",
+    "designation": "Duty Doctor",
+    "specialty": "Emergency & MICU",
+    "specialtyCode": "emergency",
+    "experience": "Emergency Management",
+    "qualification": "MBBS",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Abhiraj-R.webp",
+    "about": "<p>Dr. Abhiraj R is a dedicated medical officer proficient in internal medicine triage, emergency trauma resuscitation, and acute inpatient management.</p>",
+    "expertise": [
+      "Acute Emergency & Trauma Triage",
+      "Medical Intensive Care Resuscitation",
+      "Inpatient Monitoring & Stabilization",
+      "Internal Medicine & Clinical Care"
+    ],
+    "qualificationsDetail": "<ul><li>MBBS</li></ul>",
+    "experienceDetail": "Round-the-clock emergency hospital coverage and ICU medical officer.",
+    "awardsDetail": "Certified in ACLS & BLS emergency life support.",
+    "publicationsDetail": "Clinical audits on emergency trauma triage."
+  },
+  {
+    "id": "dr-jayanthi-anandhi",
+    "name": "Dr. Jayanthi Anandhi",
+    "designation": "Neurosurgery Specialist",
+    "specialty": "Neurosurgery",
+    "specialtyCode": "neurosurgery",
+    "experience": "5+ Years Experience",
+    "qualification": "MCh (Neurosurgery)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Jayanthi.webp",
+    "about": "<p>Dr. Jayanthi Anandhi possesses over 5 years of dedicated surgical experience in neurosurgical patient management, cranial trauma, and coordinated inpatient neuro care.</p>",
+    "expertise": [
+      "Round-the-Clock Neurosurgical Patient Assessment",
+      "Coordinated Neuro-Trauma Care",
+      "Inpatient Post-Operative Neuro Monitoring",
+      "Cranial & Spinal Emergency Management"
+    ],
+    "qualificationsDetail": "<ul><li>MCh (Neurosurgery)</li><li>MS / MBBS</li></ul>",
+    "experienceDetail": "5+ years of hands-on neurosurgical surgical experience across tertiary neuroscience centers.",
+    "awardsDetail": "Member of Neurological Society of India.",
+    "publicationsDetail": "Clinical series on post-operative neurosurgical monitoring protocols."
+  },
+  {
+    "id": "dr-sinchana-bhagavan",
+    "name": "Dr. Sinchana Bhagavan",
+    "designation": "Anaesthesiologist",
+    "specialty": "Neuro Critical Care",
+    "specialtyCode": "critical-care",
+    "experience": "Paediatric & Trauma Care",
+    "qualification": "MBBS, MD (Anaesthesiology)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Sinchana.webp",
+    "about": "<p>Dr. Sinchana Bhagavan is an experienced anaesthesiologist with special focus on paediatric surgical anaesthesia, neuroanaesthesia, obstetric and polytrauma resuscitation.</p>",
+    "expertise": [
+      "Paediatric Surgical Anaesthesia",
+      "Neuroanaesthesia for Brain & Spine Interventions",
+      "Polytrauma & Emergency Airway Management",
+      "Critical Care Resuscitation & Regional Blocks"
+    ],
+    "qualificationsDetail": "<ul><li>MBBS</li><li>MD (Anaesthesiology)</li></ul>",
+    "experienceDetail": "Clinical background across high-volume obstetric, paediatric, and neurosurgical theaters.",
+    "awardsDetail": "Member of Indian Society of Anaesthesiologists.",
+    "publicationsDetail": "Presentations on paediatric airway protocols."
+  },
+  {
+    "id": "dr-adharsh-s",
+    "name": "Dr. Adharsh S",
+    "designation": "Junior Consultant, Neuro-Anaesthesia & Neuro Critical Care",
+    "specialty": "Neuro Critical Care",
+    "specialtyCode": "critical-care",
+    "experience": "Robotic & Nerve Blocks",
+    "qualification": "MBBS, Post-graduate in Anaesthesia, ACLS, BLS, PALS",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Adharsh.webp",
+    "about": "<p>Dr. Adharsh S is an anaesthesiology specialist trained in robotic-assisted surgeries, neuroanaesthesia, ultrasound-guided nerve blocks, and acute trauma resuscitation.</p>",
+    "expertise": [
+      "Anaesthesia for Robotic-Assisted & Oncology Surgery",
+      "Neuroanaesthesia & Difficult Airway Interventions",
+      "Ultrasound-Guided Regional Nerve Blocks",
+      "Advanced Trauma & Pediatric Resuscitation (PALS, ACLS)"
+    ],
+    "qualificationsDetail": "<ul><li>MBBS</li><li>Post-graduate in Anaesthesia</li><li>ACLS, BLS, PALS Certified</li></ul>",
+    "experienceDetail": "Specialist anaesthetist in advanced robotic, onco-surgery, and neurosurgical operations.",
+    "awardsDetail": "Certified Advanced Life Support provider.",
+    "publicationsDetail": "Clinical presentations in regional anaesthesia forums."
+  },
+  {
+    "id": "dr-vishnudatha",
+    "name": "Dr. Vishnudatha",
+    "designation": "Duty Doctor",
+    "specialty": "Emergency & MICU",
+    "specialtyCode": "emergency",
+    "experience": "Clinical Care & Diagnosis",
+    "qualification": "MBBS",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Vishnudatha.webp",
+    "about": "<p>Dr. Vishnudatha provides primary clinical evaluation, acute emergency response, and coordinated patient care across inpatient wards and ICU.</p>",
+    "expertise": [
+      "Clinical Patient Assessment & Triage",
+      "Acute Inpatient Management",
+      "Primary Trauma Response",
+      "Diagnostic Workup & Ward Coordination"
+    ],
+    "qualificationsDetail": "<ul><li>MBBS</li></ul>",
+    "experienceDetail": "Emergency department clinical duties and inpatient medical supervision.",
+    "awardsDetail": "Registered Medical Practitioner.",
+    "publicationsDetail": "Clinical documentation and hospital quality audits."
+  },
+  {
+    "id": "dr-abhishek-pandya",
+    "name": "Dr. Abhishek Pandya",
+    "designation": "Consultant Neurosurgeon",
+    "specialty": "Neurosurgery",
+    "specialtyCode": "neurosurgery",
+    "experience": "Neurosurgery Specialist",
+    "qualification": "DrNB (Neurosurgery)",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Abhishek-Pandya.webp",
+    "about": "<p>Dr. Abhishek Pandya is a skilled Consultant Neurosurgeon focused on meticulous clinical evaluation, cranial surgery, and comprehensive neurosurgical care.</p>",
+    "expertise": [
+      "Clinical Diagnosis & Neurosurgical Evaluation",
+      "Cranial Microsurgery & Brain Tumor Care",
+      "Spinal Decompression & Instrumentation",
+      "Neurotrauma & Critical Head Injury Care"
+    ],
+    "qualificationsDetail": "<ul><li>DrNB (Neurosurgery)</li><li>MBBS</li></ul>",
+    "experienceDetail": "Comprehensive neurosurgical surgical training and advanced cranial surgical fellowship.",
+    "awardsDetail": "Member of Neurological Society of India.",
+    "publicationsDetail": "Neurosurgical case reports and clinical papers."
+  },
+  {
+    "id": "dr-geeta-sundar",
+    "name": "Dr. Geeta Sundar",
+    "designation": "Consultant Neurosurgeon",
+    "specialty": "Neurosurgery",
+    "specialtyCode": "neurosurgery",
+    "experience": "Complex Brain & Spine",
+    "qualification": "Consultant Neurosurgeon",
+    "hospital": "Brains Super Speciality Hospital",
+    "phone": "+91 94832 40925",
+    "phoneClean": "9483240925",
+    "image": "static/brainshospital-com/Dr-Geeta-Sundar.webp",
+    "about": "<p>Dr. Geeta Sundar has comprehensive surgical experience in managing complex brain and spine conditions, neurotrauma, vascular malformations, neuro-oncological lesions, and skull base pathologies.</p>",
+    "expertise": [
+      "Complex Brain & Spine Disorders",
+      "Neurotrauma & Critical Cranial Injuries",
+      "Neurovascular Surgeries & Aneurysm Care",
+      "Skull Base Pathologies & Brain Tumours",
+      "Infectious & Degenerative Spine Conditions"
+    ],
+    "qualificationsDetail": "<ul><li>Consultant Neurosurgeon</li></ul>",
+    "experienceDetail": "Decade of complex neurosurgical procedures across leading neuroscience centers.",
+    "awardsDetail": "Active participant and speaker in neurosurgical scientific forums.",
+    "publicationsDetail": "Contributions to neurosurgical literature on skull base lesions."
+  }
+];
+
+    function populateDoctorModal(docId) {
+      const doc = DOCTOR_PROFILES.find(d => d.id === docId) || DOCTOR_PROFILES[0];
+      if (!doc) return;
+
+      // Reset to overview tab & reset tab scroll position to start
+      const overviewTabBtn = document.getElementById('tab-overview');
+      if (overviewTabBtn) {
+        const tabInstance = bootstrap.Tab.getOrCreateInstance(overviewTabBtn);
+        tabInstance.show();
+      }
+      const profileTabsEl = document.getElementById('docProfileTabs');
+      if (profileTabsEl) {
+        profileTabsEl.scrollLeft = 0;
+      }
+
+      // Breadcrumb & Main Header
+      document.getElementById('modalBreadcrumbName').textContent = doc.name;
+      document.getElementById('modalDocPhoto').src = doc.image;
+      document.getElementById('modalDocPhoto').alt = doc.name;
+      document.getElementById('modalDocName').textContent = doc.name;
+      document.getElementById('modalDocDesignation').textContent = doc.designation;
+      document.getElementById('modalDocSpecialtyBadge').textContent = doc.specialty;
+      document.getElementById('modalDocExperience').textContent = doc.experience;
+      document.getElementById('modalDocQualification').textContent = doc.qualification;
+
+      // Contact & OPD
+      const phoneBtn = document.getElementById('modalDocPhoneBtn');
+      const phoneText = document.getElementById('modalDocPhoneText');
+      if (phoneBtn) phoneBtn.href = 'tel:' + doc.phone.replace(/\s+/g, '');
+      if (phoneText) phoneText.textContent = 'Call ' + doc.phone;
+
+      const opdEl = document.getElementById('modalDocOpd'); if (opdEl) opdEl.textContent = doc.opd;
+
+
+
+      // Overview Tab
+      document.getElementById('modalAboutTitle').textContent = 'About ' + doc.name;
+      document.getElementById('modalDocAbout').innerHTML = doc.about;
+
+      // Areas of Expertise lists
+      const expList = document.getElementById('modalDocExpertiseList');
+      const expTabList = document.getElementById('modalDocExpertiseTabList');
+      if (expList && doc.expertise) {
+        expList.innerHTML = doc.expertise.map(e => '<li>' + e + '</li>').join('');
+      }
+      if (expTabList && doc.expertise) {
+        expTabList.innerHTML = doc.expertise.map(e => '<li>' + e + '</li>').join('');
+      }
+
+      // Tabs: Qualifications, Experience, Awards, Publications
+      const qualEl = document.getElementById('modalDocQualificationsDetail');
+      if (qualEl) {
+        qualEl.innerHTML = doc.qualificationsDetail || doc.qualification;
+        qualEl.querySelectorAll('li').forEach(li => {
+          if (!li.textContent.trim()) li.remove();
+        });
+      }
+      const expDetailEl = document.getElementById('modalDocExperienceDetail');
+      if (expDetailEl) {
+        expDetailEl.innerHTML = doc.experienceDetail || doc.experience;
+        expDetailEl.querySelectorAll('li').forEach(li => {
+          if (!li.textContent.trim()) li.remove();
+        });
+      }
+      const awardsEl = document.getElementById('modalDocAwardsDetail');
+      if (awardsEl) {
+        awardsEl.innerHTML = doc.awardsDetail || 'Distinguished specialist with extensive accolades in neurology and surgical medicine.';
+        awardsEl.querySelectorAll('li').forEach(li => {
+          if (!li.textContent.trim()) li.remove();
+        });
+      }
+      const pubEl = document.getElementById('modalDocPublicationsDetail');
+      if (pubEl) {
+        pubEl.innerHTML = doc.publicationsDetail || 'Author and presenter of numerous clinical case series and medical research.';
+        pubEl.querySelectorAll('li').forEach(li => {
+          if (!li.textContent.trim()) li.remove();
+        });
+      }
+    }
+
+    // Attach listeners for View Profile modal
+    document.addEventListener('DOMContentLoaded', function () {
+      const OLD_MODAL_MAP = {
+        'dr-nk-venkataramana': 'myModal-1',
+        'dr-harsha-kj': 'myModal-2',
+        'dr-joshy-ev': 'myModal-3',
+        'dr-pavithra-venkateswaran': 'myModal-4',
+        'dr-prahlada-nb': 'myModal-5',
+        'dr-pratap-kumar-pani': 'myModal-21',
+        'dr-aswani-baby': 'myModal-8'
+      };
+
+      const profileButtons = document.querySelectorAll('.doctor-card-item .btn-clean-profile');
+      profileButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+          const card = this.closest('.doctor-card-item');
+          if (card) {
+            populateDoctorModal(card.id);
+          }
+        });
+      });
+
+      const modalEl = document.getElementById('doctorProfileModal');
+      if (modalEl) {
+        modalEl.addEventListener('show.bs.modal', function (event) {
+          const btn = event.relatedTarget;
+          if (btn) {
+            const card = btn.closest('.doctor-card-item');
+            if (card && !OLD_MODAL_MAP[card.id]) {
+              populateDoctorModal(card.id);
+            }
+          }
+        });
+      }
+
+      // Auto-center tab bar on click/activate so clicked option is centered and adjacent options reveal
+      const profileTabsEl = document.getElementById('docProfileTabs');
+      if (profileTabsEl) {
+        function centerActiveTab(tabBtn) {
+          if (!tabBtn) return;
+          // On desktop or when all tabs fit naturally, do not shift tab bar
+          if (window.innerWidth >= 992 || profileTabsEl.scrollWidth <= profileTabsEl.clientWidth) {
+            profileTabsEl.scrollLeft = 0;
+            return;
+          }
+          const navItem = tabBtn.closest('.nav-item');
+          if (!navItem) return;
+
+          const itemCenter = navItem.offsetLeft + (navItem.offsetWidth / 2);
+          const containerCenter = profileTabsEl.clientWidth / 2;
+          const targetScroll = Math.max(0, itemCenter - containerCenter);
+          profileTabsEl.scrollTo({
+            left: targetScroll,
+            behavior: 'smooth'
+          });
+        }
+
+        profileTabsEl.addEventListener('click', function (e) {
+          const tabBtn = e.target.closest('.nav-link');
+          if (tabBtn) centerActiveTab(tabBtn);
+        });
+
+        profileTabsEl.addEventListener('shown.bs.tab', function (e) {
+          centerActiveTab(e.target);
+        });
+      }
+
+      // If page opened with hash (e.g., Doctors.html#dr-nk-venkataramana), open profile modal
+      if (window.location.hash) {
+        const hashId = window.location.hash.substring(1);
+        const targetDoc = DOCTOR_PROFILES.find(d => d.id === hashId);
+        if (targetDoc && modalEl && typeof bootstrap !== 'undefined') {
+          populateDoctorModal(hashId);
+          bootstrap.Modal.getOrCreateInstance(modalEl).show();
+        }
+      }
+    });
+
   </script>
 </body>
 
