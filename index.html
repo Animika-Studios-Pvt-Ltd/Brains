@@ -31,8 +31,14 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
   </noscript>
 
+  <!-- Preload critical stylesheets to download in parallel and break serial @import chains -->
+  <link rel="preload" as="style" href="static/brainshospital-com/header.css" />
+  <link rel="preload" as="style" href="static/brainshospital-com/homepage.css" />
+  <link rel="preload" as="style" href="static/brainshospital-com/footer.css" />
+
   <!-- Plugins & Stylesheets -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /></noscript>
   <link rel="stylesheet" type="text/css" href="static/brainshospital-com/custom.css" />
   <link rel="preload" as="image" href="static/brainshospital-com/banner-1-mobile.webp" media="(max-width: 768px)"
     fetchpriority="high" />
