@@ -1466,19 +1466,19 @@
           easing: "ease-in-out",
           once: true,
           offset: 40,
+          disableMutationObserver: true,
         });
       }
     }
 
-    // Initialize immediately once scripts load
-    initAOS();
-
-    // Ensure recalculation after all images and fonts load (important for hard refreshes)
-    window.addEventListener("load", function () {
-      if (typeof AOS !== "undefined") {
-        AOS.refresh();
-      }
-    });
+    // Initialize after load/paint to eliminate forced reflow during critical rendering path
+    if (document.readyState === "complete") {
+      initAOS();
+    } else {
+      window.addEventListener("load", function () {
+        initAOS();
+      });
+    }
 
     // Tooltip initialization
     if (typeof bootstrap !== "undefined" && bootstrap.Tooltip) {

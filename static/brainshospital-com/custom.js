@@ -883,8 +883,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const psCircleImg = document.querySelector(".ps-circle-img");
 
     if (psHeading && psInnerContent && psCircleBox && psCircleText) {
-      const handlePsHeading = () => {
-        if (window.innerWidth < 767) {
+      const psMediaQuery = window.matchMedia("(max-width: 767px)");
+
+      const handlePsHeading = (isMobile) => {
+        if (isMobile) {
           if (psHeading.parentNode !== psInnerContent) {
             psInnerContent.insertBefore(psHeading, psCircleBox);
             psHeading.style.color = "#144e97";
@@ -892,7 +894,7 @@ document.addEventListener("DOMContentLoaded", () => {
             psHeading.style.width = "100%";
           }
           // swap to alternate image for small screens
-          if (psCircleImg) {
+          if (psCircleImg && !psCircleImg.src.includes("patients-speak-text-1.webp")) {
             psCircleImg.src = "static/brainshospital-com/patients-speak-text-1.webp";
           }
         } else {
@@ -903,13 +905,23 @@ document.addEventListener("DOMContentLoaded", () => {
             psHeading.style.width = "auto";
           }
           // ensure default image for larger screens
-          if (psCircleImg) {
+          if (psCircleImg && !psCircleImg.src.includes("patients-speak-text.webp")) {
             psCircleImg.src = "static/brainshospital-com/patients-speak-text.webp";
           }
         }
       };
-      window.addEventListener("resize", handlePsHeading);
-      handlePsHeading();
+
+      // Listen to viewport changes via matchMedia to prevent resize-event reflow thrashing
+      if (psMediaQuery.addEventListener) {
+        psMediaQuery.addEventListener("change", (e) => handlePsHeading(e.matches));
+      } else if (psMediaQuery.addListener) {
+        psMediaQuery.addListener((e) => handlePsHeading(e.matches));
+      }
+
+      // Schedule initial execution in requestAnimationFrame to eliminate forced synchronous reflow on load
+      window.requestAnimationFrame(() => {
+        handlePsHeading(psMediaQuery.matches);
+      });
     }
   }
 
