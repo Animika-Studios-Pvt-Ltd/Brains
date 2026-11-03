@@ -495,7 +495,8 @@
   width: 100%;
   height: 200px;
   background-color: #ffffff;
-  z-index: -1;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .founder-section .container {
@@ -533,19 +534,20 @@
 
 .founder-section h2 {
   margin-bottom: 5px;
+  color: #0c3b7a;
 }
 
 .founder-section h3 {
   font-family: "Lora-Italic";
   font-size: 24px;
-  color: #144e97;
+  color: #0c3b7a;
   margin-bottom: 8px;
 }
 
 .founder-section h4 {
   font-family: "Lora-Italic";
   font-size: 18px;
-  color: #144e97;
+  color: #0c3b7a;
   margin-bottom: 0;
   line-height: 1.4;
 }
@@ -556,7 +558,7 @@
 
 .founder-section .founder-text-bottom p {
   font-family: "Roboto-Regular";
-  color: #333333;
+  color: #1f2937;
   line-height: 1.6;
   margin-bottom: 0;
 }
@@ -577,7 +579,7 @@
 }
 
 .founder-section .founder-quote-row p {
-  color: #144e97;
+  color: #0c3b7a;
   font-family: "Roboto-Regular";
   font-size: 24px;
   margin-bottom: 15px;
@@ -589,7 +591,7 @@
   margin-right: 20px;
   font-family: "Roboto-Regular";
   font-size: 16px;
-  color: #144e97;
+  color: #0c3b7a;
   text-decoration: none;
   transition: color 0.3s ease;
 }

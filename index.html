@@ -31,10 +31,10 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
   </noscript>
 
-  <!-- Preload critical stylesheets to download in parallel and break serial @import chains -->
-  <link rel="preload" as="style" href="static/brainshospital-com/header.css" />
-  <link rel="preload" as="style" href="static/brainshospital-com/homepage.css" />
-  <link rel="preload" as="style" href="static/brainshospital-com/footer.css" />
+  <!-- Critical Stylesheets (Parallel Download to eliminate render-blocking @import waterfall) -->
+  <link rel="stylesheet" href="static/brainshospital-com/header.css" />
+  <link rel="stylesheet" href="static/brainshospital-com/homepage.css" />
+  <link rel="stylesheet" href="static/brainshospital-com/footer.css" />
 
   <!-- Plugins & Stylesheets -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'" />
