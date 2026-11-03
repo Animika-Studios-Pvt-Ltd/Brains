@@ -318,17 +318,21 @@ header::after {
 .header-sidebar-menu {
   position: fixed;
   top: 0;
-  right: -320px;
+  right: 0;
   width: 320px;
   height: 100vh;
   background-color: #ffffff;
   box-shadow: -2px 0 15px rgba(0, 0, 0, 0.2);
   z-index: 2000;
-  transition: right 0.4s ease;
+  box-sizing: border-box;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.4s ease, visibility 0.4s ease;
   padding: 10px 20px;
 }
 .header-sidebar-menu.active {
-  right: 0;
+  transform: translateX(0);
+  visibility: visible;
 }
 .header-sidebar-close {
   font-size: 40px;
