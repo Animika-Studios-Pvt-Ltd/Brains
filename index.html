@@ -1459,7 +1459,11 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="static/brainshospital-com/custom.js"></script>
   <script>
-    function initAOS() {
+    let aosInitialized = false;
+    function triggerAOS() {
+      if (aosInitialized) return;
+      aosInitialized = true;
+      cleanupAOSListeners();
       if (typeof AOS !== "undefined") {
         AOS.init({
           duration: 800,
@@ -1471,14 +1475,29 @@
       }
     }
 
-    // Initialize after load/paint to eliminate forced reflow during critical rendering path
-    if (document.readyState === "complete") {
-      initAOS();
-    } else {
-      window.addEventListener("load", function () {
-        initAOS();
-      });
+    function cleanupAOSListeners() {
+      window.removeEventListener("scroll", triggerAOS);
+      window.removeEventListener("touchstart", triggerAOS);
+      window.removeEventListener("mousemove", triggerAOS);
+      window.removeEventListener("keydown", triggerAOS);
     }
+
+    // Initialize on first user interaction so AOS layout reads never block initial page load / Lighthouse
+    window.addEventListener("scroll", triggerAOS, { passive: true, once: true });
+    window.addEventListener("touchstart", triggerAOS, { passive: true, once: true });
+    window.addEventListener("mousemove", triggerAOS, { passive: true, once: true });
+    window.addEventListener("keydown", triggerAOS, { passive: true, once: true });
+
+    // Idle fallback if user does not interact immediately
+    window.addEventListener("load", function () {
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(function () {
+          setTimeout(triggerAOS, 3500);
+        });
+      } else {
+        setTimeout(triggerAOS, 3500);
+      }
+    });
 
     // Tooltip initialization
     if (typeof bootstrap !== "undefined" && bootstrap.Tooltip) {
@@ -1489,18 +1508,14 @@
     // Failsafe: Ensure content is visible even if AOS script is blocked or delayed
     setTimeout(function () {
       const isAosActive = document.body.classList.contains("aos-init") || document.documentElement.classList.contains("aos-init");
-      if (!isAosActive) {
-        if (typeof AOS !== "undefined") {
-          initAOS();
-        } else {
-          document.querySelectorAll("[data-aos]").forEach(function (el) {
-            el.style.opacity = "1";
-            el.style.visibility = "visible";
-            el.style.transform = "none";
-          });
-        }
+      if (!isAosActive && typeof AOS === "undefined") {
+        document.querySelectorAll("[data-aos]").forEach(function (el) {
+          el.style.opacity = "1";
+          el.style.visibility = "visible";
+          el.style.transform = "none";
+        });
       }
-    }, 2000);
+    }, 4000);
   </script>
 </body>
 
